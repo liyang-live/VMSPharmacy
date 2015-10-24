@@ -1,0 +1,156 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_thuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="so_luong" type="xs:int" minOccurs="0" />
+                <xs:element name="stt_in" type="xs:short" minOccurs="0" />
+                <xs:element name="id_donthuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="mota_them" type="xs:string" minOccurs="0" />
+                <xs:element name="id_donthuocthaythe" type="xs:int" minOccurs="0" />
+                <xs:element name="id_kham" type="xs:long" minOccurs="0" />
+                <xs:element name="id_benhnhan" type="xs:long" minOccurs="0" />
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_kedon" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="id_bacsi_chidinh" type="xs:short" minOccurs="0" />
+                <xs:element name="trang_thai" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ten_donthuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_doituong_kcb" type="xs:string" minOccurs="0" />
+                <xs:element name="noitru" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="kieu_donthuoc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ma_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ham_luong" type="xs:string" minOccurs="0" />
+                <xs:element name="id_loaithuoc" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_kedon" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_bacsikedon" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_khoa" type="xs:string" minOccurs="0" />
+                <xs:element name="chan_doan" type="xs:string" minOccurs="0" />
+                <xs:element name="mabenh_chinh" type="xs:string" minOccurs="0" />
+                <xs:element name="mabenh_phu" type="xs:string" minOccurs="0" />
+                <xs:element name="chan_doan1" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_icd" type="xs:string" minOccurs="0" />
+                <xs:element name="loidan_bacsi" type="xs:string" minOccurs="0" />
+                <xs:element name="TAI_KHAM" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_taikham" type="xs:string" minOccurs="0" />
+                <xs:element name="id_doituong_kcb" type="xs:short" minOccurs="0" />
+                <xs:element name="ObjectType_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="nam_sinh" type="xs:short" minOccurs="0" />
+                <xs:element name="ngay_tiepdon" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Insurance_Num" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_sinh" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_tiepdon" type="xs:string" minOccurs="0" />
+                <xs:element name="BarCode" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_thuoc>464</id_thuoc>
+    <so_luong>10</so_luong>
+    <stt_in>1</stt_in>
+    <id_donthuoc>4</id_donthuoc>
+    <mota_them>Uống Trước Khi Ăn Mỗi ngày dùng 1 Gói chia làm 1 lần</mota_them>
+    <id_donthuocthaythe>-1</id_donthuocthaythe>
+    <id_kham>3</id_kham>
+    <id_benhnhan>3</id_benhnhan>
+    <ma_luotkham>14000003</ma_luotkham>
+    <ngay_kedon>2014-10-15T16:14:51.56+07:00</ngay_kedon>
+    <id_bacsi_chidinh>-1</id_bacsi_chidinh>
+    <trang_thai>0</trang_thai>
+    <ten_donthuoc>15.10.BnDichVu.001</ten_donthuoc>
+    <ma_doituong_kcb>DV</ma_doituong_kcb>
+    <noitru>0</noitru>
+    <kieu_donthuoc>0</kieu_donthuoc>
+    <ma_thuoc>T00100_1</ma_thuoc>
+    <ten_thuoc>ACC</ten_thuoc>
+    <ham_luong>200mg</ham_luong>
+    <id_loaithuoc>16</id_loaithuoc>
+    <ten_loaithuoc>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</ten_loaithuoc>
+    <ma_donvitinh>9</ma_donvitinh>
+    <ten_donvitinh>Gói</ten_donvitinh>
+    <sngay_kedon>15/10/2014</sngay_kedon>
+    <ma_loaithuoc>TMH</ma_loaithuoc>
+    <ten_khoa>Khoa Kcb Thường</ten_khoa>
+    <chan_doan>Khỏi bệnh;Bệnh đái tháo đường phụ thuộc insulin;ĐTĐ typ2;Bệnh đái tháo đường liên quan đến suy dinh dưỡng</chan_doan>
+    <mabenh_chinh>E10</mabenh_chinh>
+    <mabenh_phu>E11,E12</mabenh_phu>
+    <chan_doan1 />
+    <ma_icd>E10;E11;E12</ma_icd>
+    <loidan_bacsi />
+    <TAI_KHAM />
+    <id_doituong_kcb>1</id_doituong_kcb>
+    <ObjectType_Name>Dịch vụ</ObjectType_Name>
+    <gioi_tinh>Nam</gioi_tinh>
+    <ten_benhnhan>Bn Dich Vu</ten_benhnhan>
+    <dia_chi />
+    <nam_sinh>2000</nam_sinh>
+    <ngay_tiepdon>2014-10-15T16:14:51.56+07:00</ngay_tiepdon>
+    <Insurance_Num />
+    <sngay_sinh>01/01/2000</sngay_sinh>
+    <sngay_tiepdon>15/10/2014</sngay_tiepdon>
+    <BarCode>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</BarCode>
+  </Table>
+  <Table>
+    <id_thuoc>463</id_thuoc>
+    <so_luong>10</so_luong>
+    <stt_in>2</stt_in>
+    <id_donthuoc>4</id_donthuoc>
+    <mota_them>Uống Trước Khi Ăn Mỗi ngày dùng 1 1/10mCi chia làm 1 lần</mota_them>
+    <id_donthuocthaythe>-1</id_donthuocthaythe>
+    <id_kham>3</id_kham>
+    <id_benhnhan>3</id_benhnhan>
+    <ma_luotkham>14000003</ma_luotkham>
+    <ngay_kedon>2014-10-15T16:14:51.56+07:00</ngay_kedon>
+    <id_bacsi_chidinh>-1</id_bacsi_chidinh>
+    <trang_thai>0</trang_thai>
+    <ten_donthuoc>15.10.BnDichVu.001</ten_donthuoc>
+    <ma_doituong_kcb>DV</ma_doituong_kcb>
+    <noitru>0</noitru>
+    <kieu_donthuoc>0</kieu_donthuoc>
+    <ma_thuoc>T00145</ma_thuoc>
+    <ten_thuoc>ACC 200</ten_thuoc>
+    <ham_luong>200mg</ham_luong>
+    <id_loaithuoc>16</id_loaithuoc>
+    <ten_loaithuoc>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</ten_loaithuoc>
+    <ma_donvitinh>46</ma_donvitinh>
+    <ten_donvitinh>1/10mCi</ten_donvitinh>
+    <sngay_kedon>15/10/2014</sngay_kedon>
+    <ma_loaithuoc>TMH</ma_loaithuoc>
+    <ten_khoa>Khoa Kcb Thường</ten_khoa>
+    <chan_doan>Khỏi bệnh;Bệnh đái tháo đường phụ thuộc insulin;ĐTĐ typ2;Bệnh đái tháo đường liên quan đến suy dinh dưỡng</chan_doan>
+    <mabenh_chinh>E10</mabenh_chinh>
+    <mabenh_phu>E11,E12</mabenh_phu>
+    <chan_doan1 />
+    <ma_icd>E10;E11;E12</ma_icd>
+    <loidan_bacsi />
+    <TAI_KHAM />
+    <id_doituong_kcb>1</id_doituong_kcb>
+    <ObjectType_Name>Dịch vụ</ObjectType_Name>
+    <gioi_tinh>Nam</gioi_tinh>
+    <ten_benhnhan>Bn Dich Vu</ten_benhnhan>
+    <dia_chi />
+    <nam_sinh>2000</nam_sinh>
+    <ngay_tiepdon>2014-10-15T16:14:51.56+07:00</ngay_tiepdon>
+    <Insurance_Num />
+    <sngay_sinh>01/01/2000</sngay_sinh>
+    <sngay_tiepdon>15/10/2014</sngay_tiepdon>
+    <BarCode>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</BarCode>
+  </Table>
+</NewDataSet>

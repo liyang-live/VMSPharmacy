@@ -1,0 +1,8 @@
+D:\Projects\VMSClient\trunk\newLib\obj\Release\newLib.csprojResolveAssemblyReference.cache
+D:\Projects\VMSClient\trunk\newLib\obj\Release\VNS.Properties.frm_Properties.resources
+D:\Projects\VMSClient\trunk\newLib\obj\Release\VNS.Libs.frmPrintPreview.resources
+D:\Projects\VMSClient\trunk\newLib\obj\Release\VNS.Libs.frm_SignInfor.resources
+D:\Projects\VMSClient\trunk\newLib\obj\Release\VNS.Libs.frm_SysUsers.resources
+D:\Projects\VMSClient\trunk\newLib\obj\Release\newLib.Properties.Resources.resources
+D:\Projects\VMSClient\trunk\newLib\obj\Release\newLib.csproj.GenerateResource.Cache
+D:\Projects\VMSClient\trunk\newLib\obj\Release\VNS.Libs.dll.licenses

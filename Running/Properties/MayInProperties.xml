@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MayInProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TudonginPhieuchiSaukhitratien>true</TudonginPhieuchiSaukhitratien>
+  <TudonginhoadonSaukhiThanhtoan>true</TudonginhoadonSaukhiThanhtoan>
+  <mauinhoadon>mau2</mauinhoadon>
+  <mauinbienlai>mau2</mauinbienlai>
+  <InCLSsaukhiluu>true</InCLSsaukhiluu>
+  <InDonthuocsaukhiluu>false</InDonthuocsaukhiluu>
+  <InHoadonSaukhithanhtoan_KCB>false</InHoadonSaukhithanhtoan_KCB>
+  <InPhieuKCBsaukhiluu>true</InPhieuKCBsaukhiluu>
+  <CoGiayInTomtatDieutriNgoaitru>A4</CoGiayInTomtatDieutriNgoaitru>
+  <CoGiayInBienlai>A4</CoGiayInBienlai>
+  <CoGiayInDonthuoc>A4</CoGiayInDonthuoc>
+  <CoGiayInCLS>A4</CoGiayInCLS>
+  <CoGiayInPhieuKCB>A4</CoGiayInPhieuKCB>
+  <TenMayInPhieuKCB>doPDF v7</TenMayInPhieuKCB>
+  <TenMayInHoadon>doPDF v7</TenMayInHoadon>
+  <TenMayInBienlai>LEADTOOLS 19 PrintToPACS 32-bit</TenMayInBienlai>
+  <Tenmayincuoicung>doPDF v7</Tenmayincuoicung>
+  <KieuInPhieuKCB>Innhiet</KieuInPhieuKCB>
+  <PreviewInTomtatDieutriNgoaitru>true</PreviewInTomtatDieutriNgoaitru>
+  <PreviewInPhoiBHYT>true</PreviewInPhoiBHYT>
+  <PreviewInHoadon>true</PreviewInHoadon>
+  <PreviewInBienlai>true</PreviewInBienlai>
+  <PreviewInDonthuoc>true</PreviewInDonthuoc>
+  <PreviewInCLS>true</PreviewInCLS>
+  <PreviewPhieuKCB>true</PreviewPhieuKCB>
+  <PreviewPhieuTamung>true</PreviewPhieuTamung>
+</MayInProperties>

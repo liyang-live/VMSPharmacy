@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NhapkhoProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CoThangDu>false</CoThangDu>
+  <Themmoilientuc>false</Themmoilientuc>
+  <Nhapgiaban>true</Nhapgiaban>
+  <QuyenThemPhieu>true</QuyenThemPhieu>
+  <QuyenSuaPhieu>true</QuyenSuaPhieu>
+  <QuyenXoaPhieu>true</QuyenXoaPhieu>
+  <QuyenXacNhanPhieu>true</QuyenXacNhanPhieu>
+  <QuyenHuyXacNhanPhieu>true</QuyenHuyXacNhanPhieu>
+  <QuyenInphieu>true</QuyenInphieu>
+  <NhapgiaBHYT>true</NhapgiaBHYT>
+  <autosaveAfter>30</autosaveAfter>
+  <HienthiChietkhauChitiet>false</HienthiChietkhauChitiet>
+</NhapkhoProperties>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThuocProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Chophepsuagiaban>true</Chophepsuagiaban>
+  <Chophepsuasoluong>false</Chophepsuasoluong>
+  <NhomthuocIndanhmuc>false</NhomthuocIndanhmuc>
+  <NhomthuocIngia>false</NhomthuocIngia>
+  <LuuNgaysaukhisua>false</LuuNgaysaukhisua>
+  <TieudeInDanhmucThuoc>DANH MỤC THUỐC</TieudeInDanhmucThuoc>
+  <TieudeBaocaoGiathuoc>GIÁ THUỐC ĐỐI TƯỢNG</TieudeBaocaoGiathuoc>
+</ThuocProperties>

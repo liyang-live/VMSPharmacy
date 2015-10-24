@@ -1,0 +1,107 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_thuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="id_khoatra" type="xs:short" minOccurs="0" />
+                <xs:element name="id_khonhan" type="xs:short" minOccurs="0" />
+                <xs:element name="sngay_lapphieu" type="xs:string" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="so_luong" type="xs:int" minOccurs="0" />
+                <xs:element name="thanh_tien" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Ghichu" type="xs:string" minOccurs="0" />
+                <xs:element name="so_phieu" type="xs:long" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ham_luong" type="xs:string" minOccurs="0" />
+                <xs:element name="so_dangky" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_khoanoitru" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_kho" type="xs:string" minOccurs="0" />
+                <xs:element name="id_loaithuoc" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nhomthuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvichia" type="xs:string" minOccurs="0" />
+                <xs:element name="co_chiathuoc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="tenthuoc_bietduoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_nhomthuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_thuoc>4</id_thuoc>
+    <id_khoatra>76</id_khoatra>
+    <id_khonhan>16</id_khonhan>
+    <sngay_lapphieu>27/07/2015</sngay_lapphieu>
+    <don_gia>5000.000</don_gia>
+    <so_luong>2</so_luong>
+    <thanh_tien>10000.000</thanh_tien>
+    <Ghichu />
+    <so_phieu>4</so_phieu>
+    <ten_donvitinh>Gói</ten_donvitinh>
+    <ten_thuoc>ACC</ten_thuoc>
+    <ham_luong>200mg</ham_luong>
+    <so_dangky>123456</so_dangky>
+    <ten_khoanoitru>Khoa Nội Trú Tuyến Giáp</ten_khoanoitru>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <id_loaithuoc>16</id_loaithuoc>
+    <ten_loaithuoc>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</ten_loaithuoc>
+    <ten_nhomthuoc>Nhóm 2</ten_nhomthuoc>
+    <tenthuoc_bietduoc>ACC (Acetylcystein 200Mg)</tenthuoc_bietduoc>
+    <ma_nhomthuoc>02</ma_nhomthuoc>
+  </Table>
+  <Table>
+    <id_thuoc>5</id_thuoc>
+    <id_khoatra>76</id_khoatra>
+    <id_khonhan>16</id_khonhan>
+    <sngay_lapphieu>27/07/2015</sngay_lapphieu>
+    <don_gia>10000.000</don_gia>
+    <so_luong>3</so_luong>
+    <thanh_tien>30000.000</thanh_tien>
+    <Ghichu />
+    <so_phieu>4</so_phieu>
+    <ten_donvitinh>1/10mCi</ten_donvitinh>
+    <ten_thuoc>ACC 200</ten_thuoc>
+    <ham_luong>200mg</ham_luong>
+    <so_dangky />
+    <ten_khoanoitru>Khoa Nội Trú Tuyến Giáp</ten_khoanoitru>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <id_loaithuoc>16</id_loaithuoc>
+    <ten_loaithuoc>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</ten_loaithuoc>
+    <ten_nhomthuoc>Nhóm 2</ten_nhomthuoc>
+    <tenthuoc_bietduoc>ACC 200 (Acetylcystein 200Mg)</tenthuoc_bietduoc>
+    <ma_nhomthuoc>02</ma_nhomthuoc>
+  </Table>
+  <Table>
+    <id_thuoc>6</id_thuoc>
+    <id_khoatra>76</id_khoatra>
+    <id_khonhan>16</id_khonhan>
+    <sngay_lapphieu>27/07/2015</sngay_lapphieu>
+    <don_gia>15000.000</don_gia>
+    <so_luong>1</so_luong>
+    <thanh_tien>15000.000</thanh_tien>
+    <Ghichu />
+    <so_phieu>4</so_phieu>
+    <ten_donvitinh>Viên</ten_donvitinh>
+    <ten_thuoc>Accupril</ten_thuoc>
+    <ham_luong>5mg</ham_luong>
+    <so_dangky>VN-5566-10</so_dangky>
+    <ten_khoanoitru>Khoa Nội Trú Tuyến Giáp</ten_khoanoitru>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <id_loaithuoc>9</id_loaithuoc>
+    <ten_loaithuoc>THUỐC TIM MẠCH</ten_loaithuoc>
+    <ten_nhomthuoc>Nhóm 1</ten_nhomthuoc>
+    <tenthuoc_bietduoc>Accupril (Quinapril HCL 5mg)</tenthuoc_bietduoc>
+    <ma_nhomthuoc>01</ma_nhomthuoc>
+  </Table>
+</NewDataSet>

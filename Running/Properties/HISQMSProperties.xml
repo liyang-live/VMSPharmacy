@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HISQMSProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TenLoaiQMS />
+  <LoaiQMS_bo>NO</LoaiQMS_bo>
+  <Chilaysouutien>false</Chilaysouutien>
+  <Chopheplaysouutien>true</Chopheplaysouutien>
+  <MaDoituongKCB>DV</MaDoituongKCB>
+  <IsQMS>false</IsQMS>
+  <MaPhongKham>KYC</MaPhongKham>
+  <SoLuongHienThi>5</SoLuongHienThi>
+  <ThoiGianTuDongLay>3000</ThoiGianTuDongLay>
+  <MaQuay>QUAY_1</MaQuay>
+  <TenQuay>QUẦY TIẾP ĐÓN 1</TenQuay>
+  <TenBenhVien>BỆNH VIỆN NỘI TIẾT TRUNG ƯƠNG</TenBenhVien>
+  <FontSize>500</FontSize>
+  <LoaiBNFontSize>80</LoaiBNFontSize>
+  <ThoiGianCho>3</ThoiGianCho>
+  <TestMode>true</TestMode>
+</HISQMSProperties>

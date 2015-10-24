@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HISPrintProperties xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sPrinterNameBHYT>doPDF v7</sPrinterNameBHYT>
+  <SoLuongCanInBHYT>1</SoLuongCanInBHYT>
+  <SoLuongCanInHoaDon>0</SoLuongCanInHoaDon>
+  <ChophepIndonthuoc>false</ChophepIndonthuoc>
+  <InThuocsaukhiLuu>true</InThuocsaukhiLuu>
+  <HienthituychonInsaukhiLuu>false</HienthituychonInsaukhiLuu>
+  <InCLSsaukhiLuu>true</InCLSsaukhiLuu>
+  <IsChiDinhNhanh>false</IsChiDinhNhanh>
+  <InPhieukhamsaukhiLuu>true</InPhieukhamsaukhiLuu>
+  <InPhoiKhiThanhToan>false</InPhoiKhiThanhToan>
+  <Inngay>true</Inngay>
+  <TenmayinThuocCLS>doPDF v7</TenmayinThuocCLS>
+  <Tenmayinphieukham>doPDF v7</Tenmayinphieukham>
+  <TenMayThanhToan>doPDF v7</TenMayThanhToan>
+  <Sobanin>1</Sobanin>
+  <KhoGiay>A5</KhoGiay>
+  <IsQMS>false</IsQMS>
+</HISPrintProperties>

@@ -1,0 +1,240 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table1" msdata:Locale="en-US">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_thuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="ma_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="id_loaithuoc" type="xs:short" minOccurs="0" />
+                <xs:element name="tinh_chat" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ten_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="mota_them" type="xs:string" minOccurs="0" />
+                <xs:element name="hoat_chat" type="xs:string" minOccurs="0" />
+                <xs:element name="ham_luong" type="xs:string" minOccurs="0" />
+                <xs:element name="hang_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="so_dangky" type="xs:string" minOccurs="0" />
+                <xs:element name="nuoc_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="trang_thai" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dang_baoche" type="xs:string" minOccurs="0" />
+                <xs:element name="gioihan_kedon" type="xs:short" minOccurs="0" />
+                <xs:element name="donvi_but" type="xs:int" minOccurs="0" />
+                <xs:element name="kieu_thuocvattu" type="xs:string" minOccurs="0" />
+                <xs:element name="QD31" type="xs:string" minOccurs="0" />
+                <xs:element name="noitru_ngoaitru" type="xs:string" minOccurs="0" />
+                <xs:element name="tu_tuc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="gia_bhyt" type="xs:decimal" minOccurs="0" />
+                <xs:element name="phuthu_dungtuyen" type="xs:decimal" minOccurs="0" />
+                <xs:element name="phuthu_traituyen" type="xs:decimal" minOccurs="0" />
+                <xs:element name="co_chiathuoc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="sluong_chia" type="xs:int" minOccurs="0" />
+                <xs:element name="dongia_chia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_dvichia" type="xs:string" minOccurs="0" />
+                <xs:element name="nguoi_tao" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_tao" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngay_sua" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="nguoi_sua" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="tenthuoc_bietduoc" type="xs:string" minOccurs="0" />
+                <xs:element name="co_qhe" type="xs:int" minOccurs="0" />
+                <xs:element name="ma_nhomthuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="in_rieng" type="xs:short" minOccurs="0" />
+                <xs:element name="stt_hthi_loaithuoc" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_nhomthuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvichia" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_nhap" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_xacnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="so_luong" type="xs:int" minOccurs="0" />
+                <xs:element name="id_capphat" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_khoaphong" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_kho" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_loaiphieu" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_kieuphieu" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table1>
+    <id_thuoc>4</id_thuoc>
+    <ma_thuoc>T4</ma_thuoc>
+    <id_loaithuoc>16</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>ACC</ten_thuoc>
+    <ten_bhyt>ACC</ten_bhyt>
+    <don_gia>3500.00</don_gia>
+    <ma_donvitinh>9</ma_donvitinh>
+    <mota_them xml:space="preserve"> </mota_them>
+    <hoat_chat>Acetylcystein 200Mg</hoat_chat>
+    <ham_luong>200mg</ham_luong>
+    <hang_sanxuat>Công ty dược phẩm Hậu Giang</hang_sanxuat>
+    <so_dangky>123456</so_dangky>
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche />
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>3500.00</gia_bhyt>
+    <phuthu_dungtuyen>2000.00</phuthu_dungtuyen>
+    <phuthu_traituyen>3000.00</phuthu_traituyen>
+    <ngay_sua>2015-04-12T16:30:34.58+07:00</ngay_sua>
+    <nguoi_sua>ADMIN</nguoi_sua>
+    <ten_loaithuoc>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</ten_loaithuoc>
+    <ma_loaithuoc>TMH</ma_loaithuoc>
+    <tenthuoc_bietduoc>ACC (Acetylcystein 200Mg)</tenthuoc_bietduoc>
+    <co_qhe>1</co_qhe>
+    <ma_nhomthuoc>02</ma_nhomthuoc>
+    <in_rieng>0</in_rieng>
+    <stt_hthi_loaithuoc>16</stt_hthi_loaithuoc>
+    <ten_nhomthuoc>Nhóm 2</ten_nhomthuoc>
+    <ten_donvitinh>Gói</ten_donvitinh>
+    <sngay_nhap>07/07/2015</sngay_nhap>
+    <sngay_xacnhan>07/07/2015</sngay_xacnhan>
+    <so_luong>2</so_luong>
+    <id_capphat>1</id_capphat>
+    <ten_khoaphong>Khoa Nội Trú Tuyến Giáp</ten_khoaphong>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <ten_loaiphieu>Lĩnh thường</ten_loaiphieu>
+    <ten_kieuphieu>Phiếu lĩnh thuốc</ten_kieuphieu>
+  </Table1>
+  <Table1>
+    <id_thuoc>6</id_thuoc>
+    <ma_thuoc>T6</ma_thuoc>
+    <id_loaithuoc>9</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>Accupril</ten_thuoc>
+    <ten_bhyt>Accupril</ten_bhyt>
+    <don_gia>5000.00</don_gia>
+    <ma_donvitinh>1</ma_donvitinh>
+    <mota_them />
+    <hoat_chat>Quinapril HCL 5mg</hoat_chat>
+    <ham_luong>5mg</ham_luong>
+    <hang_sanxuat>Godecke GmbH - Đức</hang_sanxuat>
+    <so_dangky>VN-5566-10</so_dangky>
+    <nuoc_sanxuat>Godecke GmbH - Đức</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche>7 vỉ x 14 viên, Viên</dang_baoche>
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>5000.00</gia_bhyt>
+    <phuthu_dungtuyen>0.00</phuthu_dungtuyen>
+    <phuthu_traituyen>0.00</phuthu_traituyen>
+    <ten_loaithuoc>THUỐC TIM MẠCH</ten_loaithuoc>
+    <ma_loaithuoc>TM</ma_loaithuoc>
+    <tenthuoc_bietduoc>Accupril (Quinapril HCL 5mg)</tenthuoc_bietduoc>
+    <co_qhe>1</co_qhe>
+    <ma_nhomthuoc>01</ma_nhomthuoc>
+    <in_rieng>0</in_rieng>
+    <stt_hthi_loaithuoc>9</stt_hthi_loaithuoc>
+    <ten_nhomthuoc>Nhóm 1</ten_nhomthuoc>
+    <ten_donvitinh>Viên</ten_donvitinh>
+    <sngay_nhap>07/07/2015</sngay_nhap>
+    <sngay_xacnhan>07/07/2015</sngay_xacnhan>
+    <so_luong>20</so_luong>
+    <id_capphat>1</id_capphat>
+    <ten_khoaphong>Khoa Nội Trú Tuyến Giáp</ten_khoaphong>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <ten_loaiphieu>Lĩnh thường</ten_loaiphieu>
+    <ten_kieuphieu>Phiếu lĩnh thuốc</ten_kieuphieu>
+  </Table1>
+  <Table1>
+    <id_thuoc>33</id_thuoc>
+    <ma_thuoc>T33</ma_thuoc>
+    <id_loaithuoc>6</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>Augmentin</ten_thuoc>
+    <ten_bhyt>Augmentin</ten_bhyt>
+    <don_gia>11500.00</don_gia>
+    <ma_donvitinh>1</ma_donvitinh>
+    <mota_them />
+    <hoat_chat>Amoxicillin trihydrate 500mg +Acid Clavulanic  Potasium 125mg</hoat_chat>
+    <ham_luong>500 mg + 125mg</ham_luong>
+    <hang_sanxuat>SmithKline Beecham  Pharmaceuticals - Anh</hang_sanxuat>
+    <so_dangky>VN-11057-10</so_dangky>
+    <nuoc_sanxuat>SmithKline Beecham  Pharmaceuticals - Anh</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche>2 vĩ x 7 viên/ hộp, </dang_baoche>
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>11500.00</gia_bhyt>
+    <phuthu_dungtuyen>0.00</phuthu_dungtuyen>
+    <phuthu_traituyen>0.00</phuthu_traituyen>
+    <ten_loaithuoc>THUỐC ĐIỀU TRỊ KÍ SINH TRÙNG, CHỐNG NHIỄM KHUẨN</ten_loaithuoc>
+    <ma_loaithuoc>DTKST</ma_loaithuoc>
+    <tenthuoc_bietduoc>Augmentin (Amoxicillin trihydrate 500mg +Acid Clavulanic  Potasium 125mg)</tenthuoc_bietduoc>
+    <co_qhe>1</co_qhe>
+    <ma_nhomthuoc>01</ma_nhomthuoc>
+    <in_rieng>0</in_rieng>
+    <stt_hthi_loaithuoc>6</stt_hthi_loaithuoc>
+    <ten_nhomthuoc>Nhóm 1</ten_nhomthuoc>
+    <ten_donvitinh>Viên</ten_donvitinh>
+    <sngay_nhap>07/07/2015</sngay_nhap>
+    <sngay_xacnhan>07/07/2015</sngay_xacnhan>
+    <so_luong>10</so_luong>
+    <id_capphat>1</id_capphat>
+    <ten_khoaphong>Khoa Nội Trú Tuyến Giáp</ten_khoaphong>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <ten_loaiphieu>Lĩnh thường</ten_loaiphieu>
+    <ten_kieuphieu>Phiếu lĩnh thuốc</ten_kieuphieu>
+  </Table1>
+  <Table1>
+    <id_thuoc>60</id_thuoc>
+    <ma_thuoc>T60</ma_thuoc>
+    <id_loaithuoc>13</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>Bidiperan 10mg</ten_thuoc>
+    <ten_bhyt>Bidiperan 10mg</ten_bhyt>
+    <don_gia>10000.00</don_gia>
+    <ma_donvitinh>6</ma_donvitinh>
+    <mota_them />
+    <hoat_chat>Metoclopramide</hoat_chat>
+    <ham_luong>10mg/2ml</ham_luong>
+    <hang_sanxuat>FKB Việt Nam</hang_sanxuat>
+    <so_dangky>VD -15509 - 11</so_dangky>
+    <nuoc_sanxuat>FKB Việt Nam</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche>Thuốc tiêm</dang_baoche>
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>10000.00</gia_bhyt>
+    <phuthu_dungtuyen>0.00</phuthu_dungtuyen>
+    <phuthu_traituyen>0.00</phuthu_traituyen>
+    <ten_loaithuoc>THUỐC ĐƯỜNG TIÊU HÓA </ten_loaithuoc>
+    <ma_loaithuoc>DTH</ma_loaithuoc>
+    <tenthuoc_bietduoc>Bidiperan 10mg (Metoclopramide)</tenthuoc_bietduoc>
+    <co_qhe>1</co_qhe>
+    <ma_nhomthuoc>02</ma_nhomthuoc>
+    <in_rieng>0</in_rieng>
+    <stt_hthi_loaithuoc>13</stt_hthi_loaithuoc>
+    <ten_nhomthuoc>Nhóm 2</ten_nhomthuoc>
+    <ten_donvitinh>Ống</ten_donvitinh>
+    <sngay_nhap>07/07/2015</sngay_nhap>
+    <sngay_xacnhan>07/07/2015</sngay_xacnhan>
+    <so_luong>2</so_luong>
+    <id_capphat>1</id_capphat>
+    <ten_khoaphong>Khoa Nội Trú Tuyến Giáp</ten_khoaphong>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <ten_loaiphieu>Lĩnh thường</ten_loaiphieu>
+    <ten_kieuphieu>Phiếu lĩnh thuốc</ten_kieuphieu>
+  </Table1>
+</NewDataSet>

@@ -1,0 +1,122 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_thanhtoan" type="xs:long" minOccurs="0" />
+                <xs:element name="ma_thanhtoan" type="xs:string" minOccurs="0" />
+                <xs:element name="id_benhnhan" type="xs:long" minOccurs="0" />
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_doituong_kcb" type="xs:string" minOccurs="0" />
+                <xs:element name="id_doituong_kcb" type="xs:short" minOccurs="0" />
+                <xs:element name="id_loaidoituong_kcb" type="xs:short" minOccurs="0" />
+                <xs:element name="ngay_thanhtoan" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="id_nhanvien_thanhtoan" type="xs:int" minOccurs="0" />
+                <xs:element name="kieu_thanhtoan" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="trangthai_in" type="xs:int" minOccurs="0" />
+                <xs:element name="ngay_in" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="nguoi_in" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_tonghop" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="nguoi_tonghop" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_khoa_thuchien" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_chot" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="trangthai_chot" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="tong_tien" type="xs:decimal" minOccurs="0" />
+                <xs:element name="bhyt_chitra" type="xs:decimal" minOccurs="0" />
+                <xs:element name="bnhan_chitra" type="xs:decimal" minOccurs="0" />
+                <xs:element name="phu_thu" type="xs:decimal" minOccurs="0" />
+                <xs:element name="tu_tuc" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ptram_bhyt" type="xs:short" minOccurs="0" />
+                <xs:element name="tile_chietkhau" type="xs:decimal" minOccurs="0" />
+                <xs:element name="kieu_chietkhau" type="xs:string" minOccurs="0" />
+                <xs:element name="tongtien_chietkhau" type="xs:decimal" minOccurs="0" />
+                <xs:element name="tongtien_chietkhau_hoadon" type="xs:decimal" minOccurs="0" />
+                <xs:element name="tongtien_chietkhau_chitiet" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_lydo_chietkhau" type="xs:string" minOccurs="0" />
+                <xs:element name="noi_tru" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ma_pttt" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_ravien" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ma_lydo_huy" type="xs:string" minOccurs="0" />
+                <xs:element name="id_capphat" type="xs:int" minOccurs="0" />
+                <xs:element name="mau_hoadon" type="xs:string" minOccurs="0" />
+                <xs:element name="ki_hieu" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_quyen" type="xs:string" minOccurs="0" />
+                <xs:element name="serie" type="xs:string" minOccurs="0" />
+                <xs:element name="trangthai_seri" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="id_hdon_log" type="xs:long" minOccurs="0" />
+                <xs:element name="nguoi_tao" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_tao" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="nguoi_sua" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngay_sua" type="xs:string" minOccurs="0" />
+                <xs:element name="ip_maytao" type="xs:string" minOccurs="0" />
+                <xs:element name="ip_maysua" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_maytao" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_maysua" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_thanhtoan" type="xs:string" minOccurs="0" />
+                <xs:element name="id_phieuthu" type="xs:long" minOccurs="0" />
+                <xs:element name="so_tien" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_phieuthu" type="xs:string" minOccurs="0" />
+                <xs:element name="dsach_dichvu_thanhtoan" type="xs:string" minOccurs="0" />
+                <xs:element name="lydo_nop" type="xs:string" minOccurs="0" />
+                <xs:element name="nguoi_nop" type="xs:string" minOccurs="0" />
+                <xs:element name="soluong_chungtugoc" type="xs:short" minOccurs="0" />
+                <xs:element name="taikhoan_no" type="xs:string" minOccurs="0" />
+                <xs:element name="taikhoan_co" type="xs:string" minOccurs="0" />
+                <xs:element name="sotien_bangchu" type="xs:string" minOccurs="0" />
+                <xs:element name="Tuoi" type="xs:int" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_thanhtoan>6</id_thanhtoan>
+    <ma_thanhtoan>TT1510040002</ma_thanhtoan>
+    <id_benhnhan>1</id_benhnhan>
+    <ma_luotkham>15000001</ma_luotkham>
+    <ngay_thanhtoan>2015-10-04T22:21:23.21+07:00</ngay_thanhtoan>
+    <id_nhanvien_thanhtoan>-1</id_nhanvien_thanhtoan>
+    <kieu_thanhtoan>1</kieu_thanhtoan>
+    <trangthai_in>0</trangthai_in>
+    <nguoi_in />
+    <nguoi_tonghop />
+    <ma_khoa_thuchien>KKB</ma_khoa_thuchien>
+    <trangthai_chot>0</trangthai_chot>
+    <tong_tien>125000.000</tong_tien>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <bnhan_chitra>125000.000</bnhan_chitra>
+    <phu_thu>0.000</phu_thu>
+    <tu_tuc>0.000</tu_tuc>
+    <tile_chietkhau>0.000</tile_chietkhau>
+    <kieu_chietkhau />
+    <tongtien_chietkhau>0.000</tongtien_chietkhau>
+    <noi_tru>0</noi_tru>
+    <ma_lydo_huy>HUYPC01</ma_lydo_huy>
+    <nguoi_tao>ADMIN</nguoi_tao>
+    <ngay_tao>2015-10-04T22:21:23.21+07:00</ngay_tao>
+    <ip_maytao>192.168.1.101</ip_maytao>
+    <ten_maytao />
+    <sngay_thanhtoan>04/10/2015</sngay_thanhtoan>
+    <id_phieuthu>7</id_phieuthu>
+    <so_tien>125000.0000</so_tien>
+    <ma_phieuthu>PC1510040001</ma_phieuthu>
+    <dsach_dichvu_thanhtoan>T3;Tổng phân tích tế bào máu ngoại vi ( Laser)</dsach_dichvu_thanhtoan>
+    <lydo_nop>Không lý do</lydo_nop>
+    <nguoi_nop>ADMIN</nguoi_nop>
+    <soluong_chungtugoc>1</soluong_chungtugoc>
+    <taikhoan_no />
+    <taikhoan_co />
+    <sotien_bangchu />
+    <Tuoi>19</Tuoi>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WSURL>http://localhost:1695/AdminWS.asmx</WSURL>
+  <RunUnderWS>false</RunUnderWS>
+  <HIS_HardKeyType>SOFTKEY</HIS_HardKeyType>
+  <HIS_AppMode>License</HIS_AppMode>
+  <Min>1</Min>
+  <Max>1000</Max>
+  <MaDvi>HIS</MaDvi>
+  <MaKhoa>KKB</MaKhoa>
+  <Maphong>101</Maphong>
+  <Somayle>12345678</Somayle>
+  <DataBaseServer>.\sql2k8</DataBaseServer>
+  <DataBaseName>qlKhothuoc</DataBaseName>
+  <UID>sa</UID>
+  <PWD>123456</PWD>
+  <ORM>ORM</ORM>
+</ConfigProperties>

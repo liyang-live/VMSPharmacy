@@ -1,0 +1,102 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="tenbietduoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ID_THUOC" type="xs:int" minOccurs="0" />
+                <xs:element name="IDNHOM" type="xs:short" minOccurs="0" />
+                <xs:element name="tennhom" type="xs:string" minOccurs="0" />
+                <xs:element name="stt_hthi_nhom" type="xs:short" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="co_chiathuoc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ten_donvitinh1" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvichia" type="xs:string" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SL_TONDAU" type="xs:int" minOccurs="0" />
+                <xs:element name="SLNHAP" type="xs:int" minOccurs="0" />
+                <xs:element name="SLXuat" type="xs:int" minOccurs="0" />
+                <xs:element name="SL_TONCUOI" type="xs:int" minOccurs="0" />
+                <xs:element name="TT_TONDAU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_NHAP" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_XUAT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_TONCUOI" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ID_NHOM" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <tenbietduoc>Accupril</tenbietduoc>
+    <ID_THUOC>6</ID_THUOC>
+    <IDNHOM>9</IDNHOM>
+    <tennhom>THUỐC TIM MẠCH</tennhom>
+    <stt_hthi_nhom>9</stt_hthi_nhom>
+    <ma_donvitinh>1</ma_donvitinh>
+    <co_chiathuoc>0</co_chiathuoc>
+    <ten_donvitinh1>Viên</ten_donvitinh1>
+    <don_gia>15000.00</don_gia>
+    <SL_TONDAU>0</SL_TONDAU>
+    <SLNHAP>5</SLNHAP>
+    <SLXuat>4</SLXuat>
+    <SL_TONCUOI>1</SL_TONCUOI>
+    <TT_TONDAU>0.00</TT_TONDAU>
+    <TT_NHAP>75000.00</TT_NHAP>
+    <TT_XUAT>60000.00</TT_XUAT>
+    <TT_TONCUOI>15000.00</TT_TONCUOI>
+    <ID_NHOM>9</ID_NHOM>
+    <ten_donvitinh>Viên</ten_donvitinh>
+  </Table>
+  <Table>
+    <tenbietduoc>ACC</tenbietduoc>
+    <ID_THUOC>4</ID_THUOC>
+    <IDNHOM>16</IDNHOM>
+    <tennhom>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</tennhom>
+    <stt_hthi_nhom>16</stt_hthi_nhom>
+    <ma_donvitinh>9</ma_donvitinh>
+    <co_chiathuoc>0</co_chiathuoc>
+    <ten_donvitinh1>Gói</ten_donvitinh1>
+    <don_gia>5000.00</don_gia>
+    <SL_TONDAU>0</SL_TONDAU>
+    <SLNHAP>5</SLNHAP>
+    <SLXuat>3</SLXuat>
+    <SL_TONCUOI>2</SL_TONCUOI>
+    <TT_TONDAU>0.00</TT_TONDAU>
+    <TT_NHAP>25000.00</TT_NHAP>
+    <TT_XUAT>15000.00</TT_XUAT>
+    <TT_TONCUOI>10000.00</TT_TONCUOI>
+    <ID_NHOM>16</ID_NHOM>
+    <ten_donvitinh>Gói</ten_donvitinh>
+  </Table>
+  <Table>
+    <tenbietduoc>ACC 200</tenbietduoc>
+    <ID_THUOC>5</ID_THUOC>
+    <IDNHOM>16</IDNHOM>
+    <tennhom>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</tennhom>
+    <stt_hthi_nhom>16</stt_hthi_nhom>
+    <ma_donvitinh>46</ma_donvitinh>
+    <co_chiathuoc>0</co_chiathuoc>
+    <ten_donvitinh1>1/10mCi</ten_donvitinh1>
+    <don_gia>10000.00</don_gia>
+    <SL_TONDAU>0</SL_TONDAU>
+    <SLNHAP>5</SLNHAP>
+    <SLXuat>2</SLXuat>
+    <SL_TONCUOI>3</SL_TONCUOI>
+    <TT_TONDAU>0.00</TT_TONDAU>
+    <TT_NHAP>50000.00</TT_NHAP>
+    <TT_XUAT>20000.00</TT_XUAT>
+    <TT_TONCUOI>30000.00</TT_TONCUOI>
+    <ID_NHOM>16</ID_NHOM>
+    <ten_donvitinh>1/10mCi</ten_donvitinh>
+  </Table>
+</NewDataSet>

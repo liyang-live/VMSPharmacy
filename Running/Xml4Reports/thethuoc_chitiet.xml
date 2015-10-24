@@ -1,0 +1,146 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="tenbietduoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ID_THUOC" type="xs:int" minOccurs="0" />
+                <xs:element name="IDNHOM" type="xs:short" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="so_lo" type="xs:string" minOccurs="0" />
+                <xs:element name="so_chungtu_kemtheo" type="xs:string" minOccurs="0" />
+                <xs:element name="Tondau" type="xs:int" minOccurs="0" />
+                <xs:element name="SoLuongNhap" type="xs:int" minOccurs="0" />
+                <xs:element name="SoLuongXuat" type="xs:int" minOccurs="0" />
+                <xs:element name="Toncuoi" type="xs:int" minOccurs="0" />
+                <xs:element name="SO_CTU_NHAP" type="xs:string" minOccurs="0" />
+                <xs:element name="SO_CTU_XUAT" type="xs:string" minOccurs="0" />
+                <xs:element name="id_biendong" type="xs:long" minOccurs="0" />
+                <xs:element name="processed" type="xs:int" minOccurs="0" />
+                <xs:element name="ngay_biendong" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ma_loaiphieu" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ngay_hethan" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="hang_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="nuoc_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="NUOC_SXUAT" type="xs:string" minOccurs="0" />
+                <xs:element name="Ghi_chu" type="xs:string" minOccurs="0" />
+                <xs:element name="noi_dung" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_so" type="xs:string" minOccurs="0" />
+                <xs:element name="ham_luong" type="xs:string" minOccurs="0" />
+                <xs:element name="dang_baoche" type="xs:string" minOccurs="0" />
+                <xs:element name="hoat_chat" type="xs:string" minOccurs="0" />
+                <xs:element name="tennhom" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_kho" type="xs:string" minOccurs="0" />
+                <xs:element name="ID_NHOM" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <tenbietduoc>ACC (Acetylcystein 200Mg)</tenbietduoc>
+    <ID_THUOC>4</ID_THUOC>
+    <IDNHOM>16</IDNHOM>
+    <ma_donvitinh>9</ma_donvitinh>
+    <so_lo>1</so_lo>
+    <so_chungtu_kemtheo>1         </so_chungtu_kemtheo>
+    <Tondau>0</Tondau>
+    <SoLuongNhap>1000</SoLuongNhap>
+    <SoLuongXuat>0</SoLuongXuat>
+    <Toncuoi>0</Toncuoi>
+    <SO_CTU_NHAP>1</SO_CTU_NHAP>
+    <SO_CTU_XUAT />
+    <id_biendong>1</id_biendong>
+    <processed>0</processed>
+    <ngay_biendong>2015-10-14T00:37:10.777+07:00</ngay_biendong>
+    <ma_loaiphieu>1</ma_loaiphieu>
+    <ngay_hethan>2016-10-14T00:00:00+07:00</ngay_hethan>
+    <don_gia>5000.000</don_gia>
+    <hang_sanxuat>Công ty dược phẩm Hậu Giang</hang_sanxuat>
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <NUOC_SXUAT />
+    <Ghi_chu />
+    <noi_dung>Nhập ngoài</noi_dung>
+    <ma_so>T4</ma_so>
+    <ham_luong>200mg</ham_luong>
+    <dang_baoche />
+    <hoat_chat>Acetylcystein 200Mg</hoat_chat>
+    <tennhom>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</tennhom>
+    <ten_kho>Kho Tổng</ten_kho>
+    <ID_NHOM>16</ID_NHOM>
+  </Table>
+  <Table>
+    <tenbietduoc>ACC (Acetylcystein 200Mg)</tenbietduoc>
+    <ID_THUOC>4</ID_THUOC>
+    <IDNHOM>16</IDNHOM>
+    <ma_donvitinh>9</ma_donvitinh>
+    <so_lo>1</so_lo>
+    <so_chungtu_kemtheo xml:space="preserve">          </so_chungtu_kemtheo>
+    <Tondau>0</Tondau>
+    <SoLuongNhap>0</SoLuongNhap>
+    <SoLuongXuat>100</SoLuongXuat>
+    <Toncuoi>0</Toncuoi>
+    <SO_CTU_NHAP />
+    <SO_CTU_XUAT>2</SO_CTU_XUAT>
+    <id_biendong>4</id_biendong>
+    <processed>0</processed>
+    <ngay_biendong>2015-10-14T00:38:11.947+07:00</ngay_biendong>
+    <ma_loaiphieu>2</ma_loaiphieu>
+    <ngay_hethan>2016-10-14T00:00:00+07:00</ngay_hethan>
+    <don_gia>5000.000</don_gia>
+    <hang_sanxuat>Công ty dược phẩm Hậu Giang</hang_sanxuat>
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <NUOC_SXUAT />
+    <Ghi_chu />
+    <noi_dung>Xuất nội bộ</noi_dung>
+    <ma_so>T4</ma_so>
+    <ham_luong>200mg</ham_luong>
+    <dang_baoche />
+    <hoat_chat>Acetylcystein 200Mg</hoat_chat>
+    <tennhom>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</tennhom>
+    <ten_kho>Kho Tổng</ten_kho>
+    <ID_NHOM>16</ID_NHOM>
+  </Table>
+  <Table>
+    <tenbietduoc>ACC (Acetylcystein 200Mg)</tenbietduoc>
+    <ID_THUOC>4</ID_THUOC>
+    <IDNHOM>16</IDNHOM>
+    <ma_donvitinh>9</ma_donvitinh>
+    <so_lo>1</so_lo>
+    <so_chungtu_kemtheo xml:space="preserve">          </so_chungtu_kemtheo>
+    <Tondau>0</Tondau>
+    <SoLuongNhap>0</SoLuongNhap>
+    <SoLuongXuat>200</SoLuongXuat>
+    <Toncuoi>0</Toncuoi>
+    <SO_CTU_NHAP />
+    <SO_CTU_XUAT>3</SO_CTU_XUAT>
+    <id_biendong>8</id_biendong>
+    <processed>0</processed>
+    <ngay_biendong>2015-10-14T00:38:11.947+07:00</ngay_biendong>
+    <ma_loaiphieu>2</ma_loaiphieu>
+    <ngay_hethan>2016-10-14T00:00:00+07:00</ngay_hethan>
+    <don_gia>5000.000</don_gia>
+    <hang_sanxuat>Công ty dược phẩm Hậu Giang</hang_sanxuat>
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <NUOC_SXUAT />
+    <Ghi_chu />
+    <noi_dung>Xuất nội bộ</noi_dung>
+    <ma_so>T4</ma_so>
+    <ham_luong>200mg</ham_luong>
+    <dang_baoche />
+    <hoat_chat>Acetylcystein 200Mg</hoat_chat>
+    <tennhom>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</tennhom>
+    <ten_kho>Kho Tổng</ten_kho>
+    <ID_NHOM>16</ID_NHOM>
+  </Table>
+</NewDataSet>

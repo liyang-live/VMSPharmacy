@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ten_kcbbd" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_kcbbd" type="xs:string" minOccurs="0" />
+                <xs:element name="SLNHOM_1" type="xs:int" minOccurs="0" />
+                <xs:element name="SLNHOM_2" type="xs:int" minOccurs="0" />
+                <xs:element name="SLNHOM_3" type="xs:int" minOccurs="0" />
+                <xs:element name="SLNHOM_4" type="xs:int" minOccurs="0" />
+                <xs:element name="SLNHOM_5" type="xs:int" minOccurs="0" />
+                <xs:element name="SLNHOM_6" type="xs:int" minOccurs="0" />
+                <xs:element name="TIEN_1" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TIEN_2" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TIEN_3" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TIEN_4" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TIEN_5" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TIEN_6" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CONGTIEN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CONGSL" type="xs:int" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ten_kcbbd>YTCQ Công ty Dệt Minh Khai</ten_kcbbd>
+    <ma_kcbbd>111</ma_kcbbd>
+    <SLNHOM_1>1</SLNHOM_1>
+    <SLNHOM_2>0</SLNHOM_2>
+    <SLNHOM_3>0</SLNHOM_3>
+    <SLNHOM_4>0</SLNHOM_4>
+    <SLNHOM_5>0</SLNHOM_5>
+    <SLNHOM_6>0</SLNHOM_6>
+    <TIEN_1>170000.000</TIEN_1>
+    <TIEN_2>0.000</TIEN_2>
+    <TIEN_3>0.000</TIEN_3>
+    <TIEN_4>0.000</TIEN_4>
+    <TIEN_5>0.000</TIEN_5>
+    <TIEN_6>0.000</TIEN_6>
+    <CONGTIEN>170000.000</CONGTIEN>
+    <CONGSL>1</CONGSL>
+  </Table>
+</NewDataSet>

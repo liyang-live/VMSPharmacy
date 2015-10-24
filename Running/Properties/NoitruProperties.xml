@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NoitruProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <InsaukhiLuu>false</InsaukhiLuu>
+  <SaochepVTTH>true</SaochepVTTH>
+  <SaochepThuoc>true</SaochepThuoc>
+  <SaochepYLenh>true</SaochepYLenh>
+  <SaochepCLS>true</SaochepCLS>
+  <SaochepDinhDuong>true</SaochepDinhDuong>
+  <Songayhienthi>4</Songayhienthi>
+  <Hienthitatcaphieudieutrikhisaochep>false</Hienthitatcaphieudieutrikhisaochep>
+  <ViewOnClick>true</ViewOnClick>
+  <HienthithuocControngkho>true</HienthithuocControngkho>
+  <Songaysaochep>0</Songaysaochep>
+  <Saochepngaytruocdo>true</Saochepngaytruocdo>
+  <InphieuNhapvienNgaysaukhiNhapvien>true</InphieuNhapvienNgaysaukhiNhapvien>
+  <ThoatNgaysaukhiNhapvienthanhcong>true</ThoatNgaysaukhiNhapvienthanhcong>
+</NoitruProperties>

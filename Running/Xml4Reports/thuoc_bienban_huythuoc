@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_phieuchitiet" type="xs:int" minOccurs="0" />
+                <xs:element name="DVT" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_phieu_xuat" type="xs:string" minOccurs="0" />
+                <xs:element name="HAN_DUNG" type="xs:string" minOccurs="0" />
+                <xs:element name="ID_THUOC" type="xs:int" minOccurs="0" />
+                <xs:element name="gia_nhap" type="xs:decimal" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="GIA_BAN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SO_LUONG" type="xs:int" minOccurs="0" />
+                <xs:element name="SO_LO" type="xs:string" minOccurs="0" />
+                <xs:element name="CHIET_KHAU" type="xs:int" minOccurs="0" />
+                <xs:element name="THANH_TIEN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="so_dangky" type="xs:string" minOccurs="0" />
+                <xs:element name="id_phieu" type="xs:int" minOccurs="0" />
+                <xs:element name="thoi_gian" type="xs:string" minOccurs="0" />
+                <xs:element name="thang_nam" type="xs:string" minOccurs="0" />
+                <xs:element name="mota_them" type="xs:string" minOccurs="0" />
+                <xs:element name="hourfrom" type="xs:int" minOccurs="0" />
+                <xs:element name="hourto" type="xs:int" minOccurs="0" />
+                <xs:element name="minutefrom" type="xs:int" minOccurs="0" />
+                <xs:element name="minuteto" type="xs:int" minOccurs="0" />
+                <xs:element name="TEN_THUOC" type="xs:string" minOccurs="0" />
+                <xs:element name="hoidong_thanhly" type="xs:string" minOccurs="0" />
+                <xs:element name="diadiem_thanhly" type="xs:string" minOccurs="0" />
+                <xs:element name="ykien_dexuat" type="xs:string" minOccurs="0" />
+                <xs:element name="sthoigian_thanhly_tu" type="xs:string" minOccurs="0" />
+                <xs:element name="sthoigian_thanhly_den" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_thuoc_full" type="xs:string" minOccurs="0" />
+                <xs:element name="nuoc_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="hang_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_THUOC" type="xs:string" minOccurs="0" />
+                <xs:element name="NGAY_XUAT" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="kho_nhap" type="xs:string" minOccurs="0" />
+                <xs:element name="kho_xuat" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_phieuchitiet>22</id_phieuchitiet>
+    <DVT>Gói</DVT>
+    <ma_phieu_xuat>PHUY140924001</ma_phieu_xuat>
+    <HAN_DUNG>24/09/2015</HAN_DUNG>
+    <ID_THUOC>464</ID_THUOC>
+    <gia_nhap>5000.000</gia_nhap>
+    <don_gia>5000.000</don_gia>
+    <GIA_BAN>5000.000</GIA_BAN>
+    <SO_LUONG>1000</SO_LUONG>
+    <SO_LO>1</SO_LO>
+    <CHIET_KHAU>0</CHIET_KHAU>
+    <THANH_TIEN>5000000.000</THANH_TIEN>
+    <ma_donvitinh>9</ma_donvitinh>
+    <so_dangky>123456</so_dangky>
+    <id_phieu>5</id_phieu>
+    <thoi_gian>Hồi 23 giờ 39 ngày 24 tháng 9 năm 2014</thoi_gian>
+    <thang_nam>Tháng 9 nam 2014</thang_nam>
+    <mota_them>Thuốc hết hạn</mota_them>
+    <TEN_THUOC>ACC</TEN_THUOC>
+    <hoidong_thanhly>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}{\f1\fnil\fcharset204 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\b\f0\fs18 T\'f4i kh\u7859?ng \u273?\u7883?nh bi\'ean b\u7843?n l\'e0 \u273?\'fang\par
+\b0 ABCD\f1\par
+}
+</hoidong_thanhly>
+    <ten_thuoc_full>ACC (Acetylcystein 200Mg)</ten_thuoc_full>
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <hang_sanxuat>Công ty dược phẩm Hậu Giang</hang_sanxuat>
+    <MA_THUOC>T00100_1</MA_THUOC>
+    <NGAY_XUAT>2014-09-24T23:39:01.907+07:00</NGAY_XUAT>
+    <kho_xuat>Kho Tổng</kho_xuat>
+  </Table>
+</NewDataSet>

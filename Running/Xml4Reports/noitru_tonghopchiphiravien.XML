@@ -1,0 +1,2156 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_loaithanhtoan" type="xs:int" minOccurs="0" />
+                <xs:element name="id_phieu" type="xs:long" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="tinh_chiphi" type="xs:int" minOccurs="0" />
+                <xs:element name="bnhan_chitra" type="xs:decimal" minOccurs="0" />
+                <xs:element name="bhyt_chitra" type="xs:decimal" minOccurs="0" />
+                <xs:element name="tile_chietkhau" type="xs:decimal" minOccurs="0" />
+                <xs:element name="tien_chietkhau" type="xs:decimal" minOccurs="0" />
+                <xs:element name="kieu_chietkhau" type="xs:string" minOccurs="0" />
+                <xs:element name="phu_thu" type="xs:decimal" minOccurs="0" />
+                <xs:element name="dongia_tralai" type="xs:decimal" minOccurs="0" />
+                <xs:element name="phuthu_tralai" type="xs:decimal" minOccurs="0" />
+                <xs:element name="soluong_tralai" type="xs:int" minOccurs="0" />
+                <xs:element name="id_dichvu" type="xs:long" minOccurs="0" />
+                <xs:element name="id_chitietdichvu" type="xs:long" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="trangthai_thanhtoan" type="xs:int" minOccurs="0" />
+                <xs:element name="id_phieu_chitiet" type="xs:long" minOccurs="0" />
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="id_benhnhan" type="xs:long" minOccurs="0" />
+                <xs:element name="ten_chitietdichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="so_luong" type="xs:int" minOccurs="0" />
+                <xs:element name="tu_tuc" type="xs:int" minOccurs="0" />
+                <xs:element name="trangthai_huy" type="xs:int" minOccurs="0" />
+                <xs:element name="id_phongkham" type="xs:int" minOccurs="0" />
+                <xs:element name="id_bacsi" type="xs:short" minOccurs="0" />
+                <xs:element name="trangthai_bhyt" type="xs:int" minOccurs="0" />
+                <xs:element name="stt_in" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="trang_thai" type="xs:int" minOccurs="0" />
+                <xs:element name="id_kham" type="xs:long" minOccurs="0" />
+                <xs:element name="noi_tru" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="id_khoadieutri" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_khoadieutri" type="xs:string" minOccurs="0" />
+                <xs:element name="trong_goi" type="xs:int" minOccurs="0" />
+                <xs:element name="STT" type="xs:int" minOccurs="0" />
+                <xs:element name="stt_hthi_dichvu" type="xs:short" minOccurs="0" />
+                <xs:element name="stt_hthi_chitiet" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="Tuoi" type="xs:int" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="diachi_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="mathe_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="ngaybatdau_bhyt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngayketthuc_bhyt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngay_nhapvien" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngay_ravien" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ten_buong" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_giuong" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_khoanoitru" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_loaidichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="id_loaidichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nguongoc" type="xs:string" minOccurs="0" />
+                <xs:element name="yeucau_tralai" type="xs:int" minOccurs="0" />
+                <xs:element name="CHON" type="xs:int" minOccurs="0" />
+                <xs:element name="TT_TAMUNG" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_MIENGIAM" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ten_loaithanhtoan" type="xs:string" minOccurs="0" />
+                <xs:element name="TT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_BN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_BN_KHONG_TUTUC" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_TUTUC" type="xs:decimal" minOccurs="0" />
+                <xs:element name="chiphi_bhxh" type="xs:int" minOccurs="0" />
+                <xs:element name="TT_BN_KHONG_PHUTHU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_BHYT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_BNCHITRA_THEOBHYT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_CHUATHANHTOAN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_DATHANHTOAN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_DCT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_KHONG_PHUTHU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_PHUTHU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_loaithanhtoan>1</id_loaithanhtoan>
+    <id_phieu>7</id_phieu>
+    <don_gia>100000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>100000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>101</id_dichvu>
+    <id_chitietdichvu>9</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:30:41.097+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>7</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>KHÁM THƯỜNG BUỒNG 1</ten_chitietdichvu>
+    <ten_bhyt>KHÁM THƯỜNG BUỒNG 1</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>1</trangthai_bhyt>
+    <stt_in>1</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>1</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>63</id_khoadieutri>
+    <ten_khoadieutri>Phòng 1</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>-1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>9</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu />
+    <id_loaidichvu>-1</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin khám chữa bệnh</ten_loaithanhtoan>
+    <TT>100000.0000</TT>
+    <TT_BN>100000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>100000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>100000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>100000.0000</TT_DATHANHTOAN>
+    <TT_DCT>100000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>100000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>5</id_phieu>
+    <don_gia>52000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>52000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>412</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:31:42.32+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>39</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Định nhóm máu hệ ABO bằng phương pháp ống nghiệm; trên phiến đá hoặc trên giấy</ten_chitietdichvu>
+    <ten_bhyt>Định nhóm máu hệ ABO bằng phương pháp ống nghiệm; trên phiến đá hoặc trên giấy</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>59</id_khoadieutri>
+    <ten_khoadieutri>Khoa Kcb Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>52000.0000</TT>
+    <TT_BN>52000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>52000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>52000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>52000.0000</TT_DATHANHTOAN>
+    <TT_DCT>52000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>52000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>10</id_phieu>
+    <don_gia>52000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>52000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>412</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:09:49.553+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>66</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Định nhóm máu hệ ABO bằng phương pháp ống nghiệm; trên phiến đá hoặc trên giấy</ten_chitietdichvu>
+    <ten_bhyt>Định nhóm máu hệ ABO bằng phương pháp ống nghiệm; trên phiến đá hoặc trên giấy</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>76</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Tuyến Giáp</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>52000.0000</TT>
+    <TT_BN>52000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>52000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>52000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>52000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>52000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>52000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>11</id_phieu>
+    <don_gia>52000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>52000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>412</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:16:24+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>70</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Định nhóm máu hệ ABO bằng phương pháp ống nghiệm; trên phiến đá hoặc trên giấy</ten_chitietdichvu>
+    <ten_bhyt>Định nhóm máu hệ ABO bằng phương pháp ống nghiệm; trên phiến đá hoặc trên giấy</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>77</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>77</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>52000.0000</TT>
+    <TT_BN>52000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>52000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>52000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>52000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>52000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>52000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>5</id_phieu>
+    <don_gia>75000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>75000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>2</id_dichvu>
+    <id_chitietdichvu>313</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:31:42.32+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>40</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>FT3</ten_chitietdichvu>
+    <ten_bhyt>FT3</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>59</id_khoadieutri>
+    <ten_khoadieutri>Khoa Kcb Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>2</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>75000.0000</TT>
+    <TT_BN>75000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>75000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>75000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>75000.0000</TT_DATHANHTOAN>
+    <TT_DCT>75000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>75000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>10</id_phieu>
+    <don_gia>75000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>75000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>2</id_dichvu>
+    <id_chitietdichvu>313</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:09:49.553+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>68</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>FT3</ten_chitietdichvu>
+    <ten_bhyt>FT3</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>76</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Tuyến Giáp</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>2</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>75000.0000</TT>
+    <TT_BN>75000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>75000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>75000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>75000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>75000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>75000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>11</id_phieu>
+    <don_gia>75000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>75000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>2</id_dichvu>
+    <id_chitietdichvu>313</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:16:24+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>71</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>FT3</ten_chitietdichvu>
+    <ten_bhyt>FT3</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>1</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>77</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>77</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Thường</ten_khoadieutri>
+    <trong_goi>1</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>2</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>75000.0000</TT>
+    <TT_BN>75000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>0.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>75000.000</TT_TUTUC>
+    <chiphi_bhxh>1</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>75000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>75000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>75000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>75000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>10</id_phieu>
+    <don_gia>60000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>60000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>246</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:09:49.553+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>67</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Huyết đồ ( máy laser)</ten_chitietdichvu>
+    <ten_bhyt>Huyết đồ ( máy laser)</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>1</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>76</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Tuyến Giáp</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>60000.0000</TT>
+    <TT_BN>60000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>0.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>60000.000</TT_TUTUC>
+    <chiphi_bhxh>1</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>60000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>60000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>60000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>60000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>11</id_phieu>
+    <don_gia>60000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>60000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>246</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:16:24+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>72</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Huyết đồ ( máy laser)</ten_chitietdichvu>
+    <ten_bhyt>Huyết đồ ( máy laser)</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>77</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>77</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>60000.0000</TT>
+    <TT_BN>60000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>60000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>60000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>60000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>60000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>60000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>5</id_phieu>
+    <don_gia>75000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>75000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>2</id_dichvu>
+    <id_chitietdichvu>312</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:31:42.32+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>41</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>T3</ten_chitietdichvu>
+    <ten_bhyt>T3</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>59</id_khoadieutri>
+    <ten_khoadieutri>Khoa Kcb Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>2</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>75000.0000</TT>
+    <TT_BN>75000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>75000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>75000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>75000.0000</TT_DATHANHTOAN>
+    <TT_DCT>75000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>75000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>10</id_phieu>
+    <don_gia>75000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>75000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>2</id_dichvu>
+    <id_chitietdichvu>312</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:09:49.553+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>69</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>T3</ten_chitietdichvu>
+    <ten_bhyt>T3</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>76</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Tuyến Giáp</ten_khoadieutri>
+    <trong_goi>1</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>2</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>75000.0000</TT>
+    <TT_BN>75000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>75000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>75000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>75000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>75000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>75000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>11</id_phieu>
+    <don_gia>75000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>75000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>2</id_dichvu>
+    <id_chitietdichvu>312</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:16:24+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>73</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>T3</ten_chitietdichvu>
+    <ten_bhyt>T3</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>77</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>77</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>2</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>75000.0000</TT>
+    <TT_BN>75000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>75000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>75000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>75000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>75000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>75000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>5</id_phieu>
+    <don_gia>50000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>50000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>245</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:31:42.32+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>38</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Tổng phân tích tế bào máu ngoại vi ( Laser)</ten_chitietdichvu>
+    <ten_bhyt>Tổng phân tích tế bào máu ngoại vi ( Laser)</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>59</id_khoadieutri>
+    <ten_khoadieutri>Khoa Kcb Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>50000.0000</TT>
+    <TT_BN>50000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>50000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>50000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>50000.0000</TT_DATHANHTOAN>
+    <TT_DCT>50000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>50000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>10</id_phieu>
+    <don_gia>50000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>50000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>245</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:09:49.553+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>65</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Tổng phân tích tế bào máu ngoại vi ( Laser)</ten_chitietdichvu>
+    <ten_bhyt>Tổng phân tích tế bào máu ngoại vi ( Laser)</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>76</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Tuyến Giáp</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>50000.0000</TT>
+    <TT_BN>50000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>50000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>50000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>50000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>50000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>50000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>11</id_phieu>
+    <don_gia>50000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>50000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>245</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:16:24+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>74</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Tổng phân tích tế bào máu ngoại vi ( Laser)</ten_chitietdichvu>
+    <ten_bhyt>Tổng phân tích tế bào máu ngoại vi ( Laser)</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>1</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>77</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>77</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Thường</ten_khoadieutri>
+    <trong_goi>1</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>50000.0000</TT>
+    <TT_BN>50000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>0.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>50000.000</TT_TUTUC>
+    <chiphi_bhxh>1</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>50000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>50000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>50000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>50000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>5</id_phieu>
+    <don_gia>52000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>52000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>9</id_dichvu>
+    <id_chitietdichvu>25</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:31:42.32+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>45</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>XQ bàn tay số hóa 1 phim</ten_chitietdichvu>
+    <ten_bhyt>XQ bàn tay số hóa 1 phim</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>59</id_khoadieutri>
+    <ten_khoadieutri>Khoa Kcb Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>9</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>X quang</ten_loaidichvu>
+    <id_loaidichvu>XQ</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>52000.0000</TT>
+    <TT_BN>52000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>52000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>52000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>52000.0000</TT_DATHANHTOAN>
+    <TT_DCT>52000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>52000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>5</id_phieu>
+    <don_gia>52000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>52000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>9</id_dichvu>
+    <id_chitietdichvu>42</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:31:42.32+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>44</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>XQ ngón tay hay ngón chân số hóa 1 phim</ten_chitietdichvu>
+    <ten_bhyt>XQ ngón tay hay ngón chân số hóa 1 phim</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>59</id_khoadieutri>
+    <ten_khoadieutri>Khoa Kcb Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>9</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>X quang</ten_loaidichvu>
+    <id_loaidichvu>XQ</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>52000.0000</TT>
+    <TT_BN>52000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>52000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>52000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>52000.0000</TT_DATHANHTOAN>
+    <TT_DCT>52000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>52000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>5</id_phieu>
+    <don_gia>52000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>52000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>9</id_dichvu>
+    <id_chitietdichvu>44</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:31:42.32+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>43</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>XQ Tim Phổi (nghiêng) số hóa 1 phim</ten_chitietdichvu>
+    <ten_bhyt>XQ Tim Phổi (nghiêng) số hóa 1 phim</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>59</id_khoadieutri>
+    <ten_khoadieutri>Khoa Kcb Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>9</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>X quang</ten_loaidichvu>
+    <id_loaidichvu>XQ</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>52000.0000</TT>
+    <TT_BN>52000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>52000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>52000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>52000.0000</TT_DATHANHTOAN>
+    <TT_DCT>52000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>52000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <id_phieu>5</id_phieu>
+    <don_gia>52000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>52000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>9</id_dichvu>
+    <id_chitietdichvu>45</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:31:42.32+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>42</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>XQ Tim Phổi (thẳng) số hóa 1 phim</ten_chitietdichvu>
+    <ten_bhyt>XQ Tim Phổi (thẳng) số hóa 1 phim</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>138</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>59</id_khoadieutri>
+    <ten_khoadieutri>Khoa Kcb Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>9</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>X quang</ten_loaidichvu>
+    <id_loaidichvu>XQ</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin dịch vụ CLS</ten_loaithanhtoan>
+    <TT>52000.0000</TT>
+    <TT_BN>52000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>52000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>52000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>52000.0000</TT_DATHANHTOAN>
+    <TT_DCT>52000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>52000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>3</id_loaithanhtoan>
+    <id_phieu>5</id_phieu>
+    <don_gia>5000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>5000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>4</id_dichvu>
+    <id_chitietdichvu>4</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:32:42.777+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>9</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>ACC</ten_chitietdichvu>
+    <ten_bhyt>ACC</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>1</stt_in>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>63</id_khoadieutri>
+    <ten_khoadieutri>Phòng 1</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>3</stt_hthi_dichvu>
+    <stt_hthi_chitiet>3</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin thuốc</ten_loaithanhtoan>
+    <TT>5000.0000</TT>
+    <TT_BN>5000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>5000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>5000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>5000.0000</TT_DATHANHTOAN>
+    <TT_DCT>5000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>5000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>3</id_loaithanhtoan>
+    <id_phieu>9</id_phieu>
+    <don_gia>5000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>5000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>4</id_dichvu>
+    <id_chitietdichvu>4</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:06:47.03+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>20</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>ACC</ten_chitietdichvu>
+    <ten_bhyt>ACC</ten_bhyt>
+    <so_luong>5</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>1</stt_in>
+    <trang_thai>1</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>76</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Tuyến Giáp</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>3</stt_hthi_dichvu>
+    <stt_hthi_chitiet>3</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin thuốc</ten_loaithanhtoan>
+    <TT>25000.0000</TT>
+    <TT_BN>25000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>25000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>25000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>25000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>25000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>25000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>3</id_loaithanhtoan>
+    <id_phieu>10</id_phieu>
+    <don_gia>5000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>5000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>4</id_dichvu>
+    <id_chitietdichvu>4</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:16:24+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>23</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>ACC</ten_chitietdichvu>
+    <ten_bhyt>ACC</ten_bhyt>
+    <so_luong>5</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>1</stt_in>
+    <trang_thai>1</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>77</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>3</stt_hthi_dichvu>
+    <stt_hthi_chitiet>3</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin thuốc</ten_loaithanhtoan>
+    <TT>25000.0000</TT>
+    <TT_BN>25000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>25000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>25000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>25000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>25000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>25000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>3</id_loaithanhtoan>
+    <id_phieu>5</id_phieu>
+    <don_gia>10000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>10000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>5</id_dichvu>
+    <id_chitietdichvu>5</id_chitietdichvu>
+    <CreatedDate>2015-09-09T00:32:42.777+07:00</CreatedDate>
+    <trangthai_thanhtoan>1</trangthai_thanhtoan>
+    <id_phieu_chitiet>10</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>ACC 200</ten_chitietdichvu>
+    <ten_bhyt>ACC 200</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>63</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>1/10mCi</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>0</noi_tru>
+    <id_khoadieutri>63</id_khoadieutri>
+    <ten_khoadieutri>Phòng 1</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>6</stt_hthi_dichvu>
+    <stt_hthi_chitiet>6</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Ngoại trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>0</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin thuốc</ten_loaithanhtoan>
+    <TT>10000.0000</TT>
+    <TT_BN>10000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>10000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>10000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>0.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>10000.0000</TT_DATHANHTOAN>
+    <TT_DCT>10000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>10000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>3</id_loaithanhtoan>
+    <id_phieu>9</id_phieu>
+    <don_gia>10000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>10000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>5</id_dichvu>
+    <id_chitietdichvu>5</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:06:47.03+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>21</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>ACC 200</ten_chitietdichvu>
+    <ten_bhyt>ACC 200</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>1/10mCi</ten_donvitinh>
+    <trang_thai>1</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>76</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Tuyến Giáp</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>6</stt_hthi_dichvu>
+    <stt_hthi_chitiet>6</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin thuốc</ten_loaithanhtoan>
+    <TT>10000.0000</TT>
+    <TT_BN>10000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>10000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>10000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>10000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>10000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>10000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>3</id_loaithanhtoan>
+    <id_phieu>10</id_phieu>
+    <don_gia>10000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>10000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>5</id_dichvu>
+    <id_chitietdichvu>5</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:16:24+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>24</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>ACC 200</ten_chitietdichvu>
+    <ten_bhyt>ACC 200</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>2</stt_in>
+    <ten_donvitinh>1/10mCi</ten_donvitinh>
+    <trang_thai>1</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>77</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>6</stt_hthi_dichvu>
+    <stt_hthi_chitiet>6</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin thuốc</ten_loaithanhtoan>
+    <TT>10000.0000</TT>
+    <TT_BN>10000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>10000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>10000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>10000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>10000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>10000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>3</id_loaithanhtoan>
+    <id_phieu>9</id_phieu>
+    <don_gia>15000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>15000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>6</id_dichvu>
+    <id_chitietdichvu>6</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:06:47.03+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>22</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Accupril</ten_chitietdichvu>
+    <ten_bhyt>Accupril</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>3</stt_in>
+    <ten_donvitinh>Viên</ten_donvitinh>
+    <trang_thai>1</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>76</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Tuyến Giáp</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>7</stt_hthi_dichvu>
+    <stt_hthi_chitiet>7</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin thuốc</ten_loaithanhtoan>
+    <TT>15000.0000</TT>
+    <TT_BN>15000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>15000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>15000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>15000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>15000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>15000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>3</id_loaithanhtoan>
+    <id_phieu>10</id_phieu>
+    <don_gia>15000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>15000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>6</id_dichvu>
+    <id_chitietdichvu>6</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:16:24+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>25</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Accupril</ten_chitietdichvu>
+    <ten_bhyt>Accupril</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <stt_in>3</stt_in>
+    <ten_donvitinh>Viên</ten_donvitinh>
+    <trang_thai>1</trang_thai>
+    <id_kham>-1</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>77</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>7</stt_hthi_dichvu>
+    <stt_hthi_chitiet>7</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin thuốc</ten_loaithanhtoan>
+    <TT>15000.0000</TT>
+    <TT_BN>15000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>15000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>15000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>15000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>15000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>15000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>4</id_loaithanhtoan>
+    <id_phieu>10</id_phieu>
+    <don_gia>150000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>150000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>10</id_dichvu>
+    <id_chitietdichvu>10</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:00:41.973+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>10</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Giường 1</ten_chitietdichvu>
+    <ten_bhyt>Giường 1</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>76</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>76</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Tuyến Giáp</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>10</stt_hthi_dichvu>
+    <stt_hthi_chitiet>10</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Nội soi</ten_loaidichvu>
+    <id_loaidichvu>NS</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin giường bệnh</ten_loaithanhtoan>
+    <TT>150000.0000</TT>
+    <TT_BN>150000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>150000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>150000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>150000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>150000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>150000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+  <Table>
+    <id_loaithanhtoan>4</id_loaithanhtoan>
+    <id_phieu>11</id_phieu>
+    <don_gia>250000.0000</don_gia>
+    <tinh_chiphi>1</tinh_chiphi>
+    <bnhan_chitra>250000.000</bnhan_chitra>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <tile_chietkhau>0.00</tile_chietkhau>
+    <tien_chietkhau>0.00</tien_chietkhau>
+    <kieu_chietkhau>%</kieu_chietkhau>
+    <phu_thu>0.0000</phu_thu>
+    <dongia_tralai>0.0</dongia_tralai>
+    <phuthu_tralai>0.0</phuthu_tralai>
+    <soluong_tralai>0</soluong_tralai>
+    <id_dichvu>11</id_dichvu>
+    <id_chitietdichvu>11</id_chitietdichvu>
+    <CreatedDate>2015-09-09T01:15:23.16+07:00</CreatedDate>
+    <trangthai_thanhtoan>0</trangthai_thanhtoan>
+    <id_phieu_chitiet>11</id_phieu_chitiet>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <ten_chitietdichvu>Giường 2</ten_chitietdichvu>
+    <ten_bhyt>Giường 2</ten_bhyt>
+    <so_luong>1</so_luong>
+    <tu_tuc>0</tu_tuc>
+    <trangthai_huy>0</trangthai_huy>
+    <id_phongkham>77</id_phongkham>
+    <id_bacsi>-1</id_bacsi>
+    <trangthai_bhyt>0</trangthai_bhyt>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <trang_thai>0</trang_thai>
+    <id_kham>7</id_kham>
+    <noi_tru>1</noi_tru>
+    <id_khoadieutri>77</id_khoadieutri>
+    <ten_khoadieutri>Khoa Nội Trú Thường</ten_khoadieutri>
+    <trong_goi>0</trong_goi>
+    <STT>0</STT>
+    <stt_hthi_dichvu>11</stt_hthi_dichvu>
+    <stt_hthi_chitiet>11</stt_hthi_chitiet>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <Tuoi>25</Tuoi>
+    <dia_chi>Không xác định, Không xác định, TỈNH THÁI BÌNH</dia_chi>
+    <diachi_bhyt />
+    <mathe_bhyt />
+    <ngay_nhapvien>2015-09-09T00:47:45.243+07:00</ngay_nhapvien>
+    <ngay_ravien>2015-09-09T01:22:00+07:00</ngay_ravien>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 2</ten_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Thường</ten_khoanoitru>
+    <ten_loaidichvu>Nội soi</ten_loaidichvu>
+    <id_loaidichvu>NS</id_loaidichvu>
+    <ten_nguongoc>Nội trú</ten_nguongoc>
+    <yeucau_tralai>0</yeucau_tralai>
+    <CHON>1</CHON>
+    <TT_TAMUNG>2000000.000</TT_TAMUNG>
+    <TT_MIENGIAM>0.0</TT_MIENGIAM>
+    <ten_loaithanhtoan>Thông tin giường bệnh</ten_loaithanhtoan>
+    <TT>250000.0000</TT>
+    <TT_BN>250000.0000</TT_BN>
+    <TT_BN_KHONG_TUTUC>250000.000</TT_BN_KHONG_TUTUC>
+    <TT_TUTUC>0.000</TT_TUTUC>
+    <chiphi_bhxh>0</chiphi_bhxh>
+    <TT_BN_KHONG_PHUTHU>250000.000</TT_BN_KHONG_PHUTHU>
+    <TT_BHYT>0.000</TT_BHYT>
+    <TT_BNCHITRA_THEOBHYT>0.000</TT_BNCHITRA_THEOBHYT>
+    <TT_CHUATHANHTOAN>250000.0000</TT_CHUATHANHTOAN>
+    <TT_DATHANHTOAN>0.0000</TT_DATHANHTOAN>
+    <TT_DCT>250000.000</TT_DCT>
+    <TT_KHONG_PHUTHU>250000.0000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.0000</TT_PHUTHU>
+  </Table>
+</NewDataSet>

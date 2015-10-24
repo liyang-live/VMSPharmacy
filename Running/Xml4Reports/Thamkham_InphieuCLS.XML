@@ -1,0 +1,485 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_dichvu" type="xs:short" minOccurs="0" />
+                <xs:element name="id_chitietdichvu" type="xs:int" minOccurs="0" />
+                <xs:element name="ma_dichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_chidinh" type="xs:string" minOccurs="0" />
+                <xs:element name="stt_hthi_dichvu" type="xs:short" minOccurs="0" />
+                <xs:element name="stt_hthi_chitiet" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_dichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_chitietdichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_loaidichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="id_chidinh" type="xs:long" minOccurs="0" />
+                <xs:element name="id_chitietchidinh" type="xs:long" minOccurs="0" />
+                <xs:element name="ma_chidinh1" type="xs:string" minOccurs="0" />
+                <xs:element name="so_luong" type="xs:int" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="bhyt_chitra" type="xs:decimal" minOccurs="0" />
+                <xs:element name="bnhan_chitra" type="xs:decimal" minOccurs="0" />
+                <xs:element name="gia_danhmuc" type="xs:decimal" minOccurs="0" />
+                <xs:element name="phu_thu" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ptram_bhyt" type="xs:decimal" minOccurs="0" />
+                <xs:element name="hienthi_baocao" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="id_bacsi_chidinh" type="xs:short" minOccurs="0" />
+                <xs:element name="id_benhnhan" type="xs:long" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="diachi_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="TUOI" type="xs:int" minOccurs="0" />
+                <xs:element name="ngay_sinh" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="nam_sinh" type="xs:short" minOccurs="0" />
+                <xs:element name="dan_toc" type="xs:string" minOccurs="0" />
+                <xs:element name="CMT" type="xs:string" minOccurs="0" />
+                <xs:element name="dien_thoai" type="xs:string" minOccurs="0" />
+                <xs:element name="nghe_nghiep" type="xs:string" minOccurs="0" />
+                <xs:element name="ton_giao" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_tiepdon" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="chan_doan" type="xs:string" minOccurs="0" />
+                <xs:element name="chandoan_kemtheo" type="xs:string" minOccurs="0" />
+                <xs:element name="dung_tuyen" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="huong_dieutri" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="ngaybatdau_bhyt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngayketthuc_bhyt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="noi_dongtruso_kcbbd" type="xs:string" minOccurs="0" />
+                <xs:element name="noicap_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="mathe_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_quyenloi" type="xs:int" minOccurs="0" />
+                <xs:element name="mabenh_chinh" type="xs:string" minOccurs="0" />
+                <xs:element name="mabenh_phu" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_doituong_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_doituong_kcb" type="xs:string" minOccurs="0" />
+                <xs:element name="id_doituong_kcb" type="xs:short" minOccurs="0" />
+                <xs:element name="id_kham" type="xs:long" minOccurs="0" />
+                <xs:element name="ten_doituong_kcb" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_khoa_thuchien" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_khoa_thuchien_chitiet" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_phong_thuchien" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_phong_thuchien_chitiet" type="xs:string" minOccurs="0" />
+                <xs:element name="noithuchien_dichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="noithuchien_dichvu_chitiet" type="xs:string" minOccurs="0" />
+                <xs:element name="chidan_chitiet" type="xs:string" minOccurs="0" />
+                <xs:element name="chidan_dichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_bacsi_chidinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_khoachidinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_phongchidinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nhombaocao_chitiet" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nhombaocao_dichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nhominphieucls" type="xs:string" minOccurs="0" />
+                <xs:element name="nhom_in_cls" type="xs:string" minOccurs="0" />
+                <xs:element name="nhom_baocao_dichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="chi_dan" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>245</id_chitietdichvu>
+    <ma_dichvu>HH</ma_dichvu>
+    <ma_chidinh>151004.0001</ma_chidinh>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>0</stt_hthi_chitiet>
+    <ten_dichvu>XÉT NGHIỆM HUYẾT HỌC</ten_dichvu>
+    <ten_chitietdichvu>Tổng phân tích tế bào máu ngoại vi ( Laser)</ten_chitietdichvu>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_chidinh>2</id_chidinh>
+    <id_chitietchidinh>12</id_chitietchidinh>
+    <ma_chidinh1>151004.0001</ma_chidinh1>
+    <so_luong>1</so_luong>
+    <don_gia>35000.0000</don_gia>
+    <bhyt_chitra>28000.000</bhyt_chitra>
+    <bnhan_chitra>7000.000</bnhan_chitra>
+    <gia_danhmuc>50000.0000</gia_danhmuc>
+    <phu_thu>15000.0000</phu_thu>
+    <ptram_bhyt>80</ptram_bhyt>
+    <hienthi_baocao>0</hienthi_baocao>
+    <id_bacsi_chidinh>138</id_bacsi_chidinh>
+    <id_benhnhan>2</id_benhnhan>
+    <ten_benhnhan>Bhyt</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, TỈNH BẮC NINH</dia_chi>
+    <diachi_bhyt>Không xác định, Không xác định, TỈNH BẮC NINH</diachi_bhyt>
+    <gioi_tinh>Nam</gioi_tinh>
+    <TUOI>2</TUOI>
+    <ngay_sinh>2013-10-04T09:57:00+07:00</ngay_sinh>
+    <nam_sinh>2013</nam_sinh>
+    <dan_toc />
+    <CMT />
+    <dien_thoai />
+    <nghe_nghiep />
+    <ngay_tiepdon>2015-10-04T09:57:37.573+07:00</ngay_tiepdon>
+    <dung_tuyen>1</dung_tuyen>
+    <ma_luotkham>15000002</ma_luotkham>
+    <ngaybatdau_bhyt>2015-01-01T00:00:00+07:00</ngaybatdau_bhyt>
+    <ngayketthuc_bhyt>2015-12-31T00:00:00+07:00</ngayketthuc_bhyt>
+    <noi_dongtruso_kcbbd>01</noi_dongtruso_kcbbd>
+    <noicap_bhyt>Hà Nội</noicap_bhyt>
+    <mathe_bhyt>DN7010101010111</mathe_bhyt>
+    <ma_quyenloi>7</ma_quyenloi>
+    <ma_doituong_bhyt>DN</ma_doituong_bhyt>
+    <ma_doituong_kcb>BHYT</ma_doituong_kcb>
+    <id_doituong_kcb>2</id_doituong_kcb>
+    <id_kham>2</id_kham>
+    <ten_doituong_kcb>Bảo hiểm y tế</ten_doituong_kcb>
+    <ten_khoa_thuchien>Khoa Xét Nghiệm</ten_khoa_thuchien>
+    <ten_khoa_thuchien_chitiet />
+    <ten_phong_thuchien>Phòng Xét Nghiệm</ten_phong_thuchien>
+    <ten_phong_thuchien_chitiet />
+    <noithuchien_dichvu>Khoa Xét Nghiệm-Phòng Xét Nghiệm</noithuchien_dichvu>
+    <noithuchien_dichvu_chitiet>-</noithuchien_dichvu_chitiet>
+    <chidan_chitiet />
+    <chidan_dichvu>Tầng 1</chidan_dichvu>
+    <ten_bacsi_chidinh>Bác Sĩ 1</ten_bacsi_chidinh>
+    <ten_khoachidinh>Khoa Kcb Thường</ten_khoachidinh>
+    <ten_phongchidinh>Phòng 1</ten_phongchidinh>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <ten_nhombaocao_dichvu>Xét nghiệm</ten_nhombaocao_dichvu>
+    <ten_nhominphieucls>PHIẾU XÉT NGHIỆM</ten_nhominphieucls>
+    <nhom_in_cls>01</nhom_in_cls>
+    <nhom_baocao_dichvu>XN</nhom_baocao_dichvu>
+    <chi_dan>Tầng 1</chi_dan>
+  </Table>
+  <Table>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>246</id_chitietdichvu>
+    <ma_dichvu>HH</ma_dichvu>
+    <ma_chidinh>151004.0001</ma_chidinh>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>2</stt_hthi_chitiet>
+    <ten_dichvu>XÉT NGHIỆM HUYẾT HỌC</ten_dichvu>
+    <ten_chitietdichvu>Huyết đồ ( máy laser)</ten_chitietdichvu>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_chidinh>2</id_chidinh>
+    <id_chitietchidinh>9</id_chitietchidinh>
+    <ma_chidinh1>151004.0001</ma_chidinh1>
+    <so_luong>1</so_luong>
+    <don_gia>60000.0000</don_gia>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <bnhan_chitra>60000.000</bnhan_chitra>
+    <gia_danhmuc>60000.0000</gia_danhmuc>
+    <phu_thu>0.0000</phu_thu>
+    <ptram_bhyt>0</ptram_bhyt>
+    <hienthi_baocao>0</hienthi_baocao>
+    <id_bacsi_chidinh>138</id_bacsi_chidinh>
+    <id_benhnhan>2</id_benhnhan>
+    <ten_benhnhan>Bhyt</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, TỈNH BẮC NINH</dia_chi>
+    <diachi_bhyt>Không xác định, Không xác định, TỈNH BẮC NINH</diachi_bhyt>
+    <gioi_tinh>Nam</gioi_tinh>
+    <TUOI>2</TUOI>
+    <ngay_sinh>2013-10-04T09:57:00+07:00</ngay_sinh>
+    <nam_sinh>2013</nam_sinh>
+    <dan_toc />
+    <CMT />
+    <dien_thoai />
+    <nghe_nghiep />
+    <ngay_tiepdon>2015-10-04T09:57:37.573+07:00</ngay_tiepdon>
+    <dung_tuyen>1</dung_tuyen>
+    <ma_luotkham>15000002</ma_luotkham>
+    <ngaybatdau_bhyt>2015-01-01T00:00:00+07:00</ngaybatdau_bhyt>
+    <ngayketthuc_bhyt>2015-12-31T00:00:00+07:00</ngayketthuc_bhyt>
+    <noi_dongtruso_kcbbd>01</noi_dongtruso_kcbbd>
+    <noicap_bhyt>Hà Nội</noicap_bhyt>
+    <mathe_bhyt>DN7010101010111</mathe_bhyt>
+    <ma_quyenloi>7</ma_quyenloi>
+    <ma_doituong_bhyt>DN</ma_doituong_bhyt>
+    <ma_doituong_kcb>BHYT</ma_doituong_kcb>
+    <id_doituong_kcb>2</id_doituong_kcb>
+    <id_kham>2</id_kham>
+    <ten_doituong_kcb>Bảo hiểm y tế</ten_doituong_kcb>
+    <ten_khoa_thuchien>Khoa Xét Nghiệm</ten_khoa_thuchien>
+    <ten_khoa_thuchien_chitiet />
+    <ten_phong_thuchien>Phòng Xét Nghiệm</ten_phong_thuchien>
+    <ten_phong_thuchien_chitiet />
+    <noithuchien_dichvu>Khoa Xét Nghiệm-Phòng Xét Nghiệm</noithuchien_dichvu>
+    <noithuchien_dichvu_chitiet>-</noithuchien_dichvu_chitiet>
+    <chidan_chitiet />
+    <chidan_dichvu>Tầng 1</chidan_dichvu>
+    <ten_bacsi_chidinh>Bác Sĩ 1</ten_bacsi_chidinh>
+    <ten_khoachidinh>Khoa Kcb Thường</ten_khoachidinh>
+    <ten_phongchidinh>Phòng 1</ten_phongchidinh>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <ten_nhombaocao_dichvu>Xét nghiệm</ten_nhombaocao_dichvu>
+    <ten_nhominphieucls>PHIẾU XÉT NGHIỆM</ten_nhominphieucls>
+    <nhom_in_cls>01</nhom_in_cls>
+    <nhom_baocao_dichvu>XN</nhom_baocao_dichvu>
+    <chi_dan>Tầng 1</chi_dan>
+  </Table>
+  <Table>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>248</id_chitietdichvu>
+    <ma_dichvu>HH</ma_dichvu>
+    <ma_chidinh>151004.0001</ma_chidinh>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>4</stt_hthi_chitiet>
+    <ten_dichvu>XÉT NGHIỆM HUYẾT HỌC</ten_dichvu>
+    <ten_chitietdichvu>Máu lắng (bằng máy tự động)</ten_chitietdichvu>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_chidinh>2</id_chidinh>
+    <id_chitietchidinh>10</id_chitietchidinh>
+    <ma_chidinh1>151004.0001</ma_chidinh1>
+    <so_luong>1</so_luong>
+    <don_gia>30000.0000</don_gia>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <bnhan_chitra>30000.000</bnhan_chitra>
+    <gia_danhmuc>30000.0000</gia_danhmuc>
+    <phu_thu>0.0000</phu_thu>
+    <ptram_bhyt>0</ptram_bhyt>
+    <hienthi_baocao>0</hienthi_baocao>
+    <id_bacsi_chidinh>138</id_bacsi_chidinh>
+    <id_benhnhan>2</id_benhnhan>
+    <ten_benhnhan>Bhyt</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, TỈNH BẮC NINH</dia_chi>
+    <diachi_bhyt>Không xác định, Không xác định, TỈNH BẮC NINH</diachi_bhyt>
+    <gioi_tinh>Nam</gioi_tinh>
+    <TUOI>2</TUOI>
+    <ngay_sinh>2013-10-04T09:57:00+07:00</ngay_sinh>
+    <nam_sinh>2013</nam_sinh>
+    <dan_toc />
+    <CMT />
+    <dien_thoai />
+    <nghe_nghiep />
+    <ngay_tiepdon>2015-10-04T09:57:37.573+07:00</ngay_tiepdon>
+    <dung_tuyen>1</dung_tuyen>
+    <ma_luotkham>15000002</ma_luotkham>
+    <ngaybatdau_bhyt>2015-01-01T00:00:00+07:00</ngaybatdau_bhyt>
+    <ngayketthuc_bhyt>2015-12-31T00:00:00+07:00</ngayketthuc_bhyt>
+    <noi_dongtruso_kcbbd>01</noi_dongtruso_kcbbd>
+    <noicap_bhyt>Hà Nội</noicap_bhyt>
+    <mathe_bhyt>DN7010101010111</mathe_bhyt>
+    <ma_quyenloi>7</ma_quyenloi>
+    <ma_doituong_bhyt>DN</ma_doituong_bhyt>
+    <ma_doituong_kcb>BHYT</ma_doituong_kcb>
+    <id_doituong_kcb>2</id_doituong_kcb>
+    <id_kham>2</id_kham>
+    <ten_doituong_kcb>Bảo hiểm y tế</ten_doituong_kcb>
+    <ten_khoa_thuchien>Khoa Xét Nghiệm</ten_khoa_thuchien>
+    <ten_khoa_thuchien_chitiet />
+    <ten_phong_thuchien>Phòng Xét Nghiệm</ten_phong_thuchien>
+    <ten_phong_thuchien_chitiet />
+    <noithuchien_dichvu>Khoa Xét Nghiệm-Phòng Xét Nghiệm</noithuchien_dichvu>
+    <noithuchien_dichvu_chitiet>-</noithuchien_dichvu_chitiet>
+    <chidan_chitiet />
+    <chidan_dichvu>Tầng 1</chidan_dichvu>
+    <ten_bacsi_chidinh>Bác Sĩ 1</ten_bacsi_chidinh>
+    <ten_khoachidinh>Khoa Kcb Thường</ten_khoachidinh>
+    <ten_phongchidinh>Phòng 1</ten_phongchidinh>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <ten_nhombaocao_dichvu>Xét nghiệm</ten_nhombaocao_dichvu>
+    <ten_nhominphieucls>PHIẾU XÉT NGHIỆM</ten_nhominphieucls>
+    <nhom_in_cls>01</nhom_in_cls>
+    <nhom_baocao_dichvu>XN</nhom_baocao_dichvu>
+    <chi_dan>Tầng 1</chi_dan>
+  </Table>
+  <Table>
+    <id_dichvu>1</id_dichvu>
+    <id_chitietdichvu>250</id_chitietdichvu>
+    <ma_dichvu>HH</ma_dichvu>
+    <ma_chidinh>151004.0001</ma_chidinh>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>5</stt_hthi_chitiet>
+    <ten_dichvu>XÉT NGHIỆM HUYẾT HỌC</ten_dichvu>
+    <ten_chitietdichvu>Định nhóm máu hệ Rh(D) bằng phương pháp ống nghiệm, phiến đá</ten_chitietdichvu>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_chidinh>2</id_chidinh>
+    <id_chitietchidinh>11</id_chitietchidinh>
+    <ma_chidinh1>151004.0001</ma_chidinh1>
+    <so_luong>1</so_luong>
+    <don_gia>25000.0000</don_gia>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <bnhan_chitra>25000.000</bnhan_chitra>
+    <gia_danhmuc>25000.0000</gia_danhmuc>
+    <phu_thu>0.0000</phu_thu>
+    <ptram_bhyt>0</ptram_bhyt>
+    <hienthi_baocao>0</hienthi_baocao>
+    <id_bacsi_chidinh>138</id_bacsi_chidinh>
+    <id_benhnhan>2</id_benhnhan>
+    <ten_benhnhan>Bhyt</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, TỈNH BẮC NINH</dia_chi>
+    <diachi_bhyt>Không xác định, Không xác định, TỈNH BẮC NINH</diachi_bhyt>
+    <gioi_tinh>Nam</gioi_tinh>
+    <TUOI>2</TUOI>
+    <ngay_sinh>2013-10-04T09:57:00+07:00</ngay_sinh>
+    <nam_sinh>2013</nam_sinh>
+    <dan_toc />
+    <CMT />
+    <dien_thoai />
+    <nghe_nghiep />
+    <ngay_tiepdon>2015-10-04T09:57:37.573+07:00</ngay_tiepdon>
+    <dung_tuyen>1</dung_tuyen>
+    <ma_luotkham>15000002</ma_luotkham>
+    <ngaybatdau_bhyt>2015-01-01T00:00:00+07:00</ngaybatdau_bhyt>
+    <ngayketthuc_bhyt>2015-12-31T00:00:00+07:00</ngayketthuc_bhyt>
+    <noi_dongtruso_kcbbd>01</noi_dongtruso_kcbbd>
+    <noicap_bhyt>Hà Nội</noicap_bhyt>
+    <mathe_bhyt>DN7010101010111</mathe_bhyt>
+    <ma_quyenloi>7</ma_quyenloi>
+    <ma_doituong_bhyt>DN</ma_doituong_bhyt>
+    <ma_doituong_kcb>BHYT</ma_doituong_kcb>
+    <id_doituong_kcb>2</id_doituong_kcb>
+    <id_kham>2</id_kham>
+    <ten_doituong_kcb>Bảo hiểm y tế</ten_doituong_kcb>
+    <ten_khoa_thuchien>Khoa Xét Nghiệm</ten_khoa_thuchien>
+    <ten_khoa_thuchien_chitiet />
+    <ten_phong_thuchien>Phòng Xét Nghiệm</ten_phong_thuchien>
+    <ten_phong_thuchien_chitiet />
+    <noithuchien_dichvu>Khoa Xét Nghiệm-Phòng Xét Nghiệm</noithuchien_dichvu>
+    <noithuchien_dichvu_chitiet>-</noithuchien_dichvu_chitiet>
+    <chidan_dichvu>Tầng 1</chidan_dichvu>
+    <ten_bacsi_chidinh>Bác Sĩ 1</ten_bacsi_chidinh>
+    <ten_khoachidinh>Khoa Kcb Thường</ten_khoachidinh>
+    <ten_phongchidinh>Phòng 1</ten_phongchidinh>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <ten_nhombaocao_dichvu>Xét nghiệm</ten_nhombaocao_dichvu>
+    <ten_nhominphieucls>PHIẾU XÉT NGHIỆM</ten_nhominphieucls>
+    <nhom_in_cls>01</nhom_in_cls>
+    <nhom_baocao_dichvu>XN</nhom_baocao_dichvu>
+    <chi_dan>Tầng 1</chi_dan>
+  </Table>
+  <Table>
+    <id_dichvu>2</id_dichvu>
+    <id_chitietdichvu>313</id_chitietdichvu>
+    <ma_dichvu>HS</ma_dichvu>
+    <ma_chidinh>151004.0001</ma_chidinh>
+    <stt_hthi_dichvu>2</stt_hthi_dichvu>
+    <stt_hthi_chitiet>1</stt_hthi_chitiet>
+    <ten_dichvu>XÉT NGHIỆM HOÁ SINH -MIỄN DỊCH</ten_dichvu>
+    <ten_chitietdichvu>FT3</ten_chitietdichvu>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_chidinh>2</id_chidinh>
+    <id_chitietchidinh>13</id_chitietchidinh>
+    <ma_chidinh1>151004.0001</ma_chidinh1>
+    <so_luong>1</so_luong>
+    <don_gia>75000.0000</don_gia>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <bnhan_chitra>75000.000</bnhan_chitra>
+    <gia_danhmuc>75000.0000</gia_danhmuc>
+    <phu_thu>0.0000</phu_thu>
+    <ptram_bhyt>0</ptram_bhyt>
+    <hienthi_baocao>0</hienthi_baocao>
+    <id_bacsi_chidinh>138</id_bacsi_chidinh>
+    <id_benhnhan>2</id_benhnhan>
+    <ten_benhnhan>Bhyt</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, TỈNH BẮC NINH</dia_chi>
+    <diachi_bhyt>Không xác định, Không xác định, TỈNH BẮC NINH</diachi_bhyt>
+    <gioi_tinh>Nam</gioi_tinh>
+    <TUOI>2</TUOI>
+    <ngay_sinh>2013-10-04T09:57:00+07:00</ngay_sinh>
+    <nam_sinh>2013</nam_sinh>
+    <dan_toc />
+    <CMT />
+    <dien_thoai />
+    <nghe_nghiep />
+    <ngay_tiepdon>2015-10-04T09:57:37.573+07:00</ngay_tiepdon>
+    <dung_tuyen>1</dung_tuyen>
+    <ma_luotkham>15000002</ma_luotkham>
+    <ngaybatdau_bhyt>2015-01-01T00:00:00+07:00</ngaybatdau_bhyt>
+    <ngayketthuc_bhyt>2015-12-31T00:00:00+07:00</ngayketthuc_bhyt>
+    <noi_dongtruso_kcbbd>01</noi_dongtruso_kcbbd>
+    <noicap_bhyt>Hà Nội</noicap_bhyt>
+    <mathe_bhyt>DN7010101010111</mathe_bhyt>
+    <ma_quyenloi>7</ma_quyenloi>
+    <ma_doituong_bhyt>DN</ma_doituong_bhyt>
+    <ma_doituong_kcb>BHYT</ma_doituong_kcb>
+    <id_doituong_kcb>2</id_doituong_kcb>
+    <id_kham>2</id_kham>
+    <ten_doituong_kcb>Bảo hiểm y tế</ten_doituong_kcb>
+    <ten_khoa_thuchien>Khoa Xét Nghiệm</ten_khoa_thuchien>
+    <ten_khoa_thuchien_chitiet />
+    <ten_phong_thuchien>Phòng Xét Nghiệm</ten_phong_thuchien>
+    <ten_phong_thuchien_chitiet />
+    <noithuchien_dichvu>Khoa Xét Nghiệm-Phòng Xét Nghiệm</noithuchien_dichvu>
+    <noithuchien_dichvu_chitiet>-</noithuchien_dichvu_chitiet>
+    <chidan_chitiet>test abcd</chidan_chitiet>
+    <chidan_dichvu>Tầng 1 khu 1</chidan_dichvu>
+    <ten_bacsi_chidinh>Bác Sĩ 1</ten_bacsi_chidinh>
+    <ten_khoachidinh>Khoa Kcb Thường</ten_khoachidinh>
+    <ten_phongchidinh>Phòng 1</ten_phongchidinh>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <ten_nhombaocao_dichvu>Xét nghiệm</ten_nhombaocao_dichvu>
+    <ten_nhominphieucls>PHIẾU XÉT NGHIỆM</ten_nhominphieucls>
+    <nhom_in_cls>01</nhom_in_cls>
+    <nhom_baocao_dichvu>XN</nhom_baocao_dichvu>
+    <chi_dan>test abcd</chi_dan>
+  </Table>
+  <Table>
+    <id_dichvu>2</id_dichvu>
+    <id_chitietdichvu>312</id_chitietdichvu>
+    <ma_dichvu>HS</ma_dichvu>
+    <ma_chidinh>151004.0001</ma_chidinh>
+    <stt_hthi_dichvu>2</stt_hthi_dichvu>
+    <stt_hthi_chitiet>2</stt_hthi_chitiet>
+    <ten_dichvu>XÉT NGHIỆM HOÁ SINH -MIỄN DỊCH</ten_dichvu>
+    <ten_chitietdichvu>T3</ten_chitietdichvu>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_chidinh>2</id_chidinh>
+    <id_chitietchidinh>14</id_chitietchidinh>
+    <ma_chidinh1>151004.0001</ma_chidinh1>
+    <so_luong>1</so_luong>
+    <don_gia>75000.0000</don_gia>
+    <bhyt_chitra>0.000</bhyt_chitra>
+    <bnhan_chitra>75000.000</bnhan_chitra>
+    <gia_danhmuc>75000.0000</gia_danhmuc>
+    <phu_thu>0.0000</phu_thu>
+    <ptram_bhyt>0</ptram_bhyt>
+    <hienthi_baocao>0</hienthi_baocao>
+    <id_bacsi_chidinh>138</id_bacsi_chidinh>
+    <id_benhnhan>2</id_benhnhan>
+    <ten_benhnhan>Bhyt</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, TỈNH BẮC NINH</dia_chi>
+    <diachi_bhyt>Không xác định, Không xác định, TỈNH BẮC NINH</diachi_bhyt>
+    <gioi_tinh>Nam</gioi_tinh>
+    <TUOI>2</TUOI>
+    <ngay_sinh>2013-10-04T09:57:00+07:00</ngay_sinh>
+    <nam_sinh>2013</nam_sinh>
+    <dan_toc />
+    <CMT />
+    <dien_thoai />
+    <nghe_nghiep />
+    <ngay_tiepdon>2015-10-04T09:57:37.573+07:00</ngay_tiepdon>
+    <dung_tuyen>1</dung_tuyen>
+    <ma_luotkham>15000002</ma_luotkham>
+    <ngaybatdau_bhyt>2015-01-01T00:00:00+07:00</ngaybatdau_bhyt>
+    <ngayketthuc_bhyt>2015-12-31T00:00:00+07:00</ngayketthuc_bhyt>
+    <noi_dongtruso_kcbbd>01</noi_dongtruso_kcbbd>
+    <noicap_bhyt>Hà Nội</noicap_bhyt>
+    <mathe_bhyt>DN7010101010111</mathe_bhyt>
+    <ma_quyenloi>7</ma_quyenloi>
+    <ma_doituong_bhyt>DN</ma_doituong_bhyt>
+    <ma_doituong_kcb>BHYT</ma_doituong_kcb>
+    <id_doituong_kcb>2</id_doituong_kcb>
+    <id_kham>2</id_kham>
+    <ten_doituong_kcb>Bảo hiểm y tế</ten_doituong_kcb>
+    <ten_khoa_thuchien>Khoa Xét Nghiệm</ten_khoa_thuchien>
+    <ten_khoa_thuchien_chitiet />
+    <ten_phong_thuchien>Phòng Xét Nghiệm</ten_phong_thuchien>
+    <ten_phong_thuchien_chitiet />
+    <noithuchien_dichvu>Khoa Xét Nghiệm-Phòng Xét Nghiệm</noithuchien_dichvu>
+    <noithuchien_dichvu_chitiet>-</noithuchien_dichvu_chitiet>
+    <chidan_chitiet>test 1234</chidan_chitiet>
+    <chidan_dichvu>Tầng 1 khu 1</chidan_dichvu>
+    <ten_bacsi_chidinh>Bác Sĩ 1</ten_bacsi_chidinh>
+    <ten_khoachidinh>Khoa Kcb Thường</ten_khoachidinh>
+    <ten_phongchidinh>Phòng 1</ten_phongchidinh>
+    <ten_donvitinh>Lần</ten_donvitinh>
+    <ten_nhombaocao_dichvu>Xét nghiệm</ten_nhombaocao_dichvu>
+    <ten_nhominphieucls>PHIẾU XÉT NGHIỆM</ten_nhominphieucls>
+    <nhom_in_cls>01</nhom_in_cls>
+    <nhom_baocao_dichvu>XN</nhom_baocao_dichvu>
+    <chi_dan>test 1234</chi_dan>
+  </Table>
+</NewDataSet>

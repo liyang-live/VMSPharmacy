@@ -1,0 +1,133 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="so_lo" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_hethan" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_nhacungcap" type="xs:string" minOccurs="0" />
+                <xs:element name="tenbietduoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ID_THUOC" type="xs:int" minOccurs="0" />
+                <xs:element name="IDNHOM" type="xs:short" minOccurs="0" />
+                <xs:element name="hang_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="tennhom" type="xs:string" minOccurs="0" />
+                <xs:element name="stt_hthi_nhom" type="xs:short" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="co_chiathuoc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ten_nhacungcap" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh1" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvichia" type="xs:string" minOccurs="0" />
+                <xs:element name="SL_TONDAU" type="xs:int" minOccurs="0" />
+                <xs:element name="SLNHAP" type="xs:int" minOccurs="0" />
+                <xs:element name="SLTIEM" type="xs:int" minOccurs="0" />
+                <xs:element name="SLHUY" type="xs:int" minOccurs="0" />
+                <xs:element name="SLXuat" type="xs:int" minOccurs="0" />
+                <xs:element name="SL_TONCUOI" type="xs:int" minOccurs="0" />
+                <xs:element name="ID_NHOM" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <so_lo>1</so_lo>
+    <ngay_hethan>08/10/2016</ngay_hethan>
+    <ma_nhacungcap>01</ma_nhacungcap>
+    <tenbietduoc>Heberbiovac HB</tenbietduoc>
+    <ID_THUOC>454</ID_THUOC>
+    <IDNHOM>60</IDNHOM>
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <tennhom>Viêm Gan B: Phòng Bệnh Viêm Gan B</tennhom>
+    <stt_hthi_nhom>48</stt_hthi_nhom>
+    <ma_donvitinh>MUI</ma_donvitinh>
+    <co_chiathuoc>0</co_chiathuoc>
+    <ten_nhacungcap>Nhà cung cấp 1</ten_nhacungcap>
+    <ten_donvitinh1>Mũi</ten_donvitinh1>
+    <SL_TONDAU>0</SL_TONDAU>
+    <SLNHAP>1000</SLNHAP>
+    <SLTIEM>10</SLTIEM>
+    <SLHUY>0</SLHUY>
+    <SLXuat>10</SLXuat>
+    <SL_TONCUOI>990</SL_TONCUOI>
+    <ID_NHOM>60</ID_NHOM>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+  </Table>
+  <Table>
+    <so_lo>1</so_lo>
+    <ngay_hethan>08/10/2016</ngay_hethan>
+    <ma_nhacungcap>01</ma_nhacungcap>
+    <tenbietduoc>BCG</tenbietduoc>
+    <ID_THUOC>456</ID_THUOC>
+    <IDNHOM>62</IDNHOM>
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <tennhom>Bcg: Phòng Bệnh Lao</tennhom>
+    <stt_hthi_nhom>50</stt_hthi_nhom>
+    <ma_donvitinh>MUI</ma_donvitinh>
+    <co_chiathuoc>0</co_chiathuoc>
+    <ten_nhacungcap>Nhà cung cấp 1</ten_nhacungcap>
+    <ten_donvitinh1>Mũi</ten_donvitinh1>
+    <SL_TONDAU>0</SL_TONDAU>
+    <SLNHAP>15</SLNHAP>
+    <SLTIEM>10</SLTIEM>
+    <SLHUY>0</SLHUY>
+    <SLXuat>10</SLXuat>
+    <SL_TONCUOI>5</SL_TONCUOI>
+    <ID_NHOM>62</ID_NHOM>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+  </Table>
+  <Table>
+    <so_lo>1</so_lo>
+    <ngay_hethan>08/10/2016</ngay_hethan>
+    <ma_nhacungcap>01</ma_nhacungcap>
+    <tenbietduoc>Pentaxim</tenbietduoc>
+    <ID_THUOC>457</ID_THUOC>
+    <IDNHOM>63</IDNHOM>
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <tennhom>BH-HG-UV-BL- Hib mũi 1,2,3 Phòng bệnh Bạch hầu, Ho gà, Uốn ván, Bại liệt, viêm phổi, viêm màng não do vi khuẩn Heamophilus Influenzea typ B</tennhom>
+    <stt_hthi_nhom>51</stt_hthi_nhom>
+    <ma_donvitinh>MUI</ma_donvitinh>
+    <co_chiathuoc>0</co_chiathuoc>
+    <ten_nhacungcap>Nhà cung cấp 1</ten_nhacungcap>
+    <ten_donvitinh1>Mũi</ten_donvitinh1>
+    <SL_TONDAU>0</SL_TONDAU>
+    <SLNHAP>1000</SLNHAP>
+    <SLTIEM>10</SLTIEM>
+    <SLHUY>0</SLHUY>
+    <SLXuat>10</SLXuat>
+    <SL_TONCUOI>990</SL_TONCUOI>
+    <ID_NHOM>63</ID_NHOM>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+  </Table>
+  <Table>
+    <so_lo>1</so_lo>
+    <ngay_hethan>08/10/2016</ngay_hethan>
+    <ma_nhacungcap>01</ma_nhacungcap>
+    <tenbietduoc>Rotarix</tenbietduoc>
+    <ID_THUOC>459</ID_THUOC>
+    <IDNHOM>65</IDNHOM>
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <tennhom>Vắc xin Rota virut: Phòng bệnh tiêu chảy cấp do Rota virut</tennhom>
+    <stt_hthi_nhom>53</stt_hthi_nhom>
+    <ma_donvitinh>MUI</ma_donvitinh>
+    <co_chiathuoc>0</co_chiathuoc>
+    <ten_nhacungcap>Nhà cung cấp 1</ten_nhacungcap>
+    <ten_donvitinh1>Mũi</ten_donvitinh1>
+    <SL_TONDAU>0</SL_TONDAU>
+    <SLNHAP>1000</SLNHAP>
+    <SLTIEM>10</SLTIEM>
+    <SLHUY>0</SLHUY>
+    <SLXuat>10</SLXuat>
+    <SL_TONCUOI>990</SL_TONCUOI>
+    <ID_NHOM>65</ID_NHOM>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+  </Table>
+</NewDataSet>

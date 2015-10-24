@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FTPProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PrintAfterSave>true</PrintAfterSave>
+  <PrintPreview>true</PrintPreview>
+  <IPAddress>192.168.1.105</IPAddress>
+  <UID>sa</UID>
+  <PWD>sa</PWD>
+  <UNCPath>\\192.168.0.105\FptImages</UNCPath>
+  <ImageFolder>D:\FptLocal</ImageFolder>
+  <IamLocal>true</IamLocal>
+  <Push2FTP>false</Push2FTP>
+</FTPProperties>

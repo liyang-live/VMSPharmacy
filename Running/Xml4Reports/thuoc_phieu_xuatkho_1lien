@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="TEN_THUOC" type="xs:string" minOccurs="0" />
+                <xs:element name="id_phieu" type="xs:int" minOccurs="0" />
+                <xs:element name="ma_phieu" type="xs:string" minOccurs="0" />
+                <xs:element name="ID_THUOC" type="xs:int" minOccurs="0" />
+                <xs:element name="sngay_hethan" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_hethan" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="SO_LUONG" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="DONGIA_NHAP" type="xs:decimal" minOccurs="0" />
+                <xs:element name="DONGIA_XUAT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ten_khonhap" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_khoxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="nuoc_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="hang_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nha_ccap" type="xs:string" minOccurs="0" />
+                <xs:element name="NO" type="xs:string" minOccurs="0" />
+                <xs:element name="CO" type="xs:string" minOccurs="0" />
+                <xs:element name="BO_PHAN" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_DONVI" type="xs:string" minOccurs="0" />
+                <xs:element name="CUA" type="xs:string" minOccurs="0" />
+                <xs:element name="THEO" type="xs:string" minOccurs="0" />
+                <xs:element name="DIADIEM" type="xs:string" minOccurs="0" />
+                <xs:element name="SO_CHUNGTU_KEMTHEO" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_lydo_xuat" type="xs:string" minOccurs="0" />
+                <xs:element name="nguoi_giao" type="xs:string" minOccurs="0" />
+                <xs:element name="so_lo" type="xs:string" minOccurs="0" />
+                <xs:element name="so_hoadon" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_hoadon" type="xs:string" minOccurs="0" />
+                <xs:element name="SO_PHIEU" type="xs:string" minOccurs="0" />
+                <xs:element name="THANHTIEN_NHAP" type="xs:decimal" minOccurs="0" />
+                <xs:element name="THANHTIEN_XUAT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ID_LOAITHUOC" type="xs:int" minOccurs="0" />
+                <xs:element name="TEN_LOAITHUOC" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <TEN_THUOC>ACC (Acetylcystein 200Mg)</TEN_THUOC>
+    <id_phieu>5</id_phieu>
+    <ma_phieu>PXKHOA150523001</ma_phieu>
+    <ID_THUOC>4</ID_THUOC>
+    <sngay_hethan>22/05/2016</sngay_hethan>
+    <ngay_hethan>2016-05-22T00:00:00+07:00</ngay_hethan>
+    <SO_LUONG>100</SO_LUONG>
+    <ten_donvitinh>Gói</ten_donvitinh>
+    <DONGIA_NHAP>5000.000</DONGIA_NHAP>
+    <DONGIA_XUAT>5000.000</DONGIA_XUAT>
+    <ten_khonhap>Tủ Thuốc Khoa Tuyến Giáp</ten_khonhap>
+    <ten_khoxuat>Kho Thuốc Nội Trú</ten_khoxuat>
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <hang_sanxuat>Công ty dược phẩm Hậu Giang</hang_sanxuat>
+    <NO />
+    <CO />
+    <BO_PHAN />
+    <MA_DONVI />
+    <CUA />
+    <THEO />
+    <DIADIEM />
+    <SO_CHUNGTU_KEMTHEO />
+    <ten_lydo_xuat>Xuất thuốc tủ trực khoa nội trú</ten_lydo_xuat>
+    <nguoi_giao />
+    <so_lo>1</so_lo>
+    <so_hoadon />
+    <sngay_hoadon>23/05/2015</sngay_hoadon>
+    <SO_PHIEU>5</SO_PHIEU>
+    <THANHTIEN_NHAP>500000.000</THANHTIEN_NHAP>
+    <THANHTIEN_XUAT>500000.000</THANHTIEN_XUAT>
+    <ID_LOAITHUOC>0</ID_LOAITHUOC>
+    <TEN_LOAITHUOC>THUỐC THƯỜNG</TEN_LOAITHUOC>
+  </Table>
+</NewDataSet>

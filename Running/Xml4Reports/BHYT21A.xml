@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_dichvu" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_dichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="id_chitietdichvu" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_chitietdichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="donvi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="SO_LUONG" type="xs:int" minOccurs="0" />
+                <xs:element name="DON_GIA" type="xs:decimal" minOccurs="0" />
+                <xs:element name="THANH_TIEN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PHU_THU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_dichvu>-1</id_dichvu>
+    <ten_dichvu>Công Khám</ten_dichvu>
+    <id_chitietdichvu>-1</id_chitietdichvu>
+    <ten_chitietdichvu>Khám thường Buồng 1</ten_chitietdichvu>
+    <donvi_tinh>Lần</donvi_tinh>
+    <SO_LUONG>1</SO_LUONG>
+    <DON_GIA>100000.000</DON_GIA>
+    <THANH_TIEN>100000.000</THANH_TIEN>
+    <PHU_THU>0.000</PHU_THU>
+  </Table>
+  <Table>
+    <id_dichvu>1</id_dichvu>
+    <ten_dichvu>XÉT NGHIỆM HUYẾT HỌC</ten_dichvu>
+    <id_chitietdichvu>245</id_chitietdichvu>
+    <ten_chitietdichvu>Tổng phân tích tế bào máu ngoại vi ( Laser)</ten_chitietdichvu>
+    <donvi_tinh>Lần</donvi_tinh>
+    <SO_LUONG>1</SO_LUONG>
+    <DON_GIA>35000.000</DON_GIA>
+    <THANH_TIEN>35000.000</THANH_TIEN>
+    <PHU_THU>15000.000</PHU_THU>
+  </Table>
+  <Table>
+    <id_dichvu>1</id_dichvu>
+    <ten_dichvu>XÉT NGHIỆM HUYẾT HỌC</ten_dichvu>
+    <id_chitietdichvu>412</id_chitietdichvu>
+    <ten_chitietdichvu>Định nhóm máu hệ ABO bằng phương pháp ống nghiệm; trên phiến đá hoặc trên giấy</ten_chitietdichvu>
+    <donvi_tinh>Lần</donvi_tinh>
+    <SO_LUONG>1</SO_LUONG>
+    <DON_GIA>35000.000</DON_GIA>
+    <THANH_TIEN>35000.000</THANH_TIEN>
+    <PHU_THU>15000.000</PHU_THU>
+  </Table>
+</NewDataSet>

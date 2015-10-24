@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ten_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="stt_hthi_loaithuoc" type="xs:short" minOccurs="0" />
+                <xs:element name="tenthuoc_bietduoc" type="xs:string" minOccurs="0" />
+                <xs:element name="so_lo" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_hethan" type="xs:string" minOccurs="0" />
+                <xs:element name="so_dangky" type="xs:string" minOccurs="0" />
+                <xs:element name="hang_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="SOT39" type="xs:int" minOccurs="0" />
+                <xs:element name="SD" type="xs:int" minOccurs="0" />
+                <xs:element name="KHAC" type="xs:int" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ten_loaithuoc>Bcg: Phòng Bệnh Lao</ten_loaithuoc>
+    <stt_hthi_loaithuoc>50</stt_hthi_loaithuoc>
+    <tenthuoc_bietduoc>BCG</tenthuoc_bietduoc>
+    <so_lo>1</so_lo>
+    <ngay_hethan>08/10/2016</ngay_hethan>
+    <so_dangky />
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <SOT39>1</SOT39>
+    <SD>0</SD>
+    <KHAC>0</KHAC>
+  </Table>
+  <Table>
+    <ten_loaithuoc>BH-HG-UV-BL- Hib mũi 1,2,3 Phòng bệnh Bạch hầu, Ho gà, Uốn ván, Bại liệt, viêm phổi, viêm màng não do vi khuẩn Heamophilus Influenzea typ B</ten_loaithuoc>
+    <stt_hthi_loaithuoc>51</stt_hthi_loaithuoc>
+    <tenthuoc_bietduoc>Pentaxim</tenthuoc_bietduoc>
+    <so_lo>1</so_lo>
+    <ngay_hethan>08/10/2016</ngay_hethan>
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <SOT39>1</SOT39>
+    <SD>0</SD>
+    <KHAC>0</KHAC>
+  </Table>
+</NewDataSet>

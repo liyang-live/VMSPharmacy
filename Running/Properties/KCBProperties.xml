@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KCBProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SexInput>false</SexInput>
+  <FullDelete>true</FullDelete>
+  <Hoikhikhongdangkyphongkham>true</Hoikhikhongdangkyphongkham>
+  <Thanhtoancaphidichvukemtheo>true</Thanhtoancaphidichvukemtheo>
+  <Hoitruockhithanhtoan>true</Hoitruockhithanhtoan>
+  <PreviewHoadon>true</PreviewHoadon>
+  <Chophepthanhtoan>true</Chophepthanhtoan>
+  <Kieuhienthi>Cahai</Kieuhienthi>
+  <CapnhatNeuThanhtoanhet>false</CapnhatNeuThanhtoanhet>
+  <Hienthinuttrenluoi>false</Hienthinuttrenluoi>
+  <GoMaDvu>true</GoMaDvu>
+  <Tudongthemmoi>true</Tudongthemmoi>
+  <Andangky>false</Andangky>
+  <XoaBHYT>false</XoaBHYT>
+  <Chieurong>480</Chieurong>
+  <Chieucao>300</Chieucao>
+</KCBProperties>

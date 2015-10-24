@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="NGAY_LAPPHIEU" type="xs:string" minOccurs="0" />
+                <xs:element name="DIENBIEN" type="xs:string" minOccurs="0" />
+                <xs:element name="xu_tri" type="xs:string" minOccurs="0" />
+                <xs:element name="YLENH" type="xs:string" minOccurs="0" />
+                <xs:element name="id_phieudieutri" type="xs:int" minOccurs="0" />
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="id_benhnhan" type="xs:int" minOccurs="0" />
+                <xs:element name="id_bacsi" type="xs:short" minOccurs="0" />
+                <xs:element name="tthai_bosung" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ngay_tao" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="nguoi_tao" type="xs:string" minOccurs="0" />
+                <xs:element name="id_khoanoitru" type="xs:short" minOccurs="0" />
+                <xs:element name="id_buong" type="xs:short" minOccurs="0" />
+                <xs:element name="id_giuong" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_bacsidieutri" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_khoanoitru" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_buong" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_giuong" type="xs:string" minOccurs="0" />
+                <xs:element name="nam_sinh" type="xs:short" minOccurs="0" />
+                <xs:element name="Tuoi" type="xs:int" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="so_benh_an" type="xs:string" minOccurs="0" />
+                <xs:element name="chan_doan" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <NGAY_LAPPHIEU>11/09/2015 01:03:44  </NGAY_LAPPHIEU>
+    <DIENBIEN>ABCD
+adasd</DIENBIEN>
+    <xu_tri>123123123
+123123</xu_tri>
+    <YLENH />
+    <id_phieudieutri>3</id_phieudieutri>
+    <ma_luotkham>15000007</ma_luotkham>
+    <id_benhnhan>7</id_benhnhan>
+    <id_bacsi>-1</id_bacsi>
+    <tthai_bosung>0</tthai_bosung>
+    <ngay_tao>2015-09-09T01:04:19.7+07:00</ngay_tao>
+    <nguoi_tao>ADMIN</nguoi_tao>
+    <id_khoanoitru>76</id_khoanoitru>
+    <id_buong>1</id_buong>
+    <id_giuong>11</id_giuong>
+    <ten_khoanoitru>Khoa Nội Trú Tuyến Giáp</ten_khoanoitru>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 1</ten_giuong>
+    <nam_sinh>1990</nam_sinh>
+    <Tuoi>25</Tuoi>
+    <gioi_tinh>Nam</gioi_tinh>
+    <ten_benhnhan>Bn Dv Nội Trú</ten_benhnhan>
+    <so_benh_an>1</so_benh_an>
+    <chan_doan />
+  </Table>
+</NewDataSet>

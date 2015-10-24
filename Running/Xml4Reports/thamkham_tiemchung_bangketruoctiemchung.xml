@@ -1,0 +1,144 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_benhnhan" type="xs:long" minOccurs="0" />
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="id_gioitinh" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="Tuoi" type="xs:int" minOccurs="0" />
+                <xs:element name="Gio_sinh" type="xs:int" minOccurs="0" />
+                <xs:element name="Phut_sinh" type="xs:int" minOccurs="0" />
+                <xs:element name="ngay_sinh" type="xs:int" minOccurs="0" />
+                <xs:element name="thang_sinh" type="xs:int" minOccurs="0" />
+                <xs:element name="nam_sinh" type="xs:short" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="nguoi_lienhe" type="xs:string" minOccurs="0" />
+                <xs:element name="dien_thoai" type="xs:string" minOccurs="0" />
+                <xs:element name="dienthoai_lienhe" type="xs:string" minOccurs="0" />
+                <xs:element name="id_thuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="lydo_tiemchung" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nguoitiem" type="xs:string" minOccurs="0" />
+                <xs:element name="han_dung" type="xs:string" minOccurs="0" />
+                <xs:element name="mui_thu" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="hen_nhaclai" type="xs:string" minOccurs="0" />
+                <xs:element name="so_lo" type="xs:string" minOccurs="0" />
+                <xs:element name="lydo_tiemchung1" type="xs:string" minOccurs="0" />
+                <xs:element name="phanung_sautiem" type="xs:string" minOccurs="0" />
+                <xs:element name="xutri" type="xs:string" minOccurs="0" />
+                <xs:element name="ketluan_nguyennhan" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="duong_tiem" type="xs:string" minOccurs="0" />
+                <xs:element name="lieu" type="xs:string" minOccurs="0" />
+                <xs:element name="KPL1" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="KPL2" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="KPL3" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="KPL4" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="KPL5" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="KPL6" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="KPL7" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="KPL8" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="KL1" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="KL2" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="KL3" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_benhnhan>1</id_benhnhan>
+    <ma_luotkham>15000001</ma_luotkham>
+    <ten_benhnhan>Bn Tc</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <id_gioitinh>0</id_gioitinh>
+    <Tuoi>4</Tuoi>
+    <Gio_sinh>13</Gio_sinh>
+    <Phut_sinh>25</Phut_sinh>
+    <ngay_sinh>8</ngay_sinh>
+    <thang_sinh>10</thang_sinh>
+    <nam_sinh>2011</nam_sinh>
+    <dia_chi>Không xác định, Không xác định, Tỉnh Điên Biên</dia_chi>
+    <nguoi_lienhe />
+    <dien_thoai />
+    <id_thuoc>456</id_thuoc>
+    <lydo_tiemchung>Tiêm định kỳ</lydo_tiemchung>
+    <ten_nguoitiem>Nhân Viên Tiêm Chủng 2</ten_nguoitiem>
+    <han_dung>08/10/2016</han_dung>
+    <mui_thu>1</mui_thu>
+    <hen_nhaclai>KHÔNG HẸN</hen_nhaclai>
+    <so_lo>1</so_lo>
+    <lydo_tiemchung1>Tiêm định kỳ</lydo_tiemchung1>
+    <phanung_sautiem>-1</phanung_sautiem>
+    <xutri>-1</xutri>
+    <ketluan_nguyennhan>-1</ketluan_nguyennhan>
+    <ten_loaithuoc>Bcg: Phòng Bệnh Lao</ten_loaithuoc>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+    <duong_tiem>Tiêm dưới da</duong_tiem>
+    <lieu>Tiêm 1 lần duy nhất.</lieu>
+    <KPL1>0</KPL1>
+    <KPL2>0</KPL2>
+    <KPL3>0</KPL3>
+    <KPL4>0</KPL4>
+    <KPL5>0</KPL5>
+    <KPL6>0</KPL6>
+    <KPL7>0</KPL7>
+    <KPL8>0</KPL8>
+    <KL1>1</KL1>
+    <KL2>0</KL2>
+    <KL3>0</KL3>
+  </Table>
+  <Table>
+    <id_benhnhan>1</id_benhnhan>
+    <ma_luotkham>15000001</ma_luotkham>
+    <ten_benhnhan>Bn Tc</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <id_gioitinh>0</id_gioitinh>
+    <Tuoi>4</Tuoi>
+    <Gio_sinh>13</Gio_sinh>
+    <Phut_sinh>25</Phut_sinh>
+    <ngay_sinh>8</ngay_sinh>
+    <thang_sinh>10</thang_sinh>
+    <nam_sinh>2011</nam_sinh>
+    <dia_chi>Không xác định, Không xác định, Tỉnh Điên Biên</dia_chi>
+    <nguoi_lienhe />
+    <dien_thoai />
+    <id_thuoc>457</id_thuoc>
+    <lydo_tiemchung>Tiêm định kỳ</lydo_tiemchung>
+    <ten_nguoitiem>Nhân Viên Tiêm Chủng 2</ten_nguoitiem>
+    <han_dung>08/10/2016</han_dung>
+    <mui_thu>1</mui_thu>
+    <hen_nhaclai>KHÔNG HẸN</hen_nhaclai>
+    <so_lo>1</so_lo>
+    <lydo_tiemchung1>Tiêm định kỳ</lydo_tiemchung1>
+    <phanung_sautiem>-1</phanung_sautiem>
+    <xutri>-1</xutri>
+    <ketluan_nguyennhan>-1</ketluan_nguyennhan>
+    <ten_loaithuoc>BH-HG-UV-BL- Hib mũi 1,2,3 Phòng bệnh Bạch hầu, Ho gà, Uốn ván, Bại liệt, viêm phổi, viêm màng não do vi khuẩn Heamophilus Influenzea typ B</ten_loaithuoc>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+    <duong_tiem>Tiêm Bắp</duong_tiem>
+    <lieu />
+    <KPL1>0</KPL1>
+    <KPL2>0</KPL2>
+    <KPL3>0</KPL3>
+    <KPL4>0</KPL4>
+    <KPL5>0</KPL5>
+    <KPL6>0</KPL6>
+    <KPL7>0</KPL7>
+    <KPL8>0</KPL8>
+    <KL1>1</KL1>
+    <KL2>0</KL2>
+    <KL3>0</KL3>
+  </Table>
+</NewDataSet>

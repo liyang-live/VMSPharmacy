@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThanhtoanProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AutoSelectpatientAfterSearch>true</AutoSelectpatientAfterSearch>
+  <ChieucaohienthiLuoidanhsachBNthanhtoan>220</ChieucaohienthiLuoidanhsachBNthanhtoan>
+  <CachhienthidulieuNoitru>Noitru</CachhienthidulieuNoitru>
+  <TaodulieuDCTkhiInphieuDCT>false</TaodulieuDCTkhiInphieuDCT>
+  <AutoTab>false</AutoTab>
+  <SearchWhenStart>true</SearchWhenStart>
+  <HideStatusBar>true</HideStatusBar>
+  <CachChietkhau>0</CachChietkhau>
+  <HienthiChiTra>false</HienthiChiTra>
+  <Hienthiphuthu>true</Hienthiphuthu>
+  <HienthiChietkhauChitiet>true</HienthiChietkhauChitiet>
+  <Hienthidichvuchuathanhtoan>false</Hienthidichvuchuathanhtoan>
+  <HienthidichvuNgaysaukhithanhtoan>false</HienthidichvuNgaysaukhithanhtoan>
+  <HienthidichvuNgaysaukhitratien>true</HienthidichvuNgaysaukhitratien>
+  <AnTabDaThanhtoan>false</AnTabDaThanhtoan>
+  <Hienthihuyphieuchi>false</Hienthihuyphieuchi>
+  <Hienthihuythanhtoan>false</Hienthihuythanhtoan>
+  <Hoitruockhihuythanhtoan>true</Hoitruockhihuythanhtoan>
+  <Hoitruockhithanhtoan>false</Hoitruockhithanhtoan>
+</ThanhtoanProperties>

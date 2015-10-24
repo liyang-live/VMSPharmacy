@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ten_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="tenbietduoc" type="xs:string" minOccurs="0" />
+                <xs:element name="id_thuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="id_loaithuoc" type="xs:short" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="co_chiathuoc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ten_donvitinh1" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvichia" type="xs:string" minOccurs="0" />
+                <xs:element name="Tontruoc" type="xs:int" minOccurs="0" />
+                <xs:element name="TRA_KHOLE" type="xs:int" minOccurs="0" />
+                <xs:element name="XUAT_BN" type="xs:int" minOccurs="0" />
+                <xs:element name="NHAP_KLE" type="xs:int" minOccurs="0" />
+                <xs:element name="TONKC" type="xs:int" minOccurs="0" />
+                <xs:element name="ngay_biendong" type="xs:string" minOccurs="0" />
+                <xs:element name="YYYYMMDD" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ten_thuoc>Amiparen</ten_thuoc>
+    <tenbietduoc>Amiparen</tenbietduoc>
+    <id_thuoc>21</id_thuoc>
+    <id_loaithuoc>19</id_loaithuoc>
+    <ma_donvitinh>8</ma_donvitinh>
+    <co_chiathuoc>1</co_chiathuoc>
+    <ten_donvitinh1>Chai</ten_donvitinh1>
+    <ten_donvichia>ml</ten_donvichia>
+    <Tontruoc>0</Tontruoc>
+    <TRA_KHOLE>0</TRA_KHOLE>
+    <XUAT_BN>0</XUAT_BN>
+    <NHAP_KLE>3000</NHAP_KLE>
+    <TONKC>0</TONKC>
+    <ngay_biendong>21/05/2015</ngay_biendong>
+    <YYYYMMDD>20150521</YYYYMMDD>
+    <ten_loaithuoc>DUNG DỊCH ĐIỀU CHỈNH NƯỚC ĐIỆN GIẢI, CÂN BẰNG ACID- BASE VÀ CÁC DUNG DỊCH TIÊM TRUYỀN KHÁC</ten_loaithuoc>
+    <ten_donvitinh>ml</ten_donvitinh>
+  </Table>
+</NewDataSet>

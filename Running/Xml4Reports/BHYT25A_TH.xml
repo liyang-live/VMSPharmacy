@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DOITUONG" type="xs:string" minOccurs="0" />
+                <xs:element name="dung_tuyen" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="TIENKHAM" type="xs:decimal" minOccurs="0" />
+                <xs:element name="XN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CDHA" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PTTT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="THUOC" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TONGCONG" type="xs:decimal" minOccurs="0" />
+                <xs:element name="BHCT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="BNCT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SOLUOT" type="xs:int" minOccurs="0" />
+                <xs:element name="HOvaTEN" type="xs:string" minOccurs="0" />
+                <xs:element name="sTuyen" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <DOITUONG>C</DOITUONG>
+    <dung_tuyen>1</dung_tuyen>
+    <TIENKHAM>100000.000</TIENKHAM>
+    <XN>70000.000</XN>
+    <CDHA>0.000</CDHA>
+    <PTTT>0.000</PTTT>
+    <THUOC>0.000</THUOC>
+    <TONGCONG>170000.000</TONGCONG>
+    <BHCT>170000.000</BHCT>
+    <BNCT>0.000</BNCT>
+    <SOLUOT>1</SOLUOT>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="nam_sinh" type="xs:short" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="dan_toc" type="xs:string" minOccurs="0" />
+                <xs:element name="nghe_nghiep" type="xs:string" minOccurs="0" />
+                <xs:element name="mathe_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="co_quan" type="xs:string" minOccurs="0" />
+                <xs:element name="dauhieu_cls" type="xs:string" minOccurs="0" />
+                <xs:element name="id_phieu" type="xs:long" minOccurs="0" />
+                <xs:element name="trangthai_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_noichuyendi" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_chuyenvien" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="id_benhvien_chuyenden" type="xs:short" minOccurs="0" />
+                <xs:element name="ketqua_xn_cls" type="xs:string" minOccurs="0" />
+                <xs:element name="chan_doan" type="xs:string" minOccurs="0" />
+                <xs:element name="thuoc_sudung" type="xs:string" minOccurs="0" />
+                <xs:element name="lydo_chuyen" type="xs:string" minOccurs="0" />
+                <xs:element name="huong_dieutri" type="xs:string" minOccurs="0" />
+                <xs:element name="phuongtien_chuyen" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nguoichuyen" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ten_benhnhan>Bn 1</ten_benhnhan>
+    <gioi_tinh>Nam</gioi_tinh>
+    <nam_sinh>1990</nam_sinh>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <dan_toc />
+    <nghe_nghiep />
+    <mathe_bhyt />
+    <co_quan />
+    <dauhieu_cls>Khó thở</dauhieu_cls>
+    <id_phieu>1</id_phieu>
+    <trangthai_benhnhan>khỏe mạnh</trangthai_benhnhan>
+    <ten_noichuyendi>Bệnh viện 2 Bưu Điện</ten_noichuyendi>
+    <ngay_chuyenvien>2013-01-16T00:00:00+07:00</ngay_chuyenvien>
+    <id_benhvien_chuyenden>2</id_benhvien_chuyenden>
+    <ketqua_xn_cls>213131</ketqua_xn_cls>
+    <chan_doan>123213</chan_doan>
+    <thuoc_sudung>123123</thuoc_sudung>
+    <huong_dieutri>Chuyển Viện Chuyên Khoa</huong_dieutri>
+    <phuongtien_chuyen>Ô tô</phuongtien_chuyen>
+    <ten_nguoichuyen>123</ten_nguoichuyen>
+  </Table>
+</NewDataSet>

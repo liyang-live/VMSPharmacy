@@ -1,0 +1,373 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_thuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="ma_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="id_loaithuoc" type="xs:short" minOccurs="0" />
+                <xs:element name="tinh_chat" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ten_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="mota_them" type="xs:string" minOccurs="0" />
+                <xs:element name="hoat_chat" type="xs:string" minOccurs="0" />
+                <xs:element name="ham_luong" type="xs:string" minOccurs="0" />
+                <xs:element name="hang_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="so_dangky" type="xs:string" minOccurs="0" />
+                <xs:element name="nuoc_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="trang_thai" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dang_baoche" type="xs:string" minOccurs="0" />
+                <xs:element name="gioihan_kedon" type="xs:short" minOccurs="0" />
+                <xs:element name="donvi_but" type="xs:int" minOccurs="0" />
+                <xs:element name="kieu_thuocvattu" type="xs:string" minOccurs="0" />
+                <xs:element name="QD31" type="xs:string" minOccurs="0" />
+                <xs:element name="noitru_ngoaitru" type="xs:string" minOccurs="0" />
+                <xs:element name="tu_tuc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="gia_bhyt" type="xs:decimal" minOccurs="0" />
+                <xs:element name="phuthu_dungtuyen" type="xs:decimal" minOccurs="0" />
+                <xs:element name="phuthu_traituyen" type="xs:decimal" minOccurs="0" />
+                <xs:element name="co_chiathuoc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="sluong_chia" type="xs:int" minOccurs="0" />
+                <xs:element name="dongia_chia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_dvichia" type="xs:string" minOccurs="0" />
+                <xs:element name="nguoi_tao" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_tao" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngay_sua" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="nguoi_sua" type="xs:string" minOccurs="0" />
+                <xs:element name="kieu_biendong" type="xs:string" minOccurs="0" />
+                <xs:element name="cach_sudung" type="xs:string" minOccurs="0" />
+                <xs:element name="single_service" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="SO_LUONG" type="xs:int" minOccurs="0" />
+                <xs:element name="SLUONG_TRONGKHO" type="xs:int" minOccurs="0" />
+                <xs:element name="gia_nhap" type="xs:decimal" minOccurs="0" />
+                <xs:element name="thanh_tien" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ID_KHO" type="xs:short" minOccurs="0" />
+                <xs:element name="COQUANHE" type="xs:int" minOccurs="0" />
+                <xs:element name="sDrug_Nature" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvichia" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh1" type="xs:string" minOccurs="0" />
+                <xs:element name="SLUONG_CANCHUYEN" type="xs:int" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_thuoc>11</id_thuoc>
+    <ma_thuoc>T11</ma_thuoc>
+    <id_loaithuoc>14</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>Actrapid</ten_thuoc>
+    <ten_bhyt>Actrapid</ten_bhyt>
+    <don_gia>175000.00</don_gia>
+    <ma_donvitinh>2</ma_donvitinh>
+    <mota_them />
+    <hoat_chat>Insulin human 100IU/ml, 10ml</hoat_chat>
+    <ham_luong>100IU/ml x 10ml</ham_luong>
+    <hang_sanxuat>Novo Nordisk A/S  - Đan Mạch</hang_sanxuat>
+    <so_dangky>VN-4407-07</so_dangky>
+    <nuoc_sanxuat>Novo Nordisk A/S  - Đan Mạch</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche>Hộp 1 lọ - dung dịch</dang_baoche>
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>175000.00</gia_bhyt>
+    <phuthu_dungtuyen>0.00</phuthu_dungtuyen>
+    <phuthu_traituyen>0.00</phuthu_traituyen>
+    <SO_LUONG>6</SO_LUONG>
+    <SLUONG_TRONGKHO>0</SLUONG_TRONGKHO>
+    <gia_nhap>0.000</gia_nhap>
+    <thanh_tien>0.000</thanh_tien>
+    <ID_KHO>21</ID_KHO>
+    <COQUANHE>1</COQUANHE>
+    <sDrug_Nature>Không độc hại</sDrug_Nature>
+    <ten_loaithuoc>HORMON VÀ CÁC THUỐC TÁC DỤNG VÀO HỆ NỘI TIẾT</ten_loaithuoc>
+    <ten_donvitinh>Khác</ten_donvitinh>
+    <ten_donvichia />
+    <ten_donvitinh1>Khác</ten_donvitinh1>
+    <SLUONG_CANCHUYEN>6</SLUONG_CANCHUYEN>
+  </Table>
+  <Table>
+    <id_thuoc>456</id_thuoc>
+    <ma_thuoc>VX03</ma_thuoc>
+    <id_loaithuoc>62</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>BCG</ten_thuoc>
+    <ten_bhyt>BCG</ten_bhyt>
+    <don_gia>100000.00</don_gia>
+    <ma_donvitinh>MUI</ma_donvitinh>
+    <mota_them>Tiêm 1 lần duy nhất. </mota_them>
+    <hoat_chat xml:space="preserve"> </hoat_chat>
+    <ham_luong />
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <so_dangky />
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche>Lọ</dang_baoche>
+    <gioihan_kedon>-1</gioihan_kedon>
+    <donvi_but>-1</donvi_but>
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>100000.00</gia_bhyt>
+    <phuthu_dungtuyen>0.00</phuthu_dungtuyen>
+    <phuthu_traituyen>0.00</phuthu_traituyen>
+    <co_chiathuoc>0</co_chiathuoc>
+    <sluong_chia>0</sluong_chia>
+    <dongia_chia>0.00</dongia_chia>
+    <ma_dvichia>-1</ma_dvichia>
+    <nguoi_tao>BSTC</nguoi_tao>
+    <ngay_tao>2015-09-14T13:44:09.827+07:00</ngay_tao>
+    <ngay_sua>2015-09-14T13:44:42.783+07:00</ngay_sua>
+    <nguoi_sua>BSTC</nguoi_sua>
+    <cach_sudung>TDD</cach_sudung>
+    <SO_LUONG>5</SO_LUONG>
+    <SLUONG_TRONGKHO>8</SLUONG_TRONGKHO>
+    <gia_nhap>100000.000</gia_nhap>
+    <thanh_tien>500000.000</thanh_tien>
+    <ID_KHO>21</ID_KHO>
+    <COQUANHE>1</COQUANHE>
+    <sDrug_Nature>Không độc hại</sDrug_Nature>
+    <ten_loaithuoc>Bcg: Phòng Bệnh Lao</ten_loaithuoc>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+    <ten_donvichia />
+    <ten_donvitinh1>Mũi</ten_donvitinh1>
+    <SLUONG_CANCHUYEN>0</SLUONG_CANCHUYEN>
+  </Table>
+  <Table>
+    <id_thuoc>60</id_thuoc>
+    <ma_thuoc>T60</ma_thuoc>
+    <id_loaithuoc>13</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>Bidiperan 10mg</ten_thuoc>
+    <ten_bhyt>Bidiperan 10mg</ten_bhyt>
+    <don_gia>10000.00</don_gia>
+    <ma_donvitinh>6</ma_donvitinh>
+    <mota_them />
+    <hoat_chat>Metoclopramide</hoat_chat>
+    <ham_luong>10mg/2ml</ham_luong>
+    <hang_sanxuat>FKB Việt Nam</hang_sanxuat>
+    <so_dangky>VD -15509 - 11</so_dangky>
+    <nuoc_sanxuat>FKB Việt Nam</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche>Thuốc tiêm</dang_baoche>
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>10000.00</gia_bhyt>
+    <phuthu_dungtuyen>0.00</phuthu_dungtuyen>
+    <phuthu_traituyen>0.00</phuthu_traituyen>
+    <SO_LUONG>5</SO_LUONG>
+    <SLUONG_TRONGKHO>0</SLUONG_TRONGKHO>
+    <gia_nhap>0.000</gia_nhap>
+    <thanh_tien>0.000</thanh_tien>
+    <ID_KHO>21</ID_KHO>
+    <COQUANHE>1</COQUANHE>
+    <sDrug_Nature>Không độc hại</sDrug_Nature>
+    <ten_loaithuoc>THUỐC ĐƯỜNG TIÊU HÓA</ten_loaithuoc>
+    <ten_donvichia />
+    <SLUONG_CANCHUYEN>5</SLUONG_CANCHUYEN>
+  </Table>
+  <Table>
+    <id_thuoc>454</id_thuoc>
+    <ma_thuoc>VX01</ma_thuoc>
+    <id_loaithuoc>60</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>Heberbiovac HB</ten_thuoc>
+    <ten_bhyt>Heberbiovac HB</ten_bhyt>
+    <don_gia>10000.00</don_gia>
+    <ma_donvitinh>MUI</ma_donvitinh>
+    <mota_them>Lịch cơ bản 0 1 6 Mũi 2 cách mũi 1 1 tháng, mũi 3 cách mũi 2 5 tháng</mota_them>
+    <hoat_chat xml:space="preserve"> </hoat_chat>
+    <ham_luong>dưới 10 tuổi tiêm 0.5ml, trên 10 tuổi tiêm 1.0ml</ham_luong>
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <so_dangky />
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche>Lọ</dang_baoche>
+    <gioihan_kedon>-1</gioihan_kedon>
+    <donvi_but>-1</donvi_but>
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>10000.00</gia_bhyt>
+    <phuthu_dungtuyen>0.00</phuthu_dungtuyen>
+    <phuthu_traituyen>0.00</phuthu_traituyen>
+    <co_chiathuoc>0</co_chiathuoc>
+    <sluong_chia>0</sluong_chia>
+    <dongia_chia>0.00</dongia_chia>
+    <ma_dvichia>-1</ma_dvichia>
+    <nguoi_tao>BSTC</nguoi_tao>
+    <ngay_tao>2015-09-14T13:34:43.167+07:00</ngay_tao>
+    <ngay_sua>2015-09-14T13:35:07.43+07:00</ngay_sua>
+    <nguoi_sua>BSTC</nguoi_sua>
+    <cach_sudung>TDD</cach_sudung>
+    <SO_LUONG>6</SO_LUONG>
+    <SLUONG_TRONGKHO>10</SLUONG_TRONGKHO>
+    <gia_nhap>10000.000</gia_nhap>
+    <thanh_tien>60000.000</thanh_tien>
+    <ID_KHO>21</ID_KHO>
+    <COQUANHE>1</COQUANHE>
+    <sDrug_Nature>Không độc hại</sDrug_Nature>
+    <ten_loaithuoc>Viêm Gan B: Phòng Bệnh Viêm Gan B</ten_loaithuoc>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+    <ten_donvichia />
+    <ten_donvitinh1>Mũi</ten_donvitinh1>
+    <SLUONG_CANCHUYEN>0</SLUONG_CANCHUYEN>
+  </Table>
+  <Table>
+    <id_thuoc>455</id_thuoc>
+    <ma_thuoc>vx02</ma_thuoc>
+    <id_loaithuoc>61</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>Huyết thanh Viêm gan B</ten_thuoc>
+    <ten_bhyt>Huyết thanh Viêm gan B</ten_bhyt>
+    <don_gia>100000.00</don_gia>
+    <ma_donvitinh>MUI</ma_donvitinh>
+    <mota_them>Tiêm 1 lần duy nhất.</mota_them>
+    <hoat_chat xml:space="preserve"> </hoat_chat>
+    <ham_luong />
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <so_dangky />
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche>Lọ</dang_baoche>
+    <gioihan_kedon>-1</gioihan_kedon>
+    <donvi_but>-1</donvi_but>
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>100000.00</gia_bhyt>
+    <phuthu_dungtuyen>0.00</phuthu_dungtuyen>
+    <phuthu_traituyen>0.00</phuthu_traituyen>
+    <co_chiathuoc>0</co_chiathuoc>
+    <sluong_chia>0</sluong_chia>
+    <dongia_chia>0.00</dongia_chia>
+    <ma_dvichia>-1</ma_dvichia>
+    <nguoi_tao>BSTC</nguoi_tao>
+    <ngay_tao>2015-09-14T13:43:24.867+07:00</ngay_tao>
+    <ngay_sua>2015-09-14T13:44:29.727+07:00</ngay_sua>
+    <nguoi_sua>BSTC</nguoi_sua>
+    <cach_sudung>TB</cach_sudung>
+    <SO_LUONG>7</SO_LUONG>
+    <SLUONG_TRONGKHO>8</SLUONG_TRONGKHO>
+    <gia_nhap>100000.000</gia_nhap>
+    <thanh_tien>700000.000</thanh_tien>
+    <ID_KHO>21</ID_KHO>
+    <COQUANHE>1</COQUANHE>
+    <sDrug_Nature>Không độc hại</sDrug_Nature>
+    <ten_loaithuoc>Huyết Thanh Phòng Viêm Gan B Mẹ Hbsag Ở Trẻ Sơ Sinh Hoặc Người Phơi Nhiễm Với Virus Vgb</ten_loaithuoc>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+    <ten_donvichia />
+    <ten_donvitinh1>Mũi</ten_donvitinh1>
+    <SLUONG_CANCHUYEN>0</SLUONG_CANCHUYEN>
+  </Table>
+  <Table>
+    <id_thuoc>458</id_thuoc>
+    <ma_thuoc>VX05</ma_thuoc>
+    <id_loaithuoc>63</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>Infanrix hexa</ten_thuoc>
+    <ten_bhyt>Infanrix hexa</ten_bhyt>
+    <don_gia>726000.00</don_gia>
+    <ma_donvitinh>MUI</ma_donvitinh>
+    <mota_them>Lịch  1 2 3, nhắc lại 1 mũi khi 16-18 tháng</mota_them>
+    <hoat_chat />
+    <ham_luong />
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche>Lọ</dang_baoche>
+    <gioihan_kedon>-1</gioihan_kedon>
+    <donvi_but>-1</donvi_but>
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>726000.00</gia_bhyt>
+    <phuthu_dungtuyen>0.00</phuthu_dungtuyen>
+    <phuthu_traituyen>0.00</phuthu_traituyen>
+    <co_chiathuoc>0</co_chiathuoc>
+    <sluong_chia>0</sluong_chia>
+    <dongia_chia>0.00</dongia_chia>
+    <ma_dvichia>-1</ma_dvichia>
+    <nguoi_tao>BSTC</nguoi_tao>
+    <ngay_tao>2015-09-14T13:48:11.14+07:00</ngay_tao>
+    <cach_sudung>TB</cach_sudung>
+    <SO_LUONG>8</SO_LUONG>
+    <SLUONG_TRONGKHO>8</SLUONG_TRONGKHO>
+    <gia_nhap>726000.000</gia_nhap>
+    <thanh_tien>5808000.000</thanh_tien>
+    <ID_KHO>21</ID_KHO>
+    <COQUANHE>1</COQUANHE>
+    <sDrug_Nature>Không độc hại</sDrug_Nature>
+    <ten_loaithuoc>BH-HG-UV-BL- Hib mũi 1,2,3 Phòng bệnh Bạch hầu, Ho gà, Uốn ván, Bại liệt, viêm phổi, viêm màng não do vi khuẩn Heamophilus Influenzea typ B</ten_loaithuoc>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+    <ten_donvichia />
+    <ten_donvitinh1>Mũi</ten_donvitinh1>
+    <SLUONG_CANCHUYEN>0</SLUONG_CANCHUYEN>
+  </Table>
+  <Table>
+    <id_thuoc>457</id_thuoc>
+    <ma_thuoc>vx04</ma_thuoc>
+    <id_loaithuoc>63</id_loaithuoc>
+    <tinh_chat>0</tinh_chat>
+    <ten_thuoc>Pentaxim</ten_thuoc>
+    <ten_bhyt>Pentaxim</ten_bhyt>
+    <don_gia>668000.00</don_gia>
+    <ma_donvitinh>MUI</ma_donvitinh>
+    <mota_them />
+    <hoat_chat />
+    <ham_luong />
+    <hang_sanxuat>Dược Hậu Giang</hang_sanxuat>
+    <nuoc_sanxuat>Việt Nam</nuoc_sanxuat>
+    <trang_thai>1</trang_thai>
+    <dang_baoche>Lọ</dang_baoche>
+    <gioihan_kedon>-1</gioihan_kedon>
+    <donvi_but>-1</donvi_but>
+    <kieu_thuocvattu>THUOC</kieu_thuocvattu>
+    <QD31 />
+    <noitru_ngoaitru>ALL</noitru_ngoaitru>
+    <tu_tuc>0</tu_tuc>
+    <gia_bhyt>668000.00</gia_bhyt>
+    <phuthu_dungtuyen>0.00</phuthu_dungtuyen>
+    <phuthu_traituyen>0.00</phuthu_traituyen>
+    <co_chiathuoc>0</co_chiathuoc>
+    <sluong_chia>0</sluong_chia>
+    <dongia_chia>0.00</dongia_chia>
+    <ma_dvichia>-1</ma_dvichia>
+    <nguoi_tao>BSTC</nguoi_tao>
+    <ngay_tao>2015-09-14T13:46:24.897+07:00</ngay_tao>
+    <cach_sudung>TB</cach_sudung>
+    <SO_LUONG>9</SO_LUONG>
+    <SLUONG_TRONGKHO>10</SLUONG_TRONGKHO>
+    <gia_nhap>668000.000</gia_nhap>
+    <thanh_tien>6012000.000</thanh_tien>
+    <ID_KHO>21</ID_KHO>
+    <COQUANHE>1</COQUANHE>
+    <sDrug_Nature>Không độc hại</sDrug_Nature>
+    <ten_loaithuoc>BH-HG-UV-BL- Hib mũi 1,2,3 Phòng bệnh Bạch hầu, Ho gà, Uốn ván, Bại liệt, viêm phổi, viêm màng não do vi khuẩn Heamophilus Influenzea typ B</ten_loaithuoc>
+    <ten_donvitinh>Mũi</ten_donvitinh>
+    <ten_donvichia />
+    <ten_donvitinh1>Mũi</ten_donvitinh1>
+    <SLUONG_CANCHUYEN>0</SLUONG_CANCHUYEN>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <_DepartmentType>tatca</_DepartmentType>
+  <Makhoathien>KKB</Makhoathien>
+  <ShowActiveControl>false</ShowActiveControl>
+  <CloseAfterPWDChange>true</CloseAfterPWDChange>
+  <Click>true</Click>
+  <TabDoubleClick2Close>true</TabDoubleClick2Close>
+  <CurrentOpenning>431</CurrentOpenning>
+  <OpenningList />
+  <AppName>HIS</AppName>
+  <MenuStype>1</MenuStype>
+  <UID>ADMIN</UID>
+  <PWD />
+  <REM>true</REM>
+  <GridView>false</GridView>
+  <AutoLogin>false</AutoLogin>
+  <AutoOpen>true</AutoOpen>
+  <AutoHideHeader>true</AutoHideHeader>
+  <OpenOnlyCurrent>false</OpenOnlyCurrent>
+  <_x0020_MenuFontName>Arial</_x0020_MenuFontName>
+  <_x0020_MenuFontsize>9.75</_x0020_MenuFontsize>
+  <_x0020_MenuFontstyle>Regular</_x0020_MenuFontstyle>
+</AppProperties>

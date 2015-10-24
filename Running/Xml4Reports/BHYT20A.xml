@@ -1,0 +1,69 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="so_luong" type="xs:int" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="thanh_tien" type="xs:decimal" minOccurs="0" />
+                <xs:element name="id_thuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="ma_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="id_loaithuoc" type="xs:short" minOccurs="0" />
+                <xs:element name="tinh_chat" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ten_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="don_gia1" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="mota_them" type="xs:string" minOccurs="0" />
+                <xs:element name="hoat_chat" type="xs:string" minOccurs="0" />
+                <xs:element name="ham_luong" type="xs:string" minOccurs="0" />
+                <xs:element name="hang_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="so_dangky" type="xs:string" minOccurs="0" />
+                <xs:element name="nuoc_sanxuat" type="xs:string" minOccurs="0" />
+                <xs:element name="trang_thai" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dang_baoche" type="xs:string" minOccurs="0" />
+                <xs:element name="gioihan_kedon" type="xs:short" minOccurs="0" />
+                <xs:element name="donvi_but" type="xs:int" minOccurs="0" />
+                <xs:element name="kieu_thuocvattu" type="xs:string" minOccurs="0" />
+                <xs:element name="QD31" type="xs:string" minOccurs="0" />
+                <xs:element name="noitru_ngoaitru" type="xs:string" minOccurs="0" />
+                <xs:element name="tu_tuc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="gia_bhyt" type="xs:decimal" minOccurs="0" />
+                <xs:element name="phuthu_dungtuyen" type="xs:decimal" minOccurs="0" />
+                <xs:element name="phuthu_traituyen" type="xs:decimal" minOccurs="0" />
+                <xs:element name="co_chiathuoc" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="sluong_chia" type="xs:int" minOccurs="0" />
+                <xs:element name="dongia_chia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_dvichia" type="xs:string" minOccurs="0" />
+                <xs:element name="nguoi_tao" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_tao" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngay_sua" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="nguoi_sua" type="xs:string" minOccurs="0" />
+                <xs:element name="kieu_biendong" type="xs:string" minOccurs="0" />
+                <xs:element name="cach_sudung" type="xs:string" minOccurs="0" />
+                <xs:element name="single_service" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ten_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="tenthuoc_bietduoc" type="xs:string" minOccurs="0" />
+                <xs:element name="co_qhe" type="xs:int" minOccurs="0" />
+                <xs:element name="ma_nhomthuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="in_rieng" type="xs:short" minOccurs="0" />
+                <xs:element name="stt_hthi_loaithuoc" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_nhomthuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvichia" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh1" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+</NewDataSet>

@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_sinh" type="xs:string" minOccurs="0" />
+                <xs:element name="so_benh_an" type="xs:string" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_doituong_kcb" type="xs:string" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="mathe_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="so_phieu" type="xs:string" minOccurs="0" />
+                <xs:element name="so_tien" type="xs:decimal" minOccurs="0" />
+                <xs:element name="mota_them" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ma_luotkham>15000002</ma_luotkham>
+    <ten_benhnhan>Bhyt</ten_benhnhan>
+    <sngay_sinh>01/01/1900</sngay_sinh>
+    <so_benh_an>1</so_benh_an>
+    <gioi_tinh>Nam</gioi_tinh>
+    <ten_doituong_kcb>Bảo hiểm y tế</ten_doituong_kcb>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <mathe_bhyt>DN4010101011101</mathe_bhyt>
+    <so_phieu>1</so_phieu>
+    <so_tien>5000000.000</so_tien>
+    <mota_them>Thu tiền tạm ứng đợt 2</mota_them>
+  </Table>
+</NewDataSet>

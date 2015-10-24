@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HisDuocProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <KieuThuocVattu>THUOC</KieuThuocVattu>
+  <Hienthichitietkhichotthuoc>true</Hienthichitietkhichotthuoc>
+  <TimkiemkhiChontrangthai>true</TimkiemkhiChontrangthai>
+  <ChoPhepHuyChotThuoc>true</ChoPhepHuyChotThuoc>
+  <Chophepnhapngaychot>true</Chophepnhapngaychot>
+  <LocDonThuocKhiDuyet>true</LocDonThuocKhiDuyet>
+  <ChoPhepChinhNgayDuyet>false</ChoPhepChinhNgayDuyet>
+  <NgoaiTru>true</NgoaiTru>
+  <NoiTru>true</NoiTru>
+  <HuyXacNhan>true</HuyXacNhan>
+  <Chophepxoachitiet>true</Chophepxoachitiet>
+  <KieuDuyetDonThuoc>DONTHUOC</KieuDuyetDonThuoc>
+  <ThemBHYTDonThuoc>true</ThemBHYTDonThuoc>
+  <Tendonvi>KYDONG</Tendonvi>
+  <MathuocGaynghien>TGNHT</MathuocGaynghien>
+  <DuyetDonThuoctaiKhoVaQuay>KHO</DuyetDonThuoctaiKhoVaQuay>
+  <KieuLayThongTinThuoc>ALL</KieuLayThongTinThuoc>
+  <ThanhToanThuoc>false</ThanhToanThuoc>
+  <ThemSuaXoaThuocTaiQuay>false</ThemSuaXoaThuocTaiQuay>
+  <XoaDonThuocChiTietTaiQuay>true</XoaDonThuocChiTietTaiQuay>
+  <ChoPhepPhatThuocTaiQuay>true</ChoPhepPhatThuocTaiQuay>
+  <MacDinhKeDonThuocTaiQuay>true</MacDinhKeDonThuocTaiQuay>
+  <LocDonThuocKhiDuyetTaiQuay>false</LocDonThuocKhiDuyetTaiQuay>
+  <ChoPhepChinhNgayDuyetTaiQuay>false</ChoPhepChinhNgayDuyetTaiQuay>
+  <ChoPhepSuaSLuongTon>true</ChoPhepSuaSLuongTon>
+  <Tudonglaysolieu>0</Tudonglaysolieu>
+  <XoaDulieuKhiThuocDaHet>true</XoaDulieuKhiThuocDaHet>
+  <QuyenThemPhieu>true</QuyenThemPhieu>
+  <QuyenSuaPhieu>true</QuyenSuaPhieu>
+  <QuyenXoaPhieu>true</QuyenXoaPhieu>
+  <QuyenXacNhanPhieu>true</QuyenXacNhanPhieu>
+  <QuyenHuyXacNhanPhieu>true</QuyenHuyXacNhanPhieu>
+  <QuyenInphieu>true</QuyenInphieu>
+</HisDuocProperties>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThamKhamProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AntimkiemNangcao>false</AntimkiemNangcao>
+  <ChieucaoluoidanhsachBenhnhan>250</ChieucaoluoidanhsachBenhnhan>
+  <HienthiKetquaCLSTrongluoiChidinh>false</HienthiKetquaCLSTrongluoiChidinh>
+  <DorongVungKetquaCLS>300</DorongVungKetquaCLS>
+  <IDKhoVT>18</IDKhoVT>
+  <IDKho>21</IDKho>
+  <Timtrenluoi>true</Timtrenluoi>
+  <TudongthugonCLS>false</TudongthugonCLS>
+  <Hienthinhomthuoc>true</Hienthinhomthuoc>
+  <Hoitruockhixoathuoc>true</Hoitruockhixoathuoc>
+  <ViewAfterClick>false</ViewAfterClick>
+  <Chidinhnhanh>false</Chidinhnhanh>
+  <ChophepIndonthuoc>true</ChophepIndonthuoc>
+</ThamKhamProperties>

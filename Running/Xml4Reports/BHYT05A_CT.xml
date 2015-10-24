@@ -1,0 +1,110 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="id_benhnhan" type="xs:long" minOccurs="0" />
+                <xs:element name="XN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="BHCT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="BNCT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CDHA" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PTTT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TONGCONG" type="xs:decimal" minOccurs="0" />
+                <xs:element name="QDS" type="xs:int" minOccurs="0" />
+                <xs:element name="MAU" type="xs:int" minOccurs="0" />
+                <xs:element name="VTYT" type="xs:int" minOccurs="0" />
+                <xs:element name="DVKT" type="xs:int" minOccurs="0" />
+                <xs:element name="THUOC_K" type="xs:int" minOccurs="0" />
+                <xs:element name="VanChuyen" type="xs:int" minOccurs="0" />
+                <xs:element name="THUOC" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TienCong" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CMT" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_noicap_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_dungtuyen" type="xs:string" minOccurs="0" />
+                <xs:element name="dung_tuyen" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="noi_dongtruso_kcbbd" type="xs:string" minOccurs="0" />
+                <xs:element name="ngaybatdau_bhyt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngayketthuc_bhyt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="diachi_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="NoiKCB" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_kcbbd" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_kcbbd" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nhom_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="KCB" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="mathe_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_tiepdon" type="xs:string" minOccurs="0" />
+                <xs:element name="mabenh_chinh" type="xs:string" minOccurs="0" />
+                <xs:element name="nam_sinh" type="xs:short" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="id_gioitinh" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="id_loaidoituong_kcb" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="stt_kham" type="xs:int" minOccurs="0" />
+                <xs:element name="NamQT" msdata:ReadOnly="true" msdata:Expression="2015" type="xs:string" minOccurs="0" />
+                <xs:element name="ThangQT" msdata:ReadOnly="true" msdata:Expression="9" type="xs:string" minOccurs="0" />
+                <xs:element name="LoaiKCB" type="xs:string" minOccurs="0" />
+                <xs:element name="NoiTT" type="xs:string" minOccurs="0" />
+                <xs:element name="DoiTuong" type="xs:string" minOccurs="0" />
+                <xs:element name="IsDungTuyen" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ma_luotkham>15000004</ma_luotkham>
+    <id_benhnhan>4</id_benhnhan>
+    <XN>70000.000</XN>
+    <BHCT>170000.000</BHCT>
+    <BNCT>0.000</BNCT>
+    <CDHA>0.000</CDHA>
+    <PTTT>0.000</PTTT>
+    <TONGCONG>170000.000</TONGCONG>
+    <QDS>0</QDS>
+    <MAU>0</MAU>
+    <VTYT>0</VTYT>
+    <DVKT>0</DVKT>
+    <THUOC_K>0</THUOC_K>
+    <VanChuyen>0</VanChuyen>
+    <THUOC>0.000</THUOC>
+    <TienCong>100000.000</TienCong>
+    <CMT />
+    <ma_noicap_bhyt>01</ma_noicap_bhyt>
+    <ten_dungtuyen>Ðúng tuyến</ten_dungtuyen>
+    <dung_tuyen>1</dung_tuyen>
+    <noi_dongtruso_kcbbd>01</noi_dongtruso_kcbbd>
+    <ngaybatdau_bhyt>2015-01-01T00:00:00+07:00</ngaybatdau_bhyt>
+    <ngayketthuc_bhyt>2015-12-31T00:00:00+07:00</ngayketthuc_bhyt>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <diachi_bhyt>Không xác định, Không xác định, Hà Nội</diachi_bhyt>
+    <NoiKCB>31158</NoiKCB>
+    <ma_kcbbd>111</ma_kcbbd>
+    <ten_kcbbd>YTCQ Công ty Dệt Minh Khai</ten_kcbbd>
+    <ten_nhom_bhyt>Nhóm 1</ten_nhom_bhyt>
+    <KCB>01111</KCB>
+    <ten_benhnhan>Trần Vân Anh</ten_benhnhan>
+    <mathe_bhyt>DN7010101011101</mathe_bhyt>
+    <sngay_tiepdon>08/09/2015</sngay_tiepdon>
+    <mabenh_chinh>A00.0</mabenh_chinh>
+    <nam_sinh>1997</nam_sinh>
+    <gioi_tinh>Nam</gioi_tinh>
+    <id_gioitinh>0</id_gioitinh>
+    <id_loaidoituong_kcb>0</id_loaidoituong_kcb>
+    <stt_kham>1</stt_kham>
+    <NamQT>2015</NamQT>
+    <ThangQT>9</ThangQT>
+    <LoaiKCB>Ngoại</LoaiKCB>
+    <NoiTT>CSKCB</NoiTT>
+    <DoiTuong>B. BỆNH NHÂN NỘI TỈNH KHÔNG KCB BAN ĐẦU TẠI CƠ SỞ KCB</DoiTuong>
+  </Table>
+</NewDataSet>

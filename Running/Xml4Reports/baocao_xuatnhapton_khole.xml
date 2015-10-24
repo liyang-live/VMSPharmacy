@@ -1,0 +1,66 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ten_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="id_thuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="id_loaithuoc" type="xs:short" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="Tontruoc" type="xs:int" minOccurs="0" />
+                <xs:element name="NhapTuKhoChan" type="xs:int" minOccurs="0" />
+                <xs:element name="KPTRALAI" type="xs:int" minOccurs="0" />
+                <xs:element name="XUATKP" type="xs:int" minOccurs="0" />
+                <xs:element name="XuatBN" type="xs:int" minOccurs="0" />
+                <xs:element name="XuatTraKhoChan" type="xs:int" minOccurs="0" />
+                <xs:element name="XUATKHAC" type="xs:int" minOccurs="0" />
+                <xs:element name="TONKC" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_loaithuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh1" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ten_thuoc>ACC</ten_thuoc>
+    <id_thuoc>4</id_thuoc>
+    <id_loaithuoc>16</id_loaithuoc>
+    <ma_donvitinh>9</ma_donvitinh>
+    <Tontruoc>0</Tontruoc>
+    <NhapTuKhoChan>100</NhapTuKhoChan>
+    <KPTRALAI>0</KPTRALAI>
+    <XUATKP>0</XUATKP>
+    <XuatBN>0</XuatBN>
+    <XuatTraKhoChan>0</XuatTraKhoChan>
+    <XUATKHAC>0</XUATKHAC>
+    <TONKC>100</TONKC>
+    <ten_loaithuoc>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</ten_loaithuoc>
+  </Table>
+  <Table>
+    <ten_thuoc>Accupril</ten_thuoc>
+    <id_thuoc>6</id_thuoc>
+    <id_loaithuoc>9</id_loaithuoc>
+    <ma_donvitinh>1</ma_donvitinh>
+    <ten_donvitinh>Viên</ten_donvitinh>
+    <Tontruoc>0</Tontruoc>
+    <NhapTuKhoChan>100</NhapTuKhoChan>
+    <KPTRALAI>0</KPTRALAI>
+    <XUATKP>0</XUATKP>
+    <XuatBN>0</XuatBN>
+    <XuatTraKhoChan>0</XuatTraKhoChan>
+    <XUATKHAC>0</XUATKHAC>
+    <TONKC>100</TONKC>
+    <ten_loaithuoc>THUỐC TIM MẠCH</ten_loaithuoc>
+    <ten_donvitinh1>Uống Trước Khi Ăn</ten_donvitinh1>
+  </Table>
+</NewDataSet>

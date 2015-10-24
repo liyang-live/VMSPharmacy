@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QheGiaCLSProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TudongDieuChinhGiaPTTT>false</TudongDieuChinhGiaPTTT>
+  <TudongDieuChinhGiaDichVu>false</TudongDieuChinhGiaDichVu>
+  <TudongDieuChinhGiaBHYT>true</TudongDieuChinhGiaBHYT>
+</QheGiaCLSProperties>

@@ -1,0 +1,66 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="so_luong" type="xs:int" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="thanh_tien" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ten_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="hoat_chat" type="xs:string" minOccurs="0" />
+                <xs:element name="Ham_luong" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="Ten_Bacsy" type="xs:string" minOccurs="0" />
+                <xs:element name="id_bacsi_kedon" type="xs:short" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <so_luong>1</so_luong>
+    <don_gia>5000.000</don_gia>
+    <thanh_tien>5000.000</thanh_tien>
+    <ten_thuoc>ACC</ten_thuoc>
+    <hoat_chat>Acetylcystein 200Mg</hoat_chat>
+    <Ham_luong>200mg</Ham_luong>
+    <id_bacsi_kedon>-1</id_bacsi_kedon>
+  </Table>
+  <Table>
+    <so_luong>1</so_luong>
+    <don_gia>12000.000</don_gia>
+    <thanh_tien>12000.000</thanh_tien>
+    <ten_thuoc>ACC 200</ten_thuoc>
+    <hoat_chat>Acetylcystein 200Mg</hoat_chat>
+    <Ham_luong>200mg</Ham_luong>
+    <ten_donvitinh>1/10mCi</ten_donvitinh>
+    <id_bacsi_kedon>-1</id_bacsi_kedon>
+  </Table>
+  <Table>
+    <so_luong>1</so_luong>
+    <don_gia>45000.000</don_gia>
+    <thanh_tien>45000.000</thanh_tien>
+    <ten_thuoc>Berlthyrox Tab</ten_thuoc>
+    <hoat_chat>Levothyroxine</hoat_chat>
+    <Ham_luong>100 mcg</Ham_luong>
+    <ten_donvitinh>Viên</ten_donvitinh>
+    <id_bacsi_kedon>-1</id_bacsi_kedon>
+  </Table>
+  <Table>
+    <so_luong>1</so_luong>
+    <don_gia>15000.000</don_gia>
+    <thanh_tien>15000.000</thanh_tien>
+    <ten_thuoc>Paracetamol Kabi 1000</ten_thuoc>
+    <hoat_chat>Paracetamol</hoat_chat>
+    <Ham_luong>1g/100ml</Ham_luong>
+    <id_bacsi_kedon>-1</id_bacsi_kedon>
+  </Table>
+</NewDataSet>

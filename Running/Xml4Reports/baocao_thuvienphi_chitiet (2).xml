@@ -1,0 +1,116 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_nhanvien_thanhtoan" type="xs:int" minOccurs="0" />
+                <xs:element name="id_benhnhan" type="xs:int" minOccurs="0" />
+                <xs:element name="LOAITIEN" type="xs:string" minOccurs="0" />
+                <xs:element name="Tong_tien" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ten_nhanvien" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="mathe_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_nhanvien_thanhtoan>-1</id_nhanvien_thanhtoan>
+    <id_benhnhan>1</id_benhnhan>
+    <LOAITIEN>1.Tiền dịch vụ</LOAITIEN>
+    <Tong_tien>100000.000</Tong_tien>
+    <ten_nhanvien>ADMIN</ten_nhanvien>
+    <ten_benhnhan>Bn 1  (Nam sinh: 1990)</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <mathe_bhyt />
+    <ma_luotkham>15000001</ma_luotkham>
+  </Table>
+  <Table>
+    <id_nhanvien_thanhtoan>-1</id_nhanvien_thanhtoan>
+    <id_benhnhan>2</id_benhnhan>
+    <LOAITIEN>1.Tiền dịch vụ</LOAITIEN>
+    <Tong_tien>100000.000</Tong_tien>
+    <ten_nhanvien>ADMIN</ten_nhanvien>
+    <ten_benhnhan>Bn 2  (Nam sinh: 1990)</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <mathe_bhyt />
+    <ma_luotkham>15000002</ma_luotkham>
+  </Table>
+  <Table>
+    <id_nhanvien_thanhtoan>-1</id_nhanvien_thanhtoan>
+    <id_benhnhan>3</id_benhnhan>
+    <LOAITIEN>1.Tiền dịch vụ</LOAITIEN>
+    <Tong_tien>150000.000</Tong_tien>
+    <ten_nhanvien>ADMIN</ten_nhanvien>
+    <ten_benhnhan>Bn 3  (Nam sinh: 1990)</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <mathe_bhyt />
+    <ma_luotkham>15000003</ma_luotkham>
+  </Table>
+  <Table>
+    <id_nhanvien_thanhtoan>-1</id_nhanvien_thanhtoan>
+    <id_benhnhan>4</id_benhnhan>
+    <LOAITIEN>1.Tiền dịch vụ</LOAITIEN>
+    <Tong_tien>150000.000</Tong_tien>
+    <ten_nhanvien>ADMIN</ten_nhanvien>
+    <ten_benhnhan>Bn 4  (Nam sinh: 1990)</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <mathe_bhyt />
+    <ma_luotkham>15000004</ma_luotkham>
+  </Table>
+  <Table>
+    <id_nhanvien_thanhtoan>140</id_nhanvien_thanhtoan>
+    <id_benhnhan>1</id_benhnhan>
+    <LOAITIEN>1.Tiền dịch vụ</LOAITIEN>
+    <Tong_tien>232000.000</Tong_tien>
+    <ten_nhanvien>Thanh Toán 1</ten_nhanvien>
+    <ten_benhnhan>Bn 1  (Nam sinh: 1990)</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <mathe_bhyt />
+    <ma_luotkham>15000001</ma_luotkham>
+  </Table>
+  <Table>
+    <id_nhanvien_thanhtoan>140</id_nhanvien_thanhtoan>
+    <id_benhnhan>2</id_benhnhan>
+    <LOAITIEN>1.Tiền dịch vụ</LOAITIEN>
+    <Tong_tien>232000.000</Tong_tien>
+    <ten_nhanvien>Thanh Toán 1</ten_nhanvien>
+    <ten_benhnhan>Bn 2  (Nam sinh: 1990)</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <mathe_bhyt />
+    <ma_luotkham>15000002</ma_luotkham>
+  </Table>
+  <Table>
+    <id_nhanvien_thanhtoan>141</id_nhanvien_thanhtoan>
+    <id_benhnhan>3</id_benhnhan>
+    <LOAITIEN>1.Tiền dịch vụ</LOAITIEN>
+    <Tong_tien>267000.000</Tong_tien>
+    <ten_nhanvien>Thanh Toán 2</ten_nhanvien>
+    <ten_benhnhan>Bn 3  (Nam sinh: 1990)</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <mathe_bhyt />
+    <ma_luotkham>15000003</ma_luotkham>
+  </Table>
+  <Table>
+    <id_nhanvien_thanhtoan>141</id_nhanvien_thanhtoan>
+    <id_benhnhan>4</id_benhnhan>
+    <LOAITIEN>1.Tiền dịch vụ</LOAITIEN>
+    <Tong_tien>267000.000</Tong_tien>
+    <ten_nhanvien>Thanh Toán 2</ten_nhanvien>
+    <ten_benhnhan>Bn 4  (Nam sinh: 1990)</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <mathe_bhyt />
+    <ma_luotkham>15000004</ma_luotkham>
+  </Table>
+</NewDataSet>

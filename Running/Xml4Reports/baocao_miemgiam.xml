@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="tongtien_chietkhau" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_lydo_chietkhau" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_tao" type="xs:string" minOccurs="0" />
+                <xs:element name="lydo_chietkhau" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nhanvien" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="LOGO" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ma_luotkham>15000003</ma_luotkham>
+    <tongtien_chietkhau>99720.000</tongtien_chietkhau>
+    <ma_lydo_chietkhau>VIP</ma_lydo_chietkhau>
+    <ngay_tao>28/05/2015</ngay_tao>
+    <lydo_chietkhau>Chiết khấu VIP</lydo_chietkhau>
+    <ten_benhnhan>Bn Miễn Giảm 1</ten_benhnhan>
+    <LOGO>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</LOGO>
+  </Table>
+</NewDataSet>

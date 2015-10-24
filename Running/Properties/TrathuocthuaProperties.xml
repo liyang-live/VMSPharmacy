@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TrathuocthuaProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TimkiemkhiChontrangthai>false</TimkiemkhiChontrangthai>
+  <Locphieusaukhiduyet>false</Locphieusaukhiduyet>
+  <QuyenThemPhieu>true</QuyenThemPhieu>
+  <QuyenSuaPhieu>true</QuyenSuaPhieu>
+  <QuyenXoaPhieu>true</QuyenXoaPhieu>
+  <QuyenXacNhanPhieu>true</QuyenXacNhanPhieu>
+  <QuyenHuyXacNhanPhieu>true</QuyenHuyXacNhanPhieu>
+  <QuyenInphieu>true</QuyenInphieu>
+  <Songayluitimphieu>0</Songayluitimphieu>
+  <Insaukhiluu>true</Insaukhiluu>
+  <Kieuin>Chitiet</Kieuin>
+  <Timtheongaytra>false</Timtheongaytra>
+  <Hienthichonin>false</Hienthichonin>
+  <ThoatsaukhiLuu>1</ThoatsaukhiLuu>
+</TrathuocthuaProperties>

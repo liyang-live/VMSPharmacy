@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="id_benhnhan" type="xs:long" minOccurs="0" />
+                <xs:element name="XN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="BHCT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="BNCT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CDHA" type="xs:decimal" minOccurs="0" />
+                <xs:element name="DVvaTDCN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PTTT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TONGCONG" type="xs:decimal" minOccurs="0" />
+                <xs:element name="QDS" type="xs:int" minOccurs="0" />
+                <xs:element name="MAU" type="xs:int" minOccurs="0" />
+                <xs:element name="VTYT" type="xs:int" minOccurs="0" />
+                <xs:element name="DVKTC" type="xs:decimal" minOccurs="0" />
+                <xs:element name="THUOC_K" type="xs:int" minOccurs="0" />
+                <xs:element name="VanChuyen" type="xs:int" minOccurs="0" />
+                <xs:element name="VTYT_TT" type="xs:int" minOccurs="0" />
+                <xs:element name="THUOC" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TienCong" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ma_noicap_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_dung_tuyen" type="xs:string" minOccurs="0" />
+                <xs:element name="ngaybatdau_bhyt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngayketthuc_bhyt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="diachi_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="NoiKCB" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_kcbbd" type="xs:string" minOccurs="0" />
+                <xs:element name="KCB" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_nhombhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_nhombhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="mathe_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_tiepdon" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngay_ketthuc" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="dung_tuyen" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="mabenh_chinh" type="xs:string" minOccurs="0" />
+                <xs:element name="nam_sinh" type="xs:short" minOccurs="0" />
+                <xs:element name="nam_sinh_nu" type="xs:short" minOccurs="0" />
+                <xs:element name="nam_sinh_nam" type="xs:short" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+<xs:element name="DoiTuong" type="xs:string" minOccurs="0" />
+                <xs:element name="id_gioitinh" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="songay_dieutri" type="xs:int" minOccurs="0" />
+<xs:element name="Tuyen" type="xs:int" minOccurs="0" />
+<xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+            <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+</NewDataSet>

@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="tenbietduoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ID_THUOC" type="xs:int" minOccurs="0" />
+                <xs:element name="IDNHOM" type="xs:short" minOccurs="0" />
+                <xs:element name="ma_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="TonThangTruocKetChuyen" type="xs:int" minOccurs="0" />
+                <xs:element name="SoLuongNhap" type="xs:int" minOccurs="0" />
+                <xs:element name="Tralaitukhole" type="xs:int" minOccurs="0" />
+                <xs:element name="SoLuongXuat" type="xs:int" minOccurs="0" />
+                <xs:element name="Tranhacungcap" type="xs:int" minOccurs="0" />
+                <xs:element name="Xuatkhac" type="xs:int" minOccurs="0" />
+                <xs:element name="TonThangKetChuyen" type="xs:int" minOccurs="0" />
+                <xs:element name="ngay_biendong" type="xs:string" minOccurs="0" />
+                <xs:element name="YYYYMMDD" type="xs:int" minOccurs="0" />
+                <xs:element name="tennhom" type="xs:string" minOccurs="0" />
+                <xs:element name="ID_NHOM" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <tenbietduoc>ACC</tenbietduoc>
+    <ID_THUOC>4</ID_THUOC>
+    <IDNHOM>16</IDNHOM>
+    <ma_donvitinh>9</ma_donvitinh>
+    <TonThangTruocKetChuyen>0</TonThangTruocKetChuyen>
+    <SoLuongNhap>1000</SoLuongNhap>
+    <Tralaitukhole>0</Tralaitukhole>
+    <SoLuongXuat>300</SoLuongXuat>
+    <Tranhacungcap>0</Tranhacungcap>
+    <Xuatkhac>0</Xuatkhac>
+    <TonThangKetChuyen>0</TonThangKetChuyen>
+    <ngay_biendong>14/10/2015</ngay_biendong>
+    <YYYYMMDD>20151014</YYYYMMDD>
+    <tennhom>THUỐC ĐIỀU TRỊ BỆNH MẮT, TAI MŨI HỌNG</tennhom>
+    <ID_NHOM>16</ID_NHOM>
+  </Table>
+</NewDataSet>

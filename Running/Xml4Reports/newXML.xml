@@ -1,0 +1,221 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="STT" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="dia_chi" type="xs:string" minOccurs="0" />
+                <xs:element name="diachi_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="nam_sinh" type="xs:short" minOccurs="0" />
+                <xs:element name="ngay_sinh" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ma_doituong_kcb" type="xs:string" minOccurs="0" />
+                <xs:element name="id_dichvu" type="xs:int" minOccurs="0" />
+                <xs:element name="nguoi_ketthuc" type="xs:string" minOccurs="0" />
+                <xs:element name="mathe_bhyt" type="xs:string" minOccurs="0" />
+                <xs:element name="ngaybatdau_bhyt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngayketthuc_bhyt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="dung_tuyen" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="chan_doan" type="xs:string" minOccurs="0" />
+                <xs:element name="chandoan_kemtheo" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_kcbbd" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_kcbbd" type="xs:string" minOccurs="0" />
+                <xs:element name="mabenh_chinh" type="xs:string" minOccurs="0" />
+                <xs:element name="mabenh_phu" type="xs:string" minOccurs="0" />
+                <xs:element name="id_khoatiepnhan" type="xs:short" minOccurs="0" />
+                <xs:element name="ten_khoaphong" type="xs:string" minOccurs="0" />
+                <xs:element name="so_benh_an" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_chitietdichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="donvi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="id_loaithanhtoan" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ten_loaithanhtoan" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="id_benhnhan" type="xs:long" minOccurs="0" />
+                <xs:element name="trangthai_capcuu" type="xs:int" minOccurs="0" />
+                <xs:element name="id_gioitinh" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_tiepdon" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngay_ketthuc" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="id_bacsi_chidinh" type="xs:short" minOccurs="0" />
+                <xs:element name="so_luong" type="xs:int" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="bhyt_chitra" type="xs:decimal" minOccurs="0" />
+                <xs:element name="bnhan_chitra" type="xs:decimal" minOccurs="0" />
+                <xs:element name="phu_thu" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_BHYT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_BN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_BN_KHONG_PHUTHU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_KHONG_PHUTHU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TT_PHUTHU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ten_loaidichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="id_loaidichvu" type="xs:string" minOccurs="0" />
+                <xs:element name="stt_hthi_dichvu" type="xs:short" minOccurs="0" />
+                <xs:element name="stt_hthi_chitiet" type="xs:short" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <STT>0</STT>
+    <ten_benhnhan>Bhyt 2</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <diachi_bhyt>Không xác định, Không xác định, Hà Nội</diachi_bhyt>
+    <nam_sinh>1996</nam_sinh>
+    <ngay_sinh>1996-10-05T16:06:00+07:00</ngay_sinh>
+    <ma_doituong_kcb>BHYT</ma_doituong_kcb>
+    <id_dichvu>101</id_dichvu>
+    <nguoi_ketthuc>Bác Sĩ 1</nguoi_ketthuc>
+    <mathe_bhyt>DN7080908000001</mathe_bhyt>
+    <ngaybatdau_bhyt>2015-01-01T00:00:00+07:00</ngaybatdau_bhyt>
+    <ngayketthuc_bhyt>2015-12-31T00:00:00+07:00</ngayketthuc_bhyt>
+    <dung_tuyen>1</dung_tuyen>
+    <chan_doan>Bệnh đái tháo đường phụ thuộc insulin,ĐTĐ typ2,Bệnh đái tháo đường liên quan đến suy dinh dưỡng,</chan_doan>
+    <chandoan_kemtheo />
+    <ma_kcbbd>111</ma_kcbbd>
+    <ten_kcbbd>Trạm Y tế Xã Đồng Trạch</ten_kcbbd>
+    <mabenh_chinh>E10</mabenh_chinh>
+    <mabenh_phu>E11,E12</mabenh_phu>
+    <id_khoatiepnhan>59</id_khoatiepnhan>
+    <ten_khoaphong>Khoa Kcb Thường</ten_khoaphong>
+    <so_benh_an />
+    <ten_chitietdichvu>KHÁM THƯỜNG BUỒNG 1</ten_chitietdichvu>
+    <donvi_tinh>Lần</donvi_tinh>
+    <id_loaithanhtoan>1</id_loaithanhtoan>
+    <ten_loaithanhtoan>KHAM</ten_loaithanhtoan>
+    <ma_luotkham>15000003</ma_luotkham>
+    <id_benhnhan>3</id_benhnhan>
+    <trangthai_capcuu>0</trangthai_capcuu>
+    <id_gioitinh>0</id_gioitinh>
+    <gioi_tinh>Nam</gioi_tinh>
+    <ngay_tiepdon>2015-10-05T16:06:59.387+07:00</ngay_tiepdon>
+    <ngay_ketthuc>2015-10-05T16:22:00.84+07:00</ngay_ketthuc>
+    <id_bacsi_chidinh>-1</id_bacsi_chidinh>
+    <so_luong>1</so_luong>
+    <don_gia>100000.000</don_gia>
+    <bhyt_chitra>100000.000</bhyt_chitra>
+    <bnhan_chitra>0.000</bnhan_chitra>
+    <phu_thu>0.000</phu_thu>
+    <TT>100000.000</TT>
+    <TT_BHYT>100000.000</TT_BHYT>
+    <TT_BN>0.000</TT_BN>
+    <TT_BN_KHONG_PHUTHU>0.000</TT_BN_KHONG_PHUTHU>
+    <TT_KHONG_PHUTHU>100000.000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>0.000</TT_PHUTHU>
+    <ten_loaidichvu />
+    <id_loaidichvu>-1</id_loaidichvu>
+    <stt_hthi_dichvu>-1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>9</stt_hthi_chitiet>
+  </Table>
+  <Table>
+    <STT>0</STT>
+    <ten_benhnhan>Bhyt 2</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <diachi_bhyt>Không xác định, Không xác định, Hà Nội</diachi_bhyt>
+    <nam_sinh>1996</nam_sinh>
+    <ngay_sinh>1996-10-05T16:06:00+07:00</ngay_sinh>
+    <ma_doituong_kcb>BHYT</ma_doituong_kcb>
+    <id_dichvu>1</id_dichvu>
+    <nguoi_ketthuc>Bác Sĩ 1</nguoi_ketthuc>
+    <mathe_bhyt>DN7080908000001</mathe_bhyt>
+    <ngaybatdau_bhyt>2015-01-01T00:00:00+07:00</ngaybatdau_bhyt>
+    <ngayketthuc_bhyt>2015-12-31T00:00:00+07:00</ngayketthuc_bhyt>
+    <dung_tuyen>1</dung_tuyen>
+    <chan_doan>Bệnh đái tháo đường phụ thuộc insulin,ĐTĐ typ2,Bệnh đái tháo đường liên quan đến suy dinh dưỡng,</chan_doan>
+    <chandoan_kemtheo />
+    <ma_kcbbd>111</ma_kcbbd>
+    <ten_kcbbd>Trạm Y tế Xã Đồng Trạch</ten_kcbbd>
+    <mabenh_chinh>E10</mabenh_chinh>
+    <mabenh_phu>E11,E12</mabenh_phu>
+    <id_khoatiepnhan>59</id_khoatiepnhan>
+    <ten_khoaphong>Khoa Kcb Thường</ten_khoaphong>
+    <so_benh_an />
+    <ten_chitietdichvu>Tổng phân tích tế bào máu ngoại vi ( Laser)</ten_chitietdichvu>
+    <donvi_tinh>Lần</donvi_tinh>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <ten_loaithanhtoan>CLS</ten_loaithanhtoan>
+    <ma_luotkham>15000003</ma_luotkham>
+    <id_benhnhan>3</id_benhnhan>
+    <trangthai_capcuu>0</trangthai_capcuu>
+    <id_gioitinh>0</id_gioitinh>
+    <gioi_tinh>Nam</gioi_tinh>
+    <ngay_tiepdon>2015-10-05T16:06:59.387+07:00</ngay_tiepdon>
+    <ngay_ketthuc>2015-10-05T16:22:00.84+07:00</ngay_ketthuc>
+    <id_bacsi_chidinh>-1</id_bacsi_chidinh>
+    <so_luong>1</so_luong>
+    <don_gia>35000.000</don_gia>
+    <bhyt_chitra>35000.000</bhyt_chitra>
+    <bnhan_chitra>0.000</bnhan_chitra>
+    <phu_thu>15000.000</phu_thu>
+    <TT>50000.000</TT>
+    <TT_BHYT>35000.000</TT_BHYT>
+    <TT_BN>15000.000</TT_BN>
+    <TT_BN_KHONG_PHUTHU>0.000</TT_BN_KHONG_PHUTHU>
+    <TT_KHONG_PHUTHU>35000.000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>15000.000</TT_PHUTHU>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+  </Table>
+  <Table>
+    <STT>0</STT>
+    <ten_benhnhan>Bhyt 2</ten_benhnhan>
+    <dia_chi>Không xác định, Không xác định, Hà Nội</dia_chi>
+    <diachi_bhyt>Không xác định, Không xác định, Hà Nội</diachi_bhyt>
+    <nam_sinh>1996</nam_sinh>
+    <ngay_sinh>1996-10-05T16:06:00+07:00</ngay_sinh>
+    <ma_doituong_kcb>BHYT</ma_doituong_kcb>
+    <id_dichvu>1</id_dichvu>
+    <nguoi_ketthuc>Bác Sĩ 1</nguoi_ketthuc>
+    <mathe_bhyt>DN7080908000001</mathe_bhyt>
+    <ngaybatdau_bhyt>2015-01-01T00:00:00+07:00</ngaybatdau_bhyt>
+    <ngayketthuc_bhyt>2015-12-31T00:00:00+07:00</ngayketthuc_bhyt>
+    <dung_tuyen>1</dung_tuyen>
+    <chan_doan>Bệnh đái tháo đường phụ thuộc insulin,ĐTĐ typ2,Bệnh đái tháo đường liên quan đến suy dinh dưỡng,</chan_doan>
+    <chandoan_kemtheo />
+    <ma_kcbbd>111</ma_kcbbd>
+    <ten_kcbbd>Trạm Y tế Xã Đồng Trạch</ten_kcbbd>
+    <mabenh_chinh>E10</mabenh_chinh>
+    <mabenh_phu>E11,E12</mabenh_phu>
+    <id_khoatiepnhan>59</id_khoatiepnhan>
+    <ten_khoaphong>Khoa Kcb Thường</ten_khoaphong>
+    <so_benh_an />
+    <ten_chitietdichvu>Tổng phân tích tế bào máu ngoại vi ( Laser)</ten_chitietdichvu>
+    <donvi_tinh>Lần</donvi_tinh>
+    <id_loaithanhtoan>2</id_loaithanhtoan>
+    <ten_loaithanhtoan>CLS</ten_loaithanhtoan>
+    <ma_luotkham>15000003</ma_luotkham>
+    <id_benhnhan>3</id_benhnhan>
+    <trangthai_capcuu>0</trangthai_capcuu>
+    <id_gioitinh>0</id_gioitinh>
+    <gioi_tinh>Nam</gioi_tinh>
+    <ngay_tiepdon>2015-10-05T16:06:59.387+07:00</ngay_tiepdon>
+    <ngay_ketthuc>2015-10-05T16:22:00.84+07:00</ngay_ketthuc>
+    <id_bacsi_chidinh>-1</id_bacsi_chidinh>
+    <so_luong>1</so_luong>
+    <don_gia>35000.000</don_gia>
+    <bhyt_chitra>35000.000</bhyt_chitra>
+    <bnhan_chitra>0.000</bnhan_chitra>
+    <phu_thu>15000.000</phu_thu>
+    <TT>50000.000</TT>
+    <TT_BHYT>35000.000</TT_BHYT>
+    <TT_BN>15000.000</TT_BN>
+    <TT_BN_KHONG_PHUTHU>0.000</TT_BN_KHONG_PHUTHU>
+    <TT_KHONG_PHUTHU>35000.000</TT_KHONG_PHUTHU>
+    <TT_PHUTHU>15000.000</TT_PHUTHU>
+    <ten_loaidichvu>Xét nghiệm</ten_loaidichvu>
+    <id_loaidichvu>XN</id_loaidichvu>
+    <stt_hthi_dichvu>1</stt_hthi_dichvu>
+    <stt_hthi_chitiet>-1</stt_hthi_chitiet>
+  </Table>
+</NewDataSet>

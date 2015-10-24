@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--LEAD XML Annotation File-->
+<LTANN Version="15.0">
+	<Page>
+		<Object>
+			AnnObjectContainer
+			<Father>0</Father>
+			<Visible>1</Visible>
+			<Tag>0</Tag>
+			<Scalar X="1.000000" Y="1.000000"/>
+			<Offset X="472.000000" Y="273.000000"/>
+			<ForeColor>x0</ForeColor>
+			<BackColor>xFFFFFF</BackColor>
+			<Font Size="13.333333" Bold="0" Italic="0" StrikeThrough="0" UnderLine="0">Arial</Font>
+			<LineWidth>0</LineWidth>
+			<LineStyle>5</LineStyle>
+			<FillPattern>0</FillPattern>
+			<FillMode>0</FillMode>
+			<Alpha>0</Alpha>
+			<ShowRotateHandles>0</ShowRotateHandles>
+			<Grouping>0</Grouping>
+			<Points>
+				3
+				<Point X="0.000000" Y="0.000000"/>
+				<Point X="0.000000" Y="72.000000"/>
+				<Point X="80.000000" Y="72.000000"/>
+			</Points>
+		</Object>
+	</Page>
+</LTANN>
+

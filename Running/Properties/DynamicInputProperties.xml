@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicInputProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DynamicSize>
+    <Width>450</Width>
+    <Height>30</Height>
+  </DynamicSize>
+  <LabelSize>
+    <Width>100</Width>
+    <Height>35</Height>
+  </LabelSize>
+  <TextSize>
+    <Width>150</Width>
+    <Height>35</Height>
+  </TextSize>
+  <RtfDynamicSize>
+    <Width>450</Width>
+    <Height>200</Height>
+  </RtfDynamicSize>
+  <RtfLabelSize>
+    <Width>100</Width>
+    <Height>200</Height>
+  </RtfLabelSize>
+  <RtfTextSize>
+    <Width>350</Width>
+    <Height>200</Height>
+  </RtfTextSize>
+</DynamicInputProperties>

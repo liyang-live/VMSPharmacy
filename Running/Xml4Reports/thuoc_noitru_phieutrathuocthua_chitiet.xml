@@ -1,0 +1,213 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_donthuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="id_thuoc" type="xs:int" minOccurs="0" />
+                <xs:element name="id_khoatra" type="xs:short" minOccurs="0" />
+                <xs:element name="id_khonhan" type="xs:short" minOccurs="0" />
+                <xs:element name="id_benhnhan" type="xs:long" minOccurs="0" />
+                <xs:element name="ma_luotkham" type="xs:string" minOccurs="0" />
+                <xs:element name="sngay_kedon" type="xs:string" minOccurs="0" />
+                <xs:element name="don_gia" type="xs:decimal" minOccurs="0" />
+                <xs:element name="so_luong" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_donvitinh" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_thuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="ham_luong" type="xs:string" minOccurs="0" />
+                <xs:element name="so_dangky" type="xs:string" minOccurs="0" />
+                <xs:element name="thuc_tra" type="xs:string" minOccurs="0" />
+                <xs:element name="da_tru" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_benhnhan" type="xs:string" minOccurs="0" />
+                <xs:element name="ngay_sinh" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="gioi_tinh" type="xs:string" minOccurs="0" />
+                <xs:element name="nam_sinh" type="xs:short" minOccurs="0" />
+                <xs:element name="so_phieu" type="xs:long" minOccurs="0" />
+                <xs:element name="Tuoi" type="xs:int" minOccurs="0" />
+                <xs:element name="ten_khoanoitru" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_kho" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_buong" type="xs:string" minOccurs="0" />
+                <xs:element name="ten_giuong" type="xs:string" minOccurs="0" />
+                <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="barcode" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <id_donthuoc>1</id_donthuoc>
+    <id_thuoc>5</id_thuoc>
+    <id_khoatra>76</id_khoatra>
+    <id_khonhan>16</id_khonhan>
+    <id_benhnhan>1</id_benhnhan>
+    <ma_luotkham>15000001</ma_luotkham>
+    <sngay_kedon>14/07/2015</sngay_kedon>
+    <don_gia>10000.000</don_gia>
+    <so_luong>1</so_luong>
+    <ten_donvitinh>1/10mCi</ten_donvitinh>
+    <ma_thuoc>T5</ma_thuoc>
+    <ten_thuoc>ACC 200</ten_thuoc>
+    <ham_luong>200mg</ham_luong>
+    <so_dangky />
+    <thuc_tra />
+    <da_tru>1</da_tru>
+    <ten_benhnhan>Nội Trú 1</ten_benhnhan>
+    <ngay_sinh>1990-01-01T00:00:00+07:00</ngay_sinh>
+    <gioi_tinh>Nam</gioi_tinh>
+    <nam_sinh>1990</nam_sinh>
+    <so_phieu>4</so_phieu>
+    <Tuoi>25</Tuoi>
+    <ten_khoanoitru>Khoa Nội Trú Tuyến Giáp</ten_khoanoitru>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 1</ten_giuong>
+  </Table>
+  <Table>
+    <id_donthuoc>1</id_donthuoc>
+    <id_thuoc>6</id_thuoc>
+    <id_khoatra>76</id_khoatra>
+    <id_khonhan>16</id_khonhan>
+    <id_benhnhan>1</id_benhnhan>
+    <ma_luotkham>15000001</ma_luotkham>
+    <sngay_kedon>14/07/2015</sngay_kedon>
+    <don_gia>15000.000</don_gia>
+    <so_luong>1</so_luong>
+    <ten_donvitinh>Viên</ten_donvitinh>
+    <ma_thuoc>T6</ma_thuoc>
+    <ten_thuoc>Accupril</ten_thuoc>
+    <ham_luong>5mg</ham_luong>
+    <so_dangky>VN-5566-10</so_dangky>
+    <thuc_tra />
+    <da_tru>1</da_tru>
+    <ten_benhnhan>Nội Trú 1</ten_benhnhan>
+    <ngay_sinh>1990-01-01T00:00:00+07:00</ngay_sinh>
+    <gioi_tinh>Nam</gioi_tinh>
+    <nam_sinh>1990</nam_sinh>
+    <so_phieu>4</so_phieu>
+    <Tuoi>25</Tuoi>
+    <ten_khoanoitru>Khoa Nội Trú Tuyến Giáp</ten_khoanoitru>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 1</ten_giuong>
+  </Table>
+  <Table>
+    <id_donthuoc>3</id_donthuoc>
+    <id_thuoc>4</id_thuoc>
+    <id_khoatra>76</id_khoatra>
+    <id_khonhan>16</id_khonhan>
+    <id_benhnhan>4</id_benhnhan>
+    <ma_luotkham>15000004</ma_luotkham>
+    <sngay_kedon>14/07/2015</sngay_kedon>
+    <don_gia>5000.000</don_gia>
+    <so_luong>1</so_luong>
+    <ten_donvitinh>Gói</ten_donvitinh>
+    <ma_thuoc>T4</ma_thuoc>
+    <ten_thuoc>ACC</ten_thuoc>
+    <ham_luong>200mg</ham_luong>
+    <so_dangky>123456</so_dangky>
+    <thuc_tra />
+    <da_tru>1</da_tru>
+    <ten_benhnhan>Nội Trú 4</ten_benhnhan>
+    <ngay_sinh>1990-01-01T00:00:00+07:00</ngay_sinh>
+    <gioi_tinh>Nam</gioi_tinh>
+    <nam_sinh>1990</nam_sinh>
+    <so_phieu>4</so_phieu>
+    <Tuoi>25</Tuoi>
+    <ten_khoanoitru>Khoa Nội Trú Tuyến Giáp</ten_khoanoitru>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 4</ten_giuong>
+  </Table>
+  <Table>
+    <id_donthuoc>3</id_donthuoc>
+    <id_thuoc>5</id_thuoc>
+    <id_khoatra>76</id_khoatra>
+    <id_khonhan>16</id_khonhan>
+    <id_benhnhan>4</id_benhnhan>
+    <ma_luotkham>15000004</ma_luotkham>
+    <sngay_kedon>14/07/2015</sngay_kedon>
+    <don_gia>10000.000</don_gia>
+    <so_luong>1</so_luong>
+    <ten_donvitinh>1/10mCi</ten_donvitinh>
+    <ma_thuoc>T5</ma_thuoc>
+    <ten_thuoc>ACC 200</ten_thuoc>
+    <ham_luong>200mg</ham_luong>
+    <so_dangky />
+    <thuc_tra />
+    <da_tru>1</da_tru>
+    <ten_benhnhan>Nội Trú 4</ten_benhnhan>
+    <ngay_sinh>1990-01-01T00:00:00+07:00</ngay_sinh>
+    <gioi_tinh>Nam</gioi_tinh>
+    <nam_sinh>1990</nam_sinh>
+    <so_phieu>4</so_phieu>
+    <Tuoi>25</Tuoi>
+    <ten_khoanoitru>Khoa Nội Trú Tuyến Giáp</ten_khoanoitru>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 4</ten_giuong>
+  </Table>
+  <Table>
+    <id_donthuoc>4</id_donthuoc>
+    <id_thuoc>4</id_thuoc>
+    <id_khoatra>76</id_khoatra>
+    <id_khonhan>16</id_khonhan>
+    <id_benhnhan>5</id_benhnhan>
+    <ma_luotkham>15000005</ma_luotkham>
+    <sngay_kedon>14/07/2015</sngay_kedon>
+    <don_gia>5000.000</don_gia>
+    <so_luong>1</so_luong>
+    <ten_donvitinh>Gói</ten_donvitinh>
+    <ma_thuoc>T4</ma_thuoc>
+    <ten_thuoc>ACC</ten_thuoc>
+    <ham_luong>200mg</ham_luong>
+    <so_dangky>123456</so_dangky>
+    <thuc_tra />
+    <da_tru>1</da_tru>
+    <ten_benhnhan>Nội Trú 5</ten_benhnhan>
+    <ngay_sinh>1990-01-01T00:00:00+07:00</ngay_sinh>
+    <gioi_tinh>Nam</gioi_tinh>
+    <nam_sinh>1990</nam_sinh>
+    <so_phieu>4</so_phieu>
+    <Tuoi>25</Tuoi>
+    <ten_khoanoitru>Khoa Nội Trú Tuyến Giáp</ten_khoanoitru>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 3</ten_giuong>
+  </Table>
+  <Table>
+    <id_donthuoc>4</id_donthuoc>
+    <id_thuoc>5</id_thuoc>
+    <id_khoatra>76</id_khoatra>
+    <id_khonhan>16</id_khonhan>
+    <id_benhnhan>5</id_benhnhan>
+    <ma_luotkham>15000005</ma_luotkham>
+    <sngay_kedon>14/07/2015</sngay_kedon>
+    <don_gia>10000.000</don_gia>
+    <so_luong>1</so_luong>
+    <ten_donvitinh>1/10mCi</ten_donvitinh>
+    <ma_thuoc>T5</ma_thuoc>
+    <ten_thuoc>ACC 200</ten_thuoc>
+    <ham_luong>200mg</ham_luong>
+    <so_dangky />
+    <thuc_tra />
+    <da_tru>1</da_tru>
+    <ten_benhnhan>Nội Trú 5</ten_benhnhan>
+    <ngay_sinh>1990-01-01T00:00:00+07:00</ngay_sinh>
+    <gioi_tinh>Nam</gioi_tinh>
+    <nam_sinh>1990</nam_sinh>
+    <so_phieu>4</so_phieu>
+    <Tuoi>25</Tuoi>
+    <ten_khoanoitru>Khoa Nội Trú Tuyến Giáp</ten_khoanoitru>
+    <ten_kho>Kho Thuốc Nội Trú</ten_kho>
+    <ten_buong>Buồng 1</ten_buong>
+    <ten_giuong>Giường 3</ten_giuong>
+  </Table>
+</NewDataSet>
