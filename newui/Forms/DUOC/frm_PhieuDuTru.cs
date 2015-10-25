@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Windows.Shapes;
 using Janus.Windows.GridEX;
 using SubSonic;
 using VNS.HIS.BusRule.Classes;

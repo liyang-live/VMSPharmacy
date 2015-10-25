@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using CrystalDecisions.CrystalReports.Engine;
-using CrystalDecisions.Shared;
 using VNS.Libs;
 using VNS.HIS.DAL;
 using Microsoft.VisualBasic;

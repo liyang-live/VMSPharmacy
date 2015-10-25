@@ -5,9 +5,13 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 using Janus.Windows.GridEX;
+using Microsoft.Office.Interop.Excel;
+using VNS.HIS.UI.Classess;
 using VNS.Libs;
 using VNS.HIS.DAL;
 using SubSonic;
@@ -16,6 +20,7 @@ using VNS.Properties;
 using VNS.HIS.NGHIEPVU.THUOC;
 using VNS.HIS.UI.DANHMUC;
 using System.Threading;
+using DataTable = System.Data.DataTable;
 
 namespace VNS.HIS.UI.THUOC
 {
@@ -424,13 +429,12 @@ namespace VNS.HIS.UI.THUOC
             }
           
         }
+        private DataTable dtThuoc;
         private void LoadAuCompleteThuoc()
         {
-            txtDrugName.dtData=CommonLoadDuoc.LayThongTinThuoc(KIEU_THUOC_VT);
+            dtThuoc = CommonLoadDuoc.LayThongTinThuoc(KIEU_THUOC_VT);
+            txtDrugName.dtData = dtThuoc;
             txtDrugName.ChangeDataSource();
-           
-
-           
         }
 
         private void frm_Themmoi_Phieunhapkho_KeyDown(object sender, KeyEventArgs e)
@@ -1479,9 +1483,53 @@ namespace VNS.HIS.UI.THUOC
         {
 
         }
-        
-       
+        private void cmdChonfile_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var ofd = new OpenFileDialog();
+                ofd.Filter = "Excel File (*.xls;*.xlsx)|*.xls;*.xlsx|All Files (*.*)|*.*";
+                ofd.FilterIndex = 1;
+                ofd.RestoreDirectory = true;
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    txtPath.Text = Utility.sDbnull(ofd.FileName);
+                    DataTable dtExcel = Excel_Interop.LoadDataFromFileExcelToDataTable(ofd.FileName);
+                    dtExcel.Columns.Add("CHON", typeof(int));
+                    dtExcel.Columns.Add("id_thuoc", typeof(int));
+                    dtExcel.Columns.Add("co_bhyt", typeof(byte));
+                    dtExcel.Columns.Add("gia_bhyt_cu", typeof(decimal));
+                    foreach (DataRow rowexcel in dtExcel.AsEnumerable())
+                    {
+                        var rowcldl = (from dr in dtThuoc.AsEnumerable()
+                                       where Utility.sDbnull(dr.Field<object>("ma_QD40")) == Utility.sDbnull(rowexcel["ma_QD40"])
+                                       select dr).FirstOrDefault();
+                        if (rowcldl != null)
+                        {
+                            rowexcel["CHON"] = 1;
+                            rowexcel["id_thuoc"] = rowcldl["id_thuoc"];
+                            rowexcel["ten_donvitinh"] = rowcldl["ten_donvitinh"];
+                            rowexcel["gia_bhyt_cu"] = rowcldl["gia_bhyt"];
 
-      
-    }
+                            if (Utility.DecimaltoDbnull(rowexcel["gia_BHYT"]) > 0)
+                            {
+                                rowexcel["co_bhyt"] = 1;
+                            }
+                            else
+                            {
+                                rowexcel["co_bhyt"] = 0;
+                            }
+                        }
+                    }
+                    DataTable dtGrid = dtExcel.Select("CHON = 1").CopyToDataTable();
+                    Utility.SetDataSourceForDataGridEx(grdPhieuNhapChiTiet, dtGrid, false, false, "", "");
+                    ModifyCommand();
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowMsg("Lỗi:" + ex.Message);
+            }
+        }
+        }
 }
