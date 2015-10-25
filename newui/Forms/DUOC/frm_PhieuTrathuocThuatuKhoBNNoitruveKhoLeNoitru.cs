@@ -18,14 +18,14 @@ using VNS.HIS.NGHIEPVU.THUOC;
 using VNS.HIS.UI.Forms.Cauhinh;
 namespace VNS.HIS.UI.THUOC
 {
-    public partial class frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc : Form
+    public partial class frm_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru : Form
     {
         private bool b_Hasloaded = false;
         private DataTable m_dtDataNhapKho=new DataTable();
         private DataTable m_dtDataPhieuChiTiet = new DataTable();
         
         public string KIEU_THUOC_VT = "THUOC";
-        public frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc(string KIEU_THUOC_VT)
+        public frm_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru(string KIEU_THUOC_VT)
         {
             InitializeComponent();
             this.KIEU_THUOC_VT = KIEU_THUOC_VT;
@@ -82,7 +82,7 @@ namespace VNS.HIS.UI.THUOC
                                              chkByDate.Checked ? dtToDate.Value.ToString("dd/MM/yyyy") : "01/01/1900",-1, Utility.Int32Dbnull(cboKhoaLinh.SelectedValue, -1), 
                                              Utility.Int32Dbnull(cboKhoTra.SelectedValue, -1),
                                              Utility.Int32Dbnull(cboKhoNhan.SelectedValue, -1), Utility.Int32Dbnull(cboNhanVien.SelectedValue, -1),
-                                             -1, "ALL", Utility.sDbnull(txtSoPhieu.Text), TRANG_THAI, (int)LoaiPhieu.PhieuXuatKhoBenhNhanTuTutruc, MaKho, 2, KIEU_THUOC_VT);
+                                             -1, "ALL", Utility.sDbnull(txtSoPhieu.Text), TRANG_THAI, (int)LoaiPhieu.PhieuTrathuocTukhoBNNoitruVeKhoLeNoitru, MaKho, 1, KIEU_THUOC_VT);
 
             Utility.SetDataSourceForDataGridEx_Basic(grdList, m_dtDataNhapKho, true, true, "1=1", "");
             if (!Utility.isValidGrid(grdList)) if (m_dtDataPhieuChiTiet != null) m_dtDataPhieuChiTiet.Clear();
@@ -187,12 +187,12 @@ namespace VNS.HIS.UI.THUOC
             m_KhoaLinh = THU_VIEN_CHUNG.Laydanhmuckhoa("NOI",0);
             if (KIEU_THUOC_VT == "THUOC")
             {
-                m_dtKhoNhan = CommonLoadDuoc.LAYTHONGTIN_KHOTHUOC_AO(true);
+                m_dtKhoNhan = CommonLoadDuoc.LAYTHONGTIN_KHOTHUOC_LE_NOITRU();
                 m_dtKhoTra = CommonLoadDuoc.LAYTHONGTIN_TUTHUOC();
             }
             else
             {
-                m_dtKhoNhan = CommonLoadDuoc.LAYTHONGTIN_KHOVATTU_AO(true);
+                m_dtKhoNhan = CommonLoadDuoc.LAYTHONGTIN_KHOVATTU_CHAN();
                 m_dtKhoTra = CommonLoadDuoc.LAYTHONGTIN_KHOVATTU_LE(new List<string> { "TATCA",  "NOITRU" });
             }
             DataBinding.BindDataCombobox(cboKhoNhan, m_dtKhoNhan,
@@ -200,7 +200,7 @@ namespace VNS.HIS.UI.THUOC
                                       "---kho nhận---",true);
             DataBinding.BindDataCombobox(cboKhoaLinh, m_KhoaLinh,
                                      DmucKhoaphong.Columns.IdKhoaphong, DmucKhoaphong.Columns.TenKhoaphong,
-                                     "---Khoa xuất---",true);
+                                     "---Khoa trả---",true);
             b_Hasloaded = true;
         }
         int id_PhieuNhap = -1;
@@ -257,7 +257,7 @@ namespace VNS.HIS.UI.THUOC
                         _ngayxacnhan = _ChonngayXacnhan.pdt_InputDate;
                     }
                     ActionResult actionResult =
-                        new CapphatThuocKhoaAo().XacNhanPhieuTrathuocTutrucKhoaveKho(objTPhieuNhapxuatthuoc, _ngayxacnhan, ref errMsg);
+                        new CapphatThuocKhoa().XacNhanPhieuTrathuocKholeBNveKhoLeNoitru(objTPhieuNhapxuatthuoc, _ngayxacnhan, ref errMsg);
                     switch (actionResult)
                     {
                         case ActionResult.Success:
@@ -322,7 +322,7 @@ namespace VNS.HIS.UI.THUOC
         {
             try
             {
-                frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc frm = new frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc(KIEU_THUOC_VT);
+                frm_Themmoi_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru frm = new frm_Themmoi_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru(KIEU_THUOC_VT);
                 frm.m_enAction = action.Insert;
                 frm.p_mDataPhieuNhapKho = m_dtDataNhapKho;
                 frm.KIEU_THUOC_VT = KIEU_THUOC_VT;
@@ -358,7 +358,7 @@ namespace VNS.HIS.UI.THUOC
             {
                 if (!InValiUpdateXoa()) return;
                 int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
-                frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc frm = new frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc(KIEU_THUOC_VT);
+                frm_Themmoi_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru frm = new frm_Themmoi_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru(KIEU_THUOC_VT);
                 frm.m_enAction = action.Update;
                 frm.KIEU_THUOC_VT = KIEU_THUOC_VT;
                 frm.grdList = grdList;
@@ -411,7 +411,7 @@ namespace VNS.HIS.UI.THUOC
                 if (objTPhieuNhapxuatthuoc != null)
                 {
                     ActionResult actionResult =
-                        new CapphatThuocKhoaAo().HuyXacNhanPhieuTrathuocTutrucKhoaVeKho(objTPhieuNhapxuatthuoc, ref errMsg);
+                        new CapphatThuocKhoa().HuyXacNhanPhieuTrathuocTuKholeBNNoitruVeKhoLeNoitru(objTPhieuNhapxuatthuoc, ref errMsg);
                     switch (actionResult)
                     {
                         case ActionResult.Success:

@@ -1,6 +1,6 @@
 ﻿namespace VNS.HIS.UI.THUOC
 {
-    partial class frm_themmoi_phieuxuatthuoctutruc
+    partial class frm_themmoi_phieuxuatthuoc_Bnnoitru
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_themmoi_phieuxuatthuoctutruc));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_themmoi_phieuxuatthuoc_Bnnoitru));
             Janus.Windows.GridEX.GridEXLayout grdKhoXuat_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout grdPhieuXuatChiTiet_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.grpControl = new Janus.Windows.EditControls.UIGroupBox();
@@ -142,7 +142,6 @@
             this.grpControl.Controls.Add(this.groupBox1);
             this.grpControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.grpControl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpControl.Image = ((System.Drawing.Image)(resources.GetObject("grpControl.Image")));
             this.grpControl.Location = new System.Drawing.Point(0, 0);
             this.grpControl.Name = "grpControl";
             this.grpControl.Size = new System.Drawing.Size(1008, 156);
@@ -546,7 +545,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 20);
             this.label6.TabIndex = 47;
-            this.label6.Text = "Tủ thuốc:";
+            this.label6.Text = "Kho lĩnh";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
@@ -600,7 +599,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 20);
             this.label3.TabIndex = 31;
-            this.label3.Text = "Ngày lập:";
+            this.label3.Text = "Ngày HĐ:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtNgayNhap
@@ -746,9 +745,9 @@
             this.cmdTaoNhanh.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdTaoNhanh.Image = ((System.Drawing.Image)(resources.GetObject("cmdTaoNhanh.Image")));
             this.cmdTaoNhanh.ImageSize = new System.Drawing.Size(32, 32);
-            this.cmdTaoNhanh.Location = new System.Drawing.Point(430, 1);
+            this.cmdTaoNhanh.Location = new System.Drawing.Point(398, 4);
             this.cmdTaoNhanh.Name = "cmdTaoNhanh";
-            this.cmdTaoNhanh.Size = new System.Drawing.Size(40, 40);
+            this.cmdTaoNhanh.Size = new System.Drawing.Size(72, 37);
             this.cmdTaoNhanh.TabIndex = 25;
             this.cmdTaoNhanh.TabStop = false;
             this.toolTip1.SetToolTip(this.cmdTaoNhanh, "Tạo nhanh phiếu dự trù thuốc cho kho nhận nếu kho đó có lập kế hoạch dự trù thuốc" +
@@ -761,9 +760,9 @@
             this.cmdPrevius.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdPrevius.Image = ((System.Drawing.Image)(resources.GetObject("cmdPrevius.Image")));
             this.cmdPrevius.ImageSize = new System.Drawing.Size(32, 32);
-            this.cmdPrevius.Location = new System.Drawing.Point(476, 1);
+            this.cmdPrevius.Location = new System.Drawing.Point(476, 4);
             this.cmdPrevius.Name = "cmdPrevius";
-            this.cmdPrevius.Size = new System.Drawing.Size(40, 40);
+            this.cmdPrevius.Size = new System.Drawing.Size(72, 37);
             this.cmdPrevius.TabIndex = 24;
             this.cmdPrevius.TabStop = false;
             this.toolTip1.SetToolTip(this.cmdPrevius, "Nhấn nút này khi cần hủy chuyển các thuốc được chọn trên lưới bên tay phải( phím " +
@@ -775,9 +774,9 @@
             this.cmdNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdNext.Image = ((System.Drawing.Image)(resources.GetObject("cmdNext.Image")));
             this.cmdNext.ImageSize = new System.Drawing.Size(32, 32);
-            this.cmdNext.Location = new System.Drawing.Point(522, 1);
+            this.cmdNext.Location = new System.Drawing.Point(556, 4);
             this.cmdNext.Name = "cmdNext";
-            this.cmdNext.Size = new System.Drawing.Size(40, 40);
+            this.cmdNext.Size = new System.Drawing.Size(72, 37);
             this.cmdNext.TabIndex = 23;
             this.cmdNext.TabStop = false;
             this.toolTip1.SetToolTip(this.cmdNext, "Sau khi nhập số lượng thuốc cần chuyển có thể nhấn nút này để chuyển thuốc sang k" +
@@ -793,7 +792,7 @@
             this.uiGroupBox4.Name = "uiGroupBox4";
             this.uiGroupBox4.Size = new System.Drawing.Size(1008, 272);
             this.uiGroupBox4.TabIndex = 69;
-            this.uiGroupBox4.Text = "Chi tiết phiếu xuất thuốc tủ trực";
+            this.uiGroupBox4.Text = "Chi tiết thuốc xuất cho Bệnh nhân nội trú";
             // 
             // grdPhieuXuatChiTiet
             // 
@@ -882,7 +881,7 @@
             this.cmdExit.TabStop = false;
             this.cmdExit.Text = "&Thoát Form";
             // 
-            // frm_themmoi_phieuxuatthuoctutruc
+            // frm_themmoi_phieuxuatthuoc_Bnnoitru
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -892,11 +891,11 @@
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frm_themmoi_phieuxuatthuoctutruc";
+            this.Name = "frm_themmoi_phieuxuatthuoc_Bnnoitru";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Phiếu xuất từ kho lẻ nội trú sang các tủ trực";
-            this.Load += new System.EventHandler(this.frm_themmoi_phieuxuatthuoctutruc_Load);
+            this.Text = "Xuất thuốc Bệnh nhân nội trú";
+            this.Load += new System.EventHandler(this.frm_themmoi_phieuxuatthuoc_Bnnoitru_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grpControl)).EndInit();
             this.grpControl.ResumeLayout(false);
             this.grpControl.PerformLayout();
