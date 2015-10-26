@@ -1294,7 +1294,7 @@ namespace VNS.HIS.UI.THUOC
                     dtExcel.Columns.Add("CHON", typeof(int));
                     dtExcel.Columns.Add("id_thuoc", typeof(int));
                     dtExcel.Columns.Add("ham_luong", typeof(string));
-                    dtExcel.Columns.Add("GIA_NHAP", typeof(decimal));
+                   // dtExcel.Columns.Add("GIA_NHAP", typeof(decimal));
                     dtExcel.Columns.Add("VAT", typeof(decimal));
                     dtExcel.Columns.Add("id_thuockho", typeof(int));
                     dtExcel.Columns.Add("ngay_nhap", typeof(DateTime));
@@ -1305,46 +1305,52 @@ namespace VNS.HIS.UI.THUOC
                     dtExcel.Columns.Add("ma_nhacungcap", typeof(string));
                     dtExcel.Columns.Add("ten_nhacungcap", typeof(string));
                     dtExcel.Columns.Add("id_chuyen", typeof(int));
-                    dtExcel.Columns.Add("gia_phuthu_traituyen", typeof(decimal));
-                    dtExcel.Columns.Add("gia_phuthu_dungtuyen", typeof(decimal));
+                  //  dtExcel.Columns.Add("gia_phuthu_traituyen", typeof(decimal));
+                    //dtExcel.Columns.Add("gia_phuthu_dungtuyen", typeof(decimal));
                     dtExcel.Columns.Add("phuthu_traituyen", typeof(decimal));
                     dtExcel.Columns.Add("phuthu_dungtuyen", typeof(decimal));
                     dtExcel.Columns.Add("chiet_khau", typeof(decimal));
                     dtExcel.Columns.Add("don_gia", typeof(decimal));
-                    dtExcel.Columns.Add("so_qdinhthau", typeof(string));
-                    dtExcel.Columns.Add("so_dky", typeof(string));
+                   // dtExcel.Columns.Add("so_qdinhthau", typeof(string));
+                  //  dtExcel.Columns.Add("so_dky", typeof(string));
                    // dtExcel.Columns.Add("id_chuyen", typeof(int));
                     foreach (DataRow rowexcel in dtExcel.AsEnumerable())
                     {
-                        var rowcldl = (from dr in m_dtDataThuocKho.AsEnumerable()
-                                       where Utility.sDbnull(dr.Field<object>("ma_QD40")) == Utility.sDbnull(rowexcel["ma_QD40"])
-                                       select dr).FirstOrDefault();
-                        if (rowcldl != null)
+                        if (Utility.sDbnull(rowexcel["ma_thuoc"]).Trim().ToUpper() != "")
                         {
-                            DmucThuoc objLDrug = DmucThuoc.FetchByID(Utility.Int16Dbnull(rowcldl["id_thuoc"]));
-                            rowexcel["CHON"] = 1;
-                            rowexcel["id_thuoc"] = rowcldl["id_thuoc"];
-                            rowexcel["ham_luong"] = rowcldl["ham_luong"];
-                            rowexcel["don_gia"] = rowcldl["don_gia"];
-                            rowexcel["so_dky"] = rowcldl["so_dky"];
-                            rowexcel["so_qdinhthau"] = rowcldl["so_qdinhthau"];
-                            rowexcel["GIA_NHAP"] = rowcldl["GIA_NHAP"];
-                            rowexcel["VAT"] = rowcldl["VAT"];
-                            rowexcel["gia_phuthu_traituyen"] = objLDrug.PhuthuTraituyen;
-                            rowexcel["id_thuockho"] = rowcldl["id_thuockho"];
-                            rowexcel["id_chuyen"] = rowcldl["id_thuockho"];
-                            rowexcel["gia_phuthu_dungtuyen"] = objLDrug.PhuthuDungtuyen;
-                            rowexcel["ma_nhacungcap"] = rowcldl["ma_nhacungcap"];
-                            rowexcel["ten_nhacungcap"] = rowcldl["ten_nhacungcap"];
-                            rowexcel["ngay_nhap"] = rowcldl["ngay_nhap"];
-                            rowcldl["SO_LUONG_CHUYEN"] = rowexcel["SO_LUONG"];
-                            rowcldl["SO_LUONG"] = Utility.Int32Dbnull(rowcldl["SO_LUONG"]) - Utility.Int32Dbnull(rowcldl["SO_LUONG_CHUYEN"]);
+                            var rowcldl = (from dr in m_dtDataThuocKho.AsEnumerable()
+                                           where Utility.sDbnull(dr.Field<object>("ma_thuoc")).Trim().ToUpper() == Utility.sDbnull(rowexcel["ma_thuoc"], "").Trim().ToUpper()
+                                           select dr).FirstOrDefault();
+                            if (rowcldl != null)
+                            {
+                                DmucThuoc objLDrug = DmucThuoc.FetchByID(Utility.Int16Dbnull(rowcldl["id_thuoc"]));
+                                rowexcel["CHON"] = 1;
+                                rowexcel["id_thuoc"] = rowcldl["id_thuoc"];
+                                rowexcel["ham_luong"] = rowcldl["ham_luong"];
+                                rowexcel["don_gia"] = rowcldl["don_gia"];
+                                rowexcel["so_dky"] = rowcldl["so_dky"];
+                                rowexcel["so_qdinhthau"] = rowcldl["so_qdinhthau"];
+                              //  rowexcel["GIA_NHAP"] = rowcldl["GIA_NHAP"];
+                                rowexcel["VAT"] = rowcldl["VAT"];
+                               // rowexcel["gia_phuthu_traituyen"] = objLDrug.PhuthuTraituyen;
+                                rowexcel["id_thuockho"] = rowcldl["id_thuockho"];
+                                rowexcel["id_chuyen"] = rowcldl["id_thuockho"];
+                                rowexcel["chiet_khau"] = 0;
+                              //  rowexcel["gia_phuthu_dungtuyen"] = objLDrug.PhuthuDungtuyen;
+                                rowexcel["ma_nhacungcap"] = rowcldl["ma_nhacungcap"];
+                                rowexcel["ten_nhacungcap"] = rowcldl["ten_nhacungcap"];
+                                rowexcel["ngay_nhap"] = rowcldl["ngay_nhap"];
+                                rowcldl["SO_LUONG_CHUYEN"] = rowexcel["SO_LUONG"];
+                                rowcldl["SO_LUONG"] = Utility.Int32Dbnull(rowcldl["SO_LUONG"]) - Utility.Int32Dbnull(rowcldl["SO_LUONG_CHUYEN"]);
+                            }
                         }
-                    }
+                      
+                        }
                     m_dtDataThuocKho.AcceptChanges();
                     m_dtDataPhieuChiTiet = dtExcel.Select("CHON = 1").CopyToDataTable();
                     Utility.SetDataSourceForDataGridEx(grdPhieuXuatChiTiet, m_dtDataPhieuChiTiet, false, false, "", "");
                     ModifyCommand();
+                        
                 }
             }
             catch (Exception ex)

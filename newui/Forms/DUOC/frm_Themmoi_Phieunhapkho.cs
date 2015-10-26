@@ -1501,25 +1501,31 @@ namespace VNS.HIS.UI.THUOC
                     dtExcel.Columns.Add("gia_bhyt_cu", typeof(decimal));
                     foreach (DataRow rowexcel in dtExcel.AsEnumerable())
                     {
-                        var rowcldl = (from dr in dtThuoc.AsEnumerable()
-                                       where Utility.sDbnull(dr.Field<object>("ma_QD40")) == Utility.sDbnull(rowexcel["ma_QD40"])
-                                       select dr).FirstOrDefault();
-                        if (rowcldl != null)
+                        if (Utility.sDbnull(rowexcel["ma_thuoc"]).Trim().ToUpper() != "")
                         {
-                            rowexcel["CHON"] = 1;
-                            rowexcel["id_thuoc"] = rowcldl["id_thuoc"];
-                            rowexcel["ten_donvitinh"] = rowcldl["ten_donvitinh"];
-                            rowexcel["gia_bhyt_cu"] = rowcldl["gia_bhyt"];
+                            DataRow rowcldl = (from dr in dtThuoc.AsEnumerable()
+                                               where
+                                                   Utility.sDbnull(dr.Field<object>("ma_thuoc")).Trim().ToUpper() ==
+                                                   Utility.sDbnull(rowexcel["ma_thuoc"]).Trim().ToUpper()
+                                               select dr).FirstOrDefault();
+                            if (rowcldl != null)
+                            {
+                                rowexcel["CHON"] = 1;
+                                rowexcel["id_thuoc"] = rowcldl["id_thuoc"];
+                                rowexcel["ten_donvitinh"] = rowcldl["ten_donvitinh"];
+                                rowexcel["gia_bhyt_cu"] = rowcldl["gia_bhyt"];
 
-                            if (Utility.DecimaltoDbnull(rowexcel["gia_BHYT"]) > 0)
-                            {
-                                rowexcel["co_bhyt"] = 1;
-                            }
-                            else
-                            {
-                                rowexcel["co_bhyt"] = 0;
+                                if (Utility.DecimaltoDbnull(rowexcel["gia_BHYT"]) > 0)
+                                {
+                                    rowexcel["co_bhyt"] = 1;
+                                }
+                                else
+                                {
+                                    rowexcel["co_bhyt"] = 0;
+                                }
                             }
                         }
+                        
                     }
                     DataTable dtGrid = dtExcel.Select("CHON = 1").CopyToDataTable();
                     Utility.SetDataSourceForDataGridEx(grdPhieuNhapChiTiet, dtGrid, false, false, "", "");
