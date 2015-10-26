@@ -132,13 +132,13 @@ namespace VNS.Libs
         PhieuThanhly=10,
         Phieutrathuocthua=11,
         PhieuNhapKhoTututruc = 12,
-        PhieuXuatKhoBenhNhanTuTutruc = 13
+        PhieuXuatKhoBenhNhanTuTutruc = 13,
         //PhieuXuatKhoAoBenhNhan = 12,
         //PhieuNhapKhoAoBenhNhan = 13,
         //PhieuTrathuocKhoAoBNVeKhoLe=15,
         //PhieuXuatTutrucAoBenhNhan = 16,
         //PhieuNhapTutrucAoBenhNhan = 17,
-        //PhieuTrathuocTutrucAoBNVeKhoLe = 18
+        PhieuTrathuocTukhoBNNoitruVeKhoLeNoitru = 14
     } ;
     public enum TonghopStatus
     {
