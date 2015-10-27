@@ -475,12 +475,12 @@ namespace VNS.HIS.UI.THUOC
                     drv["ShortName"] = Utility.UnSignedCharacter(Utility.sDbnull(drv["Ten_Thuoc"]));
                 }
                 m_dtDataThuocKho.AcceptChanges();
-                Utility.SetDataSourceForDataGridEx_Basic(grdKhoXuat, m_dtDataThuocKho, true, true, "So_luong>0", "");
+                Utility.SetDataSourceForDataGridEx_Basic(grdKhoXuat, m_dtDataThuocKho, true, true,"", "");
                 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                
+                Utility.ShowMsg(ex.Message);
                 //throw;
             }
         }
@@ -1311,15 +1311,21 @@ namespace VNS.HIS.UI.THUOC
                     dtExcel.Columns.Add("phuthu_dungtuyen", typeof(decimal));
                     dtExcel.Columns.Add("chiet_khau", typeof(decimal));
                     dtExcel.Columns.Add("don_gia", typeof(decimal));
-                   // dtExcel.Columns.Add("so_qdinhthau", typeof(string));
+                    dtExcel.Columns.Add("ngay_het_han", typeof(DateTime));
                   //  dtExcel.Columns.Add("so_dky", typeof(string));
                    // dtExcel.Columns.Add("id_chuyen", typeof(int));
-                    foreach (DataRow rowexcel in dtExcel.AsEnumerable())
+
+                    foreach (DataRow rowexcel in dtExcel.Select("So_luong>0").AsEnumerable())
                     {
                         if (Utility.sDbnull(rowexcel["ma_thuoc"]).Trim().ToUpper() != "")
                         {
                             var rowcldl = (from dr in m_dtDataThuocKho.AsEnumerable()
-                                           where Utility.sDbnull(dr.Field<object>("ma_thuoc")).Trim().ToUpper() == Utility.sDbnull(rowexcel["ma_thuoc"], "").Trim().ToUpper()
+                                           where (Utility.sDbnull(dr.Field<object>("ma_thuoc")).Trim().ToUpper() == Utility.sDbnull(rowexcel["ma_thuoc"], "").Trim().ToUpper()
+                                           && Utility.sDbnull(dr.Field<object>("so_lo")).Trim().ToUpper() == Utility.sDbnull(rowexcel["so_lo"], "").Trim().ToUpper()
+                                             && Utility.DecimaltoDbnull(dr.Field<object>("gia_nhap")) == Utility.DecimaltoDbnull(rowexcel["gia_nhap"])
+                                               && Utility.DecimaltoDbnull(dr.Field<object>("gia_ban")) == Utility.DecimaltoDbnull(rowexcel["gia_ban"])
+                                                 && Convert.ToDateTime(dr.Field<object>("ngay_hethan")) == Convert.ToDateTime(rowexcel["ngay_hethan"])
+                                               )
                                            select dr).FirstOrDefault();
                             if (rowcldl != null)
                             {
@@ -1336,6 +1342,7 @@ namespace VNS.HIS.UI.THUOC
                                 rowexcel["id_thuockho"] = rowcldl["id_thuockho"];
                                 rowexcel["id_chuyen"] = rowcldl["id_thuockho"];
                                 rowexcel["chiet_khau"] = 0;
+                                rowexcel["ngay_het_han"] = rowexcel["ngay_hethan"];
                               //  rowexcel["gia_phuthu_dungtuyen"] = objLDrug.PhuthuDungtuyen;
                                 rowexcel["ma_nhacungcap"] = rowcldl["ma_nhacungcap"];
                                 rowexcel["ten_nhacungcap"] = rowcldl["ten_nhacungcap"];
