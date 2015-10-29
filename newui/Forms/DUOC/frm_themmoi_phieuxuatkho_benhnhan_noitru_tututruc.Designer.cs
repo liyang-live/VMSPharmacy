@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc));
-            Janus.Windows.GridEX.GridEXLayout grdKhoXuat_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
-            Janus.Windows.GridEX.GridEXLayout grdPhieuXuatChiTiet_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.grpControl = new Janus.Windows.EditControls.UIGroupBox();
             this.label17 = new System.Windows.Forms.Label();
             this.cboKhoaXuat = new Janus.Windows.EditControls.UIComboBox();
@@ -139,7 +136,6 @@
             this.grpControl.Controls.Add(this.groupBox1);
             this.grpControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.grpControl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpControl.Image = ((System.Drawing.Image)(resources.GetObject("grpControl.Image")));
             this.grpControl.Location = new System.Drawing.Point(0, 0);
             this.grpControl.Name = "grpControl";
             this.grpControl.Size = new System.Drawing.Size(1008, 156);
@@ -170,7 +166,7 @@
             this.txtNguoigiao._backcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtNguoigiao._Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNguoigiao._TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtNguoigiao.AutoCompleteList = ((System.Collections.Generic.List<string>)(resources.GetObject("txtNguoigiao.AutoCompleteList")));
+            this.txtNguoigiao.AutoCompleteList = null;
             this.txtNguoigiao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNguoigiao.CaseSensitive = false;
             this.txtNguoigiao.CompareNoID = true;
@@ -231,7 +227,6 @@
             // cmdAddDetail
             // 
             this.cmdAddDetail.Enabled = false;
-            this.cmdAddDetail.Image = ((System.Drawing.Image)(resources.GetObject("cmdAddDetail.Image")));
             this.cmdAddDetail.ImageSize = new System.Drawing.Size(24, 24);
             this.cmdAddDetail.Location = new System.Drawing.Point(959, 120);
             this.cmdAddDetail.Name = "cmdAddDetail";
@@ -276,7 +271,7 @@
             this.txtthuoc._backcolor = System.Drawing.SystemColors.Control;
             this.txtthuoc._Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtthuoc.AllowedSelectPrice = false;
-            this.txtthuoc.AutoCompleteList = ((System.Collections.Generic.List<string>)(resources.GetObject("txtthuoc.AutoCompleteList")));
+            this.txtthuoc.AutoCompleteList = null;
             this.txtthuoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtthuoc.CaseSensitive = false;
             this.txtthuoc.CompareNoID = true;
@@ -404,7 +399,7 @@
             this.txtNguoinhan._backcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtNguoinhan._Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNguoinhan._TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtNguoinhan.AutoCompleteList = ((System.Collections.Generic.List<string>)(resources.GetObject("txtNguoinhan.AutoCompleteList")));
+            this.txtNguoinhan.AutoCompleteList = null;
             this.txtNguoinhan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNguoinhan.CaseSensitive = false;
             this.txtNguoinhan.CompareNoID = true;
@@ -488,7 +483,7 @@
             this.txtLyDoXuat._backcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtLyDoXuat._Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLyDoXuat._TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtLyDoXuat.AutoCompleteList = ((System.Collections.Generic.List<string>)(resources.GetObject("txtLyDoXuat.AutoCompleteList")));
+            this.txtLyDoXuat.AutoCompleteList = null;
             this.txtLyDoXuat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLyDoXuat.CaseSensitive = false;
             this.txtLyDoXuat.CompareNoID = true;
@@ -648,8 +643,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.uiGroupBox4);
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitContainer1.Size = new System.Drawing.Size(1008, 574);
-            this.splitContainer1.SplitterDistance = 249;
+            this.splitContainer1.Size = new System.Drawing.Size(1008, 506);
+            this.splitContainer1.SplitterDistance = 219;
             this.splitContainer1.TabIndex = 69;
             // 
             // uiGroupBox1
@@ -660,15 +655,13 @@
             this.uiGroupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiGroupBox1.Location = new System.Drawing.Point(0, 0);
             this.uiGroupBox1.Name = "uiGroupBox1";
-            this.uiGroupBox1.Size = new System.Drawing.Size(1008, 206);
+            this.uiGroupBox1.Size = new System.Drawing.Size(1008, 176);
             this.uiGroupBox1.TabIndex = 1;
             this.uiGroupBox1.Text = "Danh sách thuốc trong tủ trực khoa nội trú";
             // 
             // grdKhoXuat
             // 
             this.grdKhoXuat.CellSelectionMode = Janus.Windows.GridEX.CellSelectionMode.SingleCell;
-            grdKhoXuat_DesignTimeLayout.LayoutString = resources.GetString("grdKhoXuat_DesignTimeLayout.LayoutString");
-            this.grdKhoXuat.DesignTimeLayout = grdKhoXuat_DesignTimeLayout;
             this.grdKhoXuat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdKhoXuat.DynamicFiltering = true;
             this.grdKhoXuat.FilterMode = Janus.Windows.GridEX.FilterMode.Automatic;
@@ -687,7 +680,7 @@
             this.grdKhoXuat.Name = "grdKhoXuat";
             this.grdKhoXuat.RecordNavigator = true;
             this.grdKhoXuat.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.grdKhoXuat.Size = new System.Drawing.Size(1002, 185);
+            this.grdKhoXuat.Size = new System.Drawing.Size(1002, 155);
             this.grdKhoXuat.TabIndex = 2;
             this.grdKhoXuat.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.grdKhoXuat.TotalRowPosition = Janus.Windows.GridEX.TotalRowPosition.BottomFixed;
@@ -719,7 +712,7 @@
             this.panel2.Controls.Add(this.cmdPrevius);
             this.panel2.Controls.Add(this.cmdNext);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 206);
+            this.panel2.Location = new System.Drawing.Point(0, 176);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1008, 43);
             this.panel2.TabIndex = 0;
@@ -727,7 +720,6 @@
             // cmdPrevius
             // 
             this.cmdPrevius.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdPrevius.Image = ((System.Drawing.Image)(resources.GetObject("cmdPrevius.Image")));
             this.cmdPrevius.ImageSize = new System.Drawing.Size(32, 32);
             this.cmdPrevius.Location = new System.Drawing.Point(442, 4);
             this.cmdPrevius.Name = "cmdPrevius";
@@ -741,7 +733,6 @@
             // cmdNext
             // 
             this.cmdNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdNext.Image = ((System.Drawing.Image)(resources.GetObject("cmdNext.Image")));
             this.cmdNext.ImageSize = new System.Drawing.Size(32, 32);
             this.cmdNext.Location = new System.Drawing.Point(522, 4);
             this.cmdNext.Name = "cmdNext";
@@ -759,7 +750,7 @@
             this.uiGroupBox4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiGroupBox4.Location = new System.Drawing.Point(0, 0);
             this.uiGroupBox4.Name = "uiGroupBox4";
-            this.uiGroupBox4.Size = new System.Drawing.Size(1008, 272);
+            this.uiGroupBox4.Size = new System.Drawing.Size(1008, 234);
             this.uiGroupBox4.TabIndex = 69;
             this.uiGroupBox4.Text = "Chi tiết trả kho lẻ nội trú";
             // 
@@ -767,8 +758,6 @@
             // 
             this.grdPhieuXuatChiTiet.AlternatingColors = true;
             this.grdPhieuXuatChiTiet.CellSelectionMode = Janus.Windows.GridEX.CellSelectionMode.SingleCell;
-            grdPhieuXuatChiTiet_DesignTimeLayout.LayoutString = resources.GetString("grdPhieuXuatChiTiet_DesignTimeLayout.LayoutString");
-            this.grdPhieuXuatChiTiet.DesignTimeLayout = grdPhieuXuatChiTiet_DesignTimeLayout;
             this.grdPhieuXuatChiTiet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdPhieuXuatChiTiet.DynamicFiltering = true;
             this.grdPhieuXuatChiTiet.FilterMode = Janus.Windows.GridEX.FilterMode.Automatic;
@@ -781,7 +770,7 @@
             this.grdPhieuXuatChiTiet.Name = "grdPhieuXuatChiTiet";
             this.grdPhieuXuatChiTiet.RecordNavigator = true;
             this.grdPhieuXuatChiTiet.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.grdPhieuXuatChiTiet.Size = new System.Drawing.Size(1002, 251);
+            this.grdPhieuXuatChiTiet.Size = new System.Drawing.Size(1002, 213);
             this.grdPhieuXuatChiTiet.TabIndex = 0;
             this.grdPhieuXuatChiTiet.TabStop = false;
             this.grdPhieuXuatChiTiet.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
@@ -795,7 +784,7 @@
             this.panel1.Controls.Add(this.cmdSave);
             this.panel1.Controls.Add(this.cmdExit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 272);
+            this.panel1.Location = new System.Drawing.Point(0, 234);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1008, 49);
             this.panel1.TabIndex = 70;
@@ -816,7 +805,6 @@
             // 
             this.cmdInPhieuNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdInPhieuNhap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdInPhieuNhap.Image = ((System.Drawing.Image)(resources.GetObject("cmdInPhieuNhap.Image")));
             this.cmdInPhieuNhap.ImageSize = new System.Drawing.Size(24, 24);
             this.cmdInPhieuNhap.Location = new System.Drawing.Point(646, 7);
             this.cmdInPhieuNhap.Name = "cmdInPhieuNhap";
@@ -829,7 +817,6 @@
             // 
             this.cmdSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdSave.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdSave.Image = ((System.Drawing.Image)(resources.GetObject("cmdSave.Image")));
             this.cmdSave.ImageSize = new System.Drawing.Size(24, 24);
             this.cmdSave.Location = new System.Drawing.Point(776, 7);
             this.cmdSave.Name = "cmdSave";
@@ -842,7 +829,6 @@
             // 
             this.cmdExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdExit.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdExit.Image = ((System.Drawing.Image)(resources.GetObject("cmdExit.Image")));
             this.cmdExit.ImageSize = new System.Drawing.Size(24, 24);
             this.cmdExit.Location = new System.Drawing.Point(895, 7);
             this.cmdExit.Name = "cmdExit";
@@ -855,7 +841,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.ClientSize = new System.Drawing.Size(1008, 662);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.grpControl);
             this.KeyPreview = true;

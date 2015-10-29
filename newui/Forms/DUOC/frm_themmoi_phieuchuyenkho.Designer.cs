@@ -29,10 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_themmoi_phieuchuyenkho));
             Janus.Windows.GridEX.GridEXLayout grdKhoXuat_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout grdPhieuXuatChiTiet_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_themmoi_phieuchuyenkho));
             this.grpControl = new Janus.Windows.EditControls.UIGroupBox();
+            this.cmdChonfile = new Janus.Windows.EditControls.UIButton();
+            this.txtPath = new Janus.Windows.GridEX.EditControls.EditBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.txtKhonhan = new VNS.HIS.UCs.AutoCompleteTextbox();
             this.txtKhoXuat = new VNS.HIS.UCs.AutoCompleteTextbox();
             this.txtNguoigiao = new VNS.HIS.UCs.AutoCompleteTextbox_Danhmucchung();
@@ -83,9 +86,6 @@
             this.cmdSave = new Janus.Windows.EditControls.UIButton();
             this.cmdExit = new Janus.Windows.EditControls.UIButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.cmdChonfile = new Janus.Windows.EditControls.UIButton();
-            this.txtPath = new Janus.Windows.GridEX.EditControls.EditBox();
-            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grpControl)).BeginInit();
             this.grpControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -151,6 +151,41 @@
             this.grpControl.Size = new System.Drawing.Size(1008, 187);
             this.grpControl.TabIndex = 1;
             this.grpControl.Text = "Thông tin phiếu xuất kho";
+            // 
+            // cmdChonfile
+            // 
+            this.cmdChonfile.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdChonfile.Image = ((System.Drawing.Image)(resources.GetObject("cmdChonfile.Image")));
+            this.cmdChonfile.ImageSize = new System.Drawing.Size(20, 20);
+            this.cmdChonfile.ImageVerticalAlignment = Janus.Windows.EditControls.ImageVerticalAlignment.Far;
+            this.cmdChonfile.Location = new System.Drawing.Point(690, 98);
+            this.cmdChonfile.Name = "cmdChonfile";
+            this.cmdChonfile.Size = new System.Drawing.Size(110, 24);
+            this.cmdChonfile.TabIndex = 494;
+            this.cmdChonfile.Text = "Chọn File";
+            this.toolTip1.SetToolTip(this.cmdChonfile, "Nhấn vào đây để thêm thuốc vào chi tiết");
+            this.cmdChonfile.Click += new System.EventHandler(this.cmdChonfile_Click);
+            // 
+            // txtPath
+            // 
+            this.txtPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPath.Enabled = false;
+            this.txtPath.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPath.Location = new System.Drawing.Point(88, 99);
+            this.txtPath.Name = "txtPath";
+            this.txtPath.Size = new System.Drawing.Size(596, 22);
+            this.txtPath.TabIndex = 493;
+            this.txtPath.TabStop = false;
+            // 
+            // label20
+            // 
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label20.Location = new System.Drawing.Point(8, 99);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(74, 20);
+            this.label20.TabIndex = 492;
+            this.label20.Text = "Path:";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtKhonhan
             // 
@@ -709,7 +744,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.uiGroupBox4);
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
-            this.splitContainer1.Size = new System.Drawing.Size(1008, 543);
+            this.splitContainer1.Size = new System.Drawing.Size(1008, 475);
             this.splitContainer1.SplitterDistance = 576;
             this.splitContainer1.TabIndex = 69;
             // 
@@ -721,7 +756,7 @@
             this.uiGroupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiGroupBox1.Location = new System.Drawing.Point(0, 0);
             this.uiGroupBox1.Name = "uiGroupBox1";
-            this.uiGroupBox1.Size = new System.Drawing.Size(526, 543);
+            this.uiGroupBox1.Size = new System.Drawing.Size(526, 475);
             this.uiGroupBox1.TabIndex = 1;
             this.uiGroupBox1.Text = "Danh sách thuốc trong kho xuất";
             // 
@@ -748,7 +783,7 @@
             this.grdKhoXuat.Name = "grdKhoXuat";
             this.grdKhoXuat.RecordNavigator = true;
             this.grdKhoXuat.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.grdKhoXuat.Size = new System.Drawing.Size(520, 522);
+            this.grdKhoXuat.Size = new System.Drawing.Size(520, 454);
             this.grdKhoXuat.TabIndex = 2;
             this.grdKhoXuat.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.grdKhoXuat.TotalRowPosition = Janus.Windows.GridEX.TotalRowPosition.BottomFixed;
@@ -783,7 +818,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(526, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(50, 543);
+            this.panel2.Size = new System.Drawing.Size(50, 475);
             this.panel2.TabIndex = 0;
             // 
             // cmdTaoNhanh
@@ -841,7 +876,7 @@
             this.uiGroupBox4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiGroupBox4.Location = new System.Drawing.Point(0, 0);
             this.uiGroupBox4.Name = "uiGroupBox4";
-            this.uiGroupBox4.Size = new System.Drawing.Size(428, 494);
+            this.uiGroupBox4.Size = new System.Drawing.Size(428, 426);
             this.uiGroupBox4.TabIndex = 69;
             this.uiGroupBox4.Text = "Chi tiết phiếu chuyển kho";
             // 
@@ -863,7 +898,7 @@
             this.grdPhieuXuatChiTiet.Name = "grdPhieuXuatChiTiet";
             this.grdPhieuXuatChiTiet.RecordNavigator = true;
             this.grdPhieuXuatChiTiet.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.grdPhieuXuatChiTiet.Size = new System.Drawing.Size(422, 473);
+            this.grdPhieuXuatChiTiet.Size = new System.Drawing.Size(422, 405);
             this.grdPhieuXuatChiTiet.TabIndex = 0;
             this.grdPhieuXuatChiTiet.TabStop = false;
             this.grdPhieuXuatChiTiet.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
@@ -876,7 +911,7 @@
             this.panel1.Controls.Add(this.cmdSave);
             this.panel1.Controls.Add(this.cmdExit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 494);
+            this.panel1.Location = new System.Drawing.Point(0, 426);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(428, 49);
             this.panel1.TabIndex = 70;
@@ -920,46 +955,11 @@
             this.cmdExit.TabStop = false;
             this.cmdExit.Text = "Thoát";
             // 
-            // cmdChonfile
-            // 
-            this.cmdChonfile.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdChonfile.Image = ((System.Drawing.Image)(resources.GetObject("cmdChonfile.Image")));
-            this.cmdChonfile.ImageSize = new System.Drawing.Size(20, 20);
-            this.cmdChonfile.ImageVerticalAlignment = Janus.Windows.EditControls.ImageVerticalAlignment.Far;
-            this.cmdChonfile.Location = new System.Drawing.Point(690, 98);
-            this.cmdChonfile.Name = "cmdChonfile";
-            this.cmdChonfile.Size = new System.Drawing.Size(110, 24);
-            this.cmdChonfile.TabIndex = 494;
-            this.cmdChonfile.Text = "Chọn File";
-            this.toolTip1.SetToolTip(this.cmdChonfile, "Nhấn vào đây để thêm thuốc vào chi tiết");
-            this.cmdChonfile.Click += new System.EventHandler(this.cmdChonfile_Click);
-            // 
-            // txtPath
-            // 
-            this.txtPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPath.Enabled = false;
-            this.txtPath.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPath.Location = new System.Drawing.Point(88, 99);
-            this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(596, 22);
-            this.txtPath.TabIndex = 493;
-            this.txtPath.TabStop = false;
-            // 
-            // label20
-            // 
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label20.Location = new System.Drawing.Point(8, 99);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(74, 20);
-            this.label20.TabIndex = 492;
-            this.label20.Text = "Path:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // frm_themmoi_phieuchuyenkho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.ClientSize = new System.Drawing.Size(1008, 662);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.grpControl);
             this.KeyPreview = true;
