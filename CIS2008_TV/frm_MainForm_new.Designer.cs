@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Node0");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Node1");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Node2");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Node3");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Node4");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Node5");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Node6");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Node7");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Node8");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Node10");
-            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Node11");
-            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Node12");
-            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Node13");
-            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Node14");
-            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Node9", new System.Windows.Forms.TreeNode[] {
-            treeNode40,
-            treeNode41,
-            treeNode42,
-            treeNode43,
-            treeNode44});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Node0");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Node1");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Node2");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Node3");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node4");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Node5");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Node6");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Node7");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Node8");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Node10");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Node11");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Node12");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Node13");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Node14");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Node9", new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode11,
+            treeNode12,
+            treeNode13,
+            treeNode14});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_MainForm_new));
             this.treeView = new System.Windows.Forms.TreeView();
             this.pMainConent = new Janus.Windows.UI.Dock.UIPanelGroup();
@@ -100,47 +100,47 @@
             this.treeView.LineColor = System.Drawing.Color.Empty;
             this.treeView.Location = new System.Drawing.Point(0, 0);
             this.treeView.Name = "treeView";
-            treeNode31.Name = "Node0";
-            treeNode31.Text = "Node0";
-            treeNode32.Name = "Node1";
-            treeNode32.Text = "Node1";
-            treeNode33.Name = "Node2";
-            treeNode33.Text = "Node2";
-            treeNode34.Name = "Node3";
-            treeNode34.Text = "Node3";
-            treeNode35.Name = "Node4";
-            treeNode35.Text = "Node4";
-            treeNode36.Name = "Node5";
-            treeNode36.Text = "Node5";
-            treeNode37.Name = "Node6";
-            treeNode37.Text = "Node6";
-            treeNode38.Name = "Node7";
-            treeNode38.Text = "Node7";
-            treeNode39.Name = "Node8";
-            treeNode39.Text = "Node8";
-            treeNode40.Name = "Node10";
-            treeNode40.Text = "Node10";
-            treeNode41.Name = "Node11";
-            treeNode41.Text = "Node11";
-            treeNode42.Name = "Node12";
-            treeNode42.Text = "Node12";
-            treeNode43.Name = "Node13";
-            treeNode43.Text = "Node13";
-            treeNode44.Name = "Node14";
-            treeNode44.Text = "Node14";
-            treeNode45.Name = "Node9";
-            treeNode45.Text = "Node9";
+            treeNode1.Name = "Node0";
+            treeNode1.Text = "Node0";
+            treeNode2.Name = "Node1";
+            treeNode2.Text = "Node1";
+            treeNode3.Name = "Node2";
+            treeNode3.Text = "Node2";
+            treeNode4.Name = "Node3";
+            treeNode4.Text = "Node3";
+            treeNode5.Name = "Node4";
+            treeNode5.Text = "Node4";
+            treeNode6.Name = "Node5";
+            treeNode6.Text = "Node5";
+            treeNode7.Name = "Node6";
+            treeNode7.Text = "Node6";
+            treeNode8.Name = "Node7";
+            treeNode8.Text = "Node7";
+            treeNode9.Name = "Node8";
+            treeNode9.Text = "Node8";
+            treeNode10.Name = "Node10";
+            treeNode10.Text = "Node10";
+            treeNode11.Name = "Node11";
+            treeNode11.Text = "Node11";
+            treeNode12.Name = "Node12";
+            treeNode12.Text = "Node12";
+            treeNode13.Name = "Node13";
+            treeNode13.Text = "Node13";
+            treeNode14.Name = "Node14";
+            treeNode14.Text = "Node14";
+            treeNode15.Name = "Node9";
+            treeNode15.Text = "Node9";
             this.treeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode31,
-            treeNode32,
-            treeNode33,
-            treeNode34,
-            treeNode35,
-            treeNode36,
-            treeNode37,
-            treeNode38,
-            treeNode39,
-            treeNode45});
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8,
+            treeNode9,
+            treeNode15});
             this.treeView.Size = new System.Drawing.Size(196, 461);
             this.treeView.TabIndex = 0;
             // 
@@ -437,7 +437,7 @@
             // lblCopyright
             // 
             this.lblCopyright.Name = "lblCopyright";
-            this.lblCopyright.Size = new System.Drawing.Size(550, 17);
+            this.lblCopyright.Size = new System.Drawing.Size(581, 17);
             this.lblCopyright.Spring = true;
             this.lblCopyright.Text = "COPYRIGHT © Công ty cổ phần CNTT VMS Việt Nam";
             this.lblCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

@@ -57,7 +57,7 @@
             // 
             this.txtUserName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtUserName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(167, 152);
+            this.txtUserName.Location = new System.Drawing.Point(148, 152);
             this.txtUserName.MaxLength = 100;
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(365, 21);
@@ -67,7 +67,7 @@
             // txtPassWord
             // 
             this.txtPassWord.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassWord.Location = new System.Drawing.Point(167, 183);
+            this.txtPassWord.Location = new System.Drawing.Point(148, 183);
             this.txtPassWord.MaxLength = 100;
             this.txtPassWord.Name = "txtPassWord";
             this.txtPassWord.PasswordChar = '*';
@@ -79,7 +79,7 @@
             // cmdLogin
             // 
             this.cmdLogin.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdLogin.Location = new System.Drawing.Point(324, 270);
+            this.cmdLogin.Location = new System.Drawing.Point(205, 271);
             this.cmdLogin.Name = "cmdLogin";
             this.cmdLogin.Size = new System.Drawing.Size(101, 28);
             this.cmdLogin.TabIndex = 3;
@@ -92,7 +92,7 @@
             this.cmdExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cmdExit.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdExit.ImageSize = new System.Drawing.Size(24, 24);
-            this.cmdExit.Location = new System.Drawing.Point(431, 270);
+            this.cmdExit.Location = new System.Drawing.Point(338, 271);
             this.cmdExit.Name = "cmdExit";
             this.cmdExit.Size = new System.Drawing.Size(101, 28);
             this.cmdExit.TabIndex = 4;
@@ -105,7 +105,7 @@
             // 
             this.chkRemember.BackColor = System.Drawing.Color.Transparent;
             this.chkRemember.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkRemember.Location = new System.Drawing.Point(167, 241);
+            this.chkRemember.Location = new System.Drawing.Point(148, 241);
             this.chkRemember.Name = "chkRemember";
             this.chkRemember.Size = new System.Drawing.Size(286, 23);
             this.chkRemember.TabIndex = 3;
@@ -116,15 +116,15 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(95, 8);
+            this.label1.Location = new System.Drawing.Point(93, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 22);
+            this.label1.Size = new System.Drawing.Size(410, 33);
             this.label1.TabIndex = 7;
             this.label1.Text = "ĐĂNG NHẬP HỆ THỐNG";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -138,7 +138,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(66, 152);
+            this.label2.Location = new System.Drawing.Point(47, 152);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 23);
             this.label2.TabIndex = 9;
@@ -148,7 +148,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(77, 189);
+            this.label3.Location = new System.Drawing.Point(58, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 10;
@@ -159,9 +159,9 @@
             // 
             this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(96, 34);
+            this.label4.Location = new System.Drawing.Point(93, 54);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(424, 36);
+            this.label4.Size = new System.Drawing.Size(410, 24);
             this.label4.TabIndex = 11;
             this.label4.Text = "Mời bạn nhập Tên đăng nhập+mật khẩu";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -204,7 +204,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(28, 123);
+            this.label5.Location = new System.Drawing.Point(9, 123);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(135, 23);
             this.label5.TabIndex = 16;
@@ -218,7 +218,7 @@
             this.cbogiaodien.Items.AddRange(new object[] {
             "Giao diện menu truyền thống",
             "Giao diện hòm thư Outlook"});
-            this.cbogiaodien.Location = new System.Drawing.Point(167, 125);
+            this.cbogiaodien.Location = new System.Drawing.Point(148, 125);
             this.cbogiaodien.Name = "cbogiaodien";
             this.cbogiaodien.Size = new System.Drawing.Size(365, 21);
             this.cbogiaodien.TabIndex = 0;
@@ -266,7 +266,7 @@
             this.cboKhoaKCB.Items.AddRange(new object[] {
             "Giao diện menu truyền thống",
             "Giao diện hòm thư Outlook"});
-            this.cboKhoaKCB.Location = new System.Drawing.Point(167, 210);
+            this.cboKhoaKCB.Location = new System.Drawing.Point(148, 210);
             this.cboKhoaKCB.Name = "cboKhoaKCB";
             this.cboKhoaKCB.Size = new System.Drawing.Size(365, 21);
             this.cboKhoaKCB.TabIndex = 18;
@@ -275,7 +275,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(28, 209);
+            this.label6.Location = new System.Drawing.Point(9, 209);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 23);
             this.label6.TabIndex = 19;
