@@ -35,6 +35,7 @@
             Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel2 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
             Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel3 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
             Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel4 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
+            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel5 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
             this.sysColor = new System.Windows.Forms.ToolStrip();
             this.cmdNew = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -317,13 +318,20 @@
             uiStatusBarPanel4.BorderColor = System.Drawing.Color.Empty;
             uiStatusBarPanel4.Key = "";
             uiStatusBarPanel4.ProgressBarValue = 0;
-            uiStatusBarPanel4.Text = "Esc:Thoát Form hiện tại";
-            uiStatusBarPanel4.Width = 144;
+            uiStatusBarPanel4.Text = "F5: Lấy  lại dữ liệu";
+            uiStatusBarPanel4.Width = 113;
+            uiStatusBarPanel5.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            uiStatusBarPanel5.BorderColor = System.Drawing.Color.Empty;
+            uiStatusBarPanel5.Key = "";
+            uiStatusBarPanel5.ProgressBarValue = 0;
+            uiStatusBarPanel5.Text = "Esc:Thoát Form hiện tại";
+            uiStatusBarPanel5.Width = 144;
             this.uiStatusBar2.Panels.AddRange(new Janus.Windows.UI.StatusBar.UIStatusBarPanel[] {
             uiStatusBarPanel1,
             uiStatusBarPanel2,
             uiStatusBarPanel3,
-            uiStatusBarPanel4});
+            uiStatusBarPanel4,
+            uiStatusBarPanel5});
             this.uiStatusBar2.Size = new System.Drawing.Size(973, 23);
             this.uiStatusBar2.TabIndex = 13;
             this.uiStatusBar2.VisualStyle = Janus.Windows.UI.VisualStyle.OfficeXP;

@@ -80,7 +80,7 @@ namespace VNS.HIS.UI.DANHMUC
         private void frm_dmuc_nhanvien_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape) toolStripButton1.PerformClick();
-            if (e.KeyCode == Keys.F3) cmdSearch.PerformClick();
+            if (e.KeyCode == Keys.F5) cmdSearch.PerformClick();
             if (e.Control && e.KeyCode == Keys.N) cmdNew.PerformClick();
             if (e.Control && e.KeyCode == Keys.E) cmdEdit.PerformClick();
             if (e.Control && e.KeyCode == Keys.D) cmdDelete.PerformClick();
