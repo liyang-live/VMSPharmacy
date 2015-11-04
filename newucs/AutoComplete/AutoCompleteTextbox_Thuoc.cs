@@ -444,8 +444,11 @@ namespace VNS.HIS.UCs
                 foreach (DataRow dr in dtData.Rows)
                 {
                     string shortcut = "";
-                    string realName = dr[DmucThuoc.Columns.TenThuoc].ToString().Trim() + " " +
-                        (dtData.Columns.Contains(DmucThuoc.Columns.HoatChat) ? Utility.Bodau(dr[DmucThuoc.Columns.HoatChat].ToString().Trim()) : Utility.Bodau(dr[DmucThuoc.Columns.HoatChat].ToString().Trim()));
+                    string realName = dr[DmucThuoc.Columns.TenThuoc].ToString().Trim()+" " +
+                                  (dtData.Columns.Contains(DmucThuoc.Columns.HoatChat)
+                                       ? Utility.Bodau(dr[DmucThuoc.Columns.HoatChat].ToString().Trim())
+                                       : Utility.Bodau(dr[DmucThuoc.Columns.HoatChat].ToString().Trim()));
+
                     shortcut = dr[DmucThuoc.Columns.MaThuoc].ToString().Trim();
                     string[] arrWords = realName.ToLower().Split(' ');
                     string _space = "";
@@ -475,7 +478,13 @@ namespace VNS.HIS.UCs
                 var source = new List<string>();
                 bool existed = dtData.Columns.Contains("id_thuockho");
                 var query = from p in dtData.Select("1=1", DmucThuoc.Columns.TenThuoc).AsEnumerable()
-                            select p[DmucThuoc.Columns.IdThuoc].ToString() + "#" + p[DmucThuoc.Columns.MaThuoc].ToString() + "@" + p[DmucThuoc.Columns.TenThuoc].ToString() + "(" + (dtData.Columns.Contains(DmucThuoc.Columns.HoatChat) ? p[DmucThuoc.Columns.HoatChat].ToString().Trim() : p[DmucThuoc.Columns.HoatChat].ToString().Trim()) + ")" + "@" + p["shortcut"].ToString() + "$" + (existed ? p["id_thuockho"].ToString() : "-1");
+                            select
+                                p[DmucThuoc.Columns.IdThuoc].ToString() + "#" + p[DmucThuoc.Columns.MaThuoc].ToString() 
+                                +"@" + p[DmucThuoc.Columns.TenThuoc].ToString() +
+                                "@" + p[DmucThuoc.Columns.TenThuoc].ToString() 
+                                //+ "(" +(dtData.Columns.Contains(DmucThuoc.Columns.HoatChat)? p[DmucThuoc.Columns.HoatChat].ToString().Trim(): p[DmucThuoc.Columns.HoatChat].ToString().Trim()) + ")" 
+                                + "@" +
+                                p["shortcut"].ToString() + "$" + (existed ? p["id_thuockho"].ToString() : "-1");
                 source = query.ToList();
                 this.AutoCompleteList = source;
                 this.TextAlign = HorizontalAlignment.Center;
