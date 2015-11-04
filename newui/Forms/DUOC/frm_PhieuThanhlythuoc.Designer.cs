@@ -255,8 +255,9 @@
             // 
             this.txtthuoc._backcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtthuoc._Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtthuoc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtthuoc.AllowedSelectPrice = false;
+            this.txtthuoc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtthuoc.AutoCompleteList = ((System.Collections.Generic.List<string>)(resources.GetObject("txtthuoc.AutoCompleteList")));
             this.txtthuoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtthuoc.CaseSensitive = false;
@@ -359,8 +360,8 @@
             // 
             // cboNhanVien
             // 
-            this.cboNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cboNhanVien.Location = new System.Drawing.Point(490, 26);
             this.cboNhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboNhanVien.MaxDropDownItems = 15;
@@ -384,6 +385,7 @@
             // 
             // dtToDate
             // 
+            this.dtToDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtToDate.Location = new System.Drawing.Point(241, 86);
             this.dtToDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtToDate.Name = "dtToDate";
@@ -403,6 +405,7 @@
             // 
             // dtFromdate
             // 
+            this.dtFromdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtFromdate.Location = new System.Drawing.Point(94, 85);
             this.dtFromdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtFromdate.Name = "dtFromdate";
@@ -463,7 +466,7 @@
             // 
             this.grdList.AlternatingColors = true;
             this.grdList.BuiltInTextsData = "<LocalizableData ID=\"LocalizableStrings\" Collection=\"true\"><FilterRowInfoText>Lọc" +
-                " thông tin phiếu nhập khoa</FilterRowInfoText></LocalizableData>";
+    " thông tin phiếu nhập khoa</FilterRowInfoText></LocalizableData>";
             grdList_DesignTimeLayout.LayoutString = resources.GetString("grdList_DesignTimeLayout.LayoutString");
             this.grdList.DesignTimeLayout = grdList_DesignTimeLayout;
             this.grdList.Dock = System.Windows.Forms.DockStyle.Fill;

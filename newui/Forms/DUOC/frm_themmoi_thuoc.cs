@@ -113,6 +113,7 @@ namespace VNS.HIS.UI.THUOC
             txtThuoc._OnEnterMe += txtThuoc__OnEnterMe;
             txtCachsudung._OnShowData += txtCachsudung__OnShowData;
             txtNuocSX._OnShowData += txtNuocSX__OnShowData;
+            txtNguongoc._OnShowData += txtNguongoc__OnShowData;
             txtHangSX._OnShowData += txtHangSX__OnShowData;
             txtDangBaoChe._OnShowData += txtDangBaoChe__OnShowData;
             txtKieuthuocVT._OnShowData += txtKieuthuocVT__OnShowData;
@@ -123,7 +124,12 @@ namespace VNS.HIS.UI.THUOC
         {
             if (m_enAction == action.Insert)
             {
-
+                DataTable dataTable = SPs.ThuocTaomathuoc(txtName.Text).GetDataSet().Tables[0];
+                if (dataTable.Rows.Count > 0)
+                {
+                    txtCode.Text = "";
+                    txtCode.Text = Utility.sDbnull(dataTable.Rows[0][0]);
+                }
             }
         }
 
@@ -182,6 +188,18 @@ namespace VNS.HIS.UI.THUOC
                 txtNuocSX.SetCode(oldCode);
                 txtNuocSX.Focus();
             }     
+        }
+        void txtNguongoc__OnShowData()
+        {
+            DMUC_DCHUNG _DMUC_DCHUNG = new DMUC_DCHUNG(txtNguongoc.LOAI_DANHMUC);
+            _DMUC_DCHUNG.ShowDialog();
+            if (!_DMUC_DCHUNG.m_blnCancel)
+            {
+                string oldCode = txtNguongoc.myCode;
+                txtNguongoc.Init();
+                txtNguongoc.SetCode(oldCode);
+                txtNguongoc.Focus();
+            }
         }
 
         void txtCachsudung__OnShowData()
@@ -469,6 +487,7 @@ namespace VNS.HIS.UI.THUOC
                     cboDrugNature.SelectedIndex = Convert.ToInt32(objThuoc.TinhChat);
                     txtNumber_Register.Text = Utility.sDbnull(objThuoc.SoDangky);
                     txtNuocSX._Text = Utility.sDbnull(objThuoc.NuocSanxuat);
+                    txtNguongoc._Text = Utility.sDbnull(objThuoc.NguonGoc);
                     txtHangSX._Text = Utility.sDbnull(objThuoc.HangSanxuat);
                     txtContent.Text = Utility.sDbnull(objThuoc.HamLuong);
                     txtQD31.Text = objThuoc.QD31;
@@ -702,7 +721,7 @@ namespace VNS.HIS.UI.THUOC
                 objThuoc.DonviBut = (int)Utility.DecimaltoDbnull(txtBut.Text, -1);
                 objThuoc.MaDonvitinh = txtDonvitinh.myCode;
                 objThuoc.CachSudung = txtCachsudung.myCode;
-
+                objThuoc.NguonGoc = Utility.sDbnull(txtNguongoc.Text,"");
                 objThuoc.CoChiathuoc = Utility.Bool2byte(chkChiathuoc.Checked);
                 objThuoc.MaDvichia = txtDonvichia.myCode;
                 objThuoc.SluongChia =(int) Utility.DecimaltoDbnull(txtSoluongchia.Text, 0);
@@ -740,6 +759,7 @@ namespace VNS.HIS.UI.THUOC
                 }
                 catch (Exception exception)
                 {
+                   Utility.ShowMsg("Lỗi:"+ exception.Message);
                 }
                 Utility.SetMsg(lblMsg, "Thêm mới dữ liệu thành công!",false);
                 SetControlStatus();
@@ -826,7 +846,7 @@ namespace VNS.HIS.UI.THUOC
             objThuoc.MaDvichia = txtDonvichia.myCode;
             objThuoc.SluongChia = (int)Utility.DecimaltoDbnull(txtSoluongchia.Text, 0);
             objThuoc.DongiaChia = Utility.DecimaltoDbnull(txtDongiachia.Text, 0);
-
+            objThuoc.NguonGoc = Utility.sDbnull(txtNguongoc.Text, "");
             objThuoc.NoitruNgoaitru=optAll.Checked?"ALL":(optNoitru.Checked?"NOI":"NGOAI");
             objThuoc.KieuThuocvattu = txtKieuthuocVT.myCode;
             objThuoc.IsNew = false;
@@ -889,8 +909,9 @@ namespace VNS.HIS.UI.THUOC
                         break;
                 }
             }
-            catch
+            catch(Exception ex)
             {
+               Utility.ShowMsg("Lỗi:"+ ex.Message);
             }
 
         }
@@ -912,6 +933,7 @@ namespace VNS.HIS.UI.THUOC
             txtNuocSX.Init();
             txtHangSX.Init();
             txtDangBaoChe.Init();
+            txtNguongoc.Init();
             txtCachsudung.Init();
             pnlGia.Enabled = Utility.Coquyen("quyen_suagia_trendanhmucthuoc");
             txtName.Init(m_dtDrugDataSource.Copy(), new List<string>() { DmucThuoc.Columns.IdThuoc, DmucThuoc.Columns.MaThuoc, DmucThuoc.Columns.TenThuoc });
@@ -1153,6 +1175,18 @@ namespace VNS.HIS.UI.THUOC
         private void txtContent_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtCode_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+               
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowMsg("Lỗi:" + ex.Message);
+            }
         }
 
 

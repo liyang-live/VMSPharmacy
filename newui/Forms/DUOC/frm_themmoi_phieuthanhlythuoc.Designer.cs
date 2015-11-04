@@ -77,6 +77,8 @@
             this.cmdSave = new Janus.Windows.EditControls.UIButton();
             this.cmdExit = new Janus.Windows.EditControls.UIButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.txtsoluong = new MaskedTextBox.MaskedTextBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grpControl)).BeginInit();
             this.grpControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -96,6 +98,8 @@
             // grpControl
             // 
             this.grpControl.BackColor = System.Drawing.SystemColors.Control;
+            this.grpControl.Controls.Add(this.txtsoluong);
+            this.grpControl.Controls.Add(this.label16);
             this.grpControl.Controls.Add(this.label15);
             this.grpControl.Controls.Add(this.label14);
             this.grpControl.Controls.Add(this.dtpTo);
@@ -244,7 +248,7 @@
             // 
             this.txtDongia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDongia.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDongia.Location = new System.Drawing.Point(559, 255);
+            this.txtDongia.Location = new System.Drawing.Point(756, 255);
             this.txtDongia.Masked = MaskedTextBox.Mask.Digit;
             this.txtDongia.Name = "txtDongia";
             this.txtDongia.Size = new System.Drawing.Size(92, 21);
@@ -255,7 +259,7 @@
             // 
             this.label11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label11.Location = new System.Drawing.Point(480, 257);
+            this.label11.Location = new System.Drawing.Point(677, 255);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(76, 20);
             this.label11.TabIndex = 484;
@@ -277,7 +281,7 @@
             this.cmdAddDetail.Enabled = false;
             this.cmdAddDetail.Image = ((System.Drawing.Image)(resources.GetObject("cmdAddDetail.Image")));
             this.cmdAddDetail.ImageSize = new System.Drawing.Size(24, 24);
-            this.cmdAddDetail.Location = new System.Drawing.Point(931, 248);
+            this.cmdAddDetail.Location = new System.Drawing.Point(854, 249);
             this.cmdAddDetail.Name = "cmdAddDetail";
             this.cmdAddDetail.Size = new System.Drawing.Size(43, 30);
             this.cmdAddDetail.TabIndex = 12;
@@ -298,7 +302,7 @@
             // 
             this.txtSoluongdutru.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSoluongdutru.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoluongdutru.Location = new System.Drawing.Point(393, 255);
+            this.txtSoluongdutru.Location = new System.Drawing.Point(590, 255);
             this.txtSoluongdutru.Masked = MaskedTextBox.Mask.Digit;
             this.txtSoluongdutru.Name = "txtSoluongdutru";
             this.txtSoluongdutru.Size = new System.Drawing.Size(81, 21);
@@ -309,7 +313,7 @@
             // 
             this.label10.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label10.Location = new System.Drawing.Point(323, 257);
+            this.label10.Location = new System.Drawing.Point(520, 255);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 20);
             this.label10.TabIndex = 66;
@@ -332,7 +336,7 @@
             this.txtLydohuy.FillValueAfterSelect = false;
             this.txtLydohuy.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLydohuy.LOAI_DANHMUC = "LYDOTHANHLY";
-            this.txtLydohuy.Location = new System.Drawing.Point(708, 255);
+            this.txtLydohuy.Location = new System.Drawing.Point(801, 127);
             this.txtLydohuy.MaxHeight = 300;
             this.txtLydohuy.MinTypedCharacters = 2;
             this.txtLydohuy.MyCode = "-1";
@@ -342,7 +346,7 @@
             this.txtLydohuy.RaiseEventEnter = false;
             this.txtLydohuy.RaiseEventEnterWhenEmpty = false;
             this.txtLydohuy.SelectedIndex = -1;
-            this.txtLydohuy.Size = new System.Drawing.Size(217, 21);
+            this.txtLydohuy.Size = new System.Drawing.Size(160, 21);
             this.txtLydohuy.splitChar = '@';
             this.txtLydohuy.splitCharIDAndCode = '#';
             this.txtLydohuy.TabIndex = 11;
@@ -359,7 +363,7 @@
             // 
             this.label6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(637, 254);
+            this.label6.Location = new System.Drawing.Point(730, 126);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 20);
             this.label6.TabIndex = 64;
@@ -378,7 +382,7 @@
             // 
             this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(9, 256);
+            this.label7.Location = new System.Drawing.Point(9, 255);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 20);
             this.label7.TabIndex = 65;
@@ -431,7 +435,7 @@
             this.txtthuoc.ExtraWidth_Pre = 0;
             this.txtthuoc.FillValueAfterSelect = true;
             this.txtthuoc.Font = new System.Drawing.Font("Arial", 9F);
-            this.txtthuoc.GridView = false;
+            this.txtthuoc.GridView = true;
             this.txtthuoc.Location = new System.Drawing.Point(85, 255);
             this.txtthuoc.MaxHeight = 300;
             this.txtthuoc.MinTypedCharacters = 2;
@@ -442,7 +446,7 @@
             this.txtthuoc.RaiseEventEnter = true;
             this.txtthuoc.RaiseEventEnterWhenEmpty = true;
             this.txtthuoc.SelectedIndex = -1;
-            this.txtthuoc.Size = new System.Drawing.Size(233, 21);
+            this.txtthuoc.Size = new System.Drawing.Size(430, 21);
             this.txtthuoc.splitChar = '@';
             this.txtthuoc.splitCharIDAndCode = '#';
             this.txtthuoc.TabIndex = 8;
@@ -775,6 +779,29 @@
             this.cmdExit.Text = "Thoát Form";
             this.toolTip1.SetToolTip(this.cmdExit, "Nhấn nút này để thoát khỏi chức năng");
             // 
+            // txtsoluong
+            // 
+            this.txtsoluong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsoluong.Enabled = false;
+            this.txtsoluong.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsoluong.Location = new System.Drawing.Point(944, 255);
+            this.txtsoluong.Masked = MaskedTextBox.Mask.Digit;
+            this.txtsoluong.Name = "txtsoluong";
+            this.txtsoluong.Size = new System.Drawing.Size(58, 21);
+            this.txtsoluong.TabIndex = 491;
+            this.txtsoluong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label16.Location = new System.Drawing.Point(900, 255);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(45, 20);
+            this.label16.TabIndex = 492;
+            this.label16.Text = "SL tồn:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // frm_themmoi_phieuthanhlythuoc
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -856,5 +883,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dtpFrom;
         private RicherTextBox.RicherTextBox txtHoidong;
+        private MaskedTextBox.MaskedTextBox txtsoluong;
+        private System.Windows.Forms.Label label16;
     }
 }

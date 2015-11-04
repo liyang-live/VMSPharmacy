@@ -83,6 +83,8 @@
             this.cmdSave = new Janus.Windows.EditControls.UIButton();
             this.cmdExit = new Janus.Windows.EditControls.UIButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.txtsoluong = new MaskedTextBox.MaskedTextBox();
+            this.label18 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grpControl)).BeginInit();
             this.grpControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -103,6 +105,8 @@
             // grpControl
             // 
             this.grpControl.BackColor = System.Drawing.SystemColors.Control;
+            this.grpControl.Controls.Add(this.txtsoluong);
+            this.grpControl.Controls.Add(this.label18);
             this.grpControl.Controls.Add(this.label17);
             this.grpControl.Controls.Add(this.cboKhoaTra);
             this.grpControl.Controls.Add(this.txtNguoigiao);
@@ -233,7 +237,7 @@
             this.cmdAddDetail.Enabled = false;
             this.cmdAddDetail.Image = ((System.Drawing.Image)(resources.GetObject("cmdAddDetail.Image")));
             this.cmdAddDetail.ImageSize = new System.Drawing.Size(24, 24);
-            this.cmdAddDetail.Location = new System.Drawing.Point(959, 120);
+            this.cmdAddDetail.Location = new System.Drawing.Point(780, 121);
             this.cmdAddDetail.Name = "cmdAddDetail";
             this.cmdAddDetail.Size = new System.Drawing.Size(43, 30);
             this.cmdAddDetail.TabIndex = 17;
@@ -242,10 +246,10 @@
             // 
             this.txtSoluongdutru.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSoluongdutru.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoluongdutru.Location = new System.Drawing.Point(779, 127);
+            this.txtSoluongdutru.Location = new System.Drawing.Point(672, 127);
             this.txtSoluongdutru.Masked = MaskedTextBox.Mask.Digit;
             this.txtSoluongdutru.Name = "txtSoluongdutru";
-            this.txtSoluongdutru.Size = new System.Drawing.Size(174, 21);
+            this.txtSoluongdutru.Size = new System.Drawing.Size(102, 21);
             this.txtSoluongdutru.TabIndex = 16;
             this.txtSoluongdutru.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -253,18 +257,18 @@
             // 
             this.label14.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label14.Location = new System.Drawing.Point(690, 128);
+            this.label14.Location = new System.Drawing.Point(583, 127);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(83, 20);
             this.label14.TabIndex = 485;
-            this.label14.Text = "S.L chuyển:";
+            this.label14.Text = "S.L trả:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label15
             // 
             this.label15.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label15.Location = new System.Drawing.Point(12, 128);
+            this.label15.Location = new System.Drawing.Point(12, 127);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(65, 20);
             this.label15.TabIndex = 484;
@@ -287,7 +291,7 @@
             this.txtthuoc.ExtraWidth_Pre = 0;
             this.txtthuoc.FillValueAfterSelect = true;
             this.txtthuoc.Font = new System.Drawing.Font("Arial", 9F);
-            this.txtthuoc.GridView = false;
+            this.txtthuoc.GridView = true;
             this.txtthuoc.Location = new System.Drawing.Point(88, 127);
             this.txtthuoc.MaxHeight = 300;
             this.txtthuoc.MinTypedCharacters = 2;
@@ -298,7 +302,7 @@
             this.txtthuoc.RaiseEventEnter = true;
             this.txtthuoc.RaiseEventEnterWhenEmpty = true;
             this.txtthuoc.SelectedIndex = -1;
-            this.txtthuoc.Size = new System.Drawing.Size(596, 21);
+            this.txtthuoc.Size = new System.Drawing.Size(492, 21);
             this.txtthuoc.splitChar = '@';
             this.txtthuoc.splitCharIDAndCode = '#';
             this.txtthuoc.TabIndex = 15;
@@ -649,7 +653,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer1.Size = new System.Drawing.Size(1008, 506);
-            this.splitContainer1.SplitterDistance = 219;
+            this.splitContainer1.SplitterDistance = 218;
             this.splitContainer1.TabIndex = 69;
             // 
             // uiGroupBox1
@@ -660,7 +664,7 @@
             this.uiGroupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiGroupBox1.Location = new System.Drawing.Point(0, 0);
             this.uiGroupBox1.Name = "uiGroupBox1";
-            this.uiGroupBox1.Size = new System.Drawing.Size(1008, 176);
+            this.uiGroupBox1.Size = new System.Drawing.Size(1008, 175);
             this.uiGroupBox1.TabIndex = 1;
             this.uiGroupBox1.Text = "Danh sách thuốc trong kho lẻ BN Nội trú";
             // 
@@ -687,7 +691,7 @@
             this.grdKhoXuat.Name = "grdKhoXuat";
             this.grdKhoXuat.RecordNavigator = true;
             this.grdKhoXuat.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.grdKhoXuat.Size = new System.Drawing.Size(1002, 155);
+            this.grdKhoXuat.Size = new System.Drawing.Size(1002, 154);
             this.grdKhoXuat.TabIndex = 2;
             this.grdKhoXuat.TotalRowPosition = Janus.Windows.GridEX.TotalRowPosition.BottomFixed;
             this.grdKhoXuat.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2005;
@@ -718,7 +722,7 @@
             this.panel2.Controls.Add(this.cmdPrevius);
             this.panel2.Controls.Add(this.cmdNext);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 176);
+            this.panel2.Location = new System.Drawing.Point(0, 175);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1008, 43);
             this.panel2.TabIndex = 0;
@@ -758,7 +762,7 @@
             this.uiGroupBox4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiGroupBox4.Location = new System.Drawing.Point(0, 0);
             this.uiGroupBox4.Name = "uiGroupBox4";
-            this.uiGroupBox4.Size = new System.Drawing.Size(1008, 234);
+            this.uiGroupBox4.Size = new System.Drawing.Size(1008, 235);
             this.uiGroupBox4.TabIndex = 69;
             this.uiGroupBox4.Text = "Chi tiết phiếu trả lại";
             // 
@@ -780,7 +784,7 @@
             this.grdPhieuXuatChiTiet.Name = "grdPhieuXuatChiTiet";
             this.grdPhieuXuatChiTiet.RecordNavigator = true;
             this.grdPhieuXuatChiTiet.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
-            this.grdPhieuXuatChiTiet.Size = new System.Drawing.Size(1002, 213);
+            this.grdPhieuXuatChiTiet.Size = new System.Drawing.Size(1002, 214);
             this.grdPhieuXuatChiTiet.TabIndex = 0;
             this.grdPhieuXuatChiTiet.TabStop = false;
             this.grdPhieuXuatChiTiet.TotalRowPosition = Janus.Windows.GridEX.TotalRowPosition.BottomFixed;
@@ -793,7 +797,7 @@
             this.panel1.Controls.Add(this.cmdSave);
             this.panel1.Controls.Add(this.cmdExit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 234);
+            this.panel1.Location = new System.Drawing.Point(0, 235);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1008, 49);
             this.panel1.TabIndex = 70;
@@ -848,6 +852,29 @@
             this.cmdExit.TabIndex = 22;
             this.cmdExit.TabStop = false;
             this.cmdExit.Text = "Thoát Form";
+            // 
+            // txtsoluong
+            // 
+            this.txtsoluong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsoluong.Enabled = false;
+            this.txtsoluong.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsoluong.Location = new System.Drawing.Point(897, 127);
+            this.txtsoluong.Masked = MaskedTextBox.Mask.Digit;
+            this.txtsoluong.Name = "txtsoluong";
+            this.txtsoluong.Size = new System.Drawing.Size(75, 21);
+            this.txtsoluong.TabIndex = 491;
+            this.txtsoluong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label18.Location = new System.Drawing.Point(829, 127);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(62, 20);
+            this.label18.TabIndex = 492;
+            this.label18.Text = "S.L tồn:";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // frm_Themmoi_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru
             // 
@@ -940,5 +967,7 @@
         private System.Windows.Forms.Label label17;
         private Janus.Windows.EditControls.UIComboBox cboKhoaTra;
         private System.Windows.Forms.Label lblMsg;
+        private MaskedTextBox.MaskedTextBox txtsoluong;
+        private System.Windows.Forms.Label label18;
     }
 }

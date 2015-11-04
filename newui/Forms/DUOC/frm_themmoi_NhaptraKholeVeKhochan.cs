@@ -53,8 +53,12 @@ namespace VNS.HIS.UI.THUOC
             this.cmdNext.Click += new System.EventHandler(this.cmdNext_Click);
             this.chkIsHetHan.CheckedChanged += new System.EventHandler(this.chkIsHetHan_CheckedChanged);
             cmdAddDetail.Click+=new EventHandler(cmdAddDetail_Click);
+            txtthuoc._OnGridSelectionChanged += txtthuoc__OnGridSelectionChanged;
         }
-
+        void txtthuoc__OnGridSelectionChanged(string ID, int id_thuockho, string _name, string Dongia, string phuthu, int tutuc)
+        {
+            int _idthuoc = Utility.Int32Dbnull(txtthuoc.MyID, -1);
+        }
        
         void txtthuoc__OnSelectionChanged()
         {
@@ -70,7 +74,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {
@@ -112,7 +116,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {

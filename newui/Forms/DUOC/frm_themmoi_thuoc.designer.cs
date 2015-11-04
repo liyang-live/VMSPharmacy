@@ -32,6 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_themmoi_thuoc));
             Janus.Windows.GridEX.GridEXLayout grdDmucthuoc_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNguongoc = new VNS.HIS.UCs.AutoCompleteTextbox_Danhmucchung();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtDesc = new System.Windows.Forms.TextBox();
             this.txtMaQD40 = new System.Windows.Forms.TextBox();
             this.txtMaQDTinh = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -108,7 +111,6 @@
             this.chkThemlientuc = new Janus.Windows.EditControls.UICheckBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.cmdNew = new Janus.Windows.EditControls.UIButton();
-            this.txtDesc = new System.Windows.Forms.TextBox();
             this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDmucthuoc)).BeginInit();
             this.pnlGia.SuspendLayout();
@@ -117,6 +119,8 @@
             // GroupBox1
             // 
             this.GroupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.GroupBox1.Controls.Add(this.txtNguongoc);
+            this.GroupBox1.Controls.Add(this.label26);
             this.GroupBox1.Controls.Add(this.txtDesc);
             this.GroupBox1.Controls.Add(this.txtMaQD40);
             this.GroupBox1.Controls.Add(this.txtMaQDTinh);
@@ -186,6 +190,69 @@
             this.GroupBox1.TabIndex = 0;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Thông tin chi tiết thuốc";
+            // 
+            // txtNguongoc
+            // 
+            this.txtNguongoc._backcolor = System.Drawing.SystemColors.Control;
+            this.txtNguongoc._Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNguongoc._TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNguongoc.AutoCompleteList = ((System.Collections.Generic.List<string>)(resources.GetObject("txtNguongoc.AutoCompleteList")));
+            this.txtNguongoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNguongoc.CaseSensitive = false;
+            this.txtNguongoc.CompareNoID = true;
+            this.txtNguongoc.DefaultCode = "-1";
+            this.txtNguongoc.DefaultID = "-1";
+            this.txtNguongoc.Drug_ID = null;
+            this.txtNguongoc.ExtraWidth = 0;
+            this.txtNguongoc.FillValueAfterSelect = false;
+            this.txtNguongoc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNguongoc.LOAI_DANHMUC = "NGUONGOC";
+            this.txtNguongoc.Location = new System.Drawing.Point(112, 361);
+            this.txtNguongoc.MaxHeight = -1;
+            this.txtNguongoc.MinTypedCharacters = 2;
+            this.txtNguongoc.MyCode = "-1";
+            this.txtNguongoc.MyID = "-1";
+            this.txtNguongoc.Name = "txtNguongoc";
+            this.txtNguongoc.RaiseEvent = false;
+            this.txtNguongoc.RaiseEventEnter = false;
+            this.txtNguongoc.RaiseEventEnterWhenEmpty = false;
+            this.txtNguongoc.SelectedIndex = -1;
+            this.txtNguongoc.Size = new System.Drawing.Size(192, 21);
+            this.txtNguongoc.splitChar = '@';
+            this.txtNguongoc.splitCharIDAndCode = '#';
+            this.txtNguongoc.TabIndex = 1744;
+            this.txtNguongoc.TakeCode = false;
+            this.txtNguongoc.txtMyCode = null;
+            this.txtNguongoc.txtMyCode_Edit = null;
+            this.txtNguongoc.txtMyID = null;
+            this.txtNguongoc.txtMyID_Edit = null;
+            this.txtNguongoc.txtMyName = null;
+            this.txtNguongoc.txtMyName_Edit = null;
+            this.txtNguongoc.txtNext = null;
+            // 
+            // label26
+            // 
+            this.label26.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(11, 360);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(96, 23);
+            this.label26.TabIndex = 1743;
+            this.label26.Text = "Nguồn gốc";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.label26, "Với thuốc có tính chất độc hại có thể ghi vào đây dòng cảnh báo khi kê đơn");
+            // 
+            // txtDesc
+            // 
+            this.txtDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDesc.BackColor = System.Drawing.Color.White;
+            this.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesc.Location = new System.Drawing.Point(112, 335);
+            this.txtDesc.MaxLength = 100;
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(594, 21);
+            this.txtDesc.TabIndex = 25;
             // 
             // txtMaQD40
             // 
@@ -330,7 +397,7 @@
             this.txtName.splitChar = '@';
             this.txtName.splitCharIDAndCode = '#';
             this.txtName.TabIndex = 4;
-            this.txtName.TakeCode = true;
+            this.txtName.TakeCode = false;
             this.txtName.txtMyCode = null;
             this.txtName.txtMyCode_Edit = null;
             this.txtName.txtMyID = null;
@@ -1128,6 +1195,7 @@
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(98, 21);
             this.txtCode.TabIndex = 1;
+            this.txtCode.TextChanged += new System.EventHandler(this.txtCode_TextChanged);
             // 
             // Label5
             // 
@@ -1361,19 +1429,6 @@
             this.cmdNew.Text = "&Thêm mới";
             this.cmdNew.ToolTipText = "Nhấn vào đây để thêm mới Bệnh nhân";
             // 
-            // txtDesc
-            // 
-            this.txtDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDesc.BackColor = System.Drawing.Color.White;
-            this.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesc.Location = new System.Drawing.Point(112, 335);
-            this.txtDesc.MaxLength = 100;
-            this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(594, 21);
-            this.txtDesc.TabIndex = 25;
-            // 
             // frm_themmoi_thuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1484,5 +1539,7 @@
         private MaskedTextBox.MaskedTextBox txtGiaDV;
         internal System.Windows.Forms.Label label25;
         internal System.Windows.Forms.TextBox txtDesc;
+        internal System.Windows.Forms.Label label26;
+        private UCs.AutoCompleteTextbox_Danhmucchung txtNguongoc;
     }
 }

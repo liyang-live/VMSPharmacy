@@ -41,6 +41,7 @@ namespace VNS.HIS.UI.THUOC
         void InitEvents()
         {
             txtthuoc._OnEnterMe += new UCs.AutoCompleteTextbox_Thuoc.OnEnterMe(txtthuoc__OnEnterMe);
+            txtthuoc._OnGridSelectionChanged += txtthuoc__OnGridSelectionChanged;
             txtthuoc._OnSelectionChanged += new UCs.AutoCompleteTextbox_Thuoc.OnSelectionChanged(txtthuoc__OnSelectionChanged);
             txtMotathem.KeyDown += new KeyEventHandler(txtMotathem_KeyDown);
             this.grdKhoXuat.UpdatingCell += new Janus.Windows.GridEX.UpdatingCellEventHandler(this.grdKhoXuat_UpdatingCell);
@@ -58,7 +59,17 @@ namespace VNS.HIS.UI.THUOC
             cmdAddDetail.Click += new EventHandler(cmdAddDetail_Click);
             txtLydohuy.KeyDown += new KeyEventHandler(txtLydohuy_KeyDown);
         }
+        void txtthuoc__OnGridSelectionChanged(string ID, int id_thuockho, string _name, string Dongia, string phuthu, int tutuc)
+        {
+            int _idthuoc = Utility.Int32Dbnull(txtthuoc.MyID, -1);
+            //var soluong = (from sl in m_dtDataThuocKho.AsEnumerable()
+            //               where Utility.Int16Dbnull(sl["ID_THUOC"]) == Utility.Int32Dbnull(_idthuoc)
+            //               select sl["SO_LUONG"]).FirstOrDefault();
+            //txtsoluong.Text = soluong.ToString();
 
+            //txtidthuockho.Text = Utility.sDbnull(id_thuockho);
+
+        }
         void grdKhoXuat_SelectionChanged(object sender, EventArgs e)
         {
             if (!AllowedChanged) return;
@@ -164,7 +175,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-                        
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {
@@ -223,7 +234,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {

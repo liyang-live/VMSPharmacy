@@ -186,7 +186,7 @@
             uiStatusBarPanel4.BorderColor = System.Drawing.Color.Empty;
             uiStatusBarPanel4.Key = "";
             uiStatusBarPanel4.ProgressBarValue = 0;
-            uiStatusBarPanel4.Text = "F9: Lấy lại dữ liệu";
+            uiStatusBarPanel4.Text = "F5: Lấy lại dữ liệu";
             uiStatusBarPanel4.Width = 110;
             uiStatusBarPanel5.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
             uiStatusBarPanel5.BorderColor = System.Drawing.Color.Empty;

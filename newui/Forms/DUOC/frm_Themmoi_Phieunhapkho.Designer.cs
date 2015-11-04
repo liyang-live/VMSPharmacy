@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Themmoi_Phieunhapkho));
-            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel9 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
-            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel10 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
-            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel11 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
-            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel12 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
+            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel1 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
+            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel2 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
+            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel3 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
+            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel4 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
             Janus.Windows.GridEX.GridEXLayout grdPhieuNhapChiTiet_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.grpControl = new Janus.Windows.EditControls.UIGroupBox();
             this.txtKhonhap = new VNS.HIS.UCs.AutoCompleteTextbox();
@@ -101,6 +101,7 @@
             this.lblThangdu = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.cmdChonfile = new Janus.Windows.EditControls.UIButton();
             this.lblBHYTcu = new System.Windows.Forms.Label();
             this.lblPhuthuDt = new System.Windows.Forms.Label();
             this.lblPhuthuTT = new System.Windows.Forms.Label();
@@ -121,7 +122,6 @@
             this.txtDrugName = new VNS.HIS.UCs.AutoCompleteTextbox_Thuoc();
             this.txtsoDK = new VNS.HIS.UCs.AutoCompleteTextbox_Danhmucchung();
             this.txtsoQDthau = new VNS.HIS.UCs.AutoCompleteTextbox_Danhmucchung();
-            this.cmdChonfile = new Janus.Windows.EditControls.UIButton();
             this.txtPath = new Janus.Windows.GridEX.EditControls.EditBox();
             this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grpControl)).BeginInit();
@@ -659,37 +659,37 @@
             this.uiStatusBar1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiStatusBar1.Location = new System.Drawing.Point(0, 627);
             this.uiStatusBar1.Name = "uiStatusBar1";
-            uiStatusBarPanel9.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-            uiStatusBarPanel9.BorderColor = System.Drawing.Color.Empty;
-            uiStatusBarPanel9.Key = "";
-            uiStatusBarPanel9.ProgressBarValue = 0;
-            uiStatusBarPanel9.Text = "Ctrl+N: Thêm phiếu";
-            uiStatusBarPanel9.Width = 122;
-            uiStatusBarPanel10.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-            uiStatusBarPanel10.BorderColor = System.Drawing.Color.Empty;
-            uiStatusBarPanel10.Key = "";
-            uiStatusBarPanel10.ProgressBarValue = 0;
-            uiStatusBarPanel10.Text = "Ctrl+S: Lưu lại";
-            uiStatusBarPanel10.Width = 93;
-            uiStatusBarPanel11.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-            uiStatusBarPanel11.BorderColor = System.Drawing.Color.Empty;
-            uiStatusBarPanel11.Key = "";
-            uiStatusBarPanel11.ProgressBarValue = 0;
-            uiStatusBarPanel11.Text = "Esc: Thoát Form";
-            uiStatusBarPanel11.Width = 105;
-            uiStatusBarPanel12.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-            uiStatusBarPanel12.BorderColor = System.Drawing.Color.Empty;
-            uiStatusBarPanel12.FormatStyle.FontBold = Janus.Windows.UI.TriState.True;
-            uiStatusBarPanel12.FormatStyle.ForeColor = System.Drawing.Color.Navy;
-            uiStatusBarPanel12.Key = "MSG";
-            uiStatusBarPanel12.ProgressBarValue = 0;
-            uiStatusBarPanel12.Text = "Thông báo";
-            uiStatusBarPanel12.Width = 74;
+            uiStatusBarPanel1.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            uiStatusBarPanel1.BorderColor = System.Drawing.Color.Empty;
+            uiStatusBarPanel1.Key = "";
+            uiStatusBarPanel1.ProgressBarValue = 0;
+            uiStatusBarPanel1.Text = "Ctrl+N: Thêm phiếu";
+            uiStatusBarPanel1.Width = 122;
+            uiStatusBarPanel2.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            uiStatusBarPanel2.BorderColor = System.Drawing.Color.Empty;
+            uiStatusBarPanel2.Key = "";
+            uiStatusBarPanel2.ProgressBarValue = 0;
+            uiStatusBarPanel2.Text = "Ctrl+S: Lưu lại";
+            uiStatusBarPanel2.Width = 93;
+            uiStatusBarPanel3.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            uiStatusBarPanel3.BorderColor = System.Drawing.Color.Empty;
+            uiStatusBarPanel3.Key = "";
+            uiStatusBarPanel3.ProgressBarValue = 0;
+            uiStatusBarPanel3.Text = "Esc: Thoát Form";
+            uiStatusBarPanel3.Width = 105;
+            uiStatusBarPanel4.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            uiStatusBarPanel4.BorderColor = System.Drawing.Color.Empty;
+            uiStatusBarPanel4.FormatStyle.FontBold = Janus.Windows.UI.TriState.True;
+            uiStatusBarPanel4.FormatStyle.ForeColor = System.Drawing.Color.Navy;
+            uiStatusBarPanel4.Key = "MSG";
+            uiStatusBarPanel4.ProgressBarValue = 0;
+            uiStatusBarPanel4.Text = "Thông báo";
+            uiStatusBarPanel4.Width = 74;
             this.uiStatusBar1.Panels.AddRange(new Janus.Windows.UI.StatusBar.UIStatusBarPanel[] {
-            uiStatusBarPanel9,
-            uiStatusBarPanel10,
-            uiStatusBarPanel11,
-            uiStatusBarPanel12});
+            uiStatusBarPanel1,
+            uiStatusBarPanel2,
+            uiStatusBarPanel3,
+            uiStatusBarPanel4});
             this.uiStatusBar1.Size = new System.Drawing.Size(928, 23);
             this.uiStatusBar1.TabIndex = 2;
             this.uiStatusBar1.TabStop = false;
@@ -1042,6 +1042,20 @@
             // 
             this.toolTip1.IsBalloon = true;
             // 
+            // cmdChonfile
+            // 
+            this.cmdChonfile.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdChonfile.Image = ((System.Drawing.Image)(resources.GetObject("cmdChonfile.Image")));
+            this.cmdChonfile.ImageSize = new System.Drawing.Size(24, 24);
+            this.cmdChonfile.ImageVerticalAlignment = Janus.Windows.EditControls.ImageVerticalAlignment.Far;
+            this.cmdChonfile.Location = new System.Drawing.Point(811, 160);
+            this.cmdChonfile.Name = "cmdChonfile";
+            this.cmdChonfile.Size = new System.Drawing.Size(110, 30);
+            this.cmdChonfile.TabIndex = 531;
+            this.cmdChonfile.Text = "Chọn File";
+            this.toolTip1.SetToolTip(this.cmdChonfile, "Nhấn vào đây để thêm thuốc vào chi tiết");
+            this.cmdChonfile.Click += new System.EventHandler(this.cmdChonfile_Click);
+            // 
             // lblBHYTcu
             // 
             this.lblBHYTcu.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1246,7 +1260,7 @@
             this.txtDrugName.ExtraWidth_Pre = 0;
             this.txtDrugName.FillValueAfterSelect = false;
             this.txtDrugName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDrugName.GridView = false;
+            this.txtDrugName.GridView = true;
             this.txtDrugName.Location = new System.Drawing.Point(108, 217);
             this.txtDrugName.MaxHeight = -1;
             this.txtDrugName.MinTypedCharacters = 2;
@@ -1346,20 +1360,6 @@
             this.txtsoQDthau.txtMyName = null;
             this.txtsoQDthau.txtMyName_Edit = null;
             this.txtsoQDthau.txtNext = null;
-            // 
-            // cmdChonfile
-            // 
-            this.cmdChonfile.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdChonfile.Image = ((System.Drawing.Image)(resources.GetObject("cmdChonfile.Image")));
-            this.cmdChonfile.ImageSize = new System.Drawing.Size(24, 24);
-            this.cmdChonfile.ImageVerticalAlignment = Janus.Windows.EditControls.ImageVerticalAlignment.Far;
-            this.cmdChonfile.Location = new System.Drawing.Point(811, 160);
-            this.cmdChonfile.Name = "cmdChonfile";
-            this.cmdChonfile.Size = new System.Drawing.Size(110, 30);
-            this.cmdChonfile.TabIndex = 531;
-            this.cmdChonfile.Text = "Chọn File";
-            this.toolTip1.SetToolTip(this.cmdChonfile, "Nhấn vào đây để thêm thuốc vào chi tiết");
-            this.cmdChonfile.Click += new System.EventHandler(this.cmdChonfile_Click);
             // 
             // txtPath
             // 

@@ -33,6 +33,8 @@
             Janus.Windows.GridEX.GridEXLayout grdKhoXuat_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout grdPhieuXuatChiTiet_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.grpControl = new Janus.Windows.EditControls.UIGroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtsoluong = new MaskedTextBox.MaskedTextBox();
             this.cmdChonfile = new Janus.Windows.EditControls.UIButton();
             this.txtPath = new Janus.Windows.GridEX.EditControls.EditBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -106,6 +108,8 @@
             // grpControl
             // 
             this.grpControl.BackColor = System.Drawing.SystemColors.Control;
+            this.grpControl.Controls.Add(this.label17);
+            this.grpControl.Controls.Add(this.txtsoluong);
             this.grpControl.Controls.Add(this.cmdChonfile);
             this.grpControl.Controls.Add(this.txtPath);
             this.grpControl.Controls.Add(this.label20);
@@ -151,6 +155,30 @@
             this.grpControl.Size = new System.Drawing.Size(1008, 187);
             this.grpControl.TabIndex = 1;
             this.grpControl.Text = "Thông tin phiếu xuất kho";
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Red;
+            this.label17.Location = new System.Drawing.Point(855, 140);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(65, 20);
+            this.label17.TabIndex = 496;
+            this.label17.Text = "S.L tồn:";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtsoluong
+            // 
+            this.txtsoluong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsoluong.Enabled = false;
+            this.txtsoluong.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsoluong.Location = new System.Drawing.Point(926, 140);
+            this.txtsoluong.Masked = MaskedTextBox.Mask.Digit;
+            this.txtsoluong.Name = "txtsoluong";
+            this.txtsoluong.ReadOnly = true;
+            this.txtsoluong.Size = new System.Drawing.Size(75, 21);
+            this.txtsoluong.TabIndex = 495;
+            this.txtsoluong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cmdChonfile
             // 
@@ -346,7 +374,7 @@
             this.cmdAddDetail.Enabled = false;
             this.cmdAddDetail.Image = ((System.Drawing.Image)(resources.GetObject("cmdAddDetail.Image")));
             this.cmdAddDetail.ImageSize = new System.Drawing.Size(24, 24);
-            this.cmdAddDetail.Location = new System.Drawing.Point(959, 133);
+            this.cmdAddDetail.Location = new System.Drawing.Point(806, 135);
             this.cmdAddDetail.Name = "cmdAddDetail";
             this.cmdAddDetail.Size = new System.Drawing.Size(43, 30);
             this.cmdAddDetail.TabIndex = 17;
@@ -355,7 +383,7 @@
             // 
             this.txtSoluongdutru.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSoluongdutru.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoluongdutru.Location = new System.Drawing.Point(779, 140);
+            this.txtSoluongdutru.Location = new System.Drawing.Point(626, 140);
             this.txtSoluongdutru.Masked = MaskedTextBox.Mask.Digit;
             this.txtSoluongdutru.Name = "txtSoluongdutru";
             this.txtSoluongdutru.Size = new System.Drawing.Size(174, 21);
@@ -366,7 +394,7 @@
             // 
             this.label14.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(690, 141);
+            this.label14.Location = new System.Drawing.Point(537, 141);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(83, 20);
             this.label14.TabIndex = 485;
@@ -400,7 +428,7 @@
             this.txtthuoc.ExtraWidth_Pre = 0;
             this.txtthuoc.FillValueAfterSelect = true;
             this.txtthuoc.Font = new System.Drawing.Font("Arial", 9F);
-            this.txtthuoc.GridView = false;
+            this.txtthuoc.GridView = true;
             this.txtthuoc.Location = new System.Drawing.Point(88, 140);
             this.txtthuoc.MaxHeight = 300;
             this.txtthuoc.MinTypedCharacters = 2;
@@ -411,7 +439,7 @@
             this.txtthuoc.RaiseEventEnter = true;
             this.txtthuoc.RaiseEventEnterWhenEmpty = true;
             this.txtthuoc.SelectedIndex = -1;
-            this.txtthuoc.Size = new System.Drawing.Size(596, 21);
+            this.txtthuoc.Size = new System.Drawing.Size(435, 21);
             this.txtthuoc.splitChar = '@';
             this.txtthuoc.splitCharIDAndCode = '#';
             this.txtthuoc.TabIndex = 15;
@@ -1049,5 +1077,7 @@
         private Janus.Windows.EditControls.UIButton cmdChonfile;
         private Janus.Windows.GridEX.EditControls.EditBox txtPath;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label17;
+        private MaskedTextBox.MaskedTextBox txtsoluong;
     }
 }

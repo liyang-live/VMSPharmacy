@@ -50,9 +50,13 @@ namespace VNS.HIS.UI.THUOC
             txtthuoc._OnEnterMe += new UCs.AutoCompleteTextbox_Thuoc.OnEnterMe(txtthuoc__OnEnterMe);
             txtthuoc._OnSelectionChanged += new UCs.AutoCompleteTextbox_Thuoc.OnSelectionChanged(txtthuoc__OnSelectionChanged);
             cmdAddDetail.Click += new EventHandler(cmdAddDetail_Click);
+            txtthuoc._OnGridSelectionChanged += txtthuoc__OnGridSelectionChanged;
             cboKhoalinh.SelectedIndexChanged += new EventHandler(cboKhoalinh_SelectedIndexChanged);
         }
-
+        void txtthuoc__OnGridSelectionChanged(string ID, int id_thuockho, string _name, string Dongia, string phuthu, int tutuc)
+        {
+            int _idthuoc = Utility.Int32Dbnull(txtthuoc.MyID, -1);
+        }
         void cboKhoalinh_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -155,7 +159,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {
@@ -199,7 +203,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {
@@ -659,7 +663,6 @@ namespace VNS.HIS.UI.THUOC
                     Utility.GonewRowJanus(grdList, TPhieuNhapxuatthuoc.Columns.IdPhieu, Utility.sDbnull(txtIDPhieuNhapKho.Text));
                     //Utility.ShowMsg("Bạn thêm mới phiếu chuyển kho thành công", "Thông báo");
                     m_enAction = action.Insert;
-                  
                     b_Cancel = true;
                     this.Close();
                     break;

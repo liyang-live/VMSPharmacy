@@ -97,7 +97,7 @@ namespace VNS.HIS.UI.THUOC
 
                     QuanHeDoiTuongKho.THEM_DOITUONG_KHO(objdoituongkho);
                 }
-                Utility.ShowMsg("Bạn thực hiện thêm mới thành công", "Thông báo", MessageBoxIcon.Information);
+               // Utility.ShowMsg("Bạn thực hiện thêm mới thành công", "Thông báo", MessageBoxIcon.Information);
                 if (chkTrangThaiForm.Checked) this.Close();
                 else
                 {
@@ -144,7 +144,7 @@ namespace VNS.HIS.UI.THUOC
                 {
                     QuanHeDoiTuongKho.THEM_DOITUONG_KHO(objdoituongkho);
                 }
-                Utility.ShowMsg("Bạn đã cập nhật dữ liệu thành công", "Thông báo", MessageBoxIcon.Information);
+              //  Utility.ShowMsg("Bạn đã cập nhật dữ liệu thành công", "Thông báo", MessageBoxIcon.Information);
                  this.Close();
 
             }

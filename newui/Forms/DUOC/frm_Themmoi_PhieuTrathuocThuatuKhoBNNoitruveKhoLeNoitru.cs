@@ -49,11 +49,15 @@ namespace VNS.HIS.UI.THUOC
             txtNguoinhan._OnShowData += new UCs.AutoCompleteTextbox_Danhmucchung.OnShowData(txtNguoinhan__OnShowData);
             txtNguoigiao._OnShowData += new UCs.AutoCompleteTextbox_Danhmucchung.OnShowData(txtNguoigiao__OnShowData);
             txtthuoc._OnEnterMe += new UCs.AutoCompleteTextbox_Thuoc.OnEnterMe(txtthuoc__OnEnterMe);
+            txtthuoc._OnGridSelectionChanged += txtthuoc__OnGridSelectionChanged;
             txtthuoc._OnSelectionChanged += new UCs.AutoCompleteTextbox_Thuoc.OnSelectionChanged(txtthuoc__OnSelectionChanged);
             cmdAddDetail.Click += new EventHandler(cmdAddDetail_Click);
             cboKhoaTra.SelectedIndexChanged += new EventHandler(cboKhoaTra_SelectedIndexChanged);
         }
-
+        void txtthuoc__OnGridSelectionChanged(string ID, int id_thuockho, string _name, string Dongia, string phuthu, int tutuc)
+        {
+            int _idthuoc = Utility.Int32Dbnull(txtthuoc.MyID, -1);
+        }
         void cboKhoaTra_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -156,7 +160,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {
@@ -200,7 +204,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {

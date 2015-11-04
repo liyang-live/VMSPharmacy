@@ -58,13 +58,24 @@ namespace VNS.HIS.UI.THUOC
                 {
                     foreach (Janus.Windows.GridEX.GridEXRow gridExRow in grdKhoThuoc.GetCheckedRows())
                     {
-                        new Delete().From(QheDoituongKho.Schema)
-                            .Where(QheDoituongKho.Columns.IdKho).IsEqualTo(Utility.Int32Dbnull(gridExRow.Cells["ID_KHO"].Value, -1))
-                            .Execute();
-                        if (new Delete().From(TDmucKho.Schema).Where(TDmucKho.Columns.IdKho).IsEqualTo(Utility.Int32Dbnull(gridExRow.Cells[TDmucKho.Columns.IdKho].Value, -1)).Execute() > 0)
+                        SqlQuery sqlkt =
+                            new Select().From(TThuockho.Schema).Where(TThuockho.Columns.IdKho).IsEqualTo(
+                                Utility.Int32Dbnull(gridExRow.Cells["ID_KHO"].Value, -1));
+                        if(sqlkt.GetRecordCount()>0)
                         {
-                            gridExRow.Delete();
+                            Utility.ShowMsg(string.Format("Kho {0} bạn muốn xóa đang được sử dụng!", Utility.sDbnull(gridExRow.Cells["TEN_KHO"].Value, "")), "Thông báo", MessageBoxIcon.Warning);
                         }
+                        else
+                        {
+                            new Delete().From(QheDoituongKho.Schema)
+                          .Where(QheDoituongKho.Columns.IdKho).IsEqualTo(Utility.Int32Dbnull(gridExRow.Cells["ID_KHO"].Value, -1))
+                          .Execute();
+                            if (new Delete().From(TDmucKho.Schema).Where(TDmucKho.Columns.IdKho).IsEqualTo(Utility.Int32Dbnull(gridExRow.Cells[TDmucKho.Columns.IdKho].Value, -1)).Execute() > 0)
+                            {
+                                gridExRow.Delete();
+                            }
+                        }
+                      
                         
                     }
                   
@@ -148,6 +159,12 @@ namespace VNS.HIS.UI.THUOC
             if (e.Control && e.KeyCode == Keys.N) cmdThemMoi.PerformClick();
             if (e.Control && e.KeyCode == Keys.E) cmdSua.PerformClick();
             if (e.Control && e.KeyCode == Keys.D) cmdXoa.PerformClick();
+            if(e.KeyCode == Keys.F5)
+            {
+                m_dtKhoThuoc = CommonLoadDuoc.LAYTHONGTIN_KHOTHUOCVaTuThuoc();
+                Utility.SetDataSourceForDataGridEx(grdKhoThuoc, m_dtKhoThuoc, true, true, "1=1", TDmucKho.Columns.SttHthi + "," + TDmucKho.Columns.TenKho);
+                ModifyCommand();
+            }
             if (e.KeyCode == Keys.Escape) cmdThoat.PerformClick();
            
            

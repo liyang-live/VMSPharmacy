@@ -41,6 +41,7 @@ namespace VNS.HIS.UI.THUOC
         void InitEvents()
         {
             cmdThemnguoinhuy.Click += new EventHandler(cmdThemnguoinhuy_Click);
+            txtthuoc._OnGridSelectionChanged += txtthuoc__OnGridSelectionChanged;
             txtthuoc._OnEnterMe += new UCs.AutoCompleteTextbox_Thuoc.OnEnterMe(txtthuoc__OnEnterMe);
             txtthuoc._OnSelectionChanged += new UCs.AutoCompleteTextbox_Thuoc.OnSelectionChanged(txtthuoc__OnSelectionChanged);
             txtMotathem.KeyDown += new KeyEventHandler(txtMotathem_KeyDown);
@@ -60,7 +61,10 @@ namespace VNS.HIS.UI.THUOC
             txtLydohuy.KeyDown += new KeyEventHandler(txtLydohuy_KeyDown);
             txtDiadiem._OnShowData += new UCs.AutoCompleteTextbox_Danhmucchung.OnShowData(txtDiadiem__OnShowData);
         }
-
+        void txtthuoc__OnGridSelectionChanged(string ID, int id_thuockho, string _name, string Dongia, string phuthu, int tutuc)
+        {
+            int _idthuoc = Utility.Int32Dbnull(txtthuoc.MyID, -1);
+        }
         void txtDiadiem__OnShowData()
         {
             DMUC_DCHUNG _DMUC_DCHUNG = new DMUC_DCHUNG(txtDiadiem.LOAI_DANHMUC);
@@ -175,6 +179,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {
@@ -233,7 +238,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {

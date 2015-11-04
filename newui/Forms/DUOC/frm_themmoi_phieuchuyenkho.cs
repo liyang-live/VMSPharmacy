@@ -43,6 +43,7 @@ namespace VNS.HIS.UI.THUOC
         void Initevents()
         {
             cmdExit.Click += new EventHandler(cmdExit_Click);
+            txtthuoc._OnGridSelectionChanged += txtthuoc__OnGridSelectionChanged;
             grdKhoXuat.KeyDown += new KeyEventHandler(grdKhoXuat_KeyDown);
             this.KeyDown += new KeyEventHandler(frm_themmoi_phieuchuyenkho_KeyDown);
             txtLyDoXuat._OnShowData += new UCs.AutoCompleteTextbox_Danhmucchung.OnShowData(txtLyDoXuat__OnShowData);
@@ -53,7 +54,10 @@ namespace VNS.HIS.UI.THUOC
             cmdAddDetail.Click += new EventHandler(cmdAddDetail_Click);
             txtKhoXuat._OnEnterMe += txtKhoXuat__OnEnterMe;
         }
-
+        void txtthuoc__OnGridSelectionChanged(string ID, int id_thuockho, string _name, string Dongia, string phuthu, int tutuc)
+        {
+            int _idthuoc = Utility.Int32Dbnull(txtthuoc.MyID, -1);
+        }
         void txtKhoXuat__OnEnterMe()
         {
 
@@ -161,7 +165,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {
@@ -173,6 +177,7 @@ namespace VNS.HIS.UI.THUOC
                     if (q1.Count() > 0)
                     {
                         grdPhieuXuatChiTiet.MoveTo(q1.First());
+                        
                     }
 
                 }
@@ -205,7 +210,7 @@ namespace VNS.HIS.UI.THUOC
                     {
                         cmdAddDetail.Enabled = true;
                         grdKhoXuat.MoveTo(q.First());
-
+                        txtsoluong.Text = Utility.sDbnull(grdKhoXuat.CurrentRow.Cells["SO_LUONG"].Value, 0);
                     }
                     else
                     {
@@ -447,7 +452,10 @@ namespace VNS.HIS.UI.THUOC
 
             try
             {
-                DataTable _dataThuoc = SPs.ThuocLaythuoctrongkhoxuatAutocomplete(Utility.Int32Dbnull(txtKhoXuat.MyID, -1), KIEU_THUOC_VT).GetDataSet().Tables[0];// new Select().From(DmucThuoc.Schema).Where(DmucThuoc.KieuThuocvattuColumn).IsEqualTo(KIEU_THUOC_VT).And(DmucThuoc.TrangThaiColumn).IsEqualTo(1).ExecuteDataSet().Tables[0];
+                DataTable _dataThuoc =
+                    SPs.ThuocLaythuoctrongkhoxuat(Utility.Int32Dbnull(txtKhoXuat.MyID, -1), statusHethan, KIEU_THUOC_VT).
+                        GetDataSet().Tables[0];
+                // new Select().From(DmucThuoc.Schema).Where(DmucThuoc.KieuThuocvattuColumn).IsEqualTo(KIEU_THUOC_VT).And(DmucThuoc.TrangThaiColumn).IsEqualTo(1).ExecuteDataSet().Tables[0];
                 if (_dataThuoc == null)
                 {
                     txtthuoc.dtData = null;

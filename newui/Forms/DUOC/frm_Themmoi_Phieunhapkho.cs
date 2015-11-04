@@ -81,7 +81,7 @@ namespace VNS.HIS.UI.THUOC
             nmrThangDu.ValueChanged += new EventHandler(nmrThangDu_ValueChanged);
             txtTongTien.KeyDown += new KeyEventHandler(txtTongTien_KeyDown);
             this.FormClosing += frm_Themmoi_Phieunhapkho_FormClosing;
-            
+            txtDrugName._OnGridSelectionChanged += txtDrugName__OnGridSelectionChanged;
             txtSoluong.TextChanged += new EventHandler(txtSoluong_TextChanged);
             this.txtTongTien.TextChanged += new System.EventHandler(this.txtTongTien_TextChanged);
             this.txtTongTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTongTien_KeyPress);
@@ -120,7 +120,11 @@ namespace VNS.HIS.UI.THUOC
             txtsoDK._OnShowData += txtsoDK__OnShowData;
             txtsoQDthau._OnShowData += txtsoQDthau__OnShowData;
         }
-
+        void txtDrugName__OnGridSelectionChanged(string ID, int id_thuockho, string _name, string Dongia, string phuthu, int tutuc)
+        {
+            int _idthuoc = Utility.Int32Dbnull(txtDrugName.MyID, -1);
+            txtDrug_ID.Text = _idthuoc.ToString();
+        }
         void txtsoQDthau__OnShowData()
         {
             VNS.HIS.UI.Classess.dmucchunghelper.ShowMe(txtsoQDthau);
