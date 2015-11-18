@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Themmoi_Phieunhapkho));
-            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel1 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
-            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel2 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
-            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel3 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
-            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel4 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
+            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel9 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
+            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel10 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
+            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel11 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
+            Janus.Windows.UI.StatusBar.UIStatusBarPanel uiStatusBarPanel12 = new Janus.Windows.UI.StatusBar.UIStatusBarPanel();
             Janus.Windows.GridEX.GridEXLayout grdPhieuNhapChiTiet_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.grpControl = new Janus.Windows.EditControls.UIGroupBox();
             this.txtKhonhap = new VNS.HIS.UCs.AutoCompleteTextbox();
@@ -86,7 +86,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtDonViTinh = new Janus.Windows.GridEX.EditControls.EditBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dtNgayHetHan = new Janus.Windows.CalendarCombo.CalendarCombo();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -124,6 +123,7 @@
             this.txtsoQDthau = new VNS.HIS.UCs.AutoCompleteTextbox_Danhmucchung();
             this.txtPath = new Janus.Windows.GridEX.EditControls.EditBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.dtNgayHetHan = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.grpControl)).BeginInit();
             this.grpControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiGroupBox2)).BeginInit();
@@ -179,7 +179,7 @@
             this.grpControl.Location = new System.Drawing.Point(0, 0);
             this.grpControl.Name = "grpControl";
             this.grpControl.Size = new System.Drawing.Size(928, 155);
-            this.grpControl.TabIndex = 0;
+            this.grpControl.TabIndex = 13;
             this.grpControl.Text = "Thông tin phiếu nhập kho";
             // 
             // txtKhonhap
@@ -614,6 +614,7 @@
             this.dtNgayNhap.Name = "dtNgayNhap";
             this.dtNgayNhap.Size = new System.Drawing.Size(272, 21);
             this.dtNgayNhap.TabIndex = 0;
+            this.dtNgayNhap.TabStop = false;
             // 
             // label2
             // 
@@ -659,37 +660,37 @@
             this.uiStatusBar1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiStatusBar1.Location = new System.Drawing.Point(0, 627);
             this.uiStatusBar1.Name = "uiStatusBar1";
-            uiStatusBarPanel1.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-            uiStatusBarPanel1.BorderColor = System.Drawing.Color.Empty;
-            uiStatusBarPanel1.Key = "";
-            uiStatusBarPanel1.ProgressBarValue = 0;
-            uiStatusBarPanel1.Text = "Ctrl+N: Thêm phiếu";
-            uiStatusBarPanel1.Width = 122;
-            uiStatusBarPanel2.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-            uiStatusBarPanel2.BorderColor = System.Drawing.Color.Empty;
-            uiStatusBarPanel2.Key = "";
-            uiStatusBarPanel2.ProgressBarValue = 0;
-            uiStatusBarPanel2.Text = "Ctrl+S: Lưu lại";
-            uiStatusBarPanel2.Width = 93;
-            uiStatusBarPanel3.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-            uiStatusBarPanel3.BorderColor = System.Drawing.Color.Empty;
-            uiStatusBarPanel3.Key = "";
-            uiStatusBarPanel3.ProgressBarValue = 0;
-            uiStatusBarPanel3.Text = "Esc: Thoát Form";
-            uiStatusBarPanel3.Width = 105;
-            uiStatusBarPanel4.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-            uiStatusBarPanel4.BorderColor = System.Drawing.Color.Empty;
-            uiStatusBarPanel4.FormatStyle.FontBold = Janus.Windows.UI.TriState.True;
-            uiStatusBarPanel4.FormatStyle.ForeColor = System.Drawing.Color.Navy;
-            uiStatusBarPanel4.Key = "MSG";
-            uiStatusBarPanel4.ProgressBarValue = 0;
-            uiStatusBarPanel4.Text = "Thông báo";
-            uiStatusBarPanel4.Width = 74;
+            uiStatusBarPanel9.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            uiStatusBarPanel9.BorderColor = System.Drawing.Color.Empty;
+            uiStatusBarPanel9.Key = "";
+            uiStatusBarPanel9.ProgressBarValue = 0;
+            uiStatusBarPanel9.Text = "Ctrl+N: Thêm phiếu";
+            uiStatusBarPanel9.Width = 122;
+            uiStatusBarPanel10.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            uiStatusBarPanel10.BorderColor = System.Drawing.Color.Empty;
+            uiStatusBarPanel10.Key = "";
+            uiStatusBarPanel10.ProgressBarValue = 0;
+            uiStatusBarPanel10.Text = "Ctrl+S: Lưu lại";
+            uiStatusBarPanel10.Width = 93;
+            uiStatusBarPanel11.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            uiStatusBarPanel11.BorderColor = System.Drawing.Color.Empty;
+            uiStatusBarPanel11.Key = "";
+            uiStatusBarPanel11.ProgressBarValue = 0;
+            uiStatusBarPanel11.Text = "Esc: Thoát Form";
+            uiStatusBarPanel11.Width = 105;
+            uiStatusBarPanel12.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            uiStatusBarPanel12.BorderColor = System.Drawing.Color.Empty;
+            uiStatusBarPanel12.FormatStyle.FontBold = Janus.Windows.UI.TriState.True;
+            uiStatusBarPanel12.FormatStyle.ForeColor = System.Drawing.Color.Navy;
+            uiStatusBarPanel12.Key = "MSG";
+            uiStatusBarPanel12.ProgressBarValue = 0;
+            uiStatusBarPanel12.Text = "Thông báo";
+            uiStatusBarPanel12.Width = 74;
             this.uiStatusBar1.Panels.AddRange(new Janus.Windows.UI.StatusBar.UIStatusBarPanel[] {
-            uiStatusBarPanel1,
-            uiStatusBarPanel2,
-            uiStatusBarPanel3,
-            uiStatusBarPanel4});
+            uiStatusBarPanel9,
+            uiStatusBarPanel10,
+            uiStatusBarPanel11,
+            uiStatusBarPanel12});
             this.uiStatusBar1.Size = new System.Drawing.Size(928, 23);
             this.uiStatusBar1.TabIndex = 2;
             this.uiStatusBar1.TabStop = false;
@@ -898,20 +899,6 @@
             this.label13.Text = "Tên biệt dược";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // dtNgayHetHan
-            // 
-            // 
-            // 
-            // 
-            this.dtNgayHetHan.DropDownCalendar.Name = "";
-            this.dtNgayHetHan.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtNgayHetHan.Location = new System.Drawing.Point(108, 267);
-            this.dtNgayHetHan.Name = "dtNgayHetHan";
-            this.dtNgayHetHan.ShowUpDown = true;
-            this.dtNgayHetHan.Size = new System.Drawing.Size(125, 21);
-            this.dtNgayHetHan.TabIndex = 15;
-            this.dtNgayHetHan.Value = new System.DateTime(2014, 9, 12, 0, 0, 0, 0);
-            // 
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -975,7 +962,7 @@
             this.cmdAddDetail.Location = new System.Drawing.Point(814, 221);
             this.cmdAddDetail.Name = "cmdAddDetail";
             this.cmdAddDetail.Size = new System.Drawing.Size(110, 30);
-            this.cmdAddDetail.TabIndex = 27;
+            this.cmdAddDetail.TabIndex = 13;
             this.cmdAddDetail.Text = "Chấp nhận";
             this.cmdAddDetail.TextHorizontalAlignment = Janus.Windows.EditControls.TextAlignment.Far;
             this.toolTip1.SetToolTip(this.cmdAddDetail, "Nhấn vào đây để thêm thuốc vào chi tiết");
@@ -1095,7 +1082,7 @@
             this.nmrThangDu.Location = new System.Drawing.Point(492, 218);
             this.nmrThangDu.Name = "nmrThangDu";
             this.nmrThangDu.Size = new System.Drawing.Size(112, 20);
-            this.nmrThangDu.TabIndex = 19;
+            this.nmrThangDu.TabIndex = 7;
             this.nmrThangDu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nmrThangDu.ThousandsSeparator = true;
             // 
@@ -1117,7 +1104,7 @@
             this.txtSoLo.Location = new System.Drawing.Point(300, 268);
             this.txtSoLo.Name = "txtSoLo";
             this.txtSoLo.Size = new System.Drawing.Size(96, 21);
-            this.txtSoLo.TabIndex = 16;
+            this.txtSoLo.TabIndex = 4;
             // 
             // lblSTTThau
             // 
@@ -1175,7 +1162,7 @@
             this.txtPhuthuTT.Masked = MaskedTextBox.Mask.Decimal;
             this.txtPhuthuTT.Name = "txtPhuthuTT";
             this.txtPhuthuTT.Size = new System.Drawing.Size(108, 21);
-            this.txtPhuthuTT.TabIndex = 26;
+            this.txtPhuthuTT.TabIndex = 12;
             this.txtPhuthuTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtPhuthuDT
@@ -1186,7 +1173,7 @@
             this.txtPhuthuDT.Masked = MaskedTextBox.Mask.Decimal;
             this.txtPhuthuDT.Name = "txtPhuthuDT";
             this.txtPhuthuDT.Size = new System.Drawing.Size(112, 21);
-            this.txtPhuthuDT.TabIndex = 25;
+            this.txtPhuthuDT.TabIndex = 11;
             this.txtPhuthuDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtGiaBHYT
@@ -1197,7 +1184,7 @@
             this.txtGiaBHYT.Masked = MaskedTextBox.Mask.Decimal;
             this.txtGiaBHYT.Name = "txtGiaBHYT";
             this.txtGiaBHYT.Size = new System.Drawing.Size(112, 21);
-            this.txtGiaBHYT.TabIndex = 23;
+            this.txtGiaBHYT.TabIndex = 10;
             this.txtGiaBHYT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtGiaban
@@ -1208,7 +1195,7 @@
             this.txtGiaban.Masked = MaskedTextBox.Mask.Decimal;
             this.txtGiaban.Name = "txtGiaban";
             this.txtGiaban.Size = new System.Drawing.Size(112, 21);
-            this.txtGiaban.TabIndex = 21;
+            this.txtGiaban.TabIndex = 9;
             this.txtGiaban.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtChietkhau
@@ -1219,7 +1206,7 @@
             this.txtChietkhau.Masked = MaskedTextBox.Mask.Decimal;
             this.txtChietkhau.Name = "txtChietkhau";
             this.txtChietkhau.Size = new System.Drawing.Size(108, 21);
-            this.txtChietkhau.TabIndex = 20;
+            this.txtChietkhau.TabIndex = 8;
             this.txtChietkhau.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtDongia
@@ -1230,7 +1217,7 @@
             this.txtDongia.Masked = MaskedTextBox.Mask.Decimal;
             this.txtDongia.Name = "txtDongia";
             this.txtDongia.Size = new System.Drawing.Size(96, 21);
-            this.txtDongia.TabIndex = 18;
+            this.txtDongia.TabIndex = 6;
             this.txtDongia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSoluong
@@ -1241,7 +1228,7 @@
             this.txtSoluong.Masked = MaskedTextBox.Mask.Digit;
             this.txtSoluong.Name = "txtSoluong";
             this.txtSoluong.Size = new System.Drawing.Size(125, 21);
-            this.txtSoluong.TabIndex = 17;
+            this.txtSoluong.TabIndex = 5;
             this.txtSoluong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtDrugName
@@ -1274,7 +1261,7 @@
             this.txtDrugName.Size = new System.Drawing.Size(288, 21);
             this.txtDrugName.splitChar = '@';
             this.txtDrugName.splitCharIDAndCode = '#';
-            this.txtDrugName.TabIndex = 14;
+            this.txtDrugName.TabIndex = 0;
             this.txtDrugName.txtMyCode = null;
             this.txtDrugName.txtMyCode_Edit = null;
             this.txtDrugName.txtMyID = null;
@@ -1312,7 +1299,7 @@
             this.txtsoDK.Size = new System.Drawing.Size(96, 21);
             this.txtsoDK.splitChar = '@';
             this.txtsoDK.splitCharIDAndCode = '#';
-            this.txtsoDK.TabIndex = 15;
+            this.txtsoDK.TabIndex = 2;
             this.txtsoDK.TakeCode = false;
             this.txtsoDK.txtMyCode = null;
             this.txtsoDK.txtMyCode_Edit = null;
@@ -1351,7 +1338,7 @@
             this.txtsoQDthau.Size = new System.Drawing.Size(125, 21);
             this.txtsoQDthau.splitChar = '@';
             this.txtsoQDthau.splitCharIDAndCode = '#';
-            this.txtsoQDthau.TabIndex = 15;
+            this.txtsoQDthau.TabIndex = 1;
             this.txtsoQDthau.TakeCode = false;
             this.txtsoQDthau.txtMyCode = null;
             this.txtsoQDthau.txtMyCode_Edit = null;
@@ -1382,10 +1369,21 @@
             this.label20.Text = "Path:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // dtNgayHetHan
+            // 
+            this.dtNgayHetHan.CustomFormat = "dd/MM/yyyy";
+            this.dtNgayHetHan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtNgayHetHan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtNgayHetHan.Location = new System.Drawing.Point(108, 265);
+            this.dtNgayHetHan.Name = "dtNgayHetHan";
+            this.dtNgayHetHan.Size = new System.Drawing.Size(125, 23);
+            this.dtNgayHetHan.TabIndex = 3;
+            // 
             // frm_Themmoi_Phieunhapkho
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(928, 650);
+            this.Controls.Add(this.dtNgayHetHan);
             this.Controls.Add(this.cmdChonfile);
             this.Controls.Add(this.txtPath);
             this.Controls.Add(this.label20);
@@ -1420,7 +1418,6 @@
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.dtNgayHetHan);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtDonViTinh);
@@ -1480,7 +1477,6 @@
         private System.Windows.Forms.Label label12;
         private Janus.Windows.GridEX.EditControls.EditBox txtDonViTinh;
         private System.Windows.Forms.Label label13;
-        private Janus.Windows.CalendarCombo.CalendarCombo dtNgayHetHan;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
@@ -1548,5 +1544,6 @@
         private Janus.Windows.EditControls.UIButton cmdChonfile;
         private Janus.Windows.GridEX.EditControls.EditBox txtPath;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.DateTimePicker dtNgayHetHan;
     }
 }

@@ -291,6 +291,7 @@ namespace VNS.HIS.UI.THUOC
                 txtLyDoNhap.Init(dtData);
                 songaycanhbao = Utility.Int32Dbnull(THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_NHAPKHO_KHOANGTHOIGIAN_CANHBAONGAYHETHAN", "10", false), 10);
                 lblSTTThau.Enabled = lblQDthau.Enabled = txtsoDK.Enabled = txtsoQDthau.Enabled = THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_NHAPKHO_BATNHAPTHONGTIN_QDTHAU", "0", false) == "1";
+
                 if (!txtsoDK.Enabled)
                     lblSTTThau.ForeColor = lblQDthau.ForeColor = lblThangdu.ForeColor;
                 if (KIEU_THUOC_VT == "THUOC")
@@ -523,15 +524,15 @@ namespace VNS.HIS.UI.THUOC
                    else
                    {
                        txtDongia.Clear();
-                       txtsoDK.Clear();
-                       txtsoQDthau.Clear();
+                      // txtsoDK.Clear();
+                       //txtsoQDthau.Clear();
                    }
 
                 }
                 else
                 {
-                    txtsoDK.Clear();
-                    txtsoQDthau.Clear();
+                    //txtsoDK.Clear();
+                   // txtsoQDthau.Clear();
                     txtDongia.Clear();
                     txtDonViTinh.Clear();
                 }

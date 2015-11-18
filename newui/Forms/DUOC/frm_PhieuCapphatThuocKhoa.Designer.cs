@@ -363,6 +363,9 @@
             // 
             // dtToDate
             // 
+            this.dtToDate.CustomFormat = "dd/MM/yyyy";
+            this.dtToDate.Font = new System.Drawing.Font("Arial", 9F);
+            this.dtToDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtToDate.Location = new System.Drawing.Point(239, 76);
             this.dtToDate.Name = "dtToDate";
             this.dtToDate.Size = new System.Drawing.Size(156, 21);
@@ -381,6 +384,9 @@
             // 
             // dtFromdate
             // 
+            this.dtFromdate.CustomFormat = "dd/MM/yyyy";
+            this.dtFromdate.Font = new System.Drawing.Font("Arial", 9F);
+            this.dtFromdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtFromdate.Location = new System.Drawing.Point(81, 76);
             this.dtFromdate.Name = "dtFromdate";
             this.dtFromdate.Size = new System.Drawing.Size(152, 21);
