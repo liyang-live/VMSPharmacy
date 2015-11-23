@@ -290,7 +290,8 @@ namespace VNS.HIS.UI.THUOC
                 txtsoQDthau.Init();
                 txtLyDoNhap.Init(dtData);
                 songaycanhbao = Utility.Int32Dbnull(THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_NHAPKHO_KHOANGTHOIGIAN_CANHBAONGAYHETHAN", "10", false), 10);
-                lblSTTThau.Enabled = lblQDthau.Enabled = txtsoDK.Enabled = txtsoQDthau.Enabled = THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_NHAPKHO_BATNHAPTHONGTIN_QDTHAU", "0", false) == "1";
+                lblQDthau.Enabled =  txtsoQDthau.Enabled = THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_NHAPKHO_BATNHAPTHONGTIN_QDTHAU", "0", false) == "1";
+                lblSTTThau.Enabled = txtsoDK.Enabled = THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_NHAPKHO_BATNHAPTHONGTIN_STTTHAU", "0", false) == "1";
 
                 if (!txtsoDK.Enabled)
                     lblSTTThau.ForeColor = lblQDthau.ForeColor = lblThangdu.ForeColor;
@@ -590,6 +591,11 @@ namespace VNS.HIS.UI.THUOC
                     txtsoQDthau.Focus();
                     return false;
                 }
+               
+            }
+            if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_NHAPKHO_BATNHAPTHONGTIN_STTTHAU", "0", false) == "1")
+            {
+               
                 if (Utility.DoTrim(txtsoDK.Text) == "")
                 {
                     Utility.SetMsg(uiStatusBar1.Panels["MSG"], "Bạn phải nhập thông tin số thứ tự thầu", true);
