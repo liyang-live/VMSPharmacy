@@ -420,6 +420,7 @@ namespace VNS.HIS.NGHIEPVU.THUOC
               .AND(TThuockho.MaNhacungcapColumn.ColumnName, Comparison.Equals, objPhieuNhapCt.MaNhacungcap)
               .AND(TThuockho.SoLoColumn.ColumnName, Comparison.Equals, objPhieuNhapCt.SoLo)
               .AND(TThuockho.VatColumn.ColumnName, Comparison.Equals, objPhieuNhapCt.Vat)
+              .AND(TThuockho.SoQdinhthauColumn.ColumnName, Comparison.Equals, objPhieuNhapCt.SoQdinhthau)
               );
 
             if (vCollection.Count <= 0)
@@ -450,6 +451,7 @@ namespace VNS.HIS.NGHIEPVU.THUOC
                .AND(TThuockho.NgayNhapColumn.ColumnName, Comparison.Equals, objPhieuNhapCt.NgayNhap)
                 .AND(TThuockho.GiaBhytColumn.ColumnName, Comparison.Equals, objPhieuNhapCt.GiaBhyt)
               .AND(TThuockho.VatColumn.ColumnName, Comparison.Equals, objPhieuNhapCt.Vat)
+              .AND(TThuockho.SoQdinhthauColumn.ColumnName, Comparison.Equals, objPhieuNhapCt.SoQdinhthau)
               );
 
             if (vCollection.Count <= 0)
