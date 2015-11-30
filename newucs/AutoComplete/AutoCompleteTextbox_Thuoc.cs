@@ -545,7 +545,7 @@ namespace VNS.HIS.UCs
 
                 if (text.Trim() != "")
                 {
-                    rowFilter = DmucThuoc.Columns.HoatChat + " like '%" + text + "%' OR " + DmucThuoc.Columns.MaThuoc + " LIKE '%" + text + "%' OR " + DmucThuoc.Columns.TenThuoc + " LIKE '%" + text + "%' OR " + DmucThuoc.Columns.HoatChat + " LIKE '%" + text + "%'";
+                    rowFilter =  DmucThuoc.Columns.HoatChat + " like '%" + text + "%' OR " + DmucThuoc.Columns.MaThuoc + " LIKE '%" + text + "%' OR " + DmucThuoc.Columns.TenThuoc + " LIKE '%" + text + "%'";
                 }
                 dtData.DefaultView.RowFilter = "1=1";
                 dtData.DefaultView.RowFilter = rowFilter;
