@@ -253,6 +253,12 @@ namespace VNS.HIS.NGHIEPVU.THUOC
                                                           objHisDuocProperties.XoaDulieuKhiThuocDaHet ? 1 : 0, errorMessage);
 
                             sp.Execute();
+                            errorMessage = Utility.sDbnull(sp.OutputValues[0], "");
+                            if (Utility.DoTrim(errorMessage)!= "")
+                            {
+                                Utility.ShowMsg(errorMessage);
+                                return ActionResult.Error;
+                            }
                             if (idthuockho > 0)
                                 new Update(TPhieuNhapxuatthuocChitiet.Schema).Set(TPhieuNhapxuatthuocChitiet.Columns.IdThuockho).EqualTo(idthuockho)
                                    .Where(TPhieuNhapxuatthuocChitiet.Columns.IdPhieuchitiet).IsEqualTo(objPhieuNhapCt.IdPhieuchitiet).Execute();
@@ -756,8 +762,7 @@ namespace VNS.HIS.NGHIEPVU.THUOC
                                .And(TBiendongThuoc.IdPhieuChitietColumn).IsEqualTo(objPhieuNhapCt.IdPhieuchitiet)
                                .And(TBiendongThuoc.MaLoaiphieuColumn).IsEqualTo((byte)LoaiPhieu.PhieuXuatKhoa).Execute();
 
-                            new Update(TPhieuNhapxuatthuocChitiet.Schema).Set(TPhieuNhapxuatthuocChitiet.Columns.IdThuockho).EqualTo(-1)
-                              .Where(TPhieuNhapxuatthuocChitiet.Columns.IdPhieuchitiet).IsEqualTo(objPhieuNhapCt.IdPhieuchitiet).Execute();
+                           
                             long id_thuockho = -1;
                             //Nhập lại kho phát
                             StoredProcedure sp = SPs.ThuocNhapkhoOutput(objPhieuNhapCt.NgayHethan, objPhieuNhapCt.GiaNhap, objPhieuNhapCt.GiaBan,
@@ -1017,7 +1022,163 @@ namespace VNS.HIS.NGHIEPVU.THUOC
                 return ActionResult.Error;
             }
         }
-       
+        public ActionResult XacNhanPhieuTrathuocThuatukhoanoitruveKhoLeNoitru(TPhieuNhapxuatthuoc objPhieuNhap, DateTime ngayxacnhan, ref string errMsg)
+        {
+            HisDuocProperties objHisDuocProperties = PropertyLib._HisDuocProperties;
+            string errorMessage = "";
+            try
+            {
+                using (var Scope = new TransactionScope())
+                {
+                    using (var dbScope = new SharedDbConnectionScope())
+                    {
+                        SqlQuery sqlQuery = new Select().From(TPhieuNhapxuatthuocChitiet.Schema)
+                            .Where(TPhieuNhapxuatthuocChitiet.Columns.IdPhieu).IsEqualTo(objPhieuNhap.IdPhieu);
+                        TPhieuNhapxuatthuocChitietCollection objPhieuNhapCtCollection =
+                            sqlQuery.ExecuteAsCollection<TPhieuNhapxuatthuocChitietCollection>();
+                        objPhieuNhap.NgayXacnhan = ngayxacnhan;
+                        foreach (TPhieuNhapxuatthuocChitiet objPhieuNhapCt in objPhieuNhapCtCollection)
+                        {
+                            ActionResult _Kiemtrathuocxacnhan = ActionResult.Success;
+                            if (_Kiemtrathuocxacnhan != ActionResult.Success) return _Kiemtrathuocxacnhan;
+                            long idthuockho = -1;
+                            //Nhập vào kho nhận
+                            StoredProcedure sp = SPs.ThuocNhapkhoOutput(objPhieuNhapCt.NgayHethan, objPhieuNhapCt.GiaNhap, objPhieuNhapCt.GiaBan,
+                                                                      objPhieuNhapCt.SoLuong, Utility.DecimaltoDbnull(objPhieuNhapCt.Vat),
+                                                                      objPhieuNhapCt.IdThuoc, objPhieuNhap.IdKhonhap,
+                                                                      objPhieuNhapCt.MaNhacungcap, objPhieuNhapCt.SoLo, objPhieuNhapCt.SoDky, objPhieuNhapCt.SoQdinhthau,
+                                                                      -1, idthuockho, ngayxacnhan, objPhieuNhapCt.GiaBhyt, objPhieuNhapCt.GiaPhuthuDungtuyen, objPhieuNhapCt.GiaPhuthuTraituyen, objPhieuNhapCt.KieuThuocvattu);
+                            sp.Execute();
+                            //Lấy về Id_thuockho tương ứng trong tủ trực
+                            idthuockho = Utility.Int64Dbnull(sp.OutputValues[0], -1);
+
+
+                            if (idthuockho > 0)
+                                new Update(TPhieuNhapxuatthuocChitiet.Schema).Set(TPhieuNhapxuatthuocChitiet.Columns.IdThuockho).EqualTo(idthuockho)
+                                   .Where(TPhieuNhapxuatthuocChitiet.Columns.IdPhieuchitiet).IsEqualTo(objPhieuNhapCt.IdPhieuchitiet).Execute();
+                            else
+                                idthuockho = Utility.Int64Dbnull(objPhieuNhapCt.IdThuockho, -1);
+                            objPhieuNhapCt.IdThuockho = idthuockho;
+                            //Insert dòng kho nhập
+                            TBiendongThuoc objXuatNhap = new TBiendongThuoc();
+                            objXuatNhap.IdPhieu = Utility.Int32Dbnull(objPhieuNhapCt.IdPhieu);
+                            objXuatNhap.IdPhieuChitiet = Utility.Int32Dbnull(objPhieuNhapCt.IdPhieuchitiet);
+                            objXuatNhap.MaPhieu = Utility.sDbnull(objPhieuNhap.MaPhieu);
+                            objXuatNhap.DonGia = Utility.DecimaltoDbnull(objPhieuNhapCt.DonGia);
+                            objXuatNhap.GiaBan = Utility.DecimaltoDbnull(objPhieuNhapCt.GiaBan);
+
+                            objXuatNhap.GiaPhuthuDungtuyen = Utility.DecimaltoDbnull(objPhieuNhapCt.GiaPhuthuDungtuyen);
+                            objXuatNhap.GiaPhuthuTraituyen = Utility.DecimaltoDbnull(objPhieuNhapCt.GiaPhuthuTraituyen);
+                            objXuatNhap.GiaBhyt = Utility.DecimaltoDbnull(objPhieuNhapCt.GiaBhyt);
+                            objXuatNhap.GiaBhytCu = Utility.DecimaltoDbnull(objPhieuNhapCt.GiaBhytCu);
+
+                            objXuatNhap.IdChuyen = objPhieuNhapCt.IdChuyen;
+                            objXuatNhap.NgayNhap = objPhieuNhapCt.NgayNhap;
+                            objXuatNhap.GiaNhap = Utility.DecimaltoDbnull(objPhieuNhapCt.GiaNhap);
+                            objXuatNhap.SoHoadon = Utility.sDbnull(objPhieuNhap.SoHoadon);
+                            objXuatNhap.SoChungtuKemtheo = objPhieuNhap.SoChungtuKemtheo;
+                            objXuatNhap.PhuThu = 0;
+                            objXuatNhap.DuTru = objPhieuNhap.DuTru;
+                            objXuatNhap.Noitru = 0;
+                            objXuatNhap.QuayThuoc = 0;
+                            objXuatNhap.SoLuong = Utility.Int32Dbnull(objPhieuNhapCt.SoLuong);
+                            objXuatNhap.SluongChia = Utility.Int32Dbnull(objPhieuNhapCt.SluongChia, 1);
+                            objXuatNhap.NgayTao = globalVariables.SysDate;
+                            objXuatNhap.NguoiTao = globalVariables.UserName;
+                            objXuatNhap.ThanhTien = Utility.DecimaltoDbnull(objPhieuNhapCt.ThanhTien);
+                            objXuatNhap.IdThuoc = Utility.Int32Dbnull(objPhieuNhapCt.IdThuoc);
+                            objXuatNhap.IdThuockho = Utility.Int32Dbnull(objPhieuNhapCt.IdThuockho);
+                            objXuatNhap.Vat = Utility.Int32Dbnull(objPhieuNhap.Vat);
+                            objXuatNhap.IdNhanvien = Utility.Int16Dbnull(objPhieuNhap.IdNhanvien);
+                            objXuatNhap.IdKho = Utility.Int16Dbnull(objPhieuNhap.IdKhonhap);
+                            objXuatNhap.NgayHethan = objPhieuNhapCt.NgayHethan.Date;
+                            objXuatNhap.MaNhacungcap = objPhieuNhapCt.MaNhacungcap;
+                            objXuatNhap.SoLo = objPhieuNhapCt.SoLo;
+                            objXuatNhap.SoDky = objPhieuNhapCt.SoDky;
+                            objXuatNhap.SoQdinhthau = objPhieuNhapCt.SoQdinhthau;
+                            objXuatNhap.IdKhoaLinh = objPhieuNhap.IdKhoalinh;//Chính là khoa trả
+
+                            objXuatNhap.MaLoaiphieu = (byte)LoaiPhieu.Phieutrathuocthua;
+                            objXuatNhap.TenLoaiphieu = Utility.TenLoaiPhieu(LoaiPhieu.Phieutrathuocthua);
+                            objXuatNhap.NgayBiendong = objPhieuNhap.NgayXacnhan;
+                            objXuatNhap.NgayHoadon = objPhieuNhap.NgayHoadon;
+                            objXuatNhap.KieuThuocvattu = objPhieuNhapCt.KieuThuocvattu;
+                            objXuatNhap.IsNew = true;
+                            objXuatNhap.Save();
+                        }
+                        new Update(TPhieuNhapxuatthuoc.Schema)
+                            .Set(TPhieuNhapxuatthuoc.Columns.IdNhanvien).EqualTo(globalVariables.gv_intIDNhanvien)
+                            .Set(TPhieuNhapxuatthuoc.Columns.NguoiXacnhan).EqualTo(globalVariables.UserName)
+                            .Set(TPhieuNhapxuatthuoc.Columns.NgayXacnhan).EqualTo(ngayxacnhan)
+                            .Set(TPhieuNhapxuatthuoc.Columns.TrangThai).EqualTo(1)
+                            .Where(TPhieuNhapxuatthuoc.Columns.IdPhieu).IsEqualTo(objPhieuNhap.IdPhieu)
+                            .And(TPhieuNhapxuatthuoc.LoaiPhieuColumn).IsEqualTo(objPhieuNhap.LoaiPhieu).Execute();
+                    }
+                    Scope.Complete();
+                    return ActionResult.Success;
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.CatchException("Lỗi khi xác nhận phiếu trả thuốc từ tủ trực khoa nội trú về kho lẻ", ex);
+                return ActionResult.Error;
+            }
+        }
+
+
+        public ActionResult HuyXacNhanPhieuTrathuocThuatuKhoanoitruVeKhoLeNoitru(TPhieuNhapxuatthuoc objPhieuNhap, ref string errMsg)
+        {
+            HisDuocProperties objHisDuocProperties = PropertyLib._HisDuocProperties;
+            string errorMessage = "";
+            try
+            {
+                using (var Scope = new TransactionScope())
+                {
+                    using (var dbScope = new SharedDbConnectionScope())
+                    {
+                        SqlQuery sqlQuery = new Select().From(TPhieuNhapxuatthuocChitiet.Schema)
+                            .Where(TPhieuNhapxuatthuocChitiet.Columns.IdPhieu).IsEqualTo(objPhieuNhap.IdPhieu);
+                        TPhieuNhapxuatthuocChitietCollection objPhieuNhapCtCollection =
+                            sqlQuery.ExecuteAsCollection<TPhieuNhapxuatthuocChitietCollection>();
+
+                        foreach (TPhieuNhapxuatthuocChitiet objPhieuNhapCt in objPhieuNhapCtCollection)
+                        {
+                            //Kiểm tra ở kho nhập xem thuốc đã sử dụng chưa
+                            ActionResult _Kiemtrathuochuyxacnhan = Kiemtrathuochuyxacnhan(objPhieuNhap, objPhieuNhapCt, ref errMsg);
+                            if (_Kiemtrathuochuyxacnhan != ActionResult.Success) return _Kiemtrathuochuyxacnhan;
+                            //Xóa biến động kho nhập
+                            new Delete().From(TBiendongThuoc.Schema)
+                                .Where(TBiendongThuoc.IdPhieuColumn).IsEqualTo(objPhieuNhap.IdPhieu)
+                                .And(TBiendongThuoc.IdPhieuChitietColumn).IsEqualTo(objPhieuNhapCt.IdPhieuchitiet)
+                                .And(TBiendongThuoc.MaLoaiphieuColumn).IsEqualTo((byte)LoaiPhieu.Phieutrathuocthua).Execute();
+                            //Trừ từ kho xuất
+                            StoredProcedure sp = SPs.ThuocXuatkho(objPhieuNhap.IdKhonhap, objPhieuNhapCt.IdThuoc,
+                                                          objPhieuNhapCt.NgayHethan, objPhieuNhapCt.GiaNhap, objPhieuNhapCt.GiaBan,
+                                                          Utility.DecimaltoDbnull(objPhieuNhapCt.Vat),
+                                                          objPhieuNhapCt.SoLuong, objPhieuNhapCt.IdThuockho, objPhieuNhapCt.MaNhacungcap, objPhieuNhapCt.SoLo, objHisDuocProperties.XoaDulieuKhiThuocDaHet ? 1 : 0, errorMessage);
+                            sp.Execute();
+                            //Cạp nhật lại id_thuockho =-1(giá trị này được update khi xác nhận phiếu). Giá trị id_chuyen cho biết chuyển từ id_thuockho của kho nội trú.
+                            new Update(TPhieuNhapxuatthuocChitiet.Schema).Set(TPhieuNhapxuatthuocChitiet.Columns.IdThuockho).EqualTo(-1)
+                            .Where(TPhieuNhapxuatthuocChitiet.Columns.IdPhieuchitiet).IsEqualTo(objPhieuNhapCt.IdPhieuchitiet).Execute();
+                        }
+                        new Update(TPhieuNhapxuatthuoc.Schema)
+                            .Set(TPhieuNhapxuatthuoc.Columns.IdNhanvien).EqualTo(null)
+                            .Set(TPhieuNhapxuatthuoc.Columns.NguoiXacnhan).EqualTo(null)
+                            .Set(TPhieuNhapxuatthuoc.Columns.NgayXacnhan).EqualTo(null)
+                            .Set(TPhieuNhapxuatthuoc.Columns.TrangThai).EqualTo(0)
+                            .Where(TPhieuNhapxuatthuoc.Columns.IdPhieu).IsEqualTo(objPhieuNhap.IdPhieu)
+                            .And(TPhieuNhapxuatthuoc.LoaiPhieuColumn).IsEqualTo(objPhieuNhap.LoaiPhieu).Execute();
+                    }
+                    Scope.Complete();
+                    return ActionResult.Success;
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.CatchException("Lỗi khi hủy xác nhận phiếu trả thuốc thừa từ khoa nội trú về kho lẻ nội trú", ex);
+                return ActionResult.Error;
+            }
+        }
         public ActionResult CappnhatPhieucapphatNoitru(TPhieuCapphatNoitru _phieucapphat, List<TPhieuCapphatChitiet> lstPhieuCapphatCt, List<TThuocCapphatChitiet> lstThuocCapphatCt)
         {
             try
