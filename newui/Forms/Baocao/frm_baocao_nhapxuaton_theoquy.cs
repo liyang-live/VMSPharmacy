@@ -23,7 +23,9 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
     {
         private HisDuocProperties HisDuocProperties;
         string KIEU_THUOC_VT = "THUOC";
-        TDmucKho _item = null;
+          string lstStockID = "-1";
+                
+        //TDmucKho _item = null;
         bool allowChanged = false;
         string KieuKho = "";
         public frm_baocao_nhapxuaton_theoquy(string args)
@@ -38,7 +40,7 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
             this.Load+=new EventHandler(frm_baocao_nhapxuaton_theoquy_Load);
             cmdBaoCao.Click+=new EventHandler(cmdBaoCao_Click);
             this.KeyDown+=new KeyEventHandler(frm_baocao_nhapxuaton_theoquy_KeyDown);
-            cboKho.SelectedIndexChanged += new EventHandler(cboKho_SelectedIndexChanged);
+            cboKho.CheckedValuesChanged += cboKho_CheckedValuesChanged;
             chkTheoNhomThuoc.CheckedChanged += new EventHandler(chkTheoNhomThuoc_CheckedChanged);
             optThang.CheckedChanged += _CheckedChanged;
             optQuy.CheckedChanged += _CheckedChanged;
@@ -46,6 +48,25 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
 
             gridEXExporter1.GridEX = grdList;
             CauHinh();
+        }
+
+        void cboKho_CheckedValuesChanged(object sender, EventArgs e)
+        {
+
+            if (!allowChanged) return;
+            if (cboKho.CheckedItems == null || cboKho.CheckedItems.Count() <= 0)
+                lstStockID = "-1";
+            else
+            {
+                var query = (from chk in cboKho.CheckedValues.AsEnumerable()
+                             let x = Utility.sDbnull(chk)
+                             select x).ToArray();
+                if (query != null && query.Count() > 0)
+                {
+                    lstStockID = string.Join(",", query);
+                }
+            }
+            SelectStock();
         }
 
         void _CheckedChanged(object sender, EventArgs e)
@@ -103,21 +124,11 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
         {
 
         }
-        void cboKho_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (!allowChanged) return;
-            SelectStock();
-        }
+       
         void SelectStock()
         {
-            if (Utility.Int32Dbnull(cboKho.SelectedValue, -1) < 0)
-                _item = null;
-            else
-            {
-                _item = new Select().From(TDmucKho.Schema).Where(TDmucKho.IdKhoColumn).IsEqualTo(Utility.Int32Dbnull(cboKho.SelectedValue)).ExecuteSingle<TDmucKho>();
                 GetKieuThuocVT();
                 BindThuocVT();
-            }
         }
         void BindThuocVT()
         {
@@ -126,7 +137,7 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
         }
         private void AutocompleteLoaithuoc()
         {
-            DataTable dtLoaithuoc = SPs.ThuocLayDanhmucLoaiThuocTheokho(Utility.Int32Dbnull(cboKho.SelectedValue, -1)).GetDataSet().Tables[0];
+            DataTable dtLoaithuoc = SPs.ThuocLayDanhmucLoaiThuocTheoDanhmucKho(lstStockID).GetDataSet().Tables[0];
             txtLoaithuoc.Init(dtLoaithuoc, new List<string>() { DmucLoaithuoc.Columns.IdLoaithuoc, DmucLoaithuoc.Columns.MaLoaithuoc, DmucLoaithuoc.Columns.TenLoaithuoc });
         }
         private void AutocompleteThuoc()
@@ -134,7 +145,7 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
 
             try
             {
-                DataTable _dataThuoc = SPs.ThuocLayDanhmucThuocTheokho(Utility.Int32Dbnull(cboKho.SelectedValue, -1)).GetDataSet().Tables[0];
+                DataTable _dataThuoc = SPs.ThuocLayDanhmucThuocTheoDanhmucKho(lstStockID).GetDataSet().Tables[0];
                 if (_dataThuoc == null)
                 {
                     txtthuoc.dtData = null;
@@ -149,24 +160,8 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
         }
         void GetKieuThuocVT()
         {
-            try
-            {
-
-                if (_item != null)
-                {
-                    KIEU_THUOC_VT = _item.KhoThuocVt;
-
-                    modifyTieude();
-                }
-                else
-                {
-                    KIEU_THUOC_VT = "ALL";
-                }
-            }
-            catch
-            {
-                KIEU_THUOC_VT = "ALL";
-            }
+            KIEU_THUOC_VT = "THUOC";
+            modifyTieude();
         }
         private void CauHinh()
         {
@@ -202,11 +197,16 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                 baocaO_TIEUDE1.Init("vt_baocao_nhapxuatton_theoquy");
                 dtkho = KieuKho == "ALL" ? CommonLoadDuoc.LAYTHONGTIN_KHOVATTU_TATCA() : (KieuKho == "CHAN" ? CommonLoadDuoc.LAYTHONGTIN_KHOVATTU_CHAN() : CommonLoadDuoc.LAYTHONGTIN_KHOVATTU_LE(new List<string> { "TATCA", "NGOAITRU","NOITRU" }));
             }
-            DataBinding.BindData(cboKho, dtkho, TDmucKho.Columns.IdKho, TDmucKho.Columns.TenKho);
+            cboKho.DropDownDataSource = dtkho;
+            cboKho.DropDownDataMember = TDmucKho.Columns.IdKho;
+            cboKho.DropDownDisplayMember = TDmucKho.Columns.TenKho;
+            cboKho.DropDownValueMember = TDmucKho.Columns.IdKho;
+
+            //DataBinding.BindData(cboKho, dtkho, TDmucKho.Columns.IdKho, TDmucKho.Columns.TenKho);
             DataTable m_dtNhomThuoc = new Select().From(DmucLoaithuoc.Schema).Where(DmucLoaithuoc.Columns.KieuThuocvattu).IsEqualTo(KIEU_THUOC_VT)
                 .OrderAsc(DmucLoaithuoc.Columns.SttHthi).ExecuteDataSet().Tables[0];
             allowChanged = true;
-            cboKho_SelectedIndexChanged(cboKho, e);
+            cboKho_CheckedValuesChanged(cboKho, e);
         }
         
         /// <summary>
@@ -311,10 +311,10 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                     todate = dtToDate.Value.ToString("dd/MM/yyyy");
                 }
                 DataTable m_dtReport = null;
-
+              
                 m_dtReport = BAOCAO_THUOC.ThuocBaocaonhapxuatton(fromdate,
                                         todate,
-                                       Utility.Int32Dbnull(cboKho.SelectedValue), nhomthuoc, Utility.Int32Dbnull(txtthuoc.MyID, -1), chkBiendong.Checked ? 1 : 0);
+                                       lstStockID, nhomthuoc, Utility.Int32Dbnull(txtthuoc.MyID, -1), chkBiendong.Checked ? 1 : 0);
 
 
                 Utility.SetDataSourceForDataGridEx(grdList, m_dtReport, true, true, "1=1", "");

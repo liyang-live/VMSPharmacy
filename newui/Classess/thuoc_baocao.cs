@@ -128,6 +128,7 @@ namespace VNS.HIS.UI.Baocao
                 Utility.SetParameterValue(crpt, "BranchName", globalVariables.Branch_Name);
                 Utility.SetParameterValue(crpt, "sTitleReport", tieude);
                 Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+                Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
                 objForm.crptViewer.ReportSource = crpt;
                 objForm.ShowDialog();
             }
@@ -163,6 +164,7 @@ namespace VNS.HIS.UI.Baocao
                 Utility.SetParameterValue(crpt, "BranchName", globalVariables.Branch_Name);
                 Utility.SetParameterValue(crpt, "sTitleReport", tieude);
                 Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+                Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
                 objForm.crptViewer.ReportSource = crpt;
                 objForm.ShowDialog();
             }
@@ -196,6 +198,7 @@ namespace VNS.HIS.UI.Baocao
                 Utility.SetParameterValue(crpt, "sCurrentDate", Utility.FormatDateTimeWithThanhPho(Ngaylapphieu));
                 Utility.SetParameterValue(crpt, "sTitleReport", tieude);
                 Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+                Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
                 objForm.crptViewer.ReportSource = crpt;
                 objForm.ShowDialog();
             }
@@ -256,6 +259,7 @@ namespace VNS.HIS.UI.Baocao
                 Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
                 Utility.SetParameterValue(crpt,"sTitleReport", tieude);
                 Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+                Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
                 objForm.crptViewer.ReportSource = crpt;
                 objForm.ShowDialog();
                 // Utility.DefaultNow(this);
@@ -292,6 +296,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt,"sTitleReport", tieude);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -328,6 +333,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt, "sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt, "sTitleReport", tieude);
               Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -364,6 +370,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt,"sTitleReport", tieude);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -435,6 +442,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt,"sTitleReport", sTitleReport);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
 
               objForm.ShowDialog();
@@ -479,6 +487,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt, "sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt, "sTitleReport", tieude);
               Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
           }
@@ -522,6 +531,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt, "sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt, "sTitleReport", tieude);
               Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
           }
@@ -566,6 +576,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt, "sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt, "sTitleReport", tieude);
               Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
           }
@@ -635,6 +646,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt, "sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt, "sTitleReport", tieude);
               Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -704,6 +716,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt, "sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt, "sTitleReport", tieude);
               Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -764,7 +777,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt, "dieukienbaocao", dieukienbaocao);
               Utility.SetParameterValue(crpt, "sTitleReport", tieude);
               Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
-              Utility.SetParameterValue(crpt, "txttrinhky","");
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -808,6 +821,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt,"sTitleReport", sTitleReport);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -880,6 +894,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt,"sTitleReport", tieude);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -917,6 +932,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt,"sTitleReport", tieude);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
           }
@@ -954,6 +970,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt,"sTitleReport", sTitleReport);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
           }
@@ -991,6 +1008,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt,"sTitleReport", sTitleReport);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
           }
@@ -1030,6 +1048,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt, "sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt, "sTitleReport", tieude);
               Utility.SetParameterValue(crpt, "BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -1070,6 +1089,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt, "sTitleReport", tieude);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -1114,6 +1134,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt,"sTitleReport", tieude);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);
@@ -1153,6 +1174,7 @@ namespace VNS.HIS.UI.Baocao
               Utility.SetParameterValue(crpt,"sCurrentDate", Utility.FormatDateTimeWithThanhPho(NgayIn));
               Utility.SetParameterValue(crpt,"sTitleReport", sTitleReport);
               Utility.SetParameterValue(crpt,"BottomCondition", THU_VIEN_CHUNG.BottomCondition());
+              Utility.SetParameterValue(crpt, "txtTrinhky", Utility.getTrinhky(objForm.mv_sReportFileName, globalVariables.SysDate));
               objForm.crptViewer.ReportSource = crpt;
               objForm.ShowDialog();
               // Utility.DefaultNow(this);

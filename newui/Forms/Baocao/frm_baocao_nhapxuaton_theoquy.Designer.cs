@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_baocao_nhapxuaton_theoquy));
+            Janus.Windows.GridEX.GridEXLayout cboKho_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.EditControls.UIComboBoxItem uiComboBoxItem1 = new Janus.Windows.EditControls.UIComboBoxItem();
             Janus.Windows.EditControls.UIComboBoxItem uiComboBoxItem2 = new Janus.Windows.EditControls.UIComboBoxItem();
             Janus.Windows.EditControls.UIComboBoxItem uiComboBoxItem3 = new Janus.Windows.EditControls.UIComboBoxItem();
@@ -54,6 +55,7 @@
             this.cmdBaoCao = new Janus.Windows.EditControls.UIButton();
             this.cmdExit = new Janus.Windows.EditControls.UIButton();
             this.uiGroupBox1 = new Janus.Windows.EditControls.UIGroupBox();
+            this.cboKho = new Janus.Windows.GridEX.EditControls.CheckedComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.optNgay = new System.Windows.Forms.RadioButton();
             this.dtpNam = new Janus.Windows.CalendarCombo.CalendarCombo();
@@ -71,7 +73,6 @@
             this.chkBiendong = new Janus.Windows.EditControls.UICheckBox();
             this.chkTheoNhomThuoc = new Janus.Windows.EditControls.UICheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cboKho = new Janus.Windows.EditControls.UIComboBox();
             this.dtToDate = new Janus.Windows.CalendarCombo.CalendarCombo();
             this.dtFromDate = new Janus.Windows.CalendarCombo.CalendarCombo();
             this.cmdExportToExcel = new Janus.Windows.EditControls.UIButton();
@@ -170,6 +171,7 @@
             this.uiGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiGroupBox1.Controls.Add(this.cboKho);
             this.uiGroupBox1.Controls.Add(this.label2);
             this.uiGroupBox1.Controls.Add(this.optNgay);
             this.uiGroupBox1.Controls.Add(this.dtpNam);
@@ -186,7 +188,6 @@
             this.uiGroupBox1.Controls.Add(this.chkBiendong);
             this.uiGroupBox1.Controls.Add(this.chkTheoNhomThuoc);
             this.uiGroupBox1.Controls.Add(this.label3);
-            this.uiGroupBox1.Controls.Add(this.cboKho);
             this.uiGroupBox1.Controls.Add(this.dtToDate);
             this.uiGroupBox1.Controls.Add(this.dtFromDate);
             this.uiGroupBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,6 +196,24 @@
             this.uiGroupBox1.Size = new System.Drawing.Size(784, 467);
             this.uiGroupBox1.TabIndex = 13;
             this.uiGroupBox1.Text = "Điều kiện báo cáo";
+            // 
+            // cboKho
+            // 
+            this.cboKho.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            cboKho_DesignTimeLayout.LayoutString = resources.GetString("cboKho_DesignTimeLayout.LayoutString");
+            this.cboKho.DesignTimeLayout = cboKho_DesignTimeLayout;
+            this.cboKho.DropDownDisplayMember = "TEN_KHO";
+            this.cboKho.DropDownValueMember = "ID_KHO";
+            this.cboKho.Font = new System.Drawing.Font("Arial", 9F);
+            this.cboKho.Location = new System.Drawing.Point(140, 29);
+            this.cboKho.Name = "cboKho";
+            this.cboKho.SaveSettings = false;
+            this.cboKho.Size = new System.Drawing.Size(581, 21);
+            this.cboKho.TabIndex = 0;
+            this.cboKho.ValueItemDataMember = "(None)";
+            this.cboKho.ValuesDataMember = null;
             // 
             // label2
             // 
@@ -441,6 +460,7 @@
             // 
             this.txtLoaithuoc._backcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtLoaithuoc._Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoaithuoc._TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtLoaithuoc.AutoCompleteList = ((System.Collections.Generic.List<string>)(resources.GetObject("txtLoaithuoc.AutoCompleteList")));
             this.txtLoaithuoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLoaithuoc.CaseSensitive = false;
@@ -456,6 +476,7 @@
             this.txtLoaithuoc.MinTypedCharacters = 2;
             this.txtLoaithuoc.MyCode = "-1";
             this.txtLoaithuoc.MyID = "-1";
+            this.txtLoaithuoc.MyText = "";
             this.txtLoaithuoc.Name = "txtLoaithuoc";
             this.txtLoaithuoc.RaiseEvent = true;
             this.txtLoaithuoc.RaiseEventEnter = true;
@@ -465,6 +486,7 @@
             this.txtLoaithuoc.splitChar = '@';
             this.txtLoaithuoc.splitCharIDAndCode = '#';
             this.txtLoaithuoc.TabIndex = 1;
+            this.txtLoaithuoc.TakeCode = false;
             this.txtLoaithuoc.txtMyCode = null;
             this.txtLoaithuoc.txtMyCode_Edit = null;
             this.txtLoaithuoc.txtMyID = null;
@@ -524,15 +546,6 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Chọn kho";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // cboKho
-            // 
-            this.cboKho.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboKho.Location = new System.Drawing.Point(139, 27);
-            this.cboKho.Name = "cboKho";
-            this.cboKho.Size = new System.Drawing.Size(371, 21);
-            this.cboKho.TabIndex = 0;
-            this.cboKho.Text = "Kho";
             // 
             // dtToDate
             // 
@@ -628,7 +641,6 @@
         private Janus.Windows.EditControls.UIGroupBox uiGroupBox1;
         private Janus.Windows.GridEX.GridEX grdList;
         private System.Windows.Forms.Label label3;
-        private Janus.Windows.EditControls.UIComboBox cboKho;
         private Janus.Windows.CalendarCombo.CalendarCombo dtToDate;
         private Janus.Windows.CalendarCombo.CalendarCombo dtFromDate;
         private Janus.Windows.EditControls.UICheckBox chkTheoNhomThuoc;
@@ -651,5 +663,6 @@
         private System.Windows.Forms.RadioButton optThang;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton optNgay;
+        private Janus.Windows.GridEX.EditControls.CheckedComboBox cboKho;
     }
 }

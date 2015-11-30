@@ -123,6 +123,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Running\Mabry.Barcode.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\VBITProjects\HIS2015\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\VBITProjects\HIS2015\Debug\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -174,6 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classess\dmucchunghelper.cs" />
+    <Compile Include="Classess\Excel_Interop.cs" />
     <Compile Include="Classess\thuoc_Phieuin_Nhapxuatkhothuoc.cs" />
     <Compile Include="Classess\thuoc_baocao.cs" />
     <Compile Include="Form1.cs">
@@ -344,29 +356,29 @@
     <Compile Include="Forms\Danhmuc\DMUC_KIEUDMUC.Designer.cs">
       <DependentUpon>DMUC_KIEUDMUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc.cs">
+    <Compile Include="Forms\DUOC\frm_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc.Designer.cs">
-      <DependentUpon>frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc.cs</DependentUpon>
+    <Compile Include="Forms\DUOC\frm_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru.Designer.cs">
+      <DependentUpon>frm_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc.cs">
+    <Compile Include="Forms\DUOC\frm_Themmoi_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc.Designer.cs">
-      <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc.cs</DependentUpon>
+    <Compile Include="Forms\DUOC\frm_Themmoi_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru.Designer.cs">
+      <DependentUpon>frm_Themmoi_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru.cs">
+    <Compile Include="Forms\DUOC\frm_PhieuXuatthuocBNNoitru.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru.Designer.cs">
-      <DependentUpon>frm_PhieuXuatKho_Benhnhan_Noitru.cs</DependentUpon>
+    <Compile Include="Forms\DUOC\frm_PhieuXuatthuocBNNoitru.Designer.cs">
+      <DependentUpon>frm_PhieuXuatthuocBNNoitru.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru.cs">
+    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatthuoc_Bnnoitru.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru.Designer.cs">
-      <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan_noitru.cs</DependentUpon>
+    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatthuoc_Bnnoitru.Designer.cs">
+      <DependentUpon>frm_themmoi_phieuxuatthuoc_Bnnoitru.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan.cs">
       <SubType>Form</SubType>
@@ -652,17 +664,17 @@
     <EmbeddedResource Include="Forms\Danhmuc\DMUC_KIEUDMUC.resx">
       <DependentUpon>DMUC_KIEUDMUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc.resx">
-      <DependentUpon>frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DUOC\frm_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru.resx">
+      <DependentUpon>frm_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc.resx">
-      <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DUOC\frm_Themmoi_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru.resx">
+      <DependentUpon>frm_Themmoi_PhieuTrathuocThuatuKhoBNNoitruveKhoLeNoitru.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru.resx">
-      <DependentUpon>frm_PhieuXuatKho_Benhnhan_Noitru.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DUOC\frm_PhieuXuatthuocBNNoitru.resx">
+      <DependentUpon>frm_PhieuXuatthuocBNNoitru.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru.resx">
-      <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan_noitru.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DUOC\frm_themmoi_phieuxuatthuoc_Bnnoitru.resx">
+      <DependentUpon>frm_themmoi_phieuxuatthuoc_Bnnoitru.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan.resx">
       <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan.cs</DependentUpon>
@@ -789,6 +801,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\Cauhinh\" />
+    <Folder Include="Forms\DUOC\Backup_Xuatthuocnoitru\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
