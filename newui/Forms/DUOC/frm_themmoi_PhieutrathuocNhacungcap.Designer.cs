@@ -33,6 +33,8 @@
             Janus.Windows.GridEX.GridEXLayout grdKhoXuat_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             Janus.Windows.GridEX.GridEXLayout grdPhieuXuatChiTiet_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
             this.grpControl = new Janus.Windows.EditControls.UIGroupBox();
+            this.txtsoluong = new MaskedTextBox.MaskedTextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.lblMsg = new System.Windows.Forms.Label();
             this.cmdAddDetail = new Janus.Windows.EditControls.UIButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -72,8 +74,6 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.txtsoluong = new MaskedTextBox.MaskedTextBox();
-            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grpControl)).BeginInit();
             this.grpControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -125,6 +125,31 @@
             this.grpControl.Size = new System.Drawing.Size(1008, 175);
             this.grpControl.TabIndex = 1;
             this.grpControl.Text = "Thông tin phiếu trả thuốc";
+            // 
+            // txtsoluong
+            // 
+            this.txtsoluong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtsoluong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsoluong.Enabled = false;
+            this.txtsoluong.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsoluong.Location = new System.Drawing.Point(928, 120);
+            this.txtsoluong.Masked = MaskedTextBox.Mask.Digit;
+            this.txtsoluong.Name = "txtsoluong";
+            this.txtsoluong.Size = new System.Drawing.Size(68, 21);
+            this.txtsoluong.TabIndex = 489;
+            this.txtsoluong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label11.Location = new System.Drawing.Point(859, 120);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 20);
+            this.label11.TabIndex = 490;
+            this.label11.Text = "S.L tồn:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblMsg
             // 
@@ -575,7 +600,7 @@
             this.uiGroupBox4.Name = "uiGroupBox4";
             this.uiGroupBox4.Size = new System.Drawing.Size(427, 438);
             this.uiGroupBox4.TabIndex = 69;
-            this.uiGroupBox4.Text = "Chi tiết phiếu chuyển kho";
+            this.uiGroupBox4.Text = "Chi tiết  thuốc trả lại";
             // 
             // grdPhieuXuatChiTiet
             // 
@@ -663,31 +688,6 @@
             // 
             this.errorProvider2.ContainerControl = this;
             // 
-            // txtsoluong
-            // 
-            this.txtsoluong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtsoluong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtsoluong.Enabled = false;
-            this.txtsoluong.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsoluong.Location = new System.Drawing.Point(928, 120);
-            this.txtsoluong.Masked = MaskedTextBox.Mask.Digit;
-            this.txtsoluong.Name = "txtsoluong";
-            this.txtsoluong.Size = new System.Drawing.Size(68, 21);
-            this.txtsoluong.TabIndex = 489;
-            this.txtsoluong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label11.Location = new System.Drawing.Point(859, 120);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 20);
-            this.label11.TabIndex = 490;
-            this.label11.Text = "S.L tồn:";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // frm_themmoi_PhieutrathuocNhacungcap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -701,7 +701,7 @@
             this.Name = "frm_themmoi_PhieutrathuocNhacungcap";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Phiếu xuất từ kho chẵn sang kho lẻ";
+            this.Text = "Trả thuốc cho nhà cung cấp";
             this.Load += new System.EventHandler(this.frm_themmoi_PhieutrathuocNhacungcap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grpControl)).EndInit();
             this.grpControl.ResumeLayout(false);

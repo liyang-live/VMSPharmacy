@@ -333,9 +333,9 @@ namespace VNS.HIS.UI.THUOC
         {
             if(e.KeyCode==Keys.F3)cmdSearch.PerformClick();
             if(e.KeyCode==Keys.F4)cmdInDonThuoc.PerformClick();
-            if(e.KeyCode==Keys.N&&e.Control)cmdThemPhieuNhap.PerformClick();
-            if(e.KeyCode==Keys.U&&e.Control)cmdUpdatePhieuNhap.PerformClick();
-            if(e.KeyCode==Keys.D&&e.Control)cmdXoaPhieuNhap.PerformClick();
+            if(e.KeyCode==Keys.N && e.Control)cmdThemPhieuNhap.PerformClick();
+            if(e.KeyCode==Keys.U && e.Control)cmdUpdatePhieuNhap.PerformClick();
+            if(e.KeyCode==Keys.D && e.Control)cmdXoaPhieuNhap.PerformClick();
             //if(e.KeyCode==Keys.F3)cmdSearch.PerformClick();
         }
         /// <summary>
