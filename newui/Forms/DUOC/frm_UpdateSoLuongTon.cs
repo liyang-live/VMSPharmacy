@@ -268,7 +268,7 @@ namespace VNS.HIS.UI.THUOC
         {
             try
             {
-                if (e.Column.Key == TThuockho.Columns.SttBan)
+                if (e.Column.Key.ToUpper() == TThuockho.Columns.SttBan.ToUpper())
                 {
                     int SttBan =Utility.Int32Dbnull( e.Value);
                     int IdThuockho = Utility.Int32Dbnull(grdDieuchinh.CurrentRow.Cells[TThuockho.Columns.IdThuockho].Value);
@@ -283,9 +283,9 @@ namespace VNS.HIS.UI.THUOC
                     grdDieuchinh.Refetch();
                     Utility.GotoNewRowJanus(grdDieuchinh, TThuockho.Columns.IdThuockho, IdThuockho.ToString());
                 }
-                if (e.Column.Key == TThuockho.Columns.SoLuong)
+                if (e.Column.Key.ToUpper() == TThuockho.Columns.SoLuong.ToUpper())
                 {
-                    if (!Utility.AcceptQuestion("Bạn có chắc chắn muốn sửa số lượng tồn kho? Bạn chỉ nên sửa khi không sử dụng các chức năng nhập xuất tồn.\nChú ý, nếu đồng ý sửa thì các báo cáo liên quan đến số liệu nhập kho sẽ không chính xác", "Cảnh báo", true))
+                    if (!Utility.AcceptQuestion("Bạn có chắc chắn muốn sửa số lượng tồn kho?", "Cảnh báo", true))
                     {
                         e.Cancel = true;
                         return;
@@ -303,7 +303,7 @@ namespace VNS.HIS.UI.THUOC
                     grdDieuchinh.Refetch();
                     Utility.GotoNewRowJanus(grdDieuchinh, TThuockho.Columns.IdThuockho, IdThuockho.ToString());
                 }
-                if (e.Column.Key == TThuockho.Columns.GiaBan)
+                if (e.Column.Key.ToUpper() == TThuockho.Columns.GiaBan.ToUpper())
                 {
                     decimal GiaBan = Utility.DecimaltoDbnull(e.Value);
                     int IdThuockho = Utility.Int32Dbnull(grdDieuchinh.CurrentRow.Cells[TThuockho.Columns.IdThuockho].Value);
@@ -472,6 +472,7 @@ namespace VNS.HIS.UI.THUOC
             if (e.KeyCode == Keys.Escape)
             {
                 cmdExit.PerformClick();
+                return;
             }
             if (e.KeyCode == Keys.F5)
             {
@@ -481,6 +482,15 @@ namespace VNS.HIS.UI.THUOC
             if (e.KeyCode == Keys.S && e.Control)
             {
                 cmdSave.PerformClick();
+                return;
+            }
+            if (e.Shift && e.Control && e.Alt && e.KeyCode == Keys.U)
+            {
+                if (grdDieuchinh.RootTable.Columns["so_luong"].EditType != EditType.TextBox)
+                    grdDieuchinh.RootTable.Columns["so_luong"].EditType = EditType.TextBox;
+                else
+                    grdDieuchinh.RootTable.Columns["so_luong"].EditType = EditType.NoEdit;
+                return;
             }
         }
 
