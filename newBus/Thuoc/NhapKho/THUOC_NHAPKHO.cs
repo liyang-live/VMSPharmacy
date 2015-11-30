@@ -296,7 +296,15 @@ namespace VNS.HIS.NGHIEPVU.THUOC
                             objXuatNhap.KieuThuocvattu = objPhieuNhap.KieuThuocvattu;
                             objXuatNhap.IsNew = true;
                             objXuatNhap.Save();
-                           
+
+                            new Update(DmucThuoc.Schema)
+                                       .Set(DmucThuoc.Columns.DonGia).EqualTo(objPhieuNhapCt.DonGia)
+                                       .Set(DmucThuoc.Columns.GiaDv).EqualTo(objPhieuNhapCt.GiaBan)
+                                       .Set(DmucThuoc.Columns.GiaBhyt).EqualTo(objPhieuNhapCt.GiaBhyt)
+                                       .Set(DmucThuoc.Columns.PhuthuDungtuyen).EqualTo(objPhieuNhapCt.GiaPhuthuDungtuyen)
+                                       .Set(DmucThuoc.Columns.PhuthuTraituyen).EqualTo(objPhieuNhapCt.GiaPhuthuTraituyen)
+                                       .Where(DmucThuoc.Columns.IdThuoc).IsEqualTo(objPhieuNhapCt.IdThuoc).Execute();
+
                             if ((Utility.ByteDbnull(objPhieuNhapCt.CoBhyt, 0) == 1 && BHYT_LUACHON_APDUNG) || TUDONG_CAPNHAT_GIADICHVU)
                             {
                                 DmucDoituongkcbCollection _lstdoituong = new Select().From(DmucDoituongkcb.Schema).ExecuteAsCollection<DmucDoituongkcbCollection>();
@@ -305,15 +313,7 @@ namespace VNS.HIS.NGHIEPVU.THUOC
                                 if (_lstdoituong != null && _objThuoc != null )
                                 {
                                     
-                                    new Update(DmucThuoc.Schema)
-                                    //.Set(DmucThuoc.Columns.SoDangky).EqualTo(objPhieuNhapCt.SoDky)
-                                    //.Set(DmucThuoc.Columns.QD31).EqualTo(objPhieuNhapCt.SoQdinhthau)
-                                        .Set(DmucThuoc.Columns.DonGia).EqualTo(objPhieuNhapCt.DonGia)
-                                        .Set(DmucThuoc.Columns.GiaDv).EqualTo(objPhieuNhapCt.GiaBan)
-                                        .Set(DmucThuoc.Columns.GiaBhyt).EqualTo(objPhieuNhapCt.GiaBhyt)
-                                        .Set(DmucThuoc.Columns.PhuthuDungtuyen).EqualTo(objPhieuNhapCt.GiaPhuthuDungtuyen)
-                                        .Set(DmucThuoc.Columns.PhuthuTraituyen).EqualTo(objPhieuNhapCt.GiaPhuthuTraituyen)
-                                        .Where(DmucThuoc.Columns.IdThuoc).IsEqualTo(_objThuoc.IdThuoc).Execute();
+                                   
                                     foreach (DmucDoituongkcb _kcb in _lstdoituong)
                                     {
                                         if ((Utility.ByteDbnull(objPhieuNhapCt.CoBhyt, 0) == 1 && BHYT_LUACHON_APDUNG && _kcb.IdLoaidoituongKcb == 0) || (TUDONG_CAPNHAT_GIADICHVU && _kcb.IdLoaidoituongKcb == 1))

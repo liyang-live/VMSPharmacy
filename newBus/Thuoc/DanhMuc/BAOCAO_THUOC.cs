@@ -78,7 +78,7 @@ namespace VNS.HIS.BusRule.Classes
 
         }
 
-        public static DataTable ThuocBaocaonhapxuatton(string FromDate, string ToDate, int? IDKHO, string NhomThuoc, int? IDThuoc, int? Cobiendong)
+        public static DataTable ThuocBaocaonhapxuatton(string FromDate, string ToDate, string IDKHO, string NhomThuoc, int? IDThuoc, int? Cobiendong)
         {
             return SPs.ThuocBaocaonhapxuatton(FromDate, ToDate, IDKHO, NhomThuoc, IDThuoc, Cobiendong).GetDataSet().Tables[0];
 
