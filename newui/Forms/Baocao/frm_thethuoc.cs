@@ -392,7 +392,7 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                                     )
                           )
                     , m_dtReport, true, true, "1=1", "");
-                if (m_dtReport.Rows.Count <= 0)
+                if (m_dtReport==null || m_dtReport.Rows.Count <= 0)
                 {
                     Utility.ShowMsg("Không tìm thấy dữ liệu báo cáo", "Thông báo", MessageBoxIcon.Warning);
                     return;
@@ -451,6 +451,7 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
 
         private void ProcessDataTutruc(ref DataTable m_dtReport)
         {
+            DataTable dtTemp = m_dtReport.Clone();
             try
             {
                 var lstAdded = new List<DataRow>();
@@ -462,13 +463,14 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                     m_dtReport.Rows[0]["YYYYMMDD"] = startDate.ToString();
                     m_dtReport.Rows[0][TBiendongThuoc.Columns.NgayBiendong] = dtFromDate.Value.ToString("dd/MM/yyyy");
                 }
+                DataRow rowdata = m_dtReport.Rows[0];
+                DateTime _dtmStartDate = dtFromDate.Value.Date;// Utility.FromYYYYMMDD2Datetime(startDate.ToString());
                 //Vong lap nay tao cac du lieu tu tuong lai
-                DataRow rowdata = null;
                 if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_THETHUOC_TUDONGTHEMDULIEU_TUONGLAI", "0", false) == "1")
                 {
-                    for (int i = startDate; i <= EndDate; i++)
+                    while (_dtmStartDate <= dtToDate.Value.Date)
                     {
-                        DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + i);
+                        DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + Utility.GetYYYYMMDD(_dtmStartDate));
                         if (arrDr.Length > 0)
                         {
                             //Không cần làm gì cả
@@ -476,24 +478,29 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                         }
                         else
                         {
-                            DataRow newDr = m_dtReport.NewRow();
+                            DataRow newDr = dtTemp.NewRow();
                             Utility.CopyData(rowdata, ref newDr);
-                            newDr["YYYYMMDD"] = i.ToString();
-                            newDr[TBiendongThuoc.Columns.NgayBiendong] =
-                                Utility.FromYYYYMMDD2Datetime(i.ToString()).ToString("dd/MM/yyyy");
+                            newDr["YYYYMMDD"] = Utility.GetYYYYMMDD(_dtmStartDate);
+                            newDr[TBiendongThuoc.Columns.NgayBiendong] = _dtmStartDate.ToString("dd/MM/yyyy");
 
                             newDr["Tontruoc"] = 0;
                             newDr["NHAP_KLE"] = 0;
                             newDr["XUAT_BN"] = 0;
                             newDr["TRA_KHOLE"] = 0;
                             newDr["TONKC"] = 0;
-                            m_dtReport.Rows.Add(newDr);
+                            dtTemp.Rows.Add(newDr);
                         }
+                        _dtmStartDate = _dtmStartDate.AddDays(1);
                     }
                 }
-                for (int i = startDate; i <= EndDate; i++)
+                else
                 {
-                    DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + i);
+                    dtTemp = m_dtReport.Copy();
+                }
+                 _dtmStartDate = dtFromDate.Value.Date;
+                while (_dtmStartDate <= dtToDate.Value.Date)
+                {
+                    DataRow[] arrDr = dtTemp.Select("YYYYMMDD=" + Utility.GetYYYYMMDD(_dtmStartDate));
                     if (arrDr.Length > 0)
                     {
                         iFound++;
@@ -506,8 +513,8 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                         }
                         else
                         {
-                            OrderedEnumerableRowCollection<DataRow> q = from p in m_dtReport.AsEnumerable()
-                                                                        where Utility.Int32Dbnull(p["YYYYMMDD"], 0) < i
+                            OrderedEnumerableRowCollection<DataRow> q = from p in dtTemp.AsEnumerable()
+                                                                        where Utility.Int32Dbnull(p["YYYYMMDD"], 0) < Utility.Int32Dbnull(Utility.GetYYYYMMDD(_dtmStartDate))
                                                                         orderby p["YYYYMMDD"] descending
                                                                         select p;
                             if (q.Count() > 0)
@@ -520,20 +527,26 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                                                     Utility.Int32Dbnull(arrDr[0]["TRA_KHOLE"], 0);
                             }
                         }
-                        m_dtReport.AcceptChanges();
+                        dtTemp.AcceptChanges();
                     }
                     else //Ca
                     {
                     }
+                    _dtmStartDate = _dtmStartDate.AddDays(1);
                 }
             }
             catch
             {
             }
+            finally
+            {
+                m_dtReport = dtTemp.Copy();
+            }
         }
 
         private void ProcessDataKhole(ref DataTable m_dtReport)
         {
+            DataTable dtTemp = m_dtReport.Clone();
             try
             {
                 var lstAdded = new List<DataRow>();
@@ -545,24 +558,23 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                     m_dtReport.Rows[0]["YYYYMMDD"] = startDate.ToString();
                     m_dtReport.Rows[0][TBiendongThuoc.Columns.NgayBiendong] = dtFromDate.Value.Date;
                 }
-                DataRow rowdata = null;
+                DataRow rowdata = m_dtReport.Rows[0];
+                DateTime _dtmStartDate = dtFromDate.Value.Date;// Utility.FromYYYYMMDD2Datetime(startDate.ToString());
                 if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_THETHUOC_TUDONGTHEMDULIEU_TUONGLAI", "0", false) == "1")
                 {
-                    for (int i = startDate; i <= EndDate; i++)
+                    while (_dtmStartDate <= dtToDate.Value.Date)
                     {
-                        DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + i);
+                        DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + Utility.GetYYYYMMDD(_dtmStartDate));
                         if (arrDr.Length > 0)
                         {
-                            //Không cần làm gì cả
-                            rowdata = arrDr[0];
+                            dtTemp.ImportRow(arrDr[0]);
                         }
                         else
                         {
-                            DataRow newDr = m_dtReport.NewRow();
+                            DataRow newDr = dtTemp.NewRow();
                             Utility.CopyData(rowdata, ref newDr);
-                            newDr["YYYYMMDD"] = i.ToString();
-                            newDr[TBiendongThuoc.Columns.NgayBiendong] =
-                                Utility.FromYYYYMMDD2Datetime(i.ToString()).ToString("dd/MM/yyyy");
+                            newDr["YYYYMMDD"] = Utility.GetYYYYMMDD(_dtmStartDate);
+                            newDr[TBiendongThuoc.Columns.NgayBiendong] = _dtmStartDate.ToString("dd/MM/yyyy");
 
                             newDr["Tontruoc"] = 0;
                             newDr["NhapTuKhoChan"] = 0;
@@ -572,14 +584,20 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                             newDr["XuatTraKhoChan"] = 0;
                             newDr["Xuatkhac"] = 0;
                             newDr["TONKC"] = 0;
-                            m_dtReport.Rows.Add(newDr);
+                            dtTemp.Rows.Add(newDr);
                         }
+                        _dtmStartDate = _dtmStartDate.AddDays(1);
                     }
                 }
-
-                for (int i = startDate; i <= EndDate; i++)
+                else
                 {
-                    DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + i);
+                    dtTemp = m_dtReport.Copy();
+                }
+
+                _dtmStartDate = dtFromDate.Value.Date;
+                while (_dtmStartDate <= dtToDate.Value.Date)
+                {
+                    DataRow[] arrDr = dtTemp.Select("YYYYMMDD=" + Utility.GetYYYYMMDD(_dtmStartDate));
                     if (arrDr.Length > 0)
                     {
                         iFound++;
@@ -595,8 +613,8 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                         }
                         else
                         {
-                            OrderedEnumerableRowCollection<DataRow> q = from p in m_dtReport.AsEnumerable()
-                                                                        where Utility.Int32Dbnull(p["YYYYMMDD"], 0) < i
+                            OrderedEnumerableRowCollection<DataRow> q = from p in dtTemp.AsEnumerable()
+                                                                        where Utility.Int32Dbnull(p["YYYYMMDD"], 0) < Utility.Int32Dbnull(Utility.GetYYYYMMDD(_dtmStartDate))
                                                                         orderby p["YYYYMMDD"] descending
                                                                         select p;
                             if (q.Count() > 0)
@@ -612,15 +630,20 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                                                     - Utility.Int32Dbnull(arrDr[0]["Xuatkhac"], 0);
                             }
                         }
-                        m_dtReport.AcceptChanges();
+                        dtTemp.AcceptChanges();
                     }
                     else
                     {
                     }
+                    _dtmStartDate = _dtmStartDate.AddDays(1);
                 }
             }
             catch
             {
+            }
+            finally
+            {
+                m_dtReport = dtTemp.Copy();
             }
         }
 
@@ -682,6 +705,7 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
 
         private void ProcessDataKhochan(ref DataTable m_dtReport)
         {
+            DataTable dtTemp = m_dtReport.Clone();
             try
             {
                 var lstAdded = new List<DataRow>();
@@ -693,24 +717,23 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                     m_dtReport.Rows[0][TBiendongThuoc.Columns.NgayBiendong] = dtFromDate.Value.Date;
                 }
                 int iFound = 0;
-                DataRow rowdata = null;
+                DataRow rowdata = m_dtReport.Rows[0];
+                DateTime _dtmStartDate = dtFromDate.Value.Date;// Utility.FromYYYYMMDD2Datetime(startDate.ToString());
                 if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_THETHUOC_TUDONGTHEMDULIEU_TUONGLAI", "0", false) == "1")
                 {
-                    for (int i = startDate; i <= EndDate; i++)
+                    while (_dtmStartDate <= dtToDate.Value.Date)
                     {
-                        DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + i);
+                        DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + Utility.GetYYYYMMDD(_dtmStartDate));
                         if (arrDr.Length > 0)
                         {
-                            //Không cần làm gì cả
-                            rowdata = arrDr[0];
+                            dtTemp.ImportRow(arrDr[0]);
                         }
                         else
                         {
-                            DataRow newDr = m_dtReport.NewRow();
+                            DataRow newDr = dtTemp.NewRow();
                             Utility.CopyData(rowdata, ref newDr);
-                            newDr["YYYYMMDD"] = i.ToString();
-                            newDr[TBiendongThuoc.Columns.NgayBiendong] =
-                                Utility.FromYYYYMMDD2Datetime(i.ToString()).ToString("dd/MM/yyyy");
+                            newDr["YYYYMMDD"] = Utility.GetYYYYMMDD(_dtmStartDate);
+                            newDr[TBiendongThuoc.Columns.NgayBiendong] = _dtmStartDate.ToString("dd/MM/yyyy");
 
                             newDr["TonThangKetChuyen"] = 0;
                             newDr["TonThangTruocKetChuyen"] = 0;
@@ -719,13 +742,19 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                             newDr["SoLuongXuat"] = 0;
                             newDr["Tranhacungcap"] = 0;
                             newDr["Xuatkhac"] = 0;
-                            m_dtReport.Rows.Add(newDr);
+                            dtTemp.Rows.Add(newDr);
                         }
+                        _dtmStartDate = _dtmStartDate.AddDays(1);
                     }
                 }
-                for (int i = startDate; i <= EndDate; i++)
+                else
                 {
-                    DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + i);
+                    dtTemp = m_dtReport.Copy();
+                }
+                _dtmStartDate = dtFromDate.Value.Date;
+                while (_dtmStartDate <= dtToDate.Value.Date)
+                {
+                    DataRow[] arrDr = dtTemp.Select("YYYYMMDD=" + Utility.GetYYYYMMDD(_dtmStartDate));
                     if (arrDr.Length > 0)
                     {
                         iFound++;
@@ -740,8 +769,8 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                         }
                         else
                         {
-                            OrderedEnumerableRowCollection<DataRow> q = from p in m_dtReport.AsEnumerable()
-                                                                        where Utility.Int32Dbnull(p["YYYYMMDD"], 0) < i
+                            OrderedEnumerableRowCollection<DataRow> q = from p in dtTemp.AsEnumerable()
+                                                                        where Utility.Int32Dbnull(p["YYYYMMDD"], 0) <  Utility.Int32Dbnull(Utility.GetYYYYMMDD(_dtmStartDate))
                                                                         orderby p["YYYYMMDD"] descending
                                                                         select p;
                             if (q.Count() > 0)
@@ -758,20 +787,27 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                                     - Utility.Int32Dbnull(arrDr[0]["Xuatkhac"], 0);
                             }
                         }
-                        m_dtReport.AcceptChanges();
+                        dtTemp.AcceptChanges();
                     }
                     else
                     {
                     }
+                    _dtmStartDate = _dtmStartDate.AddDays(1);
                 }
             }
             catch
             {
             }
+            finally
+            {
+                m_dtReport = dtTemp.Copy();
+            }
         }
 
         private void ProcessDataThethuoc(ref DataTable m_dtReport)
         {
+           
+            DataTable dtTemp = m_dtReport.Clone();
             try
             {
                 var lstAdded = new List<DataRow>();
@@ -780,39 +816,46 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                 if (m_dtReport.Rows.Count == 1 && Utility.sDbnull(m_dtReport.Rows[0]["YYYYMMDD"], "") == "")
                 {
                     m_dtReport.Rows[0]["YYYYMMDD"] = startDate.ToString();
-                    m_dtReport.Rows[0][TBiendongThuoc.Columns.NgayBiendong] = dtFromDate.Value.Date;
+                    m_dtReport.Rows[0][TBiendongThuoc.Columns.NgayBiendong] = dtFromDate.Value.Date.ToString("dd/MM/yyyy");
                 }
                 int iFound = 0;
-                DataRow rowdata = null;
+                DataRow rowdata = m_dtReport.Rows[0];
+                DateTime _dtmStartDate = dtFromDate.Value.Date;// Utility.FromYYYYMMDD2Datetime(startDate.ToString());
+                
                 if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_THETHUOC_TUDONGTHEMDULIEU_TUONGLAI", "0", false) == "1")
                 {
-                    for (int i = startDate; i <= EndDate; i++)
+                    while (_dtmStartDate <= dtToDate.Value.Date)
                     {
-                        DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + i);
+                        DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" +Utility.GetYYYYMMDD( _dtmStartDate));
                         if (arrDr.Length > 0)
                         {
-                            //Không cần làm gì cả
-                            rowdata = arrDr[0];
+                            dtTemp.ImportRow(arrDr[0]);
                         }
                         else
                         {
-                            DataRow newDr = m_dtReport.NewRow();
+                            DataRow newDr = dtTemp.NewRow();
                             Utility.CopyData(rowdata, ref newDr);
-                            newDr["YYYYMMDD"] = i.ToString();
+                            newDr["YYYYMMDD"] = Utility.GetYYYYMMDD(_dtmStartDate);
                             newDr[TBiendongThuoc.Columns.NgayBiendong] =
-                                Utility.FromYYYYMMDD2Datetime(i.ToString()).ToString("dd/MM/yyyy");
+                                _dtmStartDate.ToString("dd/MM/yyyy");
 
                             newDr["Xuat"] = 0;
                             newDr["Tondau"] = 0;
                             newDr["Toncuoi"] = 0;
                             newDr["Nhap"] = 0;
-                            m_dtReport.Rows.Add(newDr);
+                            dtTemp.Rows.Add(newDr);
                         }
+                        _dtmStartDate = _dtmStartDate.AddDays(1);
                     }
                 }
-                for (int i = startDate; i <= EndDate; i++)
+                else
                 {
-                    DataRow[] arrDr = m_dtReport.Select("YYYYMMDD=" + i);
+                    dtTemp = m_dtReport.Copy();
+                }
+                _dtmStartDate = dtFromDate.Value.Date;
+                while (_dtmStartDate <= dtToDate.Value.Date)
+                {
+                    DataRow[] arrDr = dtTemp.Select("YYYYMMDD=" + Utility.GetYYYYMMDD(_dtmStartDate));
                     if (arrDr.Length > 0)
                     {
                         iFound++;
@@ -824,8 +867,8 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                         }
                         else
                         {
-                            OrderedEnumerableRowCollection<DataRow> q = from p in m_dtReport.AsEnumerable()
-                                                                        where Utility.Int32Dbnull(p["YYYYMMDD"], 0) < i
+                            OrderedEnumerableRowCollection<DataRow> q = from p in dtTemp.AsEnumerable()
+                                                                        where Utility.Int32Dbnull(p["YYYYMMDD"], 0) < Utility.Int32Dbnull(Utility.GetYYYYMMDD(_dtmStartDate))
                                                                         orderby p["YYYYMMDD"] descending
                                                                         select p;
                             if (q.Count() > 0)
@@ -837,16 +880,20 @@ namespace VNS.HIS.UI.BaoCao.Form_BaoCao
                                                       - Utility.Int32Dbnull(arrDr[0]["Xuat"], 0);
                             }
                         }
-                        m_dtReport.AcceptChanges();
+                        dtTemp.AcceptChanges();
                     }
                     else
                     {
                     }
+                    _dtmStartDate = _dtmStartDate.AddDays(1);
                 }
             }
             catch (Exception ex)
             {
                 //Utility.CatchException(ex);
+            }
+            finally{
+                m_dtReport = dtTemp.Copy();
             }
         }
 
