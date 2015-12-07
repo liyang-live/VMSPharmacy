@@ -234,51 +234,66 @@ namespace VNS.HIS.UI.THUOC
         /// <param name="e"></param>
         private void cmdNhapKho_Click(object sender, EventArgs e)
         {
-            if (Utility.AcceptQuestion("Bạn có chắc chắn muốn xác nhận phiếu cấp phát thuốc-khoa đang chọn hay không?", "Thông báo", true))
+            try
             {
-                string errMsg = "";
-                int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
-                TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
-                if (objTPhieuNhapxuatthuoc != null)
+                cmdNhapKho.Enabled = false;
+                if (Utility.AcceptQuestion("Bạn có chắc chắn muốn xác nhận phiếu cấp phát thuốc-khoa đang chọn hay không?", "Thông báo", true))
                 {
-                    DateTime _ngayxacnhan = globalVariables.SysDate;
-                    if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_HIENTHI_NGAYXACNHAN", "0", false) == "1")
+                    string errMsg = "";
+                    int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
+                    TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
+                    if (objTPhieuNhapxuatthuoc != null)
                     {
-                        frm_ChonngayXacnhan _ChonngayXacnhan = new frm_ChonngayXacnhan();
-                        _ChonngayXacnhan.pdt_InputDate = objTPhieuNhapxuatthuoc.NgayHoadon;
-                        _ChonngayXacnhan.ShowDialog();
-                        if (_ChonngayXacnhan.b_Cancel)
-                            return;
-                        else
-                        _ngayxacnhan = _ChonngayXacnhan.pdt_InputDate;
+                        DateTime _ngayxacnhan = globalVariables.SysDate;
+                        if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_HIENTHI_NGAYXACNHAN", "0", false) == "1")
+                        {
+                            frm_ChonngayXacnhan _ChonngayXacnhan = new frm_ChonngayXacnhan();
+                            _ChonngayXacnhan.pdt_InputDate = objTPhieuNhapxuatthuoc.NgayHoadon;
+                            _ChonngayXacnhan.ShowDialog();
+                            if (_ChonngayXacnhan.b_Cancel)
+                                return;
+                            else
+                                _ngayxacnhan = _ChonngayXacnhan.pdt_InputDate;
+                        }
+                        ActionResult actionResult =
+                            new CapphatThuocKhoa().XacNhanPhieuCapphatThuoc(objTPhieuNhapxuatthuoc, _ngayxacnhan, ref errMsg);
+                        switch (actionResult)
+                        {
+                            case ActionResult.Success:
+                                Utility.SetMsg(uiStatusBar2.Panels["MSG"], "Đã xác nhận phiếu cấp phát thuốc-khoa thành công", false);
+                                grdList.CurrentRow.BeginEdit();
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value = _ngayxacnhan;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = globalVariables.UserName;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
+                                grdList.CurrentRow.EndEdit();
+                                break;
+                            case ActionResult.Exceed:
+                                Utility.ShowMsg("Không có thuốc trong kho xuất nên không thể xác nhận phiếu xuất\n" + errMsg);
+                                break;
+                            case ActionResult.NotEnoughDrugInStock:
+                                Utility.ShowMsg("Thuốc trong kho xuất không còn đủ số lượng nên không thể xác nhận phiếu xuất\n" + errMsg);
+                                break;
+                            case ActionResult.Error:
+
+                                break;
+                        }
                     }
-                    ActionResult actionResult =
-                        new CapphatThuocKhoa().XacNhanPhieuCapphatThuoc(objTPhieuNhapxuatthuoc, _ngayxacnhan, ref errMsg);
-                    switch (actionResult)
-                    {
-                        case ActionResult.Success:
-                            Utility.SetMsg(uiStatusBar2.Panels["MSG"], "Đã xác nhận phiếu cấp phát thuốc-khoa thành công", false);
-                            grdList.CurrentRow.BeginEdit();
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value = _ngayxacnhan;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = globalVariables.UserName;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
-                            grdList.CurrentRow.EndEdit();
-                            break;
-                        case ActionResult.Exceed:
-                            Utility.ShowMsg("Không có thuốc trong kho xuất nên không thể xác nhận phiếu xuất\n" + errMsg);
-                            break;
-                        case ActionResult.NotEnoughDrugInStock:
-                            Utility.ShowMsg("Thuốc trong kho xuất không còn đủ số lượng nên không thể xác nhận phiếu xuất\n" + errMsg);
-                            break;
-                        case ActionResult.Error:
-                            
-                            break;
-                    }
+
                 }
 
             }
-            ModifyCommand();
+            catch (Exception)
+            {
+
+
+            }
+            finally
+            {
+                cmdNhapKho.Enabled = true;
+                ModifyCommand();
+            }
+           
         }
 
         /// <summary>
@@ -400,38 +415,51 @@ namespace VNS.HIS.UI.THUOC
         }
         private void cmdHuychuyenkho_Click(object sender, EventArgs e)
         {
-            Utility.SetMsg(uiStatusBar2.Panels["MSG"], "", false);
-            if (Utility.AcceptQuestion("Bạn có chắc chắn muốn hủy xác nhận phiếu cấp phát thuốc-khoa đang chọn hay không?", "Thông báo", true))
+            try
             {
-                string errMsg = "";
-                int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
-                TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
-                if (objTPhieuNhapxuatthuoc != null)
+                cmdHuychuyenkho.Enabled = false;
+                Utility.SetMsg(uiStatusBar2.Panels["MSG"], "", false);
+                if (Utility.AcceptQuestion("Bạn có chắc chắn muốn hủy xác nhận phiếu cấp phát thuốc-khoa đang chọn hay không?", "Thông báo", true))
                 {
-                    ActionResult actionResult =
-                        new CapphatThuocKhoa().HuyXacNhanPhieuCapphatThuoc(objTPhieuNhapxuatthuoc, ref errMsg);
-                    switch (actionResult)
+                    string errMsg = "";
+                    int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
+                    TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
+                    if (objTPhieuNhapxuatthuoc != null)
                     {
-                        case ActionResult.Success:
-                            Utility.SetMsg(uiStatusBar2.Panels["MSG"], "Bạn thực hiện hủy xác nhận phiếu cấp phát thành công", false);
-                            grdList.CurrentRow.BeginEdit();
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 0;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value =DBNull.Value;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = DBNull.Value;
-                            grdList.CurrentRow.EndEdit();
-                            break;
-                        case ActionResult.Exceed:
-                            Utility.ShowMsg("Thuốc trong kho nhập đã được sử dụng hết nên bạn không thể hủy phiếu cấp phát", "Thông báo lỗi", MessageBoxIcon.Error);
-                            break;
-                        case ActionResult.NotEnoughDrugInStock:
-                            Utility.ShowMsg("Thuốc trong kho nhập đã gần hết nên bạn không thể hủy phiếu cấp phát", "Thông báo lỗi", MessageBoxIcon.Error);
-                            break;
-                        case ActionResult.Error:
-                            break;
+                        ActionResult actionResult =
+                            new CapphatThuocKhoa().HuyXacNhanPhieuCapphatThuoc(objTPhieuNhapxuatthuoc, ref errMsg);
+                        switch (actionResult)
+                        {
+                            case ActionResult.Success:
+                                Utility.SetMsg(uiStatusBar2.Panels["MSG"], "Bạn thực hiện hủy xác nhận phiếu cấp phát thành công", false);
+                                grdList.CurrentRow.BeginEdit();
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 0;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value = DBNull.Value;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = DBNull.Value;
+                                grdList.CurrentRow.EndEdit();
+                                break;
+                            case ActionResult.Exceed:
+                                Utility.ShowMsg("Thuốc trong kho nhập đã được sử dụng hết nên bạn không thể hủy phiếu cấp phát", "Thông báo lỗi", MessageBoxIcon.Error);
+                                break;
+                            case ActionResult.NotEnoughDrugInStock:
+                                Utility.ShowMsg("Thuốc trong kho nhập đã gần hết nên bạn không thể hủy phiếu cấp phát", "Thông báo lỗi", MessageBoxIcon.Error);
+                                break;
+                            case ActionResult.Error:
+                                break;
+                        }
                     }
                 }
+
             }
-            ModifyCommand();
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                ModifyCommand();
+            }
+          
         }
 
         private void cboKhoaLinh_SelectedIndexChanged(object sender, EventArgs e)

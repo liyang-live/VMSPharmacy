@@ -237,51 +237,63 @@ namespace VNS.HIS.UI.THUOC
         /// <param name="e"></param>
         private void cmdNhapKho_Click(object sender, EventArgs e)
         {
-            Utility.SetMsg(uiStatusBar2.Panels["MSG"], "", false);
-            if (Utility.AcceptQuestion("Bạn có muốn thực hiện trả thuốc từ tủ trực khoa nội trú về kho lẻ hay không?", "Thông báo", true))
+            try
             {
-                string errMsg = "";
-                int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
-                TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
-                if (objTPhieuNhapxuatthuoc != null)
+                cmdNhapKho.Enabled = false;
+                Utility.SetMsg(uiStatusBar2.Panels["MSG"], "", false);
+                if (Utility.AcceptQuestion("Bạn có muốn thực hiện trả thuốc từ tủ trực khoa nội trú về kho lẻ hay không?", "Thông báo", true))
                 {
-                    DateTime _ngayxacnhan = globalVariables.SysDate;
-                    if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_HIENTHI_NGAYXACNHAN", "0", false) == "1")
+                    string errMsg = "";
+                    int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
+                    TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
+                    if (objTPhieuNhapxuatthuoc != null)
                     {
-                        frm_ChonngayXacnhan _ChonngayXacnhan = new frm_ChonngayXacnhan();
-                        _ChonngayXacnhan.pdt_InputDate = objTPhieuNhapxuatthuoc.NgayHoadon;
-                        _ChonngayXacnhan.ShowDialog();
-                        if (_ChonngayXacnhan.b_Cancel)
-                            return;
-                        else
-                        _ngayxacnhan = _ChonngayXacnhan.pdt_InputDate;
+                        DateTime _ngayxacnhan = globalVariables.SysDate;
+                        if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_HIENTHI_NGAYXACNHAN", "0", false) == "1")
+                        {
+                            frm_ChonngayXacnhan _ChonngayXacnhan = new frm_ChonngayXacnhan();
+                            _ChonngayXacnhan.pdt_InputDate = objTPhieuNhapxuatthuoc.NgayHoadon;
+                            _ChonngayXacnhan.ShowDialog();
+                            if (_ChonngayXacnhan.b_Cancel)
+                                return;
+                            else
+                                _ngayxacnhan = _ChonngayXacnhan.pdt_InputDate;
+                        }
+                        ActionResult actionResult =
+                            new CapphatThuocKhoa().XacNhanPhieuTrathuocKholeBNveKhoLeNoitru(objTPhieuNhapxuatthuoc, _ngayxacnhan, ref errMsg);
+                        switch (actionResult)
+                        {
+                            case ActionResult.Success:
+                                Utility.SetMsg(uiStatusBar2.Panels["MSG"], "Trả thuốc từ tủ thuốc khoa nội trú về kho thành công", false);
+                                grdList.CurrentRow.BeginEdit();
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value = _ngayxacnhan;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = globalVariables.UserName;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
+                                grdList.CurrentRow.EndEdit();
+                                break;
+                            case ActionResult.Exceed:
+                                Utility.ShowMsg("Không có thuốc trong tủ trực nên không thể xác nhận phiếu trả thuốc\n" + errMsg, "Thông báo lỗi", MessageBoxIcon.Warning);
+                                break;
+                            case ActionResult.NotEnoughDrugInStock:
+                                Utility.ShowMsg("Thuốc trong tủ trực không còn đủ số lượng nên không thể xác nhận phiếu trả thuốc\n" + errMsg, "Thông báo lỗi", MessageBoxIcon.Warning);
+                                break;
+                            case ActionResult.Error:
+                                break;
+                        }
                     }
-                    ActionResult actionResult =
-                        new CapphatThuocKhoa().XacNhanPhieuTrathuocKholeBNveKhoLeNoitru(objTPhieuNhapxuatthuoc, _ngayxacnhan, ref errMsg);
-                    switch (actionResult)
-                    {
-                        case ActionResult.Success:
-                            Utility.SetMsg(uiStatusBar2.Panels["MSG"], "Trả thuốc từ tủ thuốc khoa nội trú về kho thành công",false);
-                            grdList.CurrentRow.BeginEdit();
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value = _ngayxacnhan;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = globalVariables.UserName;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
-                            grdList.CurrentRow.EndEdit();
-                            break;
-                        case ActionResult.Exceed:
-                            Utility.ShowMsg("Không có thuốc trong tủ trực nên không thể xác nhận phiếu trả thuốc\n" + errMsg, "Thông báo lỗi", MessageBoxIcon.Warning);
-                            break;
-                        case ActionResult.NotEnoughDrugInStock:
-                            Utility.ShowMsg("Thuốc trong tủ trực không còn đủ số lượng nên không thể xác nhận phiếu trả thuốc\n" + errMsg, "Thông báo lỗi", MessageBoxIcon.Warning);
-                            break;
-                        case ActionResult.Error:
-                            break;
-                    }
+
                 }
 
             }
-            ModifyCommand();
+            catch (Exception)
+            {
+            }
+            finally
+            {
+                ModifyCommand();
+            }
+            
         }
 
         /// <summary>
@@ -403,37 +415,49 @@ namespace VNS.HIS.UI.THUOC
         }
         private void cmdHuychuyenkho_Click(object sender, EventArgs e)
         {
-            if (Utility.AcceptQuestion("Bạn có muốn hủy xác nhận phiếu trả thuốc từ khoa nội trú về kho hay không?", "Thông báo", true))
+            try
             {
-                string errMsg = "";
-                int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
-                TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
-                if (objTPhieuNhapxuatthuoc != null)
+                cmdHuychuyenkho.Enabled = false;
+                if (Utility.AcceptQuestion("Bạn có muốn hủy xác nhận phiếu trả thuốc từ khoa nội trú về kho hay không?", "Thông báo", true))
                 {
-                    ActionResult actionResult =
-                        new CapphatThuocKhoa().HuyXacNhanPhieuTrathuocTuKholeBNNoitruVeKhoLeNoitru(objTPhieuNhapxuatthuoc, ref errMsg);
-                    switch (actionResult)
+                    string errMsg = "";
+                    int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
+                    TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
+                    if (objTPhieuNhapxuatthuoc != null)
                     {
-                        case ActionResult.Success:
-                            Utility.ShowMsg("Bạn thực hiện hủy xác nhận phiếu trả thuốc từ khoa nội trú về kho thành công", "Thông báo");
-                            grdList.CurrentRow.BeginEdit();
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 0;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value =DBNull.Value;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = DBNull.Value;
-                            grdList.CurrentRow.EndEdit();
-                            break;
-                        case ActionResult.Exceed:
-                            Utility.ShowMsg("Thuốc trong kho lẻ(nhận) đã được sử dụng hết nên bạn không thể hủy phiếu trả thuốc ", "Thông báo lỗi", MessageBoxIcon.Error);
-                            break;
-                        case ActionResult.NotEnoughDrugInStock:
-                            Utility.ShowMsg("Thuốc trong kho lẻ(nhận) đã sử dụng gần hết nên không còn đủ số lượng để hoàn trả lại tủ thuốc", "Thông báo lỗi", MessageBoxIcon.Error);
-                            break;
-                        case ActionResult.Error:
-                            break;
+                        ActionResult actionResult =
+                            new CapphatThuocKhoa().HuyXacNhanPhieuTrathuocTuKholeBNNoitruVeKhoLeNoitru(objTPhieuNhapxuatthuoc, ref errMsg);
+                        switch (actionResult)
+                        {
+                            case ActionResult.Success:
+                                Utility.ShowMsg("Bạn thực hiện hủy xác nhận phiếu trả thuốc từ khoa nội trú về kho thành công", "Thông báo");
+                                grdList.CurrentRow.BeginEdit();
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 0;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value = DBNull.Value;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = DBNull.Value;
+                                grdList.CurrentRow.EndEdit();
+                                break;
+                            case ActionResult.Exceed:
+                                Utility.ShowMsg("Thuốc trong kho lẻ(nhận) đã được sử dụng hết nên bạn không thể hủy phiếu trả thuốc ", "Thông báo lỗi", MessageBoxIcon.Error);
+                                break;
+                            case ActionResult.NotEnoughDrugInStock:
+                                Utility.ShowMsg("Thuốc trong kho lẻ(nhận) đã sử dụng gần hết nên không còn đủ số lượng để hoàn trả lại tủ thuốc", "Thông báo lỗi", MessageBoxIcon.Error);
+                                break;
+                            case ActionResult.Error:
+                                break;
+                        }
                     }
                 }
+
             }
-            ModifyCommand();
+            catch (Exception)
+            {
+            }
+            finally
+            {
+                ModifyCommand();
+            }
+          
         }
 
         private void cboKhoaLinh_SelectedIndexChanged(object sender, EventArgs e)

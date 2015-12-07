@@ -461,6 +461,7 @@ namespace VNS.HIS.UI.THUOC
         {
             try
             {
+                VNS.Libs.AppUI.UIAction._EnableControl(cmdSave, false, "");
                 switch (em_Action)
                 {
                     case action.Insert:
@@ -476,6 +477,10 @@ namespace VNS.HIS.UI.THUOC
             catch(Exception ex)
             {
                 Utility.ShowMsg(ex.Message);
+            }
+            finally
+            {
+                VNS.Libs.AppUI.UIAction._EnableControl(cmdSave, true, "");
             }
         }
         #region "khai báo các đối tượng để thực hiện việc "

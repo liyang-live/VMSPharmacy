@@ -550,6 +550,7 @@ namespace VNS.HIS.UI.THUOC
         {
             try
             {
+                VNS.Libs.AppUI.UIAction._EnableControl(cmdSave, false, "");
                 switch (m_enAction)
                 {
                     case action.Insert:
@@ -560,9 +561,13 @@ namespace VNS.HIS.UI.THUOC
                         break;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Utility.ShowMsg(ex.Message);
+            }
+            finally
+            {
+                VNS.Libs.AppUI.UIAction._EnableControl(cmdSave, true, "");
             }
         }
         #region "khai báo các đối tượng để thực hiện việc "

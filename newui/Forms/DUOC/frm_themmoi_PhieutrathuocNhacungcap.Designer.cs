@@ -137,7 +137,8 @@
             this.txtsoluong.Masked = MaskedTextBox.Mask.Digit;
             this.txtsoluong.Name = "txtsoluong";
             this.txtsoluong.Size = new System.Drawing.Size(68, 21);
-            this.txtsoluong.TabIndex = 489;
+            this.txtsoluong.TabIndex = 10;
+            this.txtsoluong.TabStop = false;
             this.txtsoluong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
@@ -171,7 +172,7 @@
             this.cmdAddDetail.Location = new System.Drawing.Point(810, 113);
             this.cmdAddDetail.Name = "cmdAddDetail";
             this.cmdAddDetail.Size = new System.Drawing.Size(43, 30);
-            this.cmdAddDetail.TabIndex = 484;
+            this.cmdAddDetail.TabIndex = 9;
             this.toolTip1.SetToolTip(this.cmdAddDetail, "Nhấn vào đây để thực hiện chuyển thuốc");
             // 
             // groupBox1
@@ -193,7 +194,7 @@
             this.txtSoluongdutru.Masked = MaskedTextBox.Mask.Digit;
             this.txtSoluongdutru.Name = "txtSoluongdutru";
             this.txtSoluongdutru.Size = new System.Drawing.Size(91, 21);
-            this.txtSoluongdutru.TabIndex = 483;
+            this.txtSoluongdutru.TabIndex = 8;
             this.txtSoluongdutru.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
@@ -248,7 +249,7 @@
             this.txtthuoc.Size = new System.Drawing.Size(493, 21);
             this.txtthuoc.splitChar = '@';
             this.txtthuoc.splitCharIDAndCode = '#';
-            this.txtthuoc.TabIndex = 482;
+            this.txtthuoc.TabIndex = 7;
             this.txtthuoc.txtMyCode = null;
             this.txtthuoc.txtMyCode_Edit = null;
             this.txtthuoc.txtMyID = null;
@@ -287,7 +288,7 @@
             this.txtLyDoNhap.Size = new System.Drawing.Size(547, 22);
             this.txtLyDoNhap.splitChar = '@';
             this.txtLyDoNhap.splitCharIDAndCode = '#';
-            this.txtLyDoNhap.TabIndex = 59;
+            this.txtLyDoNhap.TabIndex = 6;
             this.txtLyDoNhap.TakeCode = false;
             this.txtLyDoNhap.txtMyCode = null;
             this.txtLyDoNhap.txtMyCode_Edit = null;
@@ -334,7 +335,7 @@
             this.txtNhacungcap.Size = new System.Drawing.Size(271, 22);
             this.txtNhacungcap.splitChar = '@';
             this.txtNhacungcap.splitCharIDAndCode = '#';
-            this.txtNhacungcap.TabIndex = 57;
+            this.txtNhacungcap.TabIndex = 5;
             this.txtNhacungcap.TakeCode = false;
             this.txtNhacungcap.txtMyCode = null;
             this.txtNhacungcap.txtMyCode_Edit = null;
@@ -372,7 +373,7 @@
             this.cboKhoXuat.MaxDropDownItems = 15;
             this.cboKhoXuat.Name = "cboKhoXuat";
             this.cboKhoXuat.Size = new System.Drawing.Size(271, 22);
-            this.cboKhoXuat.TabIndex = 0;
+            this.cboKhoXuat.TabIndex = 4;
             this.cboKhoXuat.Text = "Kho trả";
             this.cboKhoXuat.SelectedIndexChanged += new System.EventHandler(this.cboKhoXuat_SelectedIndexChanged);
             // 
@@ -383,7 +384,8 @@
             this.txtIDPhieuNhapKho.Location = new System.Drawing.Point(112, 20);
             this.txtIDPhieuNhapKho.Name = "txtIDPhieuNhapKho";
             this.txtIDPhieuNhapKho.Size = new System.Drawing.Size(57, 22);
-            this.txtIDPhieuNhapKho.TabIndex = 42;
+            this.txtIDPhieuNhapKho.TabIndex = 0;
+            this.txtIDPhieuNhapKho.TabStop = false;
             // 
             // label8
             // 
@@ -404,7 +406,8 @@
             this.cboNhanVien.Location = new System.Drawing.Point(704, 19);
             this.cboNhanVien.Name = "cboNhanVien";
             this.cboNhanVien.Size = new System.Drawing.Size(298, 22);
-            this.cboNhanVien.TabIndex = 32;
+            this.cboNhanVien.TabIndex = 3;
+            this.cboNhanVien.TabStop = false;
             this.cboNhanVien.Text = "Nhân viên";
             // 
             // label3
@@ -425,7 +428,8 @@
             this.dtNgayNhap.Location = new System.Drawing.Point(455, 20);
             this.dtNgayNhap.Name = "dtNgayNhap";
             this.dtNgayNhap.Size = new System.Drawing.Size(150, 22);
-            this.dtNgayNhap.TabIndex = 24;
+            this.dtNgayNhap.TabIndex = 2;
+            this.dtNgayNhap.TabStop = false;
             // 
             // label1
             // 
@@ -444,7 +448,8 @@
             this.txtMaPhieu.Location = new System.Drawing.Point(170, 20);
             this.txtMaPhieu.Name = "txtMaPhieu";
             this.txtMaPhieu.Size = new System.Drawing.Size(213, 22);
-            this.txtMaPhieu.TabIndex = 23;
+            this.txtMaPhieu.TabIndex = 1;
+            this.txtMaPhieu.TabStop = false;
             this.txtMaPhieu.Text = "Tự sinh.....";
             // 
             // splitContainer1
@@ -503,6 +508,7 @@
             this.grdKhoXuat.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
             this.grdKhoXuat.Size = new System.Drawing.Size(518, 466);
             this.grdKhoXuat.TabIndex = 2;
+            this.grdKhoXuat.TabStop = false;
             this.grdKhoXuat.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
             this.grdKhoXuat.TotalRowPosition = Janus.Windows.GridEX.TotalRowPosition.BottomFixed;
             this.grdKhoXuat.VisualStyle = Janus.Windows.GridEX.VisualStyle.VS2005;
@@ -573,6 +579,7 @@
             this.cmdPrevius.Name = "cmdPrevius";
             this.cmdPrevius.Size = new System.Drawing.Size(48, 89);
             this.cmdPrevius.TabIndex = 1;
+            this.cmdPrevius.TabStop = false;
             this.toolTip1.SetToolTip(this.cmdPrevius, "Nhấn nút này khi cần hủy chuyển các thuốc được chọn trên lưới bên tay phải( phím " +
         "tắt Ctrl+Delete)");
             this.cmdPrevius.Click += new System.EventHandler(this.cmdPrevius_Click);
@@ -587,6 +594,7 @@
             this.cmdNext.Name = "cmdNext";
             this.cmdNext.Size = new System.Drawing.Size(48, 84);
             this.cmdNext.TabIndex = 0;
+            this.cmdNext.TabStop = false;
             this.toolTip1.SetToolTip(this.cmdNext, "Sau khi nhập số lượng thuốc cần chuyển có thể nhấn nút này để chuyển thuốc sang k" +
         "ho nhận(Phím tắt Ctrl+Enter)");
             this.cmdNext.Click += new System.EventHandler(this.cmdNext_Click);
@@ -664,7 +672,7 @@
             this.cmdSave.Size = new System.Drawing.Size(118, 33);
             this.cmdSave.TabIndex = 4;
             this.cmdSave.TabStop = false;
-            this.cmdSave.Text = "&Lưu lại";
+            this.cmdSave.Text = "Ghi(Ctrl+S)";
             this.cmdSave.Click += new System.EventHandler(this.cmdSave_Click);
             // 
             // cmdExit
@@ -678,7 +686,7 @@
             this.cmdExit.Size = new System.Drawing.Size(110, 33);
             this.cmdExit.TabIndex = 3;
             this.cmdExit.TabStop = false;
-            this.cmdExit.Text = "&Thoát Form";
+            this.cmdExit.Text = "Thoát";
             // 
             // errorProvider1
             // 

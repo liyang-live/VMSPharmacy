@@ -266,42 +266,54 @@ namespace VNS.HIS.UI.THUOC
         /// <param name="e"></param>
         private void cmdNhapKho_Click(object sender, EventArgs e)
         {
-            int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
-            TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
-            if (objTPhieuNhapxuatthuoc != null)
+            try
             {
-                string errMsg = "";
-                DateTime _ngayxacnhan = globalVariables.SysDate;
-                if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_HIENTHI_NGAYXACNHAN", "0", false) == "1")
+                cmdNhapKho.Enabled = false;
+                int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
+                TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
+                if (objTPhieuNhapxuatthuoc != null)
                 {
-                    frm_ChonngayXacnhan _ChonngayXacnhan = new frm_ChonngayXacnhan();
-                    _ChonngayXacnhan.pdt_InputDate = objTPhieuNhapxuatthuoc.NgayHoadon;
-                    _ChonngayXacnhan.ShowDialog();
-                    if (_ChonngayXacnhan.b_Cancel)
-                        return;
-                    else
-                    _ngayxacnhan = _ChonngayXacnhan.pdt_InputDate;
+                    string errMsg = "";
+                    DateTime _ngayxacnhan = globalVariables.SysDate;
+                    if (THU_VIEN_CHUNG.Laygiatrithamsohethong("THUOC_HIENTHI_NGAYXACNHAN", "0", false) == "1")
+                    {
+                        frm_ChonngayXacnhan _ChonngayXacnhan = new frm_ChonngayXacnhan();
+                        _ChonngayXacnhan.pdt_InputDate = objTPhieuNhapxuatthuoc.NgayHoadon;
+                        _ChonngayXacnhan.ShowDialog();
+                        if (_ChonngayXacnhan.b_Cancel)
+                            return;
+                        else
+                            _ngayxacnhan = _ChonngayXacnhan.pdt_InputDate;
+                    }
+                    ActionResult actionResult =
+                        new XuatThuoc().XacNhanPhieuHuy_thanhly_thuoc(objTPhieuNhapxuatthuoc, _ngayxacnhan, ref errMsg);
+                    switch (actionResult)
+                    {
+                        case ActionResult.Success:
+                            Utility.SetMsg(uiStatusBar2.Panels["MSG"], "Xác nhận phiếu trả nhà cung cấp thành công", false);
+                            grdList.CurrentRow.BeginEdit();
+                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
+                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value = globalVariables.SysDate;
+                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = globalVariables.UserName;
+                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
+                            grdList.CurrentRow.EndEdit();
+                            break;
+                        case ActionResult.Error:
+                            Utility.ShowMsg("Lỗi khi xác nhận phiếu trả nhà cung cấp", "Thông báo lỗi", MessageBoxIcon.Error);
+                            break;
+                    }
                 }
-                ActionResult actionResult =
-                    new XuatThuoc().XacNhanPhieuHuy_thanhly_thuoc(objTPhieuNhapxuatthuoc, _ngayxacnhan, ref errMsg);
-                switch (actionResult)
-                {
-                    case ActionResult.Success:
-                        Utility.SetMsg(uiStatusBar2.Panels["MSG"], "Xác nhận phiếu trả nhà cung cấp thành công", false);
-                        grdList.CurrentRow.BeginEdit();
-                        grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
-                        grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value = globalVariables.SysDate;
-                        grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = globalVariables.UserName;
-                        grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 1;
-                        grdList.CurrentRow.EndEdit();
-                        break;
-                    case ActionResult.Error:
-                        Utility.ShowMsg("Lỗi khi xác nhận phiếu trả nhà cung cấp", "Thông báo lỗi", MessageBoxIcon.Error);
-                        break;
-                }
-            }
 
-            ModifyCommand();
+
+            }
+            catch (Exception)
+            {
+            }
+            finally
+            {
+                ModifyCommand();
+            }
+           
         }
 
         /// <summary>
@@ -451,39 +463,51 @@ namespace VNS.HIS.UI.THUOC
 
         private void cmdHuychuyenkho_Click(object sender, EventArgs e)
         {
-            if (Utility.AcceptQuestion("Bạn có muốn hủy xác nhận phiếu trả nhà cung cấp đang chọn hay không?", "Thông báo", true))
+            try
             {
-                int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
-                TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
-                if (objTPhieuNhapxuatthuoc != null)
+                cmdHuychuyenkho.Enabled = false;
+                if (Utility.AcceptQuestion("Bạn có muốn hủy xác nhận phiếu trả nhà cung cấp đang chọn hay không?", "Thông báo", true))
                 {
-                    string ErrMsg = "";
-                    ActionResult actionResult =
-                        new XuatThuoc().HuyXacNhanPhieuHuy_thanhly_Thuoc(objTPhieuNhapxuatthuoc,ref ErrMsg);
-                    switch (actionResult)
+                    int IdPhieu = Utility.Int32Dbnull(grdList.GetValue(TPhieuNhapxuatthuoc.Columns.IdPhieu), -1);
+                    TPhieuNhapxuatthuoc objTPhieuNhapxuatthuoc = TPhieuNhapxuatthuoc.FetchByID(IdPhieu);
+                    if (objTPhieuNhapxuatthuoc != null)
                     {
-                        case ActionResult.Success:
-                            Utility.SetMsg(uiStatusBar2.Panels["MSG"], "Hủy xác nhận phiếu trả thuốc thành công", false);
-                            grdList.CurrentRow.BeginEdit();
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 0;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value = DBNull.Value;
-                            grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = DBNull.Value;
-                            grdList.CurrentRow.EndEdit();
-                            break;
-                        case ActionResult.Exceed:
-                            Utility.ShowMsg("Thuốc nhập từ phiếu này đã được sử dụng hết nên bạn không thể hủy phiếu trả", "Thông báo lỗi", MessageBoxIcon.Error);
-                            break;
-                        case ActionResult.NotEnoughDrugInStock:
-                            Utility.ShowMsg("Thuốc nhập từ phiếu này đã gần hết nên bạn không thể hủy phiếu trả", "Thông báo lỗi", MessageBoxIcon.Error);
-                            break;
-                        case ActionResult.Error:
-                            Utility.ShowMsg("Lỗi trong quá trình hủy phiếu trả nhà cung cấp", "Thông báo lỗi", MessageBoxIcon.Error);
-                            break;
+                        string ErrMsg = "";
+                        ActionResult actionResult =
+                            new XuatThuoc().HuyXacNhanPhieuHuy_thanhly_Thuoc(objTPhieuNhapxuatthuoc, ref ErrMsg);
+                        switch (actionResult)
+                        {
+                            case ActionResult.Success:
+                                Utility.SetMsg(uiStatusBar2.Panels["MSG"], "Hủy xác nhận phiếu trả thuốc thành công", false);
+                                grdList.CurrentRow.BeginEdit();
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.TrangThai].Value = 0;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NgayXacnhan].Value = DBNull.Value;
+                                grdList.CurrentRow.Cells[TPhieuNhapxuatthuoc.Columns.NguoiXacnhan].Value = DBNull.Value;
+                                grdList.CurrentRow.EndEdit();
+                                break;
+                            case ActionResult.Exceed:
+                                Utility.ShowMsg("Thuốc nhập từ phiếu này đã được sử dụng hết nên bạn không thể hủy phiếu trả", "Thông báo lỗi", MessageBoxIcon.Error);
+                                break;
+                            case ActionResult.NotEnoughDrugInStock:
+                                Utility.ShowMsg("Thuốc nhập từ phiếu này đã gần hết nên bạn không thể hủy phiếu trả", "Thông báo lỗi", MessageBoxIcon.Error);
+                                break;
+                            case ActionResult.Error:
+                                Utility.ShowMsg("Lỗi trong quá trình hủy phiếu trả nhà cung cấp", "Thông báo lỗi", MessageBoxIcon.Error);
+                                break;
+                        }
                     }
+
                 }
 
             }
-            ModifyCommand();
+            catch (Exception)
+            {
+            }
+            finally
+            {
+                ModifyCommand();
+            }
+           
         }
     }
 }

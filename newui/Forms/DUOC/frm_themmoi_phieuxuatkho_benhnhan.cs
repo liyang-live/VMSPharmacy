@@ -29,6 +29,7 @@ namespace VNS.HIS.UI.THUOC
         public string PerForm;
         public Janus.Windows.GridEX.GridEX grdList;
         public string KIEU_THUOC_VT = "THUOC";
+        bool noitru = false;
         private DataTable m_PhieuDuTru = new DataTable();
         
         public frm_themmoi_phieuxuatkho_benhnhan()
@@ -382,13 +383,13 @@ namespace VNS.HIS.UI.THUOC
         {
             if (KIEU_THUOC_VT == "THUOC")
             {
-                m_dtKhoXuat = CommonLoadDuoc.LAYTHONGTIN_KHOTHUOC_LE_NGOAITRU();
-                m_dtKhoNhap = CommonLoadDuoc.LAYTHONGTIN_KHOTHUOC_AO(false);
+                m_dtKhoXuat = noitru ? CommonLoadDuoc.LAYTHONGTIN_KHOTHUOC_LE_NOITRU() : CommonLoadDuoc.LAYTHONGTIN_KHOTHUOC_LE_NGOAITRU();
+                m_dtKhoNhap = CommonLoadDuoc.LAYTHONGTIN_KHOTHUOC_AO(noitru);
             }
             else
             {
                 m_dtKhoXuat = CommonLoadDuoc.LAYTHONGTIN_KHOVATTU_LE(new List<string> { "TATCA", "NGOAITRU", "NOITRU" });
-                m_dtKhoNhap = CommonLoadDuoc.LAYTHONGTIN_KHOVATTU_AO(false);
+                m_dtKhoNhap = CommonLoadDuoc.LAYTHONGTIN_KHOVATTU_AO(noitru);
             }
             cboNhanVien.SelectedValue = globalVariables.gv_intIDNhanvien;
             txtKhoXuat.Init(m_dtKhoXuat, new List<string>() { TDmucKho.Columns.IdKho, TDmucKho.Columns.MaKho, TDmucKho.Columns.TenKho });
@@ -503,6 +504,7 @@ namespace VNS.HIS.UI.THUOC
         {
             try
             {
+                VNS.Libs.AppUI.UIAction._EnableControl(cmdSave, false, "");
                 switch (m_enAction)
                 {
                     case action.Insert:
@@ -516,6 +518,10 @@ namespace VNS.HIS.UI.THUOC
             catch(Exception ex)
             {
                 Utility.ShowMsg(ex.Message);
+            }
+            finally
+            {
+                VNS.Libs.AppUI.UIAction._EnableControl(cmdSave, true, "");
             }
         }
         #region "khai báo các đối tượng để thực hiện việc "
@@ -534,7 +540,7 @@ namespace VNS.HIS.UI.THUOC
             objTPhieuNhapxuatthuoc.IdKhoxuat = Utility.Int16Dbnull(txtKhoXuat.MyID, -1);
             objTPhieuNhapxuatthuoc.MaNhacungcap = "";
             objTPhieuNhapxuatthuoc.MotaThem = txtLyDoXuat.Text;
-            objTPhieuNhapxuatthuoc.NoiTru = 0;
+            objTPhieuNhapxuatthuoc.NoiTru = Utility.Bool2byte(noitru);
             objTPhieuNhapxuatthuoc.TrangThai = 0;
             objTPhieuNhapxuatthuoc.KieuThuocvattu = KIEU_THUOC_VT;
             objTPhieuNhapxuatthuoc.IdNhanvien = Utility.Int16Dbnull(cboNhanVien.SelectedValue, -1);

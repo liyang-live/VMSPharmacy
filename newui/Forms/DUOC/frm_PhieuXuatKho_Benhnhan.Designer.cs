@@ -230,7 +230,7 @@
             this.cmdExit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdExit.Name = "cmdExit";
             this.cmdExit.Size = new System.Drawing.Size(99, 36);
-            this.cmdExit.Text = "&Thoát(Esc)";
+            this.cmdExit.Text = "Thoát(Esc)";
             this.cmdExit.Click += new System.EventHandler(this.cmdExit_Click);
             // 
             // uiGroupBox1
@@ -262,7 +262,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(392, 61);
+            this.label4.Location = new System.Drawing.Point(392, 57);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 14;
@@ -445,7 +445,7 @@
             this.uiGroupBox2.Name = "uiGroupBox2";
             this.uiGroupBox2.Size = new System.Drawing.Size(547, 543);
             this.uiGroupBox2.TabIndex = 1;
-            this.uiGroupBox2.Text = "Thông tin phiếu chuyển kho";
+            this.uiGroupBox2.Text = "Thông tin phiếu xuất thuốc";
             // 
             // grdList
             // 
@@ -480,7 +480,7 @@
             this.uiGroupBox4.Name = "uiGroupBox4";
             this.uiGroupBox4.Size = new System.Drawing.Size(452, 543);
             this.uiGroupBox4.TabIndex = 2;
-            this.uiGroupBox4.Text = "Chi tiết phiếu chuyển kho đang chọn";
+            this.uiGroupBox4.Text = "Chi tiết thuốc trong phiếu";
             // 
             // grdPhieuNhapChiTiet
             // 
@@ -492,6 +492,7 @@
             this.grdPhieuNhapChiTiet.FilterMode = Janus.Windows.GridEX.FilterMode.Automatic;
             this.grdPhieuNhapChiTiet.FilterRowFormatStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.grdPhieuNhapChiTiet.FilterRowUpdateMode = Janus.Windows.GridEX.FilterRowUpdateMode.WhenValueChanges;
+            this.grdPhieuNhapChiTiet.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grdPhieuNhapChiTiet.GroupByBoxVisible = false;
             this.grdPhieuNhapChiTiet.HideSelection = Janus.Windows.GridEX.HideSelection.Highlight;
             this.grdPhieuNhapChiTiet.Location = new System.Drawing.Point(3, 18);
@@ -535,7 +536,7 @@
             this.Name = "frm_PhieuXuatKho_Benhnhan";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Phiếu chuyển kho";
+            this.Text = "Quản lý phiếu xuất thuốc cho Bệnh nhân";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_PhieuXuatKho_Benhnhan_Load);
             this.toolStrip1.ResumeLayout(false);

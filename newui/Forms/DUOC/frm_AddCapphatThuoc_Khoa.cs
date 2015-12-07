@@ -254,15 +254,28 @@ namespace VNS.HIS.UI.THUOC
         }
         private void PerformAction()
         {
-            switch (m_enAction)
+            try
             {
-                case action.Insert:
-                    ThemPhieuXuatKho();
-                    break;
-                case action.Update:
-                    UpdatePhieuXuatKho();
-                    break;
+                cmdSave.Enabled = false;
+                switch (m_enAction)
+                {
+                    case action.Insert:
+                        ThemPhieuXuatKho();
+                        break;
+                    case action.Update:
+                        UpdatePhieuXuatKho();
+                        break;
+                }
             }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                cmdSave.Enabled = true;
+            }
+            
         }
         #region "khai báo các đối tượng để thực hiện việc "
         private TPhieuNhapxuatthuoc CreatePhieuNhapKho()

@@ -925,15 +925,28 @@ namespace VNS.HIS.UI.THUOC
         }
         private void PerformAction()
         {
-            switch (em_Action)
+            try
             {
-                case action.Insert:
-                    ThemPhieuNhapKho();
-                    break;
-                case action.Update:
-                    UpdatePhieuNhapKho();
-                    break;
+                VNS.Libs.AppUI.UIAction._EnableControl(cmdSave, false, "");
+                switch (em_Action)
+                {
+                    case action.Insert:
+                        ThemPhieuNhapKho();
+                        break;
+                    case action.Update:
+                        UpdatePhieuNhapKho();
+                        break;
+                }
             }
+            catch (Exception)
+            {
+               
+            }
+            finally
+            {
+                VNS.Libs.AppUI.UIAction._EnableControl(cmdSave, true, "");
+            }
+           
         }
         private void AutoSave()
         {

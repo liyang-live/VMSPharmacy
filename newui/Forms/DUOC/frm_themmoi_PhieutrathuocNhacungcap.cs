@@ -222,6 +222,7 @@ namespace VNS.HIS.UI.THUOC
 
         void frm_themmoi_PhieutrathuocNhacungcap_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter) SendKeys.Send("{TAB}");
             if (e.KeyCode == Keys.Escape) cmdExit_Click(cmdExit, new EventArgs());
             if (e.Control && e.KeyCode == Keys.S) cmdSave_Click(cmdSave, new EventArgs());
             if (e.KeyCode == Keys.F2)
@@ -450,6 +451,7 @@ namespace VNS.HIS.UI.THUOC
         {
             try
             {
+                VNS.Libs.AppUI.UIAction._EnableControl(cmdSave, false, "");
                 switch (m_enAction)
                 {
                     case action.Insert:
@@ -463,6 +465,10 @@ namespace VNS.HIS.UI.THUOC
             catch(Exception ex)
             {
                 Utility.ShowMsg(ex.Message);
+            }
+            finally
+            {
+                VNS.Libs.AppUI.UIAction._EnableControl(cmdSave, true, "");
             }
         }
         #region "khai báo các đối tượng để thực hiện việc "
